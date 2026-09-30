@@ -1,710 +1,2609 @@
 --[[ V1.2 Lume Obfuscator ]]
-local _u7erlXAb2GEWo = "龘"
+local _uLt6CnzAhPqFkucmZ = "爩"
 do
-local _rP2j5KcgdXDvDi73zw = getfenv and getfenv(0) or _ENV or _G
-local _r125KiTXNT9U = _rP2j5KcgdXDvDi73zw and _rP2j5KcgdXDvDi73zw.string or {}
-local _vAivAQXjiY9idbtbhKr = _rP2j5KcgdXDvDi73zw and _rP2j5KcgdXDvDi73zw.newcclosure
-local function _0xKuRkrYm7HMQNj(_zzJjwZ2FD9qAVax2)
-  if _vAivAQXjiY9idbtbhKr then
-    local ok, w = pcall(_vAivAQXjiY9idbtbhKr, _zzJjwZ2FD9qAVax2)
+local _j3w2DTQ7R5KL5565Wl = getfenv and getfenv(0) or _ENV or _G
+local __Yuq8k7GjE5g = _j3w2DTQ7R5KL5565Wl and _j3w2DTQ7R5KL5565Wl.string or {}
+local _zWk669NiF9FFZxX = _j3w2DTQ7R5KL5565Wl and _j3w2DTQ7R5KL5565Wl.newcclosure
+local function _mmxR2sAgvmC(_jPChQ4wQ1hT)
+  if _zWk669NiF9FFZxX then
+    local ok, w = pcall(_zWk669NiF9FFZxX, _jPChQ4wQ1hT)
     if ok and w then return w end
   end
-  return _zzJjwZ2FD9qAVax2
+  return _jPChQ4wQ1hT
 end
-local _vKKpU38UlHj = _0xKuRkrYm7HMQNj(function(...) error("protected", 2) end)
+local _zQVENG8qd9Q2 = _mmxR2sAgvmC(function(...) error("protected", 2) end)
 pcall(function()
-  if _r125KiTXNT9U.dump then _r125KiTXNT9U.dump = _vKKpU38UlHj end
+  if __Yuq8k7GjE5g.dump then __Yuq8k7GjE5g.dump = _zQVENG8qd9Q2 end
 end)
-for _mMaUjGW4y3Q, _0xXfughElMGXkr in pairs({ decompile = 1, getscriptbytecode = 1, getbytecode = 1, dumpstring = 1 }) do
-  if _rP2j5KcgdXDvDi73zw[_mMaUjGW4y3Q] then
+for _vsrJUZ447BQq, _v6YL4klQavzjzcj3fi in pairs({ decompile = 1, getscriptbytecode = 1, getbytecode = 1, dumpstring = 1 }) do
+  if _j3w2DTQ7R5KL5565Wl[_vsrJUZ447BQq] then
     pcall(function()
-      _rP2j5KcgdXDvDi73zw[_mMaUjGW4y3Q] = _0xKuRkrYm7HMQNj(function(...) return _vKKpU38UlHj(...) end)
+      _j3w2DTQ7R5KL5565Wl[_vsrJUZ447BQq] = _mmxR2sAgvmC(function(...) return _zQVENG8qd9Q2(...) end)
     end)
   end
 end
-local _kEx9hdmsNmMm = _rP2j5KcgdXDvDi73zw and (rawget(_rP2j5KcgdXDvDi73zw, "loadstring") or rawget(_rP2j5KcgdXDvDi73zw, "load"))
-if _rP2j5KcgdXDvDi73zw and _kEx9hdmsNmMm then
+local _kJiDx8R27lS = _j3w2DTQ7R5KL5565Wl and (rawget(_j3w2DTQ7R5KL5565Wl, "loadstring") or rawget(_j3w2DTQ7R5KL5565Wl, "load"))
+if _j3w2DTQ7R5KL5565Wl and _kJiDx8R27lS then
   pcall(function()
-    local _lw4RybbPe2ZGt3FKB = _0xKuRkrYm7HMQNj(function(chunk, chunkname)
-      local f = _kEx9hdmsNmMm(chunk, chunkname)
-      if f and setfenv then pcall(setfenv, f, _rP2j5KcgdXDvDi73zw) end
+    local __utm9u4wioA = _mmxR2sAgvmC(function(chunk, chunkname)
+      local f = _kJiDx8R27lS(chunk, chunkname)
+      if f and setfenv then pcall(setfenv, f, _j3w2DTQ7R5KL5565Wl) end
       return f
     end)
-    if rawget(_rP2j5KcgdXDvDi73zw, "loadstring") then _rP2j5KcgdXDvDi73zw.loadstring = _lw4RybbPe2ZGt3FKB end
-    if rawget(_rP2j5KcgdXDvDi73zw, "load") then _rP2j5KcgdXDvDi73zw.load = _lw4RybbPe2ZGt3FKB end
+    if rawget(_j3w2DTQ7R5KL5565Wl, "loadstring") then _j3w2DTQ7R5KL5565Wl.loadstring = __utm9u4wioA end
+    if rawget(_j3w2DTQ7R5KL5565Wl, "load") then _j3w2DTQ7R5KL5565Wl.load = __utm9u4wioA end
   end)
 end
-local _jnQy5EF1RJJ4CLK = _rP2j5KcgdXDvDi73zw and _rP2j5KcgdXDvDi73zw.debug
-if _jnQy5EF1RJJ4CLK then
+local _j3fOAdTxGY9SASX = _j3w2DTQ7R5KL5565Wl and _j3w2DTQ7R5KL5565Wl.debug
+if _j3fOAdTxGY9SASX then
   pcall(function()
-    if _jnQy5EF1RJJ4CLK.sethook then _jnQy5EF1RJJ4CLK.sethook = _vKKpU38UlHj end
+    if _j3fOAdTxGY9SASX.sethook then _j3fOAdTxGY9SASX.sethook = _zQVENG8qd9Q2 end
   end)
 end
-local _r7htB2mbQm5c = _rP2j5KcgdXDvDi73zw and rawget(_rP2j5KcgdXDvDi73zw, "writefile")
-if _r7htB2mbQm5c and _rP2j5KcgdXDvDi73zw then
+local _qkkHedWJxVNeOU = _j3w2DTQ7R5KL5565Wl and rawget(_j3w2DTQ7R5KL5565Wl, "writefile")
+if _qkkHedWJxVNeOU and _j3w2DTQ7R5KL5565Wl then
   pcall(function()
-    _rP2j5KcgdXDvDi73zw.writefile = _0xKuRkrYm7HMQNj(function() return _vKKpU38UlHj() end)
+    _j3w2DTQ7R5KL5565Wl.writefile = _mmxR2sAgvmC(function() return _zQVENG8qd9Q2() end)
   end)
 end
 
-  local RP7cGUCf, wbxOrIG2, jAe4oiuBq, C4r9rafL0Q, enEhp02mua2U, PSWvWddvL8, _TXkMdv9X, u3h8iU2HVrE_, Xgxm8ph4yo, UglckRDvW, qJJAXZYVBOLwcW, Kex6msFew, EoOqNYs1ZEAvE, t0LgLdo6k, t2hTAJBv, iK7m5GZrPKY, vFN9jU76GrG, AFAPdGSfclD3, NxSXLgXgoQg, EdG5asEXmzs, vrX_2jWjOi_v, ljVK3UQe96k, hMx1MjoK6KL, _ezxnjjZY, fLLzgL1N_, SHZvzZEwrs, BK_ECFq1dU05, m_bJCkOXF4OI7, ZbGbp9TH5QB, ru_1s3dO, MYpL11YDP, SEm1JEw9VO3e7, C56MkQf0jnhe, QVUjLwcqmt8e, nX1i_f9hrj7m0, VtkfV2WFLqvi5N, eMcTA0eDQ, oxnqpSvU8H, kaAnoJJc0Ay, mnZ_xAzgjd, lrw37nqu, DUb0KZ6vrZofnz, ooP8UD3y3H9, DZp6tonJu
-  local _0xfn21BiRK415 = 678521
-  while _0xfn21BiRK415 ~= 2596269 do
-    if _0xfn21BiRK415 == 862813 then
-      ZbGbp9TH5QB = ((function() end)())
-      _0xfn21BiRK415 = 784679
-    elseif _0xfn21BiRK415 == 608813 then
-      SHZvzZEwrs.Minimal = SHZvzZEwrs.Dark
-      _0xfn21BiRK415 = 928117
-    elseif _0xfn21BiRK415 == 945670 then
-      function PSWvWddvL8:GetTheme() return m_bJCkOXF4OI7 end
-      _0xfn21BiRK415 = 775041
-    elseif _0xfn21BiRK415 == 89718 then
-      C56MkQf0jnhe = function()
-      for t5n4XnPpg = #BK_ECFq1dU05, 1, -1 do
-          local hW26nOPjin = BK_ECFq1dU05[t5n4XnPpg]
-          if not hW26nOPjin.Object or not hW26nOPjin.Object.Parent then
-              table.remove(BK_ECFq1dU05, t5n4XnPpg)
+  local Ou8SJIteSGGsJ, ANTcKI8C1RJ, ObLW6oAtU, cTDFALYu, BNPLiLk3nhLF, s5u4s2Xu2FcVIb, hJORdE5S7_4, bHw_djSybixk9, hxZCNyz5_, g46Ox0oX_oV0, Y6y15RTx_bdAK, _YTIeZC88ch0D, hAJeLH7Udto5v_, qY6_AcTul1hZ, a3JMPK3UpLj, MsoLp5Te, Ql8IsB_L0uz, LLGOyAAgK37, pj6ssRQIN4J3xT, OKgvsxuqsXk9, BPdVm6wje, ztxb_GNg, mIGj3Z07d, yJ8QwZ3t44eY, jGbhiICtv, sp7yVlnQHh, Vp3aPW1J0jZh, txNz61iNG, aRRCuy6K2, LZ2C54KuY3Vq, IXDNvPpYV_29, Po7vOhpJe, dU_PlnotmciG1, kRkUreEhpACtR, vgImdDI00nN7, ZKUWoNoq2SZh, SWX_akCsjpyv, i2Kmj2xP3, sTDYF41otmqSo, zp4XnQQnCPX_G7, XS6hZZtUt8O, OynmRZnT, jjSmR_052A_, yFiMDpJtz8v
+  local _0xfx5ekO0IJtEdse5p = 449009
+  do
+  local _dTxkgUo8XP5O = 6122 % 144
+  local _d1fbo4HqVgu46wXjA = function(x) return x * 24 + 6122 end
+  if _dTxkgUo8XP5O > 144 then
+    _d1fbo4HqVgu46wXjA(_dTxkgUo8XP5O)
+  else
+    _d1fbo4HqVgu46wXjA(_dTxkgUo8XP5O + 1)
+  end
+  end
+  while _0xfx5ekO0IJtEdse5p ~= 6668267 do
+    if _0xfx5ekO0IJtEdse5p == 441905 then
+      hJORdE5S7_4 = game:GetService(BNPLiLk3nhLF("kbAuHyNsX0NJP6FMa69YXoyynQgzzLSA", (3 * 4 * 5 + 8923)))
+      _0xfx5ekO0IJtEdse5p = 626646
+    elseif _0xfx5ekO0IJtEdse5p == 947010 then
+      Po7vOhpJe = function(mhkAXovaW, PxGgzkEMw)
+      for bymqqm8TiequAq, l2rypFRkQgZG in ipairs(Vp3aPW1J0jZh) do
+          if l2rypFRkQgZG.Object == mhkAXovaW then
+              l2rypFRkQgZG.Properties = PxGgzkEMw
+              for HDWQWZveP, csNlFufTH in pairs(PxGgzkEMw) do
+                  local bHR5vxYv = LZ2C54KuY3Vq(csNlFufTH)
+                  if bHR5vxYv ~= ((function() end)()) then pcall(function() l2rypFRkQgZG.Object[HDWQWZveP] = bHR5vxYv end) end
+              end
+              return mhkAXovaW
+          end
+      end
+      return IXDNvPpYV_29(mhkAXovaW, PxGgzkEMw)
+  end
+      _0xfx5ekO0IJtEdse5p = 202109
+    elseif _0xfx5ekO0IJtEdse5p == 801143 then
+      zp4XnQQnCPX_G7 = {}
+      _0xfx5ekO0IJtEdse5p = 650127
+    elseif _0xfx5ekO0IJtEdse5p == 552844 then
+      s5u4s2Xu2FcVIb.Version = BNPLiLk3nhLF("o1EfPpqlWACtNyNU", (3 * 3 * 2 + 45692))
+      _0xfx5ekO0IJtEdse5p = 441905
+    elseif _0xfx5ekO0IJtEdse5p == 737428 then
+      OKgvsxuqsXk9 = function(SEPPIy7c, PJ_Jr0Pew, JZ30CyqCqWZiHc, gJdIzx16h3, WWgymkiNGsSgD)
+      if not SEPPIy7c or not SEPPIy7c.Parent then return end
+      local i_hemag6Ei, uEvnMkl6QYJN1 = pcall(function()
+          return hJORdE5S7_4:Create(SEPPIy7c, TweenInfo.new(PJ_Jr0Pew or 0.2, gJdIzx16h3 or Enum.EasingStyle.Quart, WWgymkiNGsSgD or Enum.EasingDirection.Out), JZ30CyqCqWZiHc)
+      end)
+      if i_hemag6Ei and uEvnMkl6QYJN1 then
+          uEvnMkl6QYJN1:Play()
+          return uEvnMkl6QYJN1
+      end
+      return ((function() end)())
+  end
+      _0xfx5ekO0IJtEdse5p = 947556
+    elseif _0xfx5ekO0IJtEdse5p == 427850 then
+      function vgImdDI00nN7.Enable()
+      if vgImdDI00nN7.Effect then return end
+      local dMr0uxCxJ = Instance.new(BNPLiLk3nhLF("FPFNMkNBbJdjTSNYFbsIwJrlVzRESJSS9buaPlFRTGu=", (8 * 13 + 34151)))
+      dMr0uxCxJ.Name = BNPLiLk3nhLF("EAoXEd6ki38U4+7MEY0628Mug3ooREZw1rrWP2DutFD=", (7 * 6 + 10421))
+      dMr0uxCxJ.FarIntensity = 0
+      dMr0uxCxJ.InFocusRadius = 0.1
+      dMr0uxCxJ.NearIntensity = 0.85
+      dMr0uxCxJ.Parent = _YTIeZC88ch0D
+      vgImdDI00nN7.Effect = dMr0uxCxJ
+      vgImdDI00nN7.Enabled = (not not 1)
+  end
+      _0xfx5ekO0IJtEdse5p = 89643
+    elseif _0xfx5ekO0IJtEdse5p == 760903 then
+      yJ8QwZ3t44eY = function(jv1VmAZrxSbm_o, mHNOSPBwJea)
+      if not jv1VmAZrxSbm_o or jv1VmAZrxSbm_o == BNPLiLk3nhLF("", (6 * 11 + 4526)) or type(jv1VmAZrxSbm_o) ~= BNPLiLk3nhLF("e+1Pe6tkeB2dgVR9", ((4 + 3) * 7 + 16883)) then
+          return mHNOSPBwJea(nil)
+      end
+      if jv1VmAZrxSbm_o:sub(1, ((6 + 9) * 2 - 19)) == BNPLiLk3nhLF("VDXhM/HFF/HttkhQh+MLETcNd3QqTcGi", (4 * 12 + 48319)) or jv1VmAZrxSbm_o:sub(1, (8 * 3 * 6 - 133)) == BNPLiLk3nhLF("iCuFnRm6icLbq9AZMiU3v6SBUMmMAKm9", ((9 + 5) * 6 + 56970)) then
+          return mHNOSPBwJea(jv1VmAZrxSbm_o)
+      end
+      if jv1VmAZrxSbm_o:sub(1, (3 * 9 - 23)) ~= BNPLiLk3nhLF("PESya7uwPjlf9dPG", (3 * 11 + 34366)) then
+          return mHNOSPBwJea(BNPLiLk3nhLF("4JMs4t26YLkvIOkDODKY66HtBlRbgdS8v5NlfI==", ((8 + 2) * 4 + 39842)) .. jv1VmAZrxSbm_o)
+      end
+
+      task.spawn(function()
+          local YaIiTi5N = ((function() end)())
+
+          local FoQH8XZw = typeof(getcustomasset) == BNPLiLk3nhLF("hJLzbO85bOV1Zhr6DZiXnV==", (5 * 3 * 6 + 25729))
+          local fcYMEo0ZiJMR22 = typeof(writefile) == BNPLiLk3nhLF("2GPWW9hTYkJ2n6Yf2tfdJt==", (5 * 8 * 3 + 50947))
+          local wjmOIm1Sm = typeof(isfile) == BNPLiLk3nhLF("9pCAoSks4GFlAxZ6GI3noG==", ((8 + 3) * 6 + 25886))
+
+          if FoQH8XZw and fcYMEo0ZiJMR22 and wjmOIm1Sm then
+              local g__cDoeq4M = ((6 + 3) * 4 + 5345)
+              for Tk0ZtATPBPKw3X = 1, #jv1VmAZrxSbm_o do
+                  g__cDoeq4M = ((g__cDoeq4M * (6 * 5 * 5 - 117)) + jv1VmAZrxSbm_o:byte(Tk0ZtATPBPKw3X)) % 2147483647
+              end
+              local vH0Ay7R0L = BNPLiLk3nhLF("DC8EMGKpp8bKzXtovslCvK==", (3 * 2 * 6 + 2229)) .. tostring(g__cDoeq4M) .. BNPLiLk3nhLF("52LrpZShF1LYWdpj", (9 * 2 + 40043))
+
+              local Bbb42D3iG = (not (1 == 1))
+              pcall(function() Bbb42D3iG = isfile(vH0Ay7R0L) end)
+
+              if not Bbb42D3iG then
+                  local tGMHRLCrXMRq1, ZA05Iw5SikF = pcall(function() return game:HttpGet(jv1VmAZrxSbm_o) end)
+                  if tGMHRLCrXMRq1 and ZA05Iw5SikF and type(ZA05Iw5SikF) == BNPLiLk3nhLF("q3yjEq/xrg6ar114", ((2 + 8) * 3 + 57742)) and #ZA05Iw5SikF > 0 then
+                      local SgAYSIAI = pcall(writefile, vH0Ay7R0L, ZA05Iw5SikF)
+                      if SgAYSIAI then
+                          Bbb42D3iG = (0 == 0)
+                      end
+                  end
+              end
+
+              if Bbb42D3iG then
+                  local pdGVLZqXYNEwJ, Vnp9b7Tjtx = pcall(getcustomasset, vH0Ay7R0L)
+                  if pdGVLZqXYNEwJ and Vnp9b7Tjtx and type(Vnp9b7Tjtx) == BNPLiLk3nhLF("ueNESKmvCH+gtocR", (4 * 5 * 3 + 30420)) then
+                      YaIiTi5N = Vnp9b7Tjtx
+                  end
+              end
+          end
+
+          mHNOSPBwJea(YaIiTi5N)
+      end)
+  end
+      _0xfx5ekO0IJtEdse5p = 238528
+    elseif _0xfx5ekO0IJtEdse5p == 41372 then
+      function mIGj3Z07d.EnsureFolder(kjUMqriv)
+      if not mIGj3Z07d.CanSave then return (not not 0 == false) end
+      local ehseQjIbzT3_Db, NeFS448K = pcall(isfolder, kjUMqriv)
+      if ehseQjIbzT3_Db and NeFS448K then return (not not 1) end
+      return pcall(makefolder, kjUMqriv)
+  end
+      _0xfx5ekO0IJtEdse5p = 902151
+    elseif _0xfx5ekO0IJtEdse5p == 441023 then
+      g46Ox0oX_oV0 = game:GetService(BNPLiLk3nhLF("4PBKM5zoEWe6AD3HIWv4IQ==", (4 * 8 * 2 + 11752)))
+      _0xfx5ekO0IJtEdse5p = 371353
+    elseif _0xfx5ekO0IJtEdse5p == 474738 then
+      sp7yVlnQHh.Minimal = sp7yVlnQHh.Dark
+      _0xfx5ekO0IJtEdse5p = 597199
+    elseif _0xfx5ekO0IJtEdse5p == 626646 then
+      bHw_djSybixk9 = game:GetService(BNPLiLk3nhLF("ecw8bLvHKVKtJ7DO6tBFk7VhKVXon48d", (10 * 9 + 3383)))
+      _0xfx5ekO0IJtEdse5p = 869295
+    elseif _0xfx5ekO0IJtEdse5p == 753568 then
+      aRRCuy6K2 = ((function() end)())
+      _0xfx5ekO0IJtEdse5p = 735842
+    elseif _0xfx5ekO0IJtEdse5p == 902224 then
+      function s5u4s2Xu2FcVIb:GetIcon(fAW53eLdk)
+      if not fAW53eLdk then return ((function() end)()) end
+      if jGbhiICtv[fAW53eLdk] then return jGbhiICtv[fAW53eLdk] end
+      if jGbhiICtv[BNPLiLk3nhLF("bpJxtoN1jOB0RhM/p6x6L2==", ((7 + 9) * 6 + 62079)) .. fAW53eLdk] then return jGbhiICtv[BNPLiLk3nhLF("ILjSw41QgzoYC0T4w+NCgA==", ((8 + 4) * 2 + 17726)) .. fAW53eLdk] end
+      return nil
+  end
+      _0xfx5ekO0IJtEdse5p = 894349
+    elseif _0xfx5ekO0IJtEdse5p == 947556 then
+      BPdVm6wje = function(mjHsP7S7Zmn4t, AFRVpdlZ7U)
+      if not AFRVpdlZ7U or AFRVpdlZ7U == 0 then return math.floor(mjHsP7S7Zmn4t + 0.5) end
+      local Vy4vb3C_cwa = (6 * 12 - 62) ^ AFRVpdlZ7U
+      return math.floor(mjHsP7S7Zmn4t * Vy4vb3C_cwa + 0.5) / Vy4vb3C_cwa
+  end
+      _0xfx5ekO0IJtEdse5p = 343842
+    elseif _0xfx5ekO0IJtEdse5p == 616661 then
+      XS6hZZtUt8O.__index = XS6hZZtUt8O
+      _0xfx5ekO0IJtEdse5p = 752972
+    elseif _0xfx5ekO0IJtEdse5p == 612729 then
+      function s5u4s2Xu2FcVIb:ToggleAcrylic(dmO54H_L)
+      if dmO54H_L then vgImdDI00nN7.Enable() else vgImdDI00nN7.Disable() end
+  end
+      _0xfx5ekO0IJtEdse5p = 57122
+    elseif _0xfx5ekO0IJtEdse5p == 30013 then
+      sp7yVlnQHh.Light = {
+      Name = BNPLiLk3nhLF("QvAJuaL1QQDPa1yk", (7 * 10 + 18084)),
+      Accent = Color3.fromRGB(0, 0, 0),
+      AccentContrast = Color3.fromRGB((5 * 8 * 4 + 95), ((8 + 4) * 5 + 195), (3 * 13 + 216)),
+      Background = Color3.fromRGB((8 * 2 * 3 + 204), ((2 + 5) * 3 + 231), (4 * 9 + 216)),
+      Background2 = Color3.fromRGB(((8 + 5) * 5 + 179), (5 * 3 * 3 + 199), ((7 + 5) * 2 + 220)),
+      Border = Color3.fromRGB((7 * 2 * 4 + 160), (6 * 8 + 168), ((7 + 7) * 2 + 188)),
+      InnerBorder = Color3.fromRGB((8 * 3 * 3 + 128), ((1 + 9) * 4 + 160), (6 * 11 + 134)),
+      TitleBarLine = Color3.fromRGB((8 * 3 * 4 + 132), (7 * 6 + 186), (9 * 6 + 174)),
+      Tab = Color3.fromRGB((2 * 10 + 50), (4 * 4 * 5 - 10), (3 * 5 * 3 + 25)),
+      Element = Color3.fromRGB(0, 0, 0),
+      ElementBorder = Color3.fromRGB(((3 + 3) * 7 + 174), (4 * 7 * 2 + 160), (6 * 5 * 5 + 66)),
+      ElementTransparency = 0.95,
+      Hover = Color3.fromRGB(0, 0, 0),
+      HoverChange = 0.05,
+      Text = Color3.fromRGB((3 * 5 * 5 - 60), (7 * 2 * 4 - 41), (6 * 4 * 6 - 129)),
+      SubText = Color3.fromRGB((9 * 5 + 75), (10 * 5 + 70), (7 * 4 * 4 + 8)),
+      ToggleSlider = Color3.fromRGB((5 * 8 * 3 + 135), (5 * 2 * 3 + 225), (9 * 4 + 219)),
+      ToggleToggled = Color3.fromRGB((3 * 2 * 6 + 219), (9 * 3 + 228), (10 * 11 + 145)),
+      ToggleOn = Color3.fromRGB((5 * 9 - 11), (6 * 13 + 119), (5 * 3 + 79)),
+      ToggleOff = Color3.fromRGB(((7 + 8) * 2 + 170), (10 * 7 + 130), (6 * 8 * 6 - 88)),
+      SliderRail = Color3.fromRGB((8 * 4 * 4 + 87), (3 * 2 * 6 + 179), ((9 + 6) * 6 + 125)),
+      DropdownFrame = Color3.fromRGB((3 * 4 + 230), ((8 + 3) * 5 + 187), (2 * 6 * 2 + 218)),
+      DropdownHolder = Color3.fromRGB((6 * 2 + 240), (7 * 6 * 4 + 84), (10 * 12 + 132)),
+      DropdownBorder = Color3.fromRGB(((2 + 9) * 7 + 138), (2 * 5 + 205), (3 * 5 * 5 + 140)),
+      DropdownOption = Color3.fromRGB(0, 0, 0),
+      Keybind = Color3.fromRGB(((4 + 3) * 2 + 228), (6 * 4 + 218), (7 * 4 + 214)),
+      Input = Color3.fromRGB(((4 + 7) * 2 + 220), (4 * 13 + 190), (4 * 6 * 4 + 146)),
+      InputFocused = Color3.fromRGB((5 * 3 * 5 + 159), (2 * 12 + 210), (11 * 7 + 157)),
+      InputIndicator = Color3.fromRGB(0, 0, 0),
+      Dialog = Color3.fromRGB((6 * 4 * 6 + 108), (4 * 4 * 5 + 172), (4 * 2 * 6 + 204)),
+      DialogHolder = Color3.fromRGB(((2 + 5) * 2 + 231), ((8 + 5) * 5 + 180), (2 * 3 * 4 + 221)),
+      DialogHolderLine = Color3.fromRGB((3 * 7 + 207), (5 * 10 + 178), (5 * 4 * 4 + 148)),
+      DialogButton = Color3.fromRGB((6 * 3 * 4 + 168), (4 * 11 + 196), (8 * 4 * 6 + 48)),
+      DialogButtonBorder = Color3.fromRGB((2 * 13 + 184), (7 * 4 * 5 + 70), (6 * 6 * 5 + 30)),
+      DialogBorder = Color3.fromRGB(((4 + 8) * 2 + 192), ((1 + 7) * 2 + 200), ((4 + 2) * 4 + 192)),
+      DialogInput = Color3.fromRGB((2 * 6 * 2 + 218), (6 * 5 * 5 + 92), (3 * 6 * 3 + 188)),
+      DialogInputLine = Color3.fromRGB(0, 0, 0),
+      Ripple = Color3.fromRGB(0, 0, 0),
+      Success = Color3.fromRGB((7 * 3 * 6 - 50), (2 * 5 * 3 + 145), (6 * 3 + 62)),
+      Warning = Color3.fromRGB(((8 + 3) * 3 + 167), (5 * 8 * 4 - 10), (6 * 9 + 6)),
+      Error = Color3.fromRGB(((6 + 2) * 4 + 179), (7 * 9 - 16), (5 * 6 * 4 - 73)),
+      Info = Color3.fromRGB((7 * 8 * 4 - 144), (5 * 2 + 70), (6 * 4 + 56)),
+      Shadow = Color3.fromRGB(0, 0, 0),
+  }
+      _0xfx5ekO0IJtEdse5p = 474738
+    elseif _0xfx5ekO0IJtEdse5p == 89643 then
+      function vgImdDI00nN7.Disable()
+      if vgImdDI00nN7.Effect then
+          vgImdDI00nN7.Effect:Destroy()
+          vgImdDI00nN7.Effect = nil
+      end
+      vgImdDI00nN7.Enabled = (not not 0 == false)
+  end
+      _0xfx5ekO0IJtEdse5p = 263456
+    elseif _0xfx5ekO0IJtEdse5p == 231428 then
+      txNz61iNG = BNPLiLk3nhLF("W2bBQaviayqTaDXS", (7 * 2 * 2 + 51546))
+      _0xfx5ekO0IJtEdse5p = 753568
+    elseif _0xfx5ekO0IJtEdse5p == 202109 then
+      dU_PlnotmciG1 = function()
+      for yfAMoGVH = #Vp3aPW1J0jZh, 1, -1 do
+          local LZD26Ae0mx = Vp3aPW1J0jZh[yfAMoGVH]
+          if not LZD26Ae0mx.Object or not LZD26Ae0mx.Object.Parent then
+              table.remove(Vp3aPW1J0jZh, yfAMoGVH)
           else
-              for W2Uxc5Wy, OyYqPhmRTXm13 in pairs(hW26nOPjin.Properties) do
-                  local aKyXiD58F7x = ru_1s3dO(OyYqPhmRTXm13)
-                  if aKyXiD58F7x ~= nil then pcall(function() hW26nOPjin.Object[W2Uxc5Wy] = aKyXiD58F7x end) end
+              for RaQNAwa7gn, QLXl5H6Gn in pairs(LZD26Ae0mx.Properties) do
+                  local _SQVfXkvSmZ = LZ2C54KuY3Vq(QLXl5H6Gn)
+                  if _SQVfXkvSmZ ~= nil then pcall(function() LZD26Ae0mx.Object[RaQNAwa7gn] = _SQVfXkvSmZ end) end
               end
           end
       end
   end
-      _0xfn21BiRK415 = 973361
-    elseif _0xfn21BiRK415 == 703569 then
-      function PSWvWddvL8:ResetConfig(MDtjwQzuhwt)
-      local vUvqzXL3QE = (MDtjwQzuhwt or enEhp02mua2U("LQX+6JJJDaxIZRC14dyRDF==", (2 * 4 * 3 + 28449))) .. enEhp02mua2U("pSLbDSEls9OxPL3xNz5+X2EgTYMYIi+/", (5 * 4 * 3 + 41171))
-      if hMx1MjoK6KL.CanSave then
-          hMx1MjoK6KL.Write(vUvqzXL3QE, enEhp02mua2U("", (6 * 6 + 37071)))
-          return (not false)
+      _0xfx5ekO0IJtEdse5p = 921100
+    elseif _0xfx5ekO0IJtEdse5p == 238528 then
+      jGbhiICtv = {
+      [BNPLiLk3nhLF("swYB82HCyRLt0HJZSdzE4AJrCa4kWd7Ni8L7Hm==", (5 * 9 + 41677))] = BNPLiLk3nhLF("0hOiRxWLW1N+BK8eD1iTVRxCUCAXgCAPaApvzQOEa1KV8C4yT385A1kGAct=", (2 * 5 * 3 + 61390)),
+      [BNPLiLk3nhLF("Dcq71cmaEw9KE+bbZaEQmuGmD+tiE5x2H/CDhR7nprmBD7qffqWbp5==", (4 * 7 * 2 + 59489))] = BNPLiLk3nhLF("IzDmX1qx+Go9qnveDC0bIZuZ7gxEVS9q2Hxf61bQQ20AyA5MKzM/S2kJYRk=", (2 * 8 * 6 + 34014)),
+      [BNPLiLk3nhLF("yEbYKgUEKKxmwQ/fAohvMP/+CJef4EtV6pUgFQ/sYEXOAge64vbJgA==", (8 * 2 + 63090))] = BNPLiLk3nhLF("tEJ0BftVihNfaERLPxEZiRGCGY8Y9yu1BROTBkb2Vdi9pCRMFw5TafrIVnJ=", (7 * 5 * 2 + 18779)),
+      [BNPLiLk3nhLF("HjjTHfrbbjAYcLEZXSrMV/1w8/o93SkTXH1Kfwr8E7YYdS+E0YIMNH==", ((9 + 4) * 5 + 7642))] = BNPLiLk3nhLF("CXPoccGdUOPTmiScsI5lwRqzwjcQ6TavZQhvh1/N+IjVWoGzMkdZAn/QUpG=", ((3 + 7) * 4 + 23562)),
+      [BNPLiLk3nhLF("o9tKF5HP0Cy0pCGrs9unWVFw57BAaVB+MInjCI==", ((9 + 8) * 4 + 48580))] = BNPLiLk3nhLF("W8S3KETHJJUfjIIFYgCKggMautw0k8z8RsnOu9u4Y3ZjMQEOjXW3JC9oaVw=", (3 * 3 * 6 + 28230)),
+      [BNPLiLk3nhLF("O9jkrRjw6R9Urbscr8dd4EFbRRs9m5Sx", ((4 + 7) * 7 + 65110))] = BNPLiLk3nhLF("AdNZWTKWex4O5VI//U0/q4I820KBm84hcCAHMwQ51SJc2Sw52yRB/8mGe9I=", (3 * 2 + 8162)),
+      [BNPLiLk3nhLF("B4dfRD8fPVW894fGhVkDZ7w1Mp84NDCcH7cmar==", ((8 + 8) * 3 + 35595))] = BNPLiLk3nhLF("qfSXHAdIH5iw0bxOxLiKMKn/0tsTM0JUZ/baqHVJVN0Pb5dTQ/J0Vzy1XtU=", ((3 + 4) * 3 + 30970)),
+      [BNPLiLk3nhLF("98ZmCeeloWvcHUxXhWCCh6sD82loCQg1hXv6qODzM1e=", (5 * 5 + 18665))] = BNPLiLk3nhLF("B/yrJxiqshDBs/KGwObJ6x0DWgDsVYAu9berdU++Kh+jKu0n6x9S87KMI/K=", (8 * 3 * 6 + 48061)),
+      [BNPLiLk3nhLF("TBxbmCdSfIFJK8R6/q1uiuY3Cp6FfpyxBSheWDd7mZU=", ((9 + 8) * 3 + 10622))] = BNPLiLk3nhLF("cFBKGQXn54k6U06UQFOtsZ1B3M8J6EhvG7AN2ZpvzslxGvJjbu1cYZhxAJ3=", (8 * 12 + 51712)),
+      [BNPLiLk3nhLF("Jc4ROqg4kvHO82CbCKt2kaf5FiFHKyWZLKHlq9mYJ3K=", (6 * 6 * 2 + 21537))] = BNPLiLk3nhLF("eHt+N4lOkrqeeIlqQuHPWx/pCdAbIr0oGW4eq0RLWIYXCHqDHVU1ZYYIICH=", (8 * 7 * 4 + 22304)),
+      [BNPLiLk3nhLF("JuHft2Gho+G8oawYupFSjGy66ibke40UL2Uie2==", (10 * 9 + 31475))] = BNPLiLk3nhLF("UIMpxvCIyGMtLvwTIIkcCLX6EA246RM3C7mQUWJtvWeyIFkoka2Tcu74kkq=", (6 * 6 + 17870)),
+      [BNPLiLk3nhLF("EP5KO8F/y8WaOUWPa8lrFeWr0xzIWdJv", (2 * 5 * 3 + 8294))] = BNPLiLk3nhLF("dQiDJ0PnvHEvHbrW5VllzKEoFFSNnuwBwtlKpzdI5K3T0pj/exKpJilhJVS=", (7 * 2 * 6 + 27789)),
+      [BNPLiLk3nhLF("8o1RBJGMViGFgJXIA9NauWqMS68IysM6rU+67AG3BQW=", ((2 + 3) * 3 + 11743))] = BNPLiLk3nhLF("evSJ6jZzxS7sbDOuxHRhmwcRMIcQI+kxqtVIg9tSmsKJa+k0eQuCuam9gnt=", (2 * 7 * 3 + 42906)),
+      [BNPLiLk3nhLF("nX5Z4gaqe86/OxcTTrRNf6Gkcye6J/OxJrRFX5==", (9 * 13 + 10580))] = BNPLiLk3nhLF("HXcnGJMnCoLljYTNN+kWjcmVMcQYj2DKNHnoovkaat8jJwmAT+8533zM3Hc=", ((5 + 6) * 6 + 20469)),
+      [BNPLiLk3nhLF("VrtpALHpjUvfgJyScywi6E9kIZMpgyTm", ((2 + 9) * 3 + 63589))] = BNPLiLk3nhLF("KVqYAe2xCLqtye0Wnr+Ru5bjNQ2ZySQCWCeBA/0Aqqq0SYsEOpLOPS5dbLB=", (2 * 10 + 20050)),
+      [BNPLiLk3nhLF("i+2FXyRP5HB9V0DPiobClF5VX05rNBqnNjiPHZfUruD=", (5 * 6 + 63003))] = BNPLiLk3nhLF("CC4VtjwpaE4GpDL6kkhv0lt3AA6ixHc7xDWHukhXwZ6Jkb8cwwVYokbQkJU=", (2 * 6 + 16036)),
+      [BNPLiLk3nhLF("4wTKGacsOPUbaxK2GgcGSggII1MCLcSaIOmCSngzr3G=", (2 * 8 * 5 + 46702))] = BNPLiLk3nhLF("oHEhT8052DwCadVK616lSDgHh3BqlQcYddb3664kT2h5oi0EQkIpfb0tFnB=", ((3 + 9) * 4 + 63831)),
+      [BNPLiLk3nhLF("oSU7tZkwouu/uIzRcZCTIkgLAYu5Mmpz", (5 * 8 + 5668))] = BNPLiLk3nhLF("IDVjwJBZQFPLV1WTP1Oaq41oDLAbFZAJqLQtz4KzDGKAZLKjQZK8JfV8z7x=", (3 * 13 + 27270)),
+      [BNPLiLk3nhLF("dTiG8oQWN6eim8c6BCY526LdpCS70ASTE4XX30==", (7 * 3 * 4 + 12264))] = BNPLiLk3nhLF("nOax9fozSHnZcCKcGEOeX3xdMNkUeEo8SlZi9V0fY1M4GCWvYN9rMHO2Smz=", ((9 + 8) * 4 + 24484)),
+      [BNPLiLk3nhLF("jY94UCo7mIZvCqp7Cqp8l4qTJNNJj2CZ", (4 * 13 + 61921))] = BNPLiLk3nhLF("paARSgTwdQUmcLQg44ddEoMdqI+qozP7BQz58glsI6lMm5otYYhyYQTE8kQ=", (10 * 6 + 37048)),
+      [BNPLiLk3nhLF("3o0osARE7LA5sLMReQlQ0Z8eGE4pQzFGA8kLMAag2Rl=", (5 * 3 * 2 + 60958))] = BNPLiLk3nhLF("gnyH8dmJ7Pf43NsvM+OW2+8TFl22alOVMOssSdQMfDQD8zzC9fXSXasLtrX=", (3 * 3 * 6 + 37513)),
+      [BNPLiLk3nhLF("jxgWTtYmp6qD25SYjJBYjPv20pjOkAi7", (8 * 10 + 26791))] = BNPLiLk3nhLF("j7Ybyr+DyW/cjDMXHb7Z87+9pKV0PUwcBuWAutIwbtK9lPruOqHhJr+NTNx=", (7 * 2 * 5 + 36035)),
+      [BNPLiLk3nhLF("ir1aHEEeKDxj6m1JQQSFm+edHAGzwm9nkqtW/E==", (7 * 10 + 34454))] = BNPLiLk3nhLF("+IB5BQdrynmvC6+emPfW+Dqi6pmoQH3cU9Sg0s3vCxqlSfqhmF04oxdpeDb=", (6 * 4 * 5 + 2128)),
+      [BNPLiLk3nhLF("x+xvmOb6BdTZx+gtXWyb0vf6DoE8HCknweZ17iNeTIf=", (4 * 3 + 54725))] = BNPLiLk3nhLF("WdLmQXS0CdgZVjcwAPtasFUVOji5CjLxwibLiic9FTbK4PyICAC/vtpTOri=", ((9 + 3) * 6 + 27036)),
+      [BNPLiLk3nhLF("gBoPNQ+4ZVnmu39bzOoBMBF9FQvhFwFrLLPX59==", ((1 + 9) * 5 + 14045))] = BNPLiLk3nhLF("o369PwEeKCl5EWEv/C14KJ4RKs+uHCHUosRFfP+HOgYVW5DwmUYMOU9r66V=", (4 * 2 * 6 + 47656)),
+      [BNPLiLk3nhLF("aFEfmNPajJP2nWVgmbyWgJWkSqDxAX3CFajpFP==", (3 * 9 + 53215))] = BNPLiLk3nhLF("+jONmN8CsmsY5UgkfQMOzaTjoLPcgm4W+Wu/UwOGsHUVz1/sIw8qOdbMCVv=", ((6 + 5) * 5 + 64647)),
+      [BNPLiLk3nhLF("AP8/cKYlgpYhNfwERUsROXzNlSG9ONlS", (2 * 11 + 65386))] = BNPLiLk3nhLF("qxgaqjnK5EJEtDL/8gNdtcNGUEQ+BjkRuDQy8QJuNIBVq7fXqAswC7LP88s=", (2 * 2 * 4 + 33459)),
+      [BNPLiLk3nhLF("xcmH62pQpKLcBk3iYHGhGILBpeL8gkSIpuBxWVZ/xVCQIOoGC+1Ycj==", (11 * 10 + 57327))] = BNPLiLk3nhLF("OZyAxpA74G23mgWUxnD3LHfQIUJgBt952ICnKoGtPjObxljexAz94o1HXhw=", ((5 + 2) * 4 + 28577)),
+      [BNPLiLk3nhLF("XI1MMtN76vpT9cbvhSw1JcN5MITp9ErRZnNxI2t/J5MrRfNUFNoDBf==", ((2 + 6) * 3 + 29835))] = BNPLiLk3nhLF("gelgVFlzhBFN9tkGqsZNXra/XxRudT1YtEZVAr3PUpLkdX2ZAkvNRFLfOQl=", (6 * 2 + 54523)),
+      [BNPLiLk3nhLF("6vxoP5PPZenE8hBhQSQsDwIjVdHsVqOp+fAJQHbyWjAFP5xL+wIaiS==", (2 * 6 * 2 + 28733))] = BNPLiLk3nhLF("Ezj1d+/WvLtigxIpQ+ojL+6FyTGOQ5BGg9yDSZgVeWe0dzg7VKNNqcalL9X=", (4 * 8 + 48502)),
+      [BNPLiLk3nhLF("Dtbt/sZbvC3ZNIzNKh30H28VODmmmsPfyC3LznGkxvmKOIFmrU1BzC==", ((9 + 5) * 6 + 22789))] = BNPLiLk3nhLF("dt3nXtw8/MPWYxLnyQ2SKlmW8t3YSQVAQH2wN3mRR4R1d8m28H0HLBRyPyZ=", (4 * 5 * 5 + 1849)),
+      [BNPLiLk3nhLF("oo51PZAL0krxvvdKpXUKo4DnywwEjojpsYrc5PYksvX=", (8 * 5 * 2 + 38419))] = BNPLiLk3nhLF("sjg4BVIWC7pXLWi2aUdxwLdHGKiLITgcIVLHBxIyFYLpiWo5gPLYwV5AQOy=", ((6 + 2) * 4 + 12408)),
+      [BNPLiLk3nhLF("i6zmd/NWDRRNVxNEp7XtiANJJSWTdOFRXSnqBN==", (3 * 12 + 9661))] = BNPLiLk3nhLF("j3JrL3JWHGWRyRP4LSWOPSPQ+4HL3w39++pzgvCJW58C+7lSTpwI13xFHVg=", ((4 + 5) * 2 + 62451)),
+      [BNPLiLk3nhLF("gvHW3zGvYsGIUhkTib397bZjhmzVhsl1YQU7icHN7YD=", (5 * 5 * 4 + 28386))] = BNPLiLk3nhLF("GsW/VR6ZJmipekoXsiPTyWhVhuAr4uvcJDPfppJmutOLe/w+y/e19IeXSsu=", ((6 + 8) * 7 + 60590)),
+      [BNPLiLk3nhLF("HJf9KLn9Hv9ONNqNP7hU9qoyVq6PxqNB", ((9 + 2) * 3 + 39418))] = BNPLiLk3nhLF("+gN7VveBJBLRE4x82DOBDcIj/8jEcCFjNnfU/AKsBDTSKAc/FJhS2ccjNnI=", ((8 + 7) * 6 + 32881)),
+      [BNPLiLk3nhLF("H5gYhhvaHhBuAk0oRHgdoMcv5rB+YIAq", ((4 + 8) * 4 + 58959))] = BNPLiLk3nhLF("mggNIyMRIge8scD+sZquQheoqgMQ+ITdElk5qjqiiOqX+o5eKjgdftmyjvo=", (8 * 4 * 3 + 40098)),
+      [BNPLiLk3nhLF("PXgXFjwFFXwGUEigtkQbZhtN8PrgDjz1", ((7 + 5) * 5 + 19357))] = BNPLiLk3nhLF("c/NEKYYLWs1gMFpeKCZDMYm7fpQ/+CZbLnOoPELEE7pHUiz9uBnFiDcAhlz=", ((6 + 2) * 2 + 6414)),
+      [BNPLiLk3nhLF("at44R4tZgWNkg2B8Rbo8WBB0S6N3Eg70", (7 * 2 + 16046))] = BNPLiLk3nhLF("kUt2QdE3MBUz+BYZGziBohuDkMFfC2FUMk9yskeWiZIULGiFw66QVFPliEr=", ((3 + 3) * 4 + 44760)),
+      [BNPLiLk3nhLF("DiiH6f+uuGKSmHMn+qgJ7kedmV2krjwP", (6 * 7 * 6 + 58792))] = BNPLiLk3nhLF("S6cJ0BYMhvDxK41icxPhI89B4l4MUiYpSODzAFsifMMnbEcrKFirELeZbbi=", (2 * 2 * 2 + 53206)),
+      [BNPLiLk3nhLF("5bXZQA+V+hKtYTGfR2KSW2ppAUgBKLUDkBcTt6==", (3 * 5 * 4 + 51206))] = BNPLiLk3nhLF("XCpUyKKTNUhA+3alC3E2FwAo4A2QD81rKJGo48NTbylKS8daGE2/+ulpCKT=", (8 * 3 * 3 + 38446)),
+      [BNPLiLk3nhLF("NCu/gnWlYWyjEObl3Np9J84jEOb2JTcPsXwO0W==", ((7 + 9) * 2 + 3072))] = BNPLiLk3nhLF("AOxHMOkkF864qPJVmAJWA2mOmiPRlYbrWGzmWBINMGijAFMa8XJRAOtnfON=", (7 * 5 + 28501)),
+      [BNPLiLk3nhLF("oBkkoJjnMNiQLyAsBlCHEM0y2qkiEL0+", ((3 + 6) * 6 + 26889))] = BNPLiLk3nhLF("ClqlXS80S7N1j3cOeUi3bYFyWsiGixTdCTNRSMnAux95ErN28yqWWYOcHTs=", (11 * 8 + 7518)),
+      [BNPLiLk3nhLF("p73+HRTfu4KFHCyZemybp78Av5okFO1s", (4 * 12 + 18289))] = BNPLiLk3nhLF("eWP3ws26GxATT5OCHGSsOa3lTnLn0UiZUW2ATkUzcM3XemMMI1fyU47icO7=", (6 * 2 + 45106)),
+      [BNPLiLk3nhLF("maGBhOG3uhsuADYwdis1IUsOuKYBlNxw", (2 * 7 * 6 + 47960))] = BNPLiLk3nhLF("PDLkU+jukTEUmaGIV5u6y7fOHKErXiLS/OwlwMuKUUVZt92TiTCUWs/AWvI=", (3 * 2 * 5 + 42808)),
+      [BNPLiLk3nhLF("FonQmgIoCu1ng4agytn6GKakT/a8p2tRHHHcd2==", ((7 + 8) * 5 + 62858))] = BNPLiLk3nhLF("+1FJTHeNzhZmfbC765q010DmH1hLbDsAFMZnX0S3KeZRo5bFDezuR0jpDwz=", ((9 + 3) * 6 + 57681)),
+      [BNPLiLk3nhLF("NokWQH5tYoB+9v5ACoapIfa1WOSqQmej8MY+83==", (7 * 4 * 6 + 54544))] = BNPLiLk3nhLF("g+sEUeKlE0+tW0X0fFlZdUqX80HsUoWxQtV+q0KoeQagqoJqCZsQUU6Uq8e=", ((7 + 8) * 2 + 52912)),
+      [BNPLiLk3nhLF("D3u1fpCuLpAKNwtmfZCaMmCRhuwAccFf", (2 * 4 * 3 + 15606))] = BNPLiLk3nhLF("pwz0wx0pqTzDvFGscdIepAcMC/MhpC+1kU8b07i2aLKesu9q4xAgS//O4n9=", (5 * 6 + 656)),
+      [BNPLiLk3nhLF("TsFHL09KaOlF74njPp9pRcJNyMlAWrXM", (4 * 3 * 2 + 7837))] = BNPLiLk3nhLF("j2RFrggdZON4c7iUwKNflVQP9wQdXNYjeKN7wcI/bVuUCUYaY2uDFBMoL1i=", (2 * 8 * 4 + 38975)),
+      [BNPLiLk3nhLF("XXF5uQ5odghv6Dj4L2xzLfjKdD7nmfhEdXFn0R==", (7 * 3 * 4 + 20153))] = BNPLiLk3nhLF("jgT5eKyIoJjZEJyAEwCy8nLijZtl1utoECE/9I2noANckyPUwYKaWx3r1VW=", ((5 + 3) * 5 + 10926)),
+      [BNPLiLk3nhLF("SigBsmekWqDPk2GzS8RI4co8erl7ezMO", (2 * 7 + 52028))] = BNPLiLk3nhLF("RTBTdYA/RTHtFaAPguH5S9mkEVMFCOAbE4ShbUNKCT0SdfEANUe1WHo4gIM=", ((3 + 9) * 7 + 15680)),
+      [BNPLiLk3nhLF("ZTxJDP45d7HOe1TA2PieAzHNCOpt2VXK", ((2 + 3) * 2 + 60328))] = BNPLiLk3nhLF("N980czPLxSTLFOBZaayG3ODJYwRyCC+karx439wnadpbMuPspCsyVH5RbDD=", ((9 + 6) * 5 + 52324)),
+      [BNPLiLk3nhLF("z1yOyN9+m1L58vqHmsZ2soSbksdCsmT7wFdWro==", (10 * 8 + 45841))] = BNPLiLk3nhLF("2gn06UCO64XzDBLFATnZOhA4wTh+iUCDG1ILrPiqeUL4GUAtfVC2DB2GeOq=", (3 * 4 * 4 + 23694)),
+      [BNPLiLk3nhLF("zuCIg8uHa8PNqsJxPmBigLuIZSajbYfS", ((8 + 6) * 5 + 44908))] = BNPLiLk3nhLF("p/+VYA+T17p3wevCck2xfeDDpq+DF7Kx9mhsBLvLVqwqLdv6Zq70FqR2YkB=", (10 * 9 + 51137)),
+      [BNPLiLk3nhLF("Lw4bVK28L4GLHyZzA2c5J9ECV1cWJScIOEaEHS==", ((2 + 4) * 5 + 35894))] = BNPLiLk3nhLF("SVQu1Rc74AD1f0Pfo/5oooQtDXyIgpc+yp5ADKVD5VMGeXS146CyoDN6qDP=", (2 * 12 + 14423)),
+      [BNPLiLk3nhLF("ijkcaLxfSszHu0ARvbyyCbcag5eVQ5+OmAZwEh==", (4 * 3 * 4 + 61642))] = BNPLiLk3nhLF("8zYqfxCMoy8jOF2xwOCMyMRpOvORmdecXqTd3lBgl3RlR8RbC4ZM703sKwV=", ((6 + 4) * 6 + 63609)),
+      [BNPLiLk3nhLF("YzalSoxbQRK0OCQQiVGITzWakGF/U/+f", (3 * 8 * 5 + 18086))] = BNPLiLk3nhLF("Y1k1yEL96lhYessS08eC6nvifsxGY2HQfJvBd2RNE87nKHR1QsCJZ8R2ZKr=", (4 * 2 * 2 + 8496)),
+      [BNPLiLk3nhLF("Iro2kN8rOj8wKN9Oz3CuYR+pFVLkI7nQ", (10 * 3 + 40752))] = BNPLiLk3nhLF("wMpKLMhxJe/h2DHiBUc51T9I5rxFdadhxQOabIPRkaLp85qtsCS+DP/9W0c=", (11 * 12 + 31837)),
+      [BNPLiLk3nhLF("PAfN/tQictsLITJIJoQ5a2UhQkgeG+IU", (6 * 4 * 2 + 34672))] = BNPLiLk3nhLF("yiTXiCoeIwTSBLM0II2nDYDjYCys9gxtxsoxWdMfG7WtBsbCQdRV9sM7DZg=", (3 * 13 + 5141)),
+      [BNPLiLk3nhLF("eZhFikNeKFANijD5ATGRg+rbAmN0YTAdUIn3I966UxXs2AkIFZpdIk22FmV=", ((2 + 6) * 2 + 36492))] = BNPLiLk3nhLF("NujTKz+FhoWTZ5GgCpGMhyR6wCrQNuLhBKNn7KkoqqoueReNBCjb7tGxOo6=", (6 * 7 + 1282)),
+      [BNPLiLk3nhLF("8BhNysUPDUdUN4tWPP+yrUHURDElth7UtPc7Qg==", ((8 + 4) * 4 + 39411))] = BNPLiLk3nhLF("QeciqE0ejf6SbePGCw8AHkLCfsGBqdpC1OBW0krqOP96OGWkYdBXlp/F1sn=", (11 * 5 + 42019)),
+      [BNPLiLk3nhLF("RVesU319X3mILUCaSycUnBpqNNkJXyXPO2vkdQyMpbB=", (7 * 12 + 64868))] = BNPLiLk3nhLF("AyVqfk3oob9joscWQIub5cEqPKM1ctuZo6SSAtDHUIeI7BoRf+D6FIaSCSa=", ((9 + 6) * 5 + 61415)),
+      [BNPLiLk3nhLF("SQGLpnsIjTmCQJzaQNIxkHkDWijGQnPf", ((2 + 3) * 7 + 40317))] = BNPLiLk3nhLF("COpwK4pRas2MVwF5lHTprvFHjm/NO7CQiHssnQ9fs1RT1G7Q039laBs4Ogl=", ((5 + 7) * 3 + 2121)),
+      [BNPLiLk3nhLF("J5Nvg7Br+IY9c6ezdKGqkvKnGDZQT5mbYxe1gDlwYNv=", (4 * 6 * 3 + 45557))] = BNPLiLk3nhLF("2AawqKAC4lu8gpnMjKmsK1pikXTTj4qSAAsXzCF+sGawV4GmA4ay2vGbqad=", (7 * 7 * 4 + 38994)),
+      [BNPLiLk3nhLF("cTImpmLS3nHV5JNOf+cvHsk8wnJADKEK", (6 * 10 + 7343))] = BNPLiLk3nhLF("OAvYuj7LePxhR2ezCJlifUx+ZDLOWLeo+efF+LfDJtSpNvIwwLeOuTfKZ2P=", (10 * 10 + 57641)),
+      [BNPLiLk3nhLF("pYJ+h93xR62xulI8VH3gdkJIFDdX7Q48CalZA9i3SQd=", ((6 + 4) * 2 + 37193))] = BNPLiLk3nhLF("2ZQXABOdZvOuob0SdxBNhv3alR6LnyYyP0OXeiXc5M+NB5q/LR3my1CCUd3=", ((2 + 5) * 5 + 2816)),
+      [BNPLiLk3nhLF("pPc7goLifWPjpieBpk3cbkLo0EHnbiR1k9RL1E==", ((1 + 3) * 6 + 59331))] = BNPLiLk3nhLF("yb6mH+Pb4BzUf3XBFBBnquBoBQ5xxAPUoB6xVHjnVhjvVkwphkL04xKrK8o=", (6 * 8 * 5 + 869)),
+      [BNPLiLk3nhLF("tXK9a79yrdCPPXx/+HQ7HXCWFvNEHzgnZdgAUB==", ((1 + 5) * 4 + 46999))] = BNPLiLk3nhLF("zwRo5+LLcyTxjrTE17eIqrKR1H4P9QuCy7qTRhLrpNjtvCoTy1eIlUsvNFq=", ((4 + 2) * 6 + 20739)),
+      [BNPLiLk3nhLF("FJHtJJZJcbVBUcyg6p0L4LRpUwVYTnC7", (7 * 10 + 63755))] = BNPLiLk3nhLF("dYKEpV1ua7zU0nwxRo1tNnw9xH+wDjttXnwi/1wr0iLzkWEBFN7PJiiXi0l=", (3 * 2 * 4 + 14841)),
+      [BNPLiLk3nhLF("ft+Eflzkwg+JCYJ+EtYqhHA5C2swTYzh", ((3 + 3) * 3 + 30133))] = BNPLiLk3nhLF("fvwFDEPaay6pOkU8B51zkskdU6qoERq2BW0X5ZAhkEacsUAgaRhDFfJEiH9=", ((8 + 3) * 2 + 41834)),
+      [BNPLiLk3nhLF("vMV9GdT7MMo9CTAHmkHpvCcIkCMoKDyh", (7 * 3 + 6051))] = BNPLiLk3nhLF("DxbAENzaXBoBXGGQbAkDNUyBW1wADEMANr5nHGBkHQwnAqo6BEBdhYP9ZMW=", (6 * 5 * 2 + 37423)),
+      [BNPLiLk3nhLF("7Np8pwM0uFwftNHVlFnLlZJc0bJklJGY", (6 * 10 + 31037))] = BNPLiLk3nhLF("08Lqqzx5SH8S0NLQVKIbq2JMPzBrPbB/BwL+CFpT1BJrBFddFQPrLtcOP3w=", ((3 + 5) * 4 + 6817)),
+      [BNPLiLk3nhLF("0jObldAZLZAoU919sdyfT6SJNdOcUMgSWuO+qs==", ((7 + 3) * 5 + 16722))] = BNPLiLk3nhLF("I9lHceeK5eezPO0bV9580e4cm8VlN9dT5T+BXBlgBsV22JayqYEfOrP02TT=", ((7 + 9) * 4 + 63421)),
+      [BNPLiLk3nhLF("HjBiQLYt9HE6iN0IqfWRijamsHaZsDFGA5FUAH==", (7 * 11 + 9722))] = BNPLiLk3nhLF("Kx1bJnzhYEa4aXFyO05nYFgziOzvhOybWvEVf1RmOv3kOzE0lIz6iXBo+wE=", (5 * 6 * 5 + 3458)),
+      [BNPLiLk3nhLF("BFoslqQKhC99N4oCICkrQewONIQkEOQBVRz2AI==", (3 * 7 * 6 + 31630))] = BNPLiLk3nhLF("by5lMV59ZAzaUiYsiNg6FHKesVTFaWRUdB6XY95d+FDmdBeI2/sjsyTefiX=", (6 * 6 * 5 + 8147)),
+      [BNPLiLk3nhLF("ZI+RVOuFT2MExDC+JeAaJ7A5qDJ8N/Pa6EP75j==", (4 * 8 * 2 + 18835))] = BNPLiLk3nhLF("3Me/qNTq2skOTgzGRgC2mcA7KNIW+eQfxRt5uleHWD8lOcSealowc1wx3Hx=", (8 * 5 * 3 + 25508)),
+      [BNPLiLk3nhLF("nqBVUojDn3JNiVDTjmgNmohFUeZ6F542p31u2Bp2rxg=", ((5 + 3) * 5 + 16743))] = BNPLiLk3nhLF("GsRLa3daAvCue/RqIPcNHC6QrxJQbIx3UniZvPMPKEWDXNPOtiLmPvqNkHm=", ((9 + 4) * 3 + 1095)),
+      [BNPLiLk3nhLF("Vxc60gTJfAIT9axII5ZAR2IhBTc9r1p2kK5agBJHb65=", (5 * 4 * 3 + 23695))] = BNPLiLk3nhLF("9LoO7fu7DnAEDS1kJxQkJEXKzEXVM4cizgL/KbTqtLSUZETW0Jc2N2LNwiN=", ((4 + 5) * 6 + 51353)),
+      [BNPLiLk3nhLF("6JGDkeOuDvRyZeQEDXrtRj0f5Jxj7/Qx", (5 * 10 + 48375))] = BNPLiLk3nhLF("0uVfinhyVD6IM8RbepDBiog4Vwm/TGIebqN2uiVm8qunfVVZkFRXilIsa39=", ((3 + 7) * 4 + 16473)),
+      [BNPLiLk3nhLF("UaA4nrhnCRHlT4IxLGUMyPQ4q2ClCsiX", (2 * 7 * 5 + 26892))] = BNPLiLk3nhLF("WIr1BbGlqJFoWCPrf9tWY0HNecGmqGqheYOzo2iyNQPsoGovWrKQqzi72Li=", (11 * 13 + 48881)),
+      [BNPLiLk3nhLF("HUb/UUErkFfykZnfw7lgLCG7Rvw+S2GThUTEmE==", (5 * 9 + 7909))] = BNPLiLk3nhLF("EqeX8Oi3GqAlWh0b8WsEKjFKCdedMnIom/q6yFkZIItRGEHmRVIcGwBH35q=", ((9 + 4) * 2 + 8350)),
+      [BNPLiLk3nhLF("SGNiIW9SA2l/P/rhq4XW4WL9d6IpwXG3", ((9 + 6) * 5 + 24332))] = BNPLiLk3nhLF("qORQS6QDiFOVXwwSp1B1b4Tc7DmtZ1HeewOgNZRR8ZmZBn2ezXx6hnGbBtC=", (7 * 8 + 54953)),
+      [BNPLiLk3nhLF("oVIH1l8zcAgCeqOZRlHGn5Kgnd156514eEIgye==", ((3 + 6) * 4 + 14538))] = BNPLiLk3nhLF("Y36eQ3Rxqzq8InOJeR8nudw3u3CcuCYuC30WPILnUa8nTnOCQC8nIRO0WjO=", (2 * 4 + 18886)),
+      [BNPLiLk3nhLF("pl46iO0AACtvV0Y1KVKTADHTkCoEcDgzMsgGUQ==", (11 * 11 + 2441))] = BNPLiLk3nhLF("6QjegVUDZHTETmMhdszMFNM2ZLMMI44pX6cpsVBy4RshIl0/ZhzvoNtsqeT=", ((4 + 2) * 5 + 36793)),
+      [BNPLiLk3nhLF("RxlSMbvGRrvx/pSRiNyHFXgCdAS9uPiv", (3 * 3 * 6 + 19154))] = BNPLiLk3nhLF("r+mGthBO812eRfIgFLFvfqP7FDXoFWyB3LkZrU+LAQiUMTBgMGDMgFiaO+k=", ((5 + 8) * 7 + 35616)),
+      [BNPLiLk3nhLF("U46lI46uSIG/xQFjsBVS2shmCKRjZwSR", (7 * 13 + 6881))] = BNPLiLk3nhLF("Hpk77j1BlK78Nq+GXj1K+/g1XP1j+AEyRAzQZqwWtK+YfDvwv/R5HfF0+dF=", (8 * 9 + 47415)),
+      [BNPLiLk3nhLF("0DE9orITRrN4vTFR2bAO0kVBWLRsXbUKLGIRgF==", ((5 + 5) * 6 + 27115))] = BNPLiLk3nhLF("YN4Z0hqC2RVBgBvnrymm9C2QyNAFMKmNF5TMyM4CCCb7j05+FMyO2jtR2BO=", ((7 + 3) * 2 + 2538)),
+      [BNPLiLk3nhLF("c/6A5IrDcjLWpTExlOTGp7xx9t3xR4Bkd/BClT==", ((9 + 7) * 7 + 48619))] = BNPLiLk3nhLF("mSRQmbEXbHko6bI2wC8XaSmVCCZVYvjhEYR3OSAXkSkWf9r2a2O/lSIhEkS=", (9 * 8 + 45522)),
+      [BNPLiLk3nhLF("NEnC915VFddIHEOrVup0915kgLa6ZvuJ", (3 * 2 + 6239))] = BNPLiLk3nhLF("WwrcWrMsKw+rYR07Keu/pGQzT47/qhPxTGr1K5BCL5+sM5Au0KAFyU0LI8m=", (7 * 8 + 61978)),
+      [BNPLiLk3nhLF("hOj+pvm3lWFztQpdgfzsf+zxBcmDwrqM", ((8 + 8) * 3 + 46427))] = BNPLiLk3nhLF("K6chQ72DQy2sFvOCUfOqWtCKLawYcoVAF1CJP8SNUtUMPfoNUyq1fCy5iEb=", (5 * 3 * 4 + 51778)),
+      [BNPLiLk3nhLF("6IcNX7CXtL7clAPCQZUzQ4W5nij0HLC1t3ekoWPYWT8b6l8LH7WgX6==", (6 * 10 + 50834))] = BNPLiLk3nhLF("UvDyQ2PhUqM2OHSEwTs9nizzRNHfOomSeaX7sSMPW4SCGGvesTPlwARxoyM=", (8 * 5 * 2 + 12814)),
+      [BNPLiLk3nhLF("6KVgIf3R471MlMWjIoexGdZ7ISdMiP1RMsCkF3e6lE6vIotOaRy/QK==", (8 * 12 + 58928))] = BNPLiLk3nhLF("usRuaAaeWtjaI2IPdVRgqjeWQ4c2u5HhQQ4j4PI8Q2pggs97Z5rs+xKDqBK=", (2 * 9 + 26910)),
+      [BNPLiLk3nhLF("lIMDKakWncfhIdNXyEoGqJy+JuBpMlag", (8 * 5 * 5 + 13236))] = BNPLiLk3nhLF("AZI6+eR0MU51NXjgIP1AKV1xoDqc8bJkMxD8CpXsAMsgoi/KAEo08Ws8M0p=", ((4 + 5) * 3 + 21793)),
+      [BNPLiLk3nhLF("pwbKeO5pjiriPMb7lRLHVHi4pOObjdEmPibSpg==", (8 * 3 * 2 + 31133))] = BNPLiLk3nhLF("ZZZk9ognZWI+VQ4dNInnZbd3N1AI4dydnoJVjoDKLHbfdQnaJB4AmcoBV0A=", (4 * 8 * 2 + 55965)),
+      [BNPLiLk3nhLF("FdTMak33VJHIjdxMTB6zBf+M9x3XlHYu", ((6 + 7) * 7 + 46828))] = BNPLiLk3nhLF("sDFYQvcvwiTfwtHqzjMED9zGirFNDwTOjjFfH9jMIG6kJ9TPJcT0UN8ki+L=", ((8 + 6) * 6 + 17743)),
+      [BNPLiLk3nhLF("EaTVHzks6ktlZukkYVDfI4EFzzst64T9YYjjzAy60asjSzIpweudjO==", ((6 + 2) * 7 + 44366))] = BNPLiLk3nhLF("8/tTfveEbke1P9iJLdH+jdt+9RBK6pRYf82H+yBt85VfP52VfbrwXpR/LgA=", (6 * 2 * 5 + 8653)),
+      [BNPLiLk3nhLF("wugqoqgj9f5wwadgYs2PkoGjMVE4kSjuroCK1E==", (5 * 5 * 2 + 1002))] = BNPLiLk3nhLF("4uVjAfhQC/h7E2Sekh208tp8camLULCj93v9CsK5QWhE4tKE8JmGUhmBKvf=", (5 * 2 + 10278)),
+      [BNPLiLk3nhLF("uIHxMs9NesfhJB3z1cvlAzoNyVKvxPHl", (5 * 6 + 36180))] = BNPLiLk3nhLF("2lKrggwGKbbbFlILQzqXjuKkGeqEUW/0zTqfkz/2IzT0SFk1K8iyOmSym8i=", (11 * 13 + 22435)),
+      [BNPLiLk3nhLF("y2sAGcsYTLbJelEnAw9HXdaHbFb2IIqKgPF1q+rQuelVYefU+Lraqe3x7hA=", (2 * 6 + 17678))] = BNPLiLk3nhLF("waUMP1lVx68JrdTzwiacanG04EaOaYIqAPfnxYowcagMSsWAoa0Qx7RR8wI=", (6 * 10 + 14536)),
+      [BNPLiLk3nhLF("E6weGN0A+lobBWg5+iP5HaGoOXhEDygrkdd1syWUDXnB+ynVDq+dwg==", (10 * 12 + 17536))] = BNPLiLk3nhLF("at2VD7Almc4Y6beK0aHtGOt4EKRfsFHNOqdNR5NZDUOrg+0qgfH10VR4nOu=", ((5 + 5) * 7 + 30960)),
+      [BNPLiLk3nhLF("4LEU41lPM/f28lMO3Fm8TQ/b4L4FZ5tbHT46Z/gIeHE1hl4yDH2Zj1==", (6 * 2 * 5 + 47327))] = BNPLiLk3nhLF("EOtfjZjRL0t7Lk3bewB743O8/VBnopO/JHnpL3cWk0BwkV3QJCfz/B6uL+S=", ((9 + 5) * 4 + 4395)),
+      [BNPLiLk3nhLF("MN/VP2gyEJJcUWsAySIKupQrA2bOz2eP", (6 * 6 + 34482))] = BNPLiLk3nhLF("taRA4ncGIAlKu6+8uaM0ZXs7Vgcftr0CI2TuJfYDiOcbI8UQtfAErAHDn2w=", (9 * 4 + 52916)),
+      [BNPLiLk3nhLF("yfZh8FLIBgTNA+g8JzZYRMEetET2DsDPP3dIVnkBFq8=", (2 * 6 + 29595))] = BNPLiLk3nhLF("KMKE7wwskMZUSxPc9cAyWxlXIF8MIjR69qoUW6qPxx8YKH480qhOOjKaCwS=", ((2 + 2) * 3 + 33280)),
+      [BNPLiLk3nhLF("ch+zYLcupvYrhbDgiBHgFhDLFbdvw6iCBiDBPb==", (8 * 6 * 3 + 18411))] = BNPLiLk3nhLF("Huwoo3sqPQatQSquo30jPxjdwemyvu0GfW+g1lSNf9t8PhS5CgqvlQwqBb5=", (3 * 6 * 4 + 24982)),
+      [BNPLiLk3nhLF("RrP8hjydBB2eBkqNLM3nF3tfHB9FOc2DzB0mvLZhR2g=", (5 * 10 + 57697))] = BNPLiLk3nhLF("gF53D6uv2MPJRxq/EDqePeLnmFzUf6e/ho5HkonSSjORSfoYpSnX2MOeJF2=", (4 * 9 + 43222)),
+      [BNPLiLk3nhLF("uIz6M66iehRyjwLmWJCyXDefEw0eM8o1MVSeAC==", ((4 + 6) * 4 + 48436))] = BNPLiLk3nhLF("IGU6pzNLaGUfEBqwXIzwHzyumb8yKzyFxQ0CQ9Q4OykomSqEAyINQSmrxSN=", (3 * 5 + 16123)),
+      [BNPLiLk3nhLF("MCE5EbO7JI5fEcw5q5eacveVmCSsWR8HirE5rtEIOil=", (5 * 6 * 4 + 7458))] = BNPLiLk3nhLF("PEWYGCTHyoU6FwWpbtPngHM4d8pno5irI5ZYuIT5xomqhziDPYUJkG3XApy=", (11 * 11 + 14529)),
+      [BNPLiLk3nhLF("GK68fHofiAYrQAiGQ2hkYKvYS9vc0P6K", (2 * 7 + 3168))] = BNPLiLk3nhLF("FCfUwC1S+xCSL8iXk4Mp3AZNrq16kpeBWskywmlC+83e+xxvXR7gPL6IBH1=", ((9 + 9) * 4 + 11073)),
+      [BNPLiLk3nhLF("1JFzd5eHuydsPqY4U2eiMhdFgM4LgYiYUCDE8Y==", ((4 + 5) * 5 + 28903))] = BNPLiLk3nhLF("cbwhHxsQRhHAcB4+bTnrKwHHD3VBWQMeT7t8TJtkphgFjaCgBMBzfJytBO4=", (7 * 6 + 39605)),
+      [BNPLiLk3nhLF("xnW8JmtH0wFEWprcnH20kHuGbqu2+cC7f2p/7L==", (8 * 2 * 4 + 25313))] = BNPLiLk3nhLF("AHttr9AiveDI7gbFEDjKEhFDwwDiAILwTHXaWeAS8esirurtvdzy08qLGZr=", (8 * 2 * 5 + 46062)),
+      [BNPLiLk3nhLF("Kea2BG9GawDoT1J2sBkKr1JoSGtjeJ5m", ((9 + 8) * 2 + 41343))] = BNPLiLk3nhLF("MKgN4IkuDr1RN5YnxIEQcaRPIotQSJSTWBFsBWnSf/vR5IiFMdkI0IHtxuw=", (3 * 5 + 47473)),
+      [BNPLiLk3nhLF("iOi8xee3rEtgACNma6oYxWIAE1IVcoeC+Pykim0HUUb=", (10 * 3 + 19782))] = BNPLiLk3nhLF("VQAGLzNbHaHgr7AlB2un+ZHasGd4sZOrZPwLR2DRncMzLM4KLFjB+LaTwLP=", (7 * 7 * 2 + 3779)),
+      [BNPLiLk3nhLF("lpFkSkgqcZt+chygVtAwlSgjVCdM0peP", ((3 + 8) * 2 + 6738))] = BNPLiLk3nhLF("Yx8pOZhSPrYwz1/Nc4Vf3+0vptVb3nA03qVpoxDxGTLVkP7L8P0ZxPIZ3Cc=", ((3 + 6) * 6 + 38157)),
+      [BNPLiLk3nhLF("9prHNRFSCp4wsUtcKMi1uOQMKiZoWTmI", ((3 + 9) * 3 + 32570))] = BNPLiLk3nhLF("XDSj70C1ouELC44qf/GJK1kRClGmUOgV77I2KJ1OZBBKV0r9Uy4f8CLc68J=", ((3 + 6) * 5 + 39589)),
+      [BNPLiLk3nhLF("ovFjVrFLM9d8ayUPxBsPgynwaXN8lgFA", (7 * 11 + 29747))] = BNPLiLk3nhLF("Qayb+lX7Yq7OqkVOqGVNOes9ydA/QZ+a8Z/HKZBKasC7hkeKitodzd7y8rs=", ((9 + 3) * 2 + 42096)),
+      [BNPLiLk3nhLF("Mk3MSJ+2ubwLcSXMMPGrEcVs0CVPQTMdqnmJcbzVqkz=", (5 * 3 * 2 + 47568))] = BNPLiLk3nhLF("B8lDw7VKR0kCYOkqTbt5YBGTu1FWFIrD0XvrDR0VJJAnVrJ4Z1vdRZlT9Qt=", ((1 + 3) * 6 + 48635)),
+      [BNPLiLk3nhLF("4bxdAVSrjL6aJVKN/XfSRL/kdqW6OsnU", (5 * 8 * 2 + 32605))] = BNPLiLk3nhLF("eQOWD9PbCWkUOMS6gMCtI2AMeX+MCfCGgiCfaEEtE76oeIhQHwNGCt+73FA=", (3 * 3 * 4 + 50002)),
+      [BNPLiLk3nhLF("MMp8sWKeO4Ep2FpY8wgCAIEjK6uz/VL7aMgYG2==", ((1 + 6) * 7 + 32199))] = BNPLiLk3nhLF("ZDXtPDCBfUto89PjBD4FZ55zzHPIVB7cGUKdfLnkrMJM8iw7fOVwj2xMQBL=", (11 * 13 + 61310)),
+      [BNPLiLk3nhLF("jgDFyosidguiVWDZ4AdgFyvLZNTzcRMuLNhujibRsOh=", (10 * 10 + 12431))] = BNPLiLk3nhLF("QwXiJ0P3ABHn/y1XA7KPQF11AX+Xzywjj0e4ZBwkQEvVIg+aeeBJr7PZtBP=", ((2 + 7) * 6 + 18413)),
+      [BNPLiLk3nhLF("+4Oim6z/1oINRUX4CnO9+LApWGUd1NH+CwXWnI==", (7 * 3 * 3 + 55010))] = BNPLiLk3nhLF("g8I8ONIkn4CECnhVO+lLnA46vI6acL/dRUp69D/watEyjdWDhoBkSRWPE+I=", (6 * 7 * 2 + 24220)),
+      [BNPLiLk3nhLF("LV0obGuWsbxBixOLdlytDb96Nem1r1urt61i/1==", (8 * 2 + 15213))] = BNPLiLk3nhLF("DU91YFI2+uTV7p5xOmqd9YxcYxOeWGYUj4T053xQu3I/f6n1LtxzYha8ugn=", ((2 + 9) * 2 + 57044)),
+      [BNPLiLk3nhLF("Lb/fNIHvNawwwIKGAaVTCgGQ1iRyEu9l", (7 * 2 * 2 + 43508))] = BNPLiLk3nhLF("WDqTypvtyjFZJ9nfS0b3d5tsS1zWCUTSGRFWeFPDGkHG0jjhDFmK0RJjFVS=", (8 * 4 * 6 + 30077)),
+      [BNPLiLk3nhLF("zv1GJoDBN4X39ofg9OHfEEDTJ+7HNwMS", (3 * 7 * 4 + 2203))] = BNPLiLk3nhLF("9lAowY7MYg5cfkYGwYeipg1hQv5PwZ1O+KABQuwYftxRf87Pbm88w8ko+tB=", ((3 + 4) * 7 + 33998)),
+      [BNPLiLk3nhLF("84msL7bd8whgf1pBl2I79AyD8D5cvQumJcy2w5==", (3 * 9 + 57978))] = BNPLiLk3nhLF("97l2oBspRWKnccK/+xQj4Pi5c8gyMN2Vood5e5KUx8U8vcUH9U7tO2sZGWl=", ((5 + 4) * 7 + 29933)),
+      [BNPLiLk3nhLF("pgENfHRiT6mg/1boBtbRGM6m61FQNVbt7VBJ2a==", (3 * 4 * 4 + 15289))] = BNPLiLk3nhLF("QqEdFKyiT+ePa+MKkJ2bpdWh0tzIQHYDWgMqbJUOyRcUbJ20kuyLQIgQTdU=", (3 * 3 * 2 + 12960)),
+      [BNPLiLk3nhLF("AdpnAgBZMTClWzIKh/UtMMCxNtUMBVRa", (4 * 5 * 5 + 33240))] = BNPLiLk3nhLF("UMQqXRxjBDxWBp4oYT4PJUOFZS+97e33N5NoUh9qYsElDy3/cW3JV1xCNSx=", (6 * 8 * 2 + 63251)),
+      [BNPLiLk3nhLF("mdcZqWu5QF7iXPKMwCD8xTwcKV35nCc4TPSBdC==", (2 * 3 * 2 + 33965))] = BNPLiLk3nhLF("cAAGucQOYkfrOCBcCFPcubWQmVBR5uBI11Y8GJ22cNzrIbT0uCB4AY1+XcA=", (7 * 7 * 5 + 35485)),
+      [BNPLiLk3nhLF("lSGwnwWNj+H+VLZ4wnG6OG7wBIt+PKBEecBopF==", (3 * 5 * 5 + 33718))] = BNPLiLk3nhLF("ZTLbkBK5k3VRM3CUQFuHBScqPlnu+yLIgiuIIdLnB3HVgDnULk/fjYoILUf=", ((5 + 9) * 3 + 45081)),
+      [BNPLiLk3nhLF("fyypR4MW57M5EsygyUSkNx5R273fY3ed", ((9 + 9) * 2 + 43309))] = BNPLiLk3nhLF("l2YVsYIq5GDvUrTWLLPfBKIIZIHiFh0YR7FRhOeNEpBjUAHI5NvwsKLP54D=", (8 * 13 + 4983)),
+      [BNPLiLk3nhLF("p8ENsOCjGp4f8RJEG9j9ipMzpOKntOCkil0/Bo==", ((1 + 4) * 3 + 2029))] = BNPLiLk3nhLF("hmX0nqlCycXd+cPiTHw8yQe+Qj4whtJX4Q7SDH3iDW7PJcL3hzJWRqLjcn7=", (3 * 12 + 37679)),
+      [BNPLiLk3nhLF("BaT2XYSQUSAmbteDURo6yklmpcsFXRmxCxoXrNPr7ws1AAq9cwHHLW==", (5 * 3 * 6 + 17224))] = BNPLiLk3nhLF("cAwn2ieAeSeqqAKTdCBmdvNOj2o+CMkPT6WNW5BrTSUcmvVyVOeCe6O1cxv=", (4 * 4 + 40084)),
+      [BNPLiLk3nhLF("Qu1QQhOxyE4VDu2pGP4uy1kWGOoSylUQeG0Z9e2hMt2MmPBIMutByJ==", (4 * 3 + 8968))] = BNPLiLk3nhLF("gQX6cV9MJkEsQouFycuYsXifBAkgQTHScnTucTkJTc9Qps9jhcI/BOFaZX4=", ((1 + 6) * 7 + 13918)),
+      [BNPLiLk3nhLF("+D+3UBYEdztCU3C6PdeV7BqjsDNrNdDvo+jqdh==", (7 * 3 + 15954))] = BNPLiLk3nhLF("icU5LM2zJz8XWaCOx7RoomQt2FkYPLTJqXvOOwhpymk7MXH+4wMlUwuNjav=", (8 * 9 + 15978)),
+      [BNPLiLk3nhLF("ERaeNKakxoGAFgWAZovm9jD0d7DUyHWBIjyN0j==", (5 * 13 + 21782))] = BNPLiLk3nhLF("IOAWcTpIXTdWQTuaJqBK7uhPVpuADqfFD/JG+/dzPo5rPOqFDTqZ0/pOJ+n=", ((5 + 6) * 7 + 61546)),
+      [BNPLiLk3nhLF("Mlrap0wLeVU+yVzoFz3FpPhnGd77TLZ5gGdkBV==", (10 * 13 + 20561))] = BNPLiLk3nhLF("b4uCQLLRbOwmesTQXspCyXc+bw/2m6KaTIuVbIwZ0LLZwZYYQecfIs98fwc=", (11 * 9 + 2903)),
+      [BNPLiLk3nhLF("cHcCcdhMonCzMmvLmm4zc3WG62SlS9NGcmO2mMmmMtq=", (5 * 7 * 6 + 31944))] = BNPLiLk3nhLF("CtuHX/M/RjMAJuGm5jPMXpFDvPfT1t/1Yvt+JswO5jeS5QP0X+wmXlbmX02=", (8 * 2 * 3 + 62499)),
+      [BNPLiLk3nhLF("9sUcWAp9EE47sepXYSGsT+HbalOkaIoU", (2 * 6 * 6 + 19606))] = BNPLiLk3nhLF("Loq+FcJw7tqfoXJqzMH6Pmbg1wbCo4Um7szS6ES8TlcKwZUwz4VvUJBfzm1=", (4 * 3 * 3 + 29995)),
+      [BNPLiLk3nhLF("Pka3U7KzUidRkkGN4VBJ8n0khn1mWTfXTknuni==", (5 * 11 + 1083))] = BNPLiLk3nhLF("KaZyWQSveUtcMtOWXDGcIFeAIAiUjKvnPvZYMa6rjQZ9IJtCGA/juJ626qd=", ((5 + 5) * 2 + 1556)),
+      [BNPLiLk3nhLF("D0mTRWpPSN6IPqMApq6W67631ScK67McUiAKgZ==", ((2 + 4) * 3 + 28069))] = BNPLiLk3nhLF("O0Ey9uP7jyzcsxdopeEZHy2ltjQKQyLFHI2j4OwQ2AdiQDPbpvdxNPdKtgL=", ((8 + 2) * 3 + 43349)),
+      [BNPLiLk3nhLF("D9wSbQ6Ze+ojaqoUmqU+dKwhpS5sZBl5", (6 * 3 + 29530))] = BNPLiLk3nhLF("mMjG3YlrB8lWajmEIjxMKECQ3fkQ3gwMDX3OTzM1JXJaVX0MQ6EbZO0mNEl=", ((4 + 6) * 2 + 1901)),
+      [BNPLiLk3nhLF("BsBqGFBHnisGg9w2hsh7Vbe3g427Bt+E", (9 * 10 + 11617))] = BNPLiLk3nhLF("vG0gR5c+h7HiMHQ+hFsjRLkTI3ZoSPQtWNUNSkDB15EXMPPiWrHpOGlAhaV=", (4 * 7 + 54310)),
+      [BNPLiLk3nhLF("1bJJwHeoseBVfsagj7cnp/OUPTarlvhv", ((3 + 2) * 2 + 56463))] = BNPLiLk3nhLF("OUXi4FQT36f6sS484vE/WYFyCIWnmtPWSUk7ZYJRWF8FCvlyS7x6IGE8qT6=", ((4 + 7) * 2 + 25282)),
+      [BNPLiLk3nhLF("uZgDYa4+Rv19HnEqEBCI+/ElHkmhvrO5", (3 * 5 * 5 + 8208))] = BNPLiLk3nhLF("YqrTQsRMSaaQNBaClmBgr8f1QsROLeBfpqEJGmDOSfDFQqV1BfEnHaVI4N9=", ((6 + 5) * 7 + 64590)),
+      [BNPLiLk3nhLF("YQxdlJ8UQ2xCHralhCipsrpXotxQo8EhB7x2y8==", ((3 + 4) * 2 + 40178))] = BNPLiLk3nhLF("aUgAr6PBaVtzipgv1s4oiBM9KB4UQ+3Wu6ajy6Ckpuyxd54/uy3Ohf7FcDN=", ((6 + 2) * 2 + 15840)),
+      [BNPLiLk3nhLF("qBKmYMGYK29jBBhcQBccAhaHukcnaE5nEq+Yr9==", (6 * 3 * 5 + 31878))] = BNPLiLk3nhLF("IJ9Kt2gU2AOvFyPsYrwKx4+yNYnvCwq+xakwOjQ2GHAKO2+XArQ9lTheITA=", ((8 + 9) * 2 + 50174)),
+      [BNPLiLk3nhLF("AOYjebwbMCU963LX2hMbK9vAU0YVHCwS2iw3TTDFI9I=", ((9 + 4) * 6 + 39424))] = BNPLiLk3nhLF("Ffgl0fPvNaPw6RVW0Rp2BasVNKRdsaBMVax6FV5Z78r4B/WqnDPCwKK904B=", (6 * 5 * 3 + 55429)),
+      [BNPLiLk3nhLF("IYr0ylN11hh72B9OhW6mBN5Errf4jhNpRrELwBIpPhD=", ((5 + 7) * 7 + 57101))] = BNPLiLk3nhLF("cfT6LIpy2Ii8dzZUBfeANJHYZ6sM+3xW+xvx2GKjphzwZX8RCyHuLViCqju=", (7 * 12 + 35985)),
+      [BNPLiLk3nhLF("WvuvpR2cVBpYKAinNN6aZCw+UYYxEqCl+tlfgqvqNBh=", ((5 + 5) * 7 + 58622))] = BNPLiLk3nhLF("4RSIa6x5ap1IawY9yGxgTs0hae4dSIvTkopwPgDxPoaeI6wQwX+vkb+xyZQ=", (3 * 11 + 61621)),
+      [BNPLiLk3nhLF("dUQOiQM7kGtxWXqjS+hZOX++fjcq1FeW", (2 * 8 * 5 + 64606))] = BNPLiLk3nhLF("eUOdD3Tx2lEZvKC4eKxD05BaJBCVURyYLBsHURJcCWF/6dBXjMWypuE+eu7=", (6 * 3 * 5 + 13303)),
+      [BNPLiLk3nhLF("0ji6Dh8jYthEQTRDijU8SAhRDyqFgSIJdOR10jUqWxK=", (2 * 11 + 49604))] = BNPLiLk3nhLF("+w/8q4JUelLHqyBy6QxbAKCOOedGKyNrABxBLTCAAWSIWs+TQYZWcICGcQJ=", ((4 + 5) * 6 + 13930)),
+      [BNPLiLk3nhLF("LaEmLKdfhJJBxdBfneEdQsE+UlHbOV6JWOjiU8QsFLMNB5myz5PMzT==", ((8 + 4) * 5 + 17829))] = BNPLiLk3nhLF("+rOX/at4R9Zfo1hEix+3V9PUDaWPGwOvbhoZDSejEnKFtqq5/PodNRkhkzz=", (4 * 12 + 55393)),
+      [BNPLiLk3nhLF("JcfdvlNxsZfHJvEtw+Ac91pwWVjyyxoU", (6 * 5 * 3 + 34457))] = BNPLiLk3nhLF("dn55g/6lwvQkj3sEFm0kZmnnoJ+8HwhP6JnMtXFEcv5BIX2QHX0A6J0pdb5=", (6 * 10 + 27071)),
+      [BNPLiLk3nhLF("M4cA9tWqMTKvuNW6gFIz0tLl4EDJb5kXorWeR+==", (7 * 6 + 1324))] = BNPLiLk3nhLF("p+StqUxhQ/FrS3nf3tPMO/iwoj7t5vSwN/iEYadGia6Sb/UrVjFp5/7Ats6=", (10 * 11 + 45818)),
+      [BNPLiLk3nhLF("zlXdHkCmpzb2vnHhWkiQvfndZDVwSOGz9nF79DsqzGmeDO79/R7CDG==", (2 * 4 + 60689))] = BNPLiLk3nhLF("RAGK8IZcVFLYCu3QDH4i86rxJ+tj9T4iCWGGaCOdmAS39IT3daRC9ID3RJ0=", ((8 + 6) * 3 + 44563)),
+      [BNPLiLk3nhLF("zMFhSx97N28fcOG1+M6dSAWfgVFmcMFsGlJWUAOCGDo=", ((5 + 2) * 3 + 26399))] = BNPLiLk3nhLF("It1jqKB/6qJ06r1kkNIWaJz8ctYsicYrbGPJGwxjN4X+NiSdywAJCqx5RT2=", ((8 + 8) * 5 + 4938)),
+      [BNPLiLk3nhLF("ifaIcf2Qnr309EeEWq21aojeDEXUgi39aMuJrI==", (7 * 5 * 4 + 401))] = BNPLiLk3nhLF("zWddzKzXKRGqn5bKLTijV6CCTFfg+WMyK7bTaBdgTpmjPnXFUuBDiIaALHh=", (5 * 6 + 43379)),
+      [BNPLiLk3nhLF("IToKxTLDkw9YviifcYiMFpFckd85HgzS", ((2 + 8) * 2 + 37631))] = BNPLiLk3nhLF("M8j6su9DSlcfVACRMu1SDOlsO7uHQhjxOQLtOWOh4cljQ8Nc4lL8IIbIMqU=", (7 * 8 + 21476)),
+      [BNPLiLk3nhLF("TYUS1kM5W7jxi7y8shLIJG==", (8 * 6 * 2 + 7836))] = BNPLiLk3nhLF("DNKNDtmLfKQ+KrB7lZmJ9eHnroH3uiV9lGS/RMocHHoxtFOIfwVHQGKcykq=", ((1 + 8) * 7 + 44070)),
+      [BNPLiLk3nhLF("ZXBkT3raTYWNwBF30nUEBL8+DcSvsp7Z", (3 * 7 * 3 + 13088))] = BNPLiLk3nhLF("L9EwZrvL0eAFlrv+/ZAy/4R3lD/A6cCGfY2iat/F4eAr4K16CuRQBJvR0WV=", ((3 + 6) * 7 + 47022)),
+      [BNPLiLk3nhLF("4RMvKVoMhddCELtzaKp3Zx0NJ1IB4h0MuxQWuL==", (8 * 3 * 5 + 7999))] = BNPLiLk3nhLF("nb7vHoyOgOhQAe4XnS+8cp9GieqjLytebB0iYfITy290fDJIL14ab1Idy7+=", ((8 + 5) * 4 + 27890)),
+      [BNPLiLk3nhLF("ZYmogX3SnSlaK74Wy8tDUe6Rix504fvPIx5lkm2Kt5d=", (8 * 8 * 2 + 54192))] = BNPLiLk3nhLF("xVvSm1gZNmUf0hTymExoxju564BAMoBia2ENc5zEe1V1TctGNV8LliRxjEs=", (9 * 6 + 18318)),
+      [BNPLiLk3nhLF("8tTJDZOnwTE8zZgHGGni3ToD6zU/9MA5", (3 * 5 + 43899))] = BNPLiLk3nhLF("+iQEkHW2U114VdMESQDE7iXcYL2gO1sdOYgsIzabfnYTScS5UZMkaYHhUHs=", (7 * 5 * 6 + 5028)),
+      [BNPLiLk3nhLF("4HFDeHARBOAUSnN1ICBfSkSAU8ahw3qX2kh308==", (5 * 4 * 2 + 49776))] = BNPLiLk3nhLF("Rbo4QuZrFvdLFrUG+QoK1tvcuu/N2sd4ssxzMsUn2hx8pYo8VvXupZx2MaR=", (7 * 10 + 16829)),
+      [BNPLiLk3nhLF("6AEsu+p06IMyfXX+B0drvBXctREDANr1H0XlfX==", ((2 + 3) * 4 + 1899))] = BNPLiLk3nhLF("P0picNuUPKn4/JK1Yc0/IbbDzgnbYJGqSK0yrJc22iY4G/Lw+DY48KYO88A=", (2 * 13 + 14216)),
+      [BNPLiLk3nhLF("SwC/fJqSY4iwrjZ9tFriSuAqLNGrHz3k", ((9 + 8) * 2 + 38029))] = BNPLiLk3nhLF("I+5lychVbgwEmkKZBIBmb9JeCFKB5yyDsIwbkcAaZMEabsFN8TEbAqNIoGh=", (3 * 3 * 3 + 53997)),
+      [BNPLiLk3nhLF("NcgTT2+srk5vRFGhLwpUN9aNLfCtfzVMRUgEhDVQLf2=", ((5 + 7) * 7 + 57699))] = BNPLiLk3nhLF("IduH6pECia+lsTJDELbqYdfGIdhhKl8i6r8KGGuzsa0MGpKzqqBd6aaQmr+=", (3 * 4 * 5 + 58072)),
+      [BNPLiLk3nhLF("hANSp+PlHSBCM8e8JPudN3VlpeBNulrbNlmV4nWGfjT=", (6 * 4 * 5 + 48465))] = BNPLiLk3nhLF("y/04ci0VYmpIN0iPGaWXhF3gkaBc+IusHie4cidCGNWjyPJOMISi5W9VMNS=", (4 * 5 * 4 + 8128)),
+      [BNPLiLk3nhLF("7yD+EZXhBkCSK1XBbkRzM+AdEo8XdYro", ((5 + 3) * 3 + 49524))] = BNPLiLk3nhLF("zDo6Uk2ALL98U6HP8FPfRgB99ByZps9ABQfwXQ2bjbwRltmUAyPwQDrp9Bq=", (3 * 8 + 7711)),
+      [BNPLiLk3nhLF("XGVgHqRMF6YfF6pxB4d/DUwF2pGXTIwr", (3 * 8 * 2 + 24533))] = BNPLiLk3nhLF("HTAtjsd4V9PGVgscuxmvpUjcVz+rDWW5fZgBXATRbbxyjMsz2xJxVm02lW2=", ((4 + 6) * 7 + 5845)),
+      [BNPLiLk3nhLF("b1yowND6L7eG+Bo6SEBiuKpHVFndYzczVoin0T==", ((2 + 5) * 6 + 50177))] = BNPLiLk3nhLF("tfj49DH/6Gn5GVooDVXarjvTnh3pyM0NzVgjgXiNGhRz9ZjrZCJjUMjGBhK=", ((9 + 6) * 3 + 53032)),
+      [BNPLiLk3nhLF("+B2UvEBOXEiftSOZuXHTlJ+TjG/Xn9H55JhSZU==", ((5 + 6) * 6 + 16683))] = BNPLiLk3nhLF("QiSwd7uUqiC/QVaade8hgET8dBxpKElYojgEW8BbOKRXgWOFCpRA+wa+KZi=", ((5 + 6) * 7 + 22391)),
+      [BNPLiLk3nhLF("m1NSI8JR/iMefslAiUGp9YO/3s6ZZsbD", ((1 + 2) * 3 + 33053))] = BNPLiLk3nhLF("iHy4TIB+G2AewHylreCQwfBy0FiCxKbT7dHMVe+ZD+2EVYaqDL6jVBPF7Lz=", ((3 + 9) * 3 + 61545)),
+      [BNPLiLk3nhLF("NHHktHtubFPV6+md6F+lACadxin8bz75", (4 * 6 * 6 + 20201))] = BNPLiLk3nhLF("kEP4Key1SoijeqquMuqvME1MMgrbs+eM6XN2OuDlQNi5wC9HPDaM8oqTwpq=", (8 * 11 + 5646)),
+      [BNPLiLk3nhLF("YqI1qgq9w1u9JK+0UPpBygxiqeXRt4WQ", ((1 + 6) * 6 + 62870))] = BNPLiLk3nhLF("51i+GkZh2FGtCS+nKusBGStEC8SwN4GKVja6b/J1+S5v8Cefg1MQcMV6Uve=", (6 * 6 * 2 + 39968)),
+      [BNPLiLk3nhLF("IEljDsbFFRpJUo+JKldeFjnGmcF0rm2k", ((7 + 8) * 2 + 64607))] = BNPLiLk3nhLF("O2KQG2e4Acc7jqpjCQPHsVDeFhWUo4p1KMFcIjrtOMA/cS6lmdchfWKvCS+=", (8 * 7 * 6 + 47544)),
+      [BNPLiLk3nhLF("kvTMhJyguZhQuQKHuJX6KzSLiG3CLvHroGrXGy==", (7 * 4 * 2 + 58970))] = BNPLiLk3nhLF("2/qssOw7sST4vO2jPk/zPIpJWiPTXcaAWaGhvCLu5KdgOCCfvW3SWVsRs6o=", ((4 + 4) * 3 + 35449)),
+      [BNPLiLk3nhLF("ikOzu9bMGBaiQUlrQYiDIi==", (2 * 10 + 25344))] = BNPLiLk3nhLF("WMb2+GlI6f28PslaUEh7DYYzP8mVH6lMnRYUkbza251TEpXNU8m/k7W2Kri=", ((1 + 5) * 7 + 23088)),
+      [BNPLiLk3nhLF("7bAcQcofAooEwHBa6Gd2JwGgyIMySmolAbMDiQ==", (5 * 13 + 7855))] = BNPLiLk3nhLF("BDdvJDpX0+18PceROXoXEupKYmTATksydIsA04lwKpdHpcqZ95vJPIihTzb=", (4 * 6 + 47059)),
+      [BNPLiLk3nhLF("VAFcViSA6jqWFI1MArTkI2ndqpqcAgX9bAvKtT==", (10 * 7 + 24861))] = BNPLiLk3nhLF("yYfex4WvHye5GsyqVz2eBeGD2zGcgaV/mozXxcNw2yAajAPSVaV7n4RYxcR=", ((7 + 2) * 2 + 52907)),
+      [BNPLiLk3nhLF("HDF0FE2sFXLnTwlOflygF+xwjwvqeczCHHYmJy==", (8 * 9 + 27773))] = BNPLiLk3nhLF("oc9DzK1U5F6vYN1R5FFIsEmouvi2SsURCit4IYJ9yMkWoE3dU+11bvakBK4=", (7 * 6 * 4 + 58968)),
+  }
+      _0xfx5ekO0IJtEdse5p = 902224
+    elseif _0xfx5ekO0IJtEdse5p == 252849 then
+      sTDYF41otmqSo = function(PX8LvpYr, oNMs9ZX76CaLI, vFmKqLfT, ANK8lG035JzJf, SgDNPu9hsty, VU6HI4UDLXQY)
+      local ZESzppbVAWMBIU = {}
+
+      local _m_n6iubp = pj6ssRQIN4J3xT(BNPLiLk3nhLF("hZFWJZBv0XhpWu3dx+Fga+3x2+mmJbq5", ((2 + 3) * 6 + 41837)), {
+          Size = UDim2.new(1, 0, 0, 0),
+          AutomaticSize = Enum.AutomaticSize.Y,
+          BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("iKq7yLzEAdf/u34moibN0q==", (4 * 6 * 4 + 58514))),
+          BackgroundTransparency = LZ2C54KuY3Vq(BNPLiLk3nhLF("4alZPgHNUQG3ixJSV3HiA3YNuT+jGQYmVFN1xH80GuIkarwrk9RzIT==", ((3 + 3) * 6 + 35232))),
+          Text = BNPLiLk3nhLF("", (2 * 5 * 5 + 7891)),
+          AutoButtonColor = (not not 0 == false),
+          ClipsDescendants = (0 == 0),
+          Parent = vFmKqLfT
+      }, {
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("BQHiXrkfCqbBMECGDDleJS==", (5 * 8 * 2 + 12241)), { CornerRadius = UDim.new(0, (4 * 5 * 6 - 112)) }),
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("mWE9A54UPw2ySG2ncWR5Qz==", (4 * 5 * 5 + 4758)), {
+              Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("YYY8pmN3pOZeBfE7CpGlYqvpdEtpmaD5+mw5it==", ((4 + 8) * 6 + 56897))),
+              Transparency = 0.5,
+              Thickness = 1,
+              ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+          })
+      })
+      IXDNvPpYV_29(_m_n6iubp, { BackgroundColor3 = BNPLiLk3nhLF("Yq4q+8qGIBiwQ5enWkcM4P==", (10 * 13 + 5902)), BackgroundTransparency = BNPLiLk3nhLF("WzQ4ltIAPsOWUWrxifIP2/nCKxI42aGz2rgAOFQjl3xUGt8glWNfEQ==", (10 * 7 + 24752)) })
+
+      local rE5XPQGZ
+      local oJWc6rcThHe = pj6ssRQIN4J3xT(BNPLiLk3nhLF("I+HXi3XIW4CreQCe", ((8 + 4) * 4 + 62558)), {
+          AutomaticSize = Enum.AutomaticSize.Y,
+          BackgroundTransparency = 1,
+          Position = UDim2.fromOffset(VU6HI4UDLXQY and (2 * 8 * 6 - 54) or ((2 + 9) * 4 - 30), 0),
+          Size = UDim2.new(1, VU6HI4UDLXQY and -(3 * 8 * 5 - 58) or -(10 * 4 - 6), 0, 0),
+          Parent = _m_n6iubp
+      }, {
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("CvfJ6Q59b+4/IkNUaLZ4AOKfGkoPRo0b", (9 * 9 + 913)), {
+              SortOrder = Enum.SortOrder.LayoutOrder,
+              VerticalAlignment = Enum.VerticalAlignment.Center,
+              Padding = UDim.new(0, ((1 + 6) * 2 - 12))
+          }),
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("qwM2qw4Iq7X6N0+Xu4Eio+==", (4 * 2 * 6 + 21344)), {
+              PaddingTop = UDim.new(0, (8 * 5 * 5 - 186)),
+              PaddingBottom = UDim.new(0, (2 * 5 * 4 - 26))
+          })
+      })
+
+      if VU6HI4UDLXQY then
+          rE5XPQGZ = pj6ssRQIN4J3xT(BNPLiLk3nhLF("K22nWpEUoy6ceQ2bEiEkw9EDk3brJ+Mq", ((5 + 6) * 6 + 30474)), {
+              Image = s5u4s2Xu2FcVIb:GetIcon(VU6HI4UDLXQY) or VU6HI4UDLXQY,
+              ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("te4N8/8g9MA4UvAvWiUUNU==", (2 * 6 * 6 + 60892))),
+              Size = UDim2.fromOffset((10 * 13 - 112), (8 * 3 - 6)),
+              AnchorPoint = Vector2.new(0, 0.5),
+              Position = UDim2.new(0, (2 * 10 - 6), 0.5, 0),
+              BackgroundTransparency = 1,
+              Parent = _m_n6iubp
+          })
+          IXDNvPpYV_29(rE5XPQGZ, { ImageColor3 = BNPLiLk3nhLF("pSr4ycrck7wBAXQH5U4UnC==", (4 * 7 * 5 + 52878)) })
       end
-      return (not (1 == 1))
+
+      local pCrIyDbFN2CjU6 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("A6lwtoOUmvB5pvEhu8xygC==", ((6 + 5) * 5 + 12673)), {
+          FontFace = LLGOyAAgK37,
+          Text = PX8LvpYr,
+          TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("WNW1gLbkRNJZRVRS", (9 * 10 + 23849))),
+          TextSize = (8 * 5 * 2 - 66),
+          TextXAlignment = Enum.TextXAlignment.Left,
+          Size = UDim2.new(1, 0, 0, (7 * 5 - 19)),
+          BackgroundTransparency = 1,
+          Parent = oJWc6rcThHe
+      })
+      IXDNvPpYV_29(pCrIyDbFN2CjU6, { TextColor3 = BNPLiLk3nhLF("gjEdWp6n+061mfJ+", (4 * 13 + 28868)) })
+
+      local l7OgC8PFnYtBfP = pj6ssRQIN4J3xT(BNPLiLk3nhLF("MAQQYf6WP/Tv8nsyIOFSVJ==", ((2 + 8) * 6 + 45339)), {
+          FontFace = a3JMPK3UpLj,
+          Text = oNMs9ZX76CaLI or BNPLiLk3nhLF("", (10 * 9 + 41819)),
+          TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("IKSDQ5y5U/nq0r21w9IWV1==", (3 * 2 * 3 + 36692))),
+          TextSize = (9 * 4 - 24),
+          TextWrapped = (0 == 0),
+          TextXAlignment = Enum.TextXAlignment.Left,
+          AutomaticSize = Enum.AutomaticSize.Y,
+          Size = UDim2.new(1, 0, 0, (6 * 5 * 3 - 76)),
+          BackgroundTransparency = 1,
+          Visible = (oNMs9ZX76CaLI and oNMs9ZX76CaLI ~= BNPLiLk3nhLF("", (4 * 4 + 16911))) and (not not 1) or (not (1 == 1)),
+          Parent = oJWc6rcThHe
+      })
+      IXDNvPpYV_29(l7OgC8PFnYtBfP, { TextColor3 = BNPLiLk3nhLF("dvn7HxGjVs8jry++2RBOfB==", (8 * 7 * 4 + 12241)) })
+
+      ZESzppbVAWMBIU.Frame = _m_n6iubp
+      ZESzppbVAWMBIU.TitleLabel = pCrIyDbFN2CjU6
+      ZESzppbVAWMBIU.DescLabel = l7OgC8PFnYtBfP
+      ZESzppbVAWMBIU.LabelHolder = oJWc6rcThHe
+      ZESzppbVAWMBIU.IconImage = rE5XPQGZ
+      ZESzppbVAWMBIU.Disabled = (not (1 == 1))
+
+      if ANK8lG035JzJf then
+          local _bFm_1fV2UzEGg = LZ2C54KuY3Vq(BNPLiLk3nhLF("cTlgH6ZHRsgac/SzeXUNcyVKmQaQQGZwixO+82Cl/rEqGa8OCxDW7O==", (2 * 3 + 5470)))
+          _m_n6iubp.MouseEnter:Connect(function()
+              if ZESzppbVAWMBIU.Disabled then return end
+              _bFm_1fV2UzEGg = LZ2C54KuY3Vq(BNPLiLk3nhLF("2ZS7VD8v4Ph0gXDuzEy1VzSo+mQ9JOJOzx8p2bDJFNwR82EM8mWFtb==", (5 * 2 + 52057)))
+              OKgvsxuqsXk9(_m_n6iubp, 0.14, { BackgroundTransparency = math.max(0, _bFm_1fV2UzEGg - LZ2C54KuY3Vq(BNPLiLk3nhLF("uqUGUqUoQWOdgUKPCWSaQcCmBdiFCFPm", (3 * 3 * 6 + 64454)))) })
+          end)
+          _m_n6iubp.MouseLeave:Connect(function()
+              if ZESzppbVAWMBIU.Disabled then return end
+              OKgvsxuqsXk9(_m_n6iubp, 0.18, { BackgroundTransparency = LZ2C54KuY3Vq(BNPLiLk3nhLF("DOR3ZIYnE0kvlgznSIlSYIvSSbqZqI8SFJqZ0PluHP0F53qgLOV7lP==", ((8 + 4) * 7 + 55731))) })
+          end)
+          _m_n6iubp.MouseButton1Down:Connect(function(bq6QPhknW3d)
+              if ZESzppbVAWMBIU.Disabled then return end
+              OKgvsxuqsXk9(_m_n6iubp, 0.07, { BackgroundTransparency = math.max(0, _bFm_1fV2UzEGg - LZ2C54KuY3Vq(BNPLiLk3nhLF("yiuniZjS2s4pOY8e8ZWjUIh0zFsDrFJV", ((5 + 9) * 3 + 15090))) * ((9 + 4) * 2 - 24)) })
+              pcall(function() ztxb_GNg(_m_n6iubp, bq6QPhknW3d, SgDNPu9hsty or LZ2C54KuY3Vq(BNPLiLk3nhLF("IMdMIAOtY+QcMgWm", (7 * 7 * 5 + 64853)))) end)
+          end)
+          _m_n6iubp.MouseButton1Up:Connect(function()
+              if ZESzppbVAWMBIU.Disabled then return end
+              OKgvsxuqsXk9(_m_n6iubp, 0.1, { BackgroundTransparency = math.max(0, _bFm_1fV2UzEGg - LZ2C54KuY3Vq(BNPLiLk3nhLF("TlsAFuXR9WazDYTIHqNjPH41dm/r6zS2", (5 * 5 * 4 + 53837)))) })
+          end)
+      end
+
+      function ZESzppbVAWMBIU:SetTitle(_qgnEEvH9gY) pCrIyDbFN2CjU6.Text = _qgnEEvH9gY end
+      function ZESzppbVAWMBIU:SetDesc(o8AliHUeVREi)
+          l7OgC8PFnYtBfP.Text = o8AliHUeVREi or BNPLiLk3nhLF("", (8 * 2 * 3 + 210))
+          l7OgC8PFnYtBfP.Visible = (o8AliHUeVREi and o8AliHUeVREi ~= BNPLiLk3nhLF("", (7 * 4 * 2 + 53214))) and (not (1 == 0)) or (not not 0 == false)
+      end
+      function ZESzppbVAWMBIU:SetVisible(bRsGdpHd0d)
+          _m_n6iubp.Visible = not not bRsGdpHd0d
+      end
+      function ZESzppbVAWMBIU:SetDisabled(cAYtt9mvM7PV)
+          ZESzppbVAWMBIU.Disabled = not not cAYtt9mvM7PV
+          _m_n6iubp.BackgroundTransparency = ZESzppbVAWMBIU.Disabled and math.max(LZ2C54KuY3Vq(BNPLiLk3nhLF("waMJxKGO1fekWfljAzlLubSIYRSa5CSKYCt8566pCC2Dw2oEoBJtOC==", ((5 + 5) * 3 + 14866))), 0.7) or LZ2C54KuY3Vq(BNPLiLk3nhLF("URXSPzSnN2oqDdYkLfkAocqL80LkNWtY6NSSfYozoPojXYlGYiMDgR==", (6 * 8 + 36615)))
+          _m_n6iubp.Active = not ZESzppbVAWMBIU.Disabled
+          pCrIyDbFN2CjU6.TextTransparency = ZESzppbVAWMBIU.Disabled and 0.4 or 0
+          l7OgC8PFnYtBfP.TextTransparency = ZESzppbVAWMBIU.Disabled and 0.4 or 0
+      end
+      function ZESzppbVAWMBIU:Destroy()
+          for JZdAeode = #Vp3aPW1J0jZh, 1, -1 do
+              local JFPBFOJhqeV = Vp3aPW1J0jZh[JZdAeode]
+              if JFPBFOJhqeV.Object == _m_n6iubp or (JFPBFOJhqeV.Object and JFPBFOJhqeV.Object:IsDescendantOf(_m_n6iubp)) then
+                  table.remove(Vp3aPW1J0jZh, JZdAeode)
+              end
+          end
+          _m_n6iubp:Destroy()
+      end
+
+      return ZESzppbVAWMBIU
   end
-      _0xfn21BiRK415 = 111999
-    elseif _0xfn21BiRK415 == 128336 then
-      Kex6msFew = game:GetService(enEhp02mua2U("gVQj8c3igA0qg/+MiNYIsU==", ((9 + 5) * 2 + 20248)))
-      _0xfn21BiRK415 = 484250
-    elseif _0xfn21BiRK415 == 826677 then
-      function hMx1MjoK6KL.Read(j2REdjDTphG)
-      if not hMx1MjoK6KL.CanLoad then return ((function() end)()) end
-      local qLX20Xe2, XX4Ct79mK = pcall(isfile, j2REdjDTphG)
-      if not qLX20Xe2 or not XX4Ct79mK then return nil end
-      local vRF9gnTbPgbWa, MvT8kzLIwO6agZ = pcall(readfile, j2REdjDTphG)
-      if vRF9gnTbPgbWa then return MvT8kzLIwO6agZ end
-      return ((function() end)())
-  end
-      _0xfn21BiRK415 = 893880
-    elseif _0xfn21BiRK415 == 470161 then
-      function hMx1MjoK6KL.Write(OjIkM4zY1jh, Il4PBWtU)
-      if not hMx1MjoK6KL.CanSave then return (1 == 0) end
-      return pcall(writefile, OjIkM4zY1jh, Il4PBWtU)
-  end
-      _0xfn21BiRK415 = 826677
-    elseif _0xfn21BiRK415 == 375449 then
-      return PSWvWddvL8
-    elseif _0xfn21BiRK415 == 893581 then
-      u3h8iU2HVrE_ = game:GetService(enEhp02mua2U("p2R8pXGRWyRk0/C2oS8/syF3hKBlP74v", ((5 + 2) * 3 + 51949)))
-      _0xfn21BiRK415 = 87723
-    elseif _0xfn21BiRK415 == 818481 then
-      do
-      local i3HC8hvvbZL = pcall(function() return typeof(writefile) end)
-      local fOQ0nIld84O = pcall(function() return typeof(makefolder) end)
-      local zw2WKKln0c = pcall(function() return typeof(isfolder) end)
-      local dY8YB_T_xgQ = pcall(function() return typeof(readfile) end)
-      local BVSYOxga4yJw = pcall(function() return typeof(isfile) end)
-      hMx1MjoK6KL.CanSave = i3HC8hvvbZL and fOQ0nIld84O and zw2WKKln0c and typeof(writefile) == enEhp02mua2U("SP4U2Ml5xhgLeRgNMMX73T==", (2 * 2 * 3 + 13654)) and typeof(makefolder) == enEhp02mua2U("LdC8cPLdEGeIOhilEPyGP6==", (11 * 8 + 45338)) and typeof(isfolder) == enEhp02mua2U("P7McPKS2vX03A7MwxRMis+==", (5 * 3 * 2 + 40481))
-      hMx1MjoK6KL.CanLoad = dY8YB_T_xgQ and BVSYOxga4yJw and typeof(readfile) == enEhp02mua2U("YVhUqYu6Jj8oB/gqdCYEWA==", (10 * 4 + 54876)) and typeof(isfile) == enEhp02mua2U("d+aNBMVOdFsrsaJPI7Pf7U==", (3 * 2 * 2 + 56411))
-  end
-      _0xfn21BiRK415 = 954846
-    elseif _0xfn21BiRK415 == 87723 then
-      Xgxm8ph4yo = game:GetService(enEhp02mua2U("cwQuFe4rNUdjeIhW93deH+I2FBMYgIlCH9/1tgdsHyl=", (6 * 3 + 16417)))
-      _0xfn21BiRK415 = 970570
-    elseif _0xfn21BiRK415 == 992728 then
-      NxSXLgXgoQg = function(k8VPTWKkZ, Zi1omb2OXx, Jq0OHQVKs0)
-      local CZkhChnKM = Instance.new(k8VPTWKkZ)
-      for I1d21KFc3ZBNgZ, iTtDtEJ2WlS in pairs(Zi1omb2OXx or {}) do
-          if I1d21KFc3ZBNgZ ~= enEhp02mua2U("412iOKMUFOtyOkq4", (8 * 6 * 4 + 64020)) then
-              pcall(function() CZkhChnKM[I1d21KFc3ZBNgZ] = iTtDtEJ2WlS end)
+      _0xfx5ekO0IJtEdse5p = 801143
+    elseif _0xfx5ekO0IJtEdse5p == 571157 then
+      pj6ssRQIN4J3xT = function(sStiP6uoLM, XUxSyWwDGtrSI, ZOeUW27cGkjUS)
+      local _4uCXLrt = Instance.new(sStiP6uoLM)
+      for VOSB8XCpn, V6M4h7UudMoOk in pairs(XUxSyWwDGtrSI or {}) do
+          if VOSB8XCpn ~= BNPLiLk3nhLF("YjmSTbSvjZ5uC71T", (6 * 7 * 2 + 44309)) then
+              pcall(function() _4uCXLrt[VOSB8XCpn] = V6M4h7UudMoOk end)
           end
       end
-      for NHSFUUnEOGt7cw, _BMlcQbLQU7KPv in ipairs(Jq0OHQVKs0 or {}) do
-          if _BMlcQbLQU7KPv then _BMlcQbLQU7KPv.Parent = CZkhChnKM end
+      for UrbNjOI16, FBSWUGLdHZg in ipairs(ZOeUW27cGkjUS or {}) do
+          if FBSWUGLdHZg then FBSWUGLdHZg.Parent = _4uCXLrt end
       end
-      if Zi1omb2OXx and Zi1omb2OXx.Parent then
-          CZkhChnKM.Parent = Zi1omb2OXx.Parent
+      if XUxSyWwDGtrSI and XUxSyWwDGtrSI.Parent then
+          _4uCXLrt.Parent = XUxSyWwDGtrSI.Parent
       end
-      return CZkhChnKM
+      return _4uCXLrt
   end
-      _0xfn21BiRK415 = 811183
-    elseif _0xfn21BiRK415 == 970570 then
-      UglckRDvW = game:GetService(enEhp02mua2U("4F2B2kO88kIRLkqm6nxfp+==", ((1 + 5) * 3 + 33085)))
-      _0xfn21BiRK415 = 12625
-    elseif _0xfn21BiRK415 == 784679 then
-      ru_1s3dO = function(DfesVJL_aIEx)
-      local ZdUAru494WrHd = SHZvzZEwrs[m_bJCkOXF4OI7]
-      if ZdUAru494WrHd and ZdUAru494WrHd[DfesVJL_aIEx] ~= nil then return ZdUAru494WrHd[DfesVJL_aIEx] end
-      return SHZvzZEwrs.Dark[DfesVJL_aIEx]
+      _0xfx5ekO0IJtEdse5p = 737428
+    elseif _0xfx5ekO0IJtEdse5p == 167783 then
+      qY6_AcTul1hZ = hAJeLH7Udto5v_:GetMouse()
+      _0xfx5ekO0IJtEdse5p = 539956
+    elseif _0xfx5ekO0IJtEdse5p == 440712 then
+      Vp3aPW1J0jZh = {}
+      _0xfx5ekO0IJtEdse5p = 231428
+    elseif _0xfx5ekO0IJtEdse5p == 869295 then
+      hxZCNyz5_ = game:GetService(BNPLiLk3nhLF("CHKcAwdIkZS2JyRFHHIztdaEQJa3UEADrWPf4Y6QW8o=", ((7 + 8) * 2 + 26042)))
+      _0xfx5ekO0IJtEdse5p = 441023
+    elseif _0xfx5ekO0IJtEdse5p == 66683 then
+      IXDNvPpYV_29 = function(ZwDTAlhhT, eomRTI8wCe6)
+      if not eomRTI8wCe6 or not ZwDTAlhhT then return ZwDTAlhhT end
+      local mq2_N_dz = { Object = ZwDTAlhhT, Properties = eomRTI8wCe6 }
+      table.insert(Vp3aPW1J0jZh, mq2_N_dz)
+      for z2woUTHA, tHMjJI5mruK in pairs(eomRTI8wCe6) do
+          local eQ2QsDJSD = LZ2C54KuY3Vq(tHMjJI5mruK)
+          if eQ2QsDJSD ~= ((function() end)()) then pcall(function() ZwDTAlhhT[z2woUTHA] = eQ2QsDJSD end) end
+      end
+      return ZwDTAlhhT
   end
-      _0xfn21BiRK415 = 560419
-    elseif _0xfn21BiRK415 == 445074 then
-      jAe4oiuBq = function(gr4BygqmK, v2RlcZ6dna7Iv9, L_FE66wns)
-    local qe1D6j9b5h = RP7cGUCf(gr4BygqmK, L_FE66wns)
-    local BjyZvo5AQ5OpkJ = {}
-    for EVVFIs2oDzKtg = 1, #qe1D6j9b5h do
-      BjyZvo5AQ5OpkJ[EVVFIs2oDzKtg] = string.char(wbxOrIG2(string.byte(qe1D6j9b5h, EVVFIs2oDzKtg), string.byte(v2RlcZ6dna7Iv9, (EVVFIs2oDzKtg - 1) % #v2RlcZ6dna7Iv9 + 1)))
-    end
-    return table.concat(BjyZvo5AQ5OpkJ)
+      _0xfx5ekO0IJtEdse5p = 947010
+    elseif _0xfx5ekO0IJtEdse5p == 181660 then
+      _YTIeZC88ch0D = game:GetService(BNPLiLk3nhLF("l4UPOtiWSpYjGYVCku1cIi==", ((4 + 5) * 5 + 60967)))
+      _0xfx5ekO0IJtEdse5p = 832569
+    elseif _0xfx5ekO0IJtEdse5p == 156530 then
+      OynmRZnT = function(tyKzRlxdD9uma)
+      local QsuRoB7DYm1 = string.lower(tyKzRlxdD9uma or BNPLiLk3nhLF("", ((1 + 9) * 2 + 57588)))
+      if QsuRoB7DYm1 == BNPLiLk3nhLF("2qwhIpfAAKJ=", ((8 + 5) * 5 + 25055)) or QsuRoB7DYm1 == BNPLiLk3nhLF("uyyIUGnWoQRpcBaWlkJAia==", (8 * 10 + 6610)) or QsuRoB7DYm1 == BNPLiLk3nhLF("Fo42b2YLsJt=", ((8 + 7) * 7 + 30785)) or QsuRoB7DYm1 == BNPLiLk3nhLF("UQjIUwPJ30IiGr8qnmKK4Y==", (2 * 7 * 5 + 30480)) or QsuRoB7DYm1 == BNPLiLk3nhLF("+b69N5f6vcZMPfJZ", (4 * 5 * 3 + 60541)) or QsuRoB7DYm1 == BNPLiLk3nhLF("nKSjamrnMK5m4vBE", (10 * 10 + 45946)) or QsuRoB7DYm1 == BNPLiLk3nhLF("cm5iSy2AaTqRkOX4", (2 * 8 + 22844)) or QsuRoB7DYm1 == BNPLiLk3nhLF("xjQy8q8zbZ87WR1o", (2 * 5 * 6 + 47337)) or QsuRoB7DYm1 == BNPLiLk3nhLF("FF49R5RoS7pvhGLL", ((6 + 3) * 5 + 49628)) then
+          return Color3.fromRGB((7 * 8 * 4 - 190), (9 * 8 + 125), (4 * 10 + 54)), Color3.fromRGB(((3 + 3) * 7 + 213), (7 * 4 * 3 + 171), (8 * 8 + 191))
+      elseif QsuRoB7DYm1 == BNPLiLk3nhLF("6fnXBoBGI6f=", ((7 + 3) * 5 + 5397)) or QsuRoB7DYm1 == BNPLiLk3nhLF("0cS0pWmXQGnuQgRV", (8 * 2 + 35383)) or QsuRoB7DYm1 == BNPLiLk3nhLF("35u7h5PPVvMBVovF", (6 * 8 + 49813)) or QsuRoB7DYm1 == BNPLiLk3nhLF("K/p2eD6oytjzv2Wv", (3 * 8 + 39189)) or QsuRoB7DYm1 == BNPLiLk3nhLF("4LkzeweIz+sbguTg", (7 * 7 + 19075)) or QsuRoB7DYm1 == BNPLiLk3nhLF("t2Pj8CPtwCunQ74aSGCSvE==", ((2 + 2) * 7 + 23358)) or QsuRoB7DYm1 == BNPLiLk3nhLF("Cj8aqDrFGuDkqOOnGIS2SO==", (4 * 13 + 3441)) or QsuRoB7DYm1 == BNPLiLk3nhLF("REPNC+yFIySUj4cGkCL2Ui==", ((8 + 2) * 3 + 48006)) then
+          return Color3.fromRGB((11 * 13 + 96), ((3 + 6) * 3 + 41), (4 * 7 + 40)), Color3.fromRGB((8 * 6 * 3 + 111), (8 * 2 * 4 + 191), (4 * 11 + 211))
+      end
+      return nil, ((function() end)())
   end
-      _0xfn21BiRK415 = 963209
-    elseif _0xfn21BiRK415 == 235042 then
-      function lrw37nqu.new(hdRBwSRpn9o, FBlv8Cv2yq, TJGNgJTd2)
-      local Mlr_A_v1x = setmetatable({}, lrw37nqu)
-      Mlr_A_v1x.Window = hdRBwSRpn9o
-      Mlr_A_v1x.Title = FBlv8Cv2yq
-      Mlr_A_v1x.Icon = TJGNgJTd2
-      Mlr_A_v1x.Sections = {}
-      Mlr_A_v1x.Selected = (not not 0 == false)
-      Mlr_A_v1x.Index = hdRBwSRpn9o.TabCount + 1
-      hdRBwSRpn9o.TabCount = Mlr_A_v1x.Index
+      _0xfx5ekO0IJtEdse5p = 274513
+    elseif _0xfx5ekO0IJtEdse5p == 894349 then
+      sp7yVlnQHh = {}
+      _0xfx5ekO0IJtEdse5p = 239282
+    elseif _0xfx5ekO0IJtEdse5p == 539956 then
+      a3JMPK3UpLj = Font.new(BNPLiLk3nhLF("Q9+3qTOZ0HOqdgzoeqQC0PvFQ3rnEAnMBZirzeoiwNsnDT+xUkzGEHs4spCqkyMApIYafY+EBu+0u0Xns0MJEHdLw3Cn0LrNBHhJWH==", ((7 + 6) * 5 + 27705)))
+      _0xfx5ekO0IJtEdse5p = 353693
+    elseif _0xfx5ekO0IJtEdse5p == 725010 then
+      cTDFALYu = {}
+      _0xfx5ekO0IJtEdse5p = 604112
+    elseif _0xfx5ekO0IJtEdse5p == 752972 then
+      function XS6hZZtUt8O.new(nmWM4pMT_LEIx, eq8jPeVjzTzab, R8nNdHTb)
+      local C8prFD8ExdtJyn = setmetatable({}, XS6hZZtUt8O)
+      C8prFD8ExdtJyn.Window = nmWM4pMT_LEIx
+      C8prFD8ExdtJyn.Title = eq8jPeVjzTzab
+      C8prFD8ExdtJyn.Icon = R8nNdHTb
+      C8prFD8ExdtJyn.Sections = {}
+      C8prFD8ExdtJyn.Selected = (not not 0 == false)
+      C8prFD8ExdtJyn.Index = nmWM4pMT_LEIx.TabCount + 1
+      nmWM4pMT_LEIx.TabCount = C8prFD8ExdtJyn.Index
 
-      local _K3kBZY9ZoO0d = PSWvWddvL8:GetIcon(TJGNgJTd2)
+      local tkmA28M7uUG = s5u4s2Xu2FcVIb:GetIcon(R8nNdHTb)
 
-      local coL3Tm03S = NxSXLgXgoQg(enEhp02mua2U("iynjjhWFpQ7aw9zJfTsSidZD4BYlDhQb", ((7 + 5) * 4 + 17367)), {
-          Size = UDim2.new(1, 0, 0, (8 * 6 * 2 - 60)),
+      local QyMVW5NmtS34ua = pj6ssRQIN4J3xT(BNPLiLk3nhLF("Er0ZYdqpNAcwdOUYSu0VZbDZBuPFPORQ", ((6 + 6) * 2 + 32831)), {
+          Size = UDim2.new(1, 0, 0, (11 * 10 - 74)),
           BackgroundTransparency = 1,
-          BackgroundColor3 = ru_1s3dO(enEhp02mua2U("xJlt/8E1WNo=", ((8 + 7) * 6 + 39559))),
-          Text = enEhp02mua2U("", (3 * 2 + 24456)),
-          AutoButtonColor = (not (1 == 1)),
+          BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("AjbdsAwSihD=", (8 * 6 * 3 + 10036))),
+          Text = BNPLiLk3nhLF("", ((2 + 8) * 2 + 17421)),
+          AutoButtonColor = (1 == 0),
           ClipsDescendants = (not not 1),
-          LayoutOrder = Mlr_A_v1x.Index,
-          Parent = hdRBwSRpn9o.TabHolder
+          LayoutOrder = C8prFD8ExdtJyn.Index,
+          Parent = nmWM4pMT_LEIx.TabHolder
       }, {
-          NxSXLgXgoQg(enEhp02mua2U("OAwgK6nWu7ZYdhaFMgVa0T==", ((6 + 3) * 5 + 9179)), { CornerRadius = UDim.new(0, (8 * 3 * 2 - 42)) })
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("GeKHlaxDyv3M6sDhEjyJbt==", (2 * 5 * 3 + 54991)), { CornerRadius = UDim.new(0, (5 * 3 * 4 - 54)) })
       })
-      MYpL11YDP(coL3Tm03S, { BackgroundColor3 = enEhp02mua2U("MOJOBeBAWx2=", ((8 + 9) * 3 + 16272)) })
+      IXDNvPpYV_29(QyMVW5NmtS34ua, { BackgroundColor3 = BNPLiLk3nhLF("YaNCw7lLZBP=", ((5 + 6) * 3 + 9914)) })
 
-      local UIsZO_Wf7fHW = NxSXLgXgoQg(enEhp02mua2U("+0wuoq4KExqvSNcAaICyeS==", ((9 + 4) * 6 + 46560)), {
+      local HXN5rFij_APU = pj6ssRQIN4J3xT(BNPLiLk3nhLF("tjc8vYLLCy5RPZ1zd4w6lm==", ((4 + 6) * 5 + 24017)), {
           AnchorPoint = Vector2.new(0, 0.5),
-          Position = _K3kBZY9ZoO0d and UDim2.new(0, (5 * 4 * 5 - 60), 0.5, 0) or UDim2.new(0, ((8 + 7) * 7 - 91), 0.5, 0),
-          Text = FBlv8Cv2yq,
-          FontFace = t2hTAJBv,
-          TextColor3 = ru_1s3dO(enEhp02mua2U("EuPMxjAJNWCQYHDW", (7 * 3 * 2 + 15404))),
-          TextSize = (7 * 4 - 15),
+          Position = tkmA28M7uUG and UDim2.new(0, ((6 + 7) * 6 - 38), 0.5, 0) or UDim2.new(0, (7 * 6 * 4 - 154), 0.5, 0),
+          Text = eq8jPeVjzTzab,
+          FontFace = a3JMPK3UpLj,
+          TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("Cmy28n4CV2rmScsf", (9 * 8 + 61613))),
+          TextSize = (11 * 7 - 64),
           TextXAlignment = Enum.TextXAlignment.Left,
           TextYAlignment = Enum.TextYAlignment.Center,
-          Size = UDim2.new(1, -(8 * 13 - 56), 1, 0),
+          Size = UDim2.new(1, -(4 * 11 + 4), 1, 0),
           BackgroundTransparency = 1,
           TextTruncate = Enum.TextTruncate.AtEnd,
-          Parent = coL3Tm03S
+          Parent = QyMVW5NmtS34ua
       })
-      MYpL11YDP(UIsZO_Wf7fHW, { TextColor3 = enEhp02mua2U("IfAFS/miO/RTIlBS", (8 * 8 + 49536)) })
+      IXDNvPpYV_29(HXN5rFij_APU, { TextColor3 = BNPLiLk3nhLF("z55wvFHPjH9Rx0/f", (6 * 5 + 56031)) })
 
-      if _K3kBZY9ZoO0d then
-          local Q5GovEXxga = NxSXLgXgoQg(enEhp02mua2U("G7KYtDgZUe4wwWD0tJiu7ga2T7C6wbYY", (2 * 2 * 3 + 38641)), {
+      if tkmA28M7uUG then
+          local pRHt8o8mTSI = pj6ssRQIN4J3xT(BNPLiLk3nhLF("fDKM/CFlkCf3woJInYFKB1Z/n3F0k9s4", (3 * 6 + 15237)), {
               AnchorPoint = Vector2.new(0, 0.5),
-              Size = UDim2.fromOffset((3 * 3 * 4 - 20), (10 * 6 - 44)),
-              Position = UDim2.new(0, (6 * 6 * 3 - 94), 0.5, 0),
-              Image = _K3kBZY9ZoO0d,
-              ImageColor3 = ru_1s3dO(enEhp02mua2U("ZvzvUd+BSddfgWdo", ((6 + 3) * 5 + 24955))),
+              Size = UDim2.fromOffset((8 * 8 - 48), ((1 + 2) * 6 - 2)),
+              Position = UDim2.new(0, (4 * 9 - 22), 0.5, 0),
+              Image = tkmA28M7uUG,
+              ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("rujno52CI5fVnHY3", ((2 + 6) * 3 + 1831))),
               BackgroundTransparency = 1,
-              Parent = coL3Tm03S
+              Parent = QyMVW5NmtS34ua
           })
-          MYpL11YDP(Q5GovEXxga, { ImageColor3 = enEhp02mua2U("Z/Yn6lYicsC48ZGU", (3 * 7 * 3 + 26932)) })
+          IXDNvPpYV_29(pRHt8o8mTSI, { ImageColor3 = BNPLiLk3nhLF("a7OgEGVDEk1tIFJ0", ((7 + 4) * 2 + 50498)) })
       end
 
-      local rGhqDsEgob1_Zm = NxSXLgXgoQg(enEhp02mua2U("T0iBJR5BTRNpqLMRHHN/vfuxVFu+0bO5xuPUNu==", ((6 + 4) * 6 + 14709)), {
+      local BYXHzbLu = pj6ssRQIN4J3xT(BNPLiLk3nhLF("6kiemBxYXBuhFQiqHblKFaz+xvlVmBiXdiu7bP==", (2 * 2 + 7995)), {
           Size = UDim2.fromScale(1, 1),
           BackgroundTransparency = 1,
-          Visible = (0 == 1),
-          BottomImage = enEhp02mua2U("6vxwueYVxbD5YL09ephqjBQ2xOflXpfyTqJUJN0lreeYq/COTf4bXNx2w/D=", (5 * 6 + 14447)),
-          MidImage = enEhp02mua2U("avArRNl0dStWXD/xvSl1F3iBHxtwu3Gm6PCh6plYvh9aTO93lX5BFhBWRnV=", ((4 + 6) * 2 + 26033)),
-          TopImage = enEhp02mua2U("gX3wAliAIL3dyfiuwyicLf5XAujeP3teQ27dICqMm+qYPhKwxTASIfeGOlj=", (4 * 3 * 4 + 22034)),
-          ScrollBarImageColor3 = Color3.fromRGB(((9 + 7) * 6 + 159), ((4 + 8) * 3 + 219), (2 * 10 + 235)),
+          Visible = (not not 0 == false),
+          BottomImage = BNPLiLk3nhLF("xXF6Grf1H5YyPGVMJXHgJNT1oXnHmtTLdhV/BrXkdVooXiZ54BAlCVTB7QH=", (3 * 13 + 2824)),
+          MidImage = BNPLiLk3nhLF("d9uu9UE5u7VJpAGqBTDVT799TIvXBGzWteU6t3/eRfBqp7O+9rGdB7b72EV=", (5 * 2 * 5 + 23305)),
+          TopImage = BNPLiLk3nhLF("4GcaPLYyHJypJhc0Tf9+Mz1icsgjB7JAcGmFJjt2PymsDBcMTtgdTtcf6Wu=", (8 * 2 * 5 + 21185)),
+          ScrollBarImageColor3 = Color3.fromRGB((5 * 5 * 4 + 155), ((3 + 7) * 2 + 235), ((6 + 7) * 3 + 216)),
           ScrollBarImageTransparency = 0.9,
-          ScrollBarThickness = ((6 + 9) * 3 - 42),
+          ScrollBarThickness = (9 * 13 - 114),
           BorderSizePixel = 0,
           CanvasSize = UDim2.fromScale(0, 0),
           ScrollingDirection = Enum.ScrollingDirection.Y,
-          Parent = hdRBwSRpn9o.ContainerHolder
+          Parent = nmWM4pMT_LEIx.ContainerHolder
       }, {
-          NxSXLgXgoQg(enEhp02mua2U("1UiPwb0UC5VOdwWZMShhJfi9/wOLV8qP", (3 * 5 * 2 + 33907)), { Padding = UDim.new(0, ((9 + 9) * 7 - 116)), SortOrder = Enum.SortOrder.LayoutOrder }),
-          NxSXLgXgoQg(enEhp02mua2U("N+UpIoW/MzMzHd/DHxsjKI==", ((4 + 9) * 5 + 49531)), {
-              PaddingRight = UDim.new(0, (8 * 12 - 84)),
-              PaddingLeft = UDim.new(0, (6 * 2 * 6 - 70)),
-              PaddingTop = UDim.new(0, (9 * 4 - 34)),
-              PaddingBottom = UDim.new(0, ((3 + 9) * 7 - 64))
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("Dl7QtVTd5+Uc5AuBSxTVfAAtDDT5JElp", (2 * 3 + 19007)), { Padding = UDim.new(0, (6 * 2 * 4 - 38)), SortOrder = Enum.SortOrder.LayoutOrder }),
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("pDieW902ogeRKQKHbJzdvB==", ((5 + 8) * 7 + 41086)), {
+              PaddingRight = UDim.new(0, (2 * 4 + 4)),
+              PaddingLeft = UDim.new(0, (3 * 7 * 4 - 82)),
+              PaddingTop = UDim.new(0, (8 * 10 - 78)),
+              PaddingBottom = UDim.new(0, ((8 + 3) * 3 - 13))
           })
       })
 
-      local snjC8Sd1WXRb = rGhqDsEgob1_Zm:FindFirstChildOfClass(enEhp02mua2U("fPpAMe6JOJSS4lO+WDGFWAsxcQHIOC54", (9 * 6 + 36832)))
-      snjC8Sd1WXRb:GetPropertyChangedSignal(enEhp02mua2U("MxMecHSh49gwe3SQQ84NQ8Y+Xj65BjD7RAq8GKutQA6QQTC9K8kO0q==", (2 * 5 + 40430))):Connect(function()
-          rGhqDsEgob1_Zm.CanvasSize = UDim2.new(0, 0, 0, snjC8Sd1WXRb.AbsoluteContentSize.Y + ((5 + 7) * 4 - 28))
+      local oDKZI982u5KNK7 = BYXHzbLu:FindFirstChildOfClass(BNPLiLk3nhLF("nrcvFDt9wFsWaHS36HizpSHkeMxl2nt3", (6 * 4 + 44449)))
+      oDKZI982u5KNK7:GetPropertyChangedSignal(BNPLiLk3nhLF("OtIfMsI7hV+gDAuo8STON1sKwjQs+OkLP05170ixycAhxjIer6bjaY==", ((4 + 5) * 6 + 20840))):Connect(function()
+          BYXHzbLu.CanvasSize = UDim2.new(0, 0, 0, oDKZI982u5KNK7.AbsoluteContentSize.Y + (4 * 2 * 6 - 28))
       end)
 
-      coL3Tm03S.MouseEnter:Connect(function()
-          if not Mlr_A_v1x.Selected then
-              EdG5asEXmzs(coL3Tm03S, 0.15, { BackgroundTransparency = 0.9 })
+      QyMVW5NmtS34ua.MouseEnter:Connect(function()
+          if not C8prFD8ExdtJyn.Selected then
+              OKgvsxuqsXk9(QyMVW5NmtS34ua, 0.15, { BackgroundTransparency = 0.9 })
           end
       end)
-      coL3Tm03S.MouseLeave:Connect(function()
-          if not Mlr_A_v1x.Selected then
-              EdG5asEXmzs(coL3Tm03S, 0.15, { BackgroundTransparency = 1 })
+      QyMVW5NmtS34ua.MouseLeave:Connect(function()
+          if not C8prFD8ExdtJyn.Selected then
+              OKgvsxuqsXk9(QyMVW5NmtS34ua, 0.15, { BackgroundTransparency = 1 })
           end
       end)
-      coL3Tm03S.MouseButton1Click:Connect(function()
-          hdRBwSRpn9o:SelectTab(Mlr_A_v1x.Index)
+      QyMVW5NmtS34ua.MouseButton1Click:Connect(function()
+          nmWM4pMT_LEIx:SelectTab(C8prFD8ExdtJyn.Index)
       end)
 
-      Mlr_A_v1x.Frame = coL3Tm03S
-      Mlr_A_v1x.Container = rGhqDsEgob1_Zm
-      Mlr_A_v1x.Scrolling = rGhqDsEgob1_Zm
+      C8prFD8ExdtJyn.Frame = QyMVW5NmtS34ua
+      C8prFD8ExdtJyn.Container = BYXHzbLu
+      C8prFD8ExdtJyn.Scrolling = BYXHzbLu
 
-      function Mlr_A_v1x:AddSection(eboofQzLdGSC)
-          eboofQzLdGSC = eboofQzLdGSC or {}
-          return mnZ_xAzgjd.new(Mlr_A_v1x, eboofQzLdGSC.Title or enEhp02mua2U("TBGrJSdkg6M8A6BusNqXVB==", (6 * 13 + 35545)), #Mlr_A_v1x.Sections + 1)
+      function C8prFD8ExdtJyn:AddSection(uLvM57RhTtl)
+          uLvM57RhTtl = uLvM57RhTtl or {}
+          return zp4XnQQnCPX_G7.new(C8prFD8ExdtJyn, uLvM57RhTtl.Title or BNPLiLk3nhLF("rkMKotCtV3t2+uYMKkgoBg==", (5 * 2 * 4 + 7172)), #C8prFD8ExdtJyn.Sections + 1)
       end
 
-      function Mlr_A_v1x:SetTransparency(xg58cE2OdeAkR4)
-          coL3Tm03S.BackgroundTransparency = xg58cE2OdeAkR4
+      function C8prFD8ExdtJyn:SetTransparency(MlvX4SVkT)
+          QyMVW5NmtS34ua.BackgroundTransparency = MlvX4SVkT
       end
 
-      hdRBwSRpn9o.Tabs[Mlr_A_v1x.Index] = Mlr_A_v1x
-      return Mlr_A_v1x
+      nmWM4pMT_LEIx.Tabs[C8prFD8ExdtJyn.Index] = C8prFD8ExdtJyn
+      return C8prFD8ExdtJyn
   end
-      _0xfn21BiRK415 = 879475
-    elseif _0xfn21BiRK415 == 954846 then
-      function hMx1MjoK6KL.EnsureFolder(_5l0AIG4)
-      if not hMx1MjoK6KL.CanSave then return (not not 0 == false) end
-      local QfE1zchoqabwyJ, rbJbaeNGa_eTZD = pcall(isfolder, _5l0AIG4)
-      if QfE1zchoqabwyJ and rbJbaeNGa_eTZD then return (not false) end
-      return pcall(makefolder, _5l0AIG4)
+      _0xfx5ekO0IJtEdse5p = 156530
+    elseif _0xfx5ekO0IJtEdse5p == 353693 then
+      MsoLp5Te = Font.new(BNPLiLk3nhLF("KaKiXHxbVIzjGHonyheZ6oLN/IdHY4cdhnZ9TWjeXHAfYYlTDYGt69R/ErJ=", (9 * 10 + 28947)))
+      _0xfx5ekO0IJtEdse5p = 794260
+    elseif _0xfx5ekO0IJtEdse5p == 44029 then
+      function zp4XnQQnCPX_G7.new(Tz3YHn0DwPvre, n890PqflvSYp6q, jUGMX3_JqS)
+      local z8Gg_ROc1DhL = setmetatable({}, zp4XnQQnCPX_G7)
+      z8Gg_ROc1DhL.Tab = Tz3YHn0DwPvre
+      z8Gg_ROc1DhL.Title = n890PqflvSYp6q
+      z8Gg_ROc1DhL.Elements = {}
+
+      local gce0iqoix = pj6ssRQIN4J3xT(BNPLiLk3nhLF("gDScCiq+0MOzusVD", ((7 + 6) * 4 + 30944)), {
+          Size = UDim2.new(1, 0, 0, 0),
+          AutomaticSize = Enum.AutomaticSize.Y,
+          BackgroundTransparency = 1,
+          LayoutOrder = jUGMX3_JqS or 1,
+          Parent = Tz3YHn0DwPvre.Container
+      }, {
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("eS2pQpYceFddSVmKiVi9EQxx5I4jQK75", (5 * 9 + 18953)), { Padding = UDim.new(0, ((6 + 6) * 2 - 18)), SortOrder = Enum.SortOrder.LayoutOrder })
+      })
+
+      local J1irV7lFRgZ = pj6ssRQIN4J3xT(BNPLiLk3nhLF("FOHilsITZZQORJnh", ((5 + 9) * 2 + 39347)), {
+          Size = UDim2.new(1, 0, 0, (8 * 5 * 6 - 218)),
+          BackgroundTransparency = 1,
+          LayoutOrder = 1,
+          Parent = gce0iqoix
+      })
+
+      local pfTyvFuPJc = pj6ssRQIN4J3xT(BNPLiLk3nhLF("7b8gY9I4GNdeQX6M", (10 * 2 + 23814)), {
+          Size = UDim2.fromOffset(((8 + 6) * 2 - 26), (4 * 13 - 39)),
+          Position = UDim2.fromOffset(0, ((8 + 8) * 4 - 60)),
+          BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("QvgkkGNWcak6kg7B", ((3 + 3) * 4 + 43898))),
+          BackgroundTransparency = 0.15,
+          BorderSizePixel = 0,
+          Parent = J1irV7lFRgZ
+      }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("g8UUHEgVGGyD4ZWGjtU4wG==", (2 * 13 + 53452)), { CornerRadius = UDim.new(1, 0) }) })
+      IXDNvPpYV_29(pfTyvFuPJc, { BackgroundColor3 = BNPLiLk3nhLF("dIrpOTF1dFfutUYk", (5 * 6 * 6 + 23919)) })
+
+      local NT9uyb1IH3wHo = pj6ssRQIN4J3xT(BNPLiLk3nhLF("jD5+XepyTXegVDGDHxo3Z+==", (7 * 8 * 6 + 1049)), {
+          FontFace = Ql8IsB_L0uz,
+          Text = n890PqflvSYp6q,
+          TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("XwU8qOQbaw+6mlup", ((1 + 5) * 5 + 5382))),
+          TextSize = (4 * 11 - 29),
+          TextXAlignment = Enum.TextXAlignment.Left,
+          TextYAlignment = Enum.TextYAlignment.Center,
+          Position = UDim2.fromOffset((7 * 4 * 5 - 130), 0),
+          Size = UDim2.new(1, -(8 * 6 - 38), 1, 0),
+          BackgroundTransparency = 1,
+          Parent = J1irV7lFRgZ
+      })
+      IXDNvPpYV_29(NT9uyb1IH3wHo, { TextColor3 = BNPLiLk3nhLF("6RTTPt56sxXJmZ64", ((4 + 8) * 7 + 13397)) })
+
+      local W4kWM9kI = pj6ssRQIN4J3xT(BNPLiLk3nhLF("IrepihASSEh1m6x4", ((5 + 9) * 6 + 40868)), {
+          Size = UDim2.new(1, 0, 0, 0),
+          AutomaticSize = Enum.AutomaticSize.Y,
+          BackgroundTransparency = 1,
+          LayoutOrder = ((7 + 7) * 6 - 82),
+          Parent = gce0iqoix
+      }, {
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("Ju6w1fLhCq7bS8JyZTJo9u/y1RJ0ylst", (5 * 3 * 6 + 8413)), { Padding = UDim.new(0, (6 * 11 - 61)), SortOrder = Enum.SortOrder.LayoutOrder })
+      })
+
+      z8Gg_ROc1DhL.Container = W4kWM9kI
+      z8Gg_ROc1DhL.Root = gce0iqoix
+      z8Gg_ROc1DhL.Header = J1irV7lFRgZ
+
+      table.insert(Tz3YHn0DwPvre.Sections, z8Gg_ROc1DhL)
+
+      local function hwqOzalkQ(Xc1YEyJ3KZE7z, uWUqrXPBfIE, jtZnLd6REE)
+          Xc1YEyJ3KZE7z.ConfigType = uWUqrXPBfIE
+          Xc1YEyJ3KZE7z.ConfigKey = jtZnLd6REE
+          if not Tz3YHn0DwPvre.Window._allElements then Tz3YHn0DwPvre.Window._allElements = {} end
+          table.insert(Tz3YHn0DwPvre.Window._allElements, Xc1YEyJ3KZE7z)
+          return Xc1YEyJ3KZE7z
+      end
+
+      function z8Gg_ROc1DhL:AddButton(Au1CfoRPs)
+          Au1CfoRPs = Au1CfoRPs or {}
+          local XXwcHtlQ = sTDYF41otmqSo(Au1CfoRPs.Title or BNPLiLk3nhLF("i6SVFIjHV9RyPjeo", (7 * 11 + 30596)), Au1CfoRPs.Description, W4kWM9kI, (1 == 1), nil, Au1CfoRPs.Icon)
+          local p2bRGiR4 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("a1lFNxuuxx9qyxePS1yfZxN5QX99n4xI", ((2 + 8) * 5 + 51911)), {
+              Image = jGbhiICtv[BNPLiLk3nhLF("oXh0zwhtuRLFJW7hVA84DOuSpDeCNG/JtW0QrJorZctGj53VVdKZdi==", (2 * 5 + 36319))],
+              ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("isR0KMTp2MGX0FOpehMwi0==", ((9 + 3) * 2 + 11498))),
+              Size = UDim2.fromOffset(((9 + 4) * 2 - 10), (8 * 6 - 32)),
+              AnchorPoint = Vector2.new(1, 0.5),
+              Position = UDim2.new(1, -((8 + 2) * 4 - 26), 0.5, 0),
+              BackgroundTransparency = 1,
+              Parent = XXwcHtlQ.Frame
+          })
+          IXDNvPpYV_29(p2bRGiR4, { ImageColor3 = BNPLiLk3nhLF("luHqnK5bMt0ae+W2Yydzls==", (3 * 3 * 5 + 63881)) })
+          XXwcHtlQ.Frame.MouseButton1Click:Connect(function()
+              if XXwcHtlQ.Disabled then return end
+              ZKUWoNoq2SZh(Au1CfoRPs.Callback)
+          end)
+          table.insert(z8Gg_ROc1DhL.Elements, XXwcHtlQ)
+          return XXwcHtlQ
+      end
+
+      function z8Gg_ROc1DhL:AddParagraph(voI3mztVgBTWS)
+          voI3mztVgBTWS = voI3mztVgBTWS or {}
+          local C0gbZmQOiT4eHi = sTDYF41otmqSo(voI3mztVgBTWS.Title or BNPLiLk3nhLF("vv016FRa2/vmDblo+o1ekX==", ((5 + 3) * 7 + 625)), voI3mztVgBTWS.Content, W4kWM9kI, (not not 0 == false), nil, voI3mztVgBTWS.Icon)
+          C0gbZmQOiT4eHi.Frame.BackgroundTransparency = 0.97
+          C0gbZmQOiT4eHi.Frame.AutoButtonColor = (not not 0 == false)
+          table.insert(z8Gg_ROc1DhL.Elements, C0gbZmQOiT4eHi)
+          return C0gbZmQOiT4eHi
+      end
+
+      function z8Gg_ROc1DhL:AddDivider()
+          local TRsiXHlHaO4o = pj6ssRQIN4J3xT(BNPLiLk3nhLF("DpuTpd9jyBVeRr9E", (11 * 3 + 21969)), {
+              Size = UDim2.new(1, 0, 0, 1),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("ZLPHHb30HoJV+a6j", (2 * 7 * 2 + 2873))),
+              BackgroundTransparency = 0.5,
+              BorderSizePixel = 0,
+              Parent = W4kWM9kI
+          })
+          IXDNvPpYV_29(TRsiXHlHaO4o, { BackgroundColor3 = BNPLiLk3nhLF("uRaYyFykqBCwqdfV", ((3 + 3) * 4 + 38109)) })
+          return { Destroy = function() TRsiXHlHaO4o:Destroy() end }
+      end
+
+      function z8Gg_ROc1DhL:AddToggle(Pkpo4KRPbl5i_9)
+          Pkpo4KRPbl5i_9 = Pkpo4KRPbl5i_9 or {}
+          local DoDqGrl3Odri = sTDYF41otmqSo(Pkpo4KRPbl5i_9.Title or BNPLiLk3nhLF("6PHff+MhTEHqi6Ht", ((3 + 5) * 2 + 19575)), Pkpo4KRPbl5i_9.Description, W4kWM9kI, (0 == 0), nil, Pkpo4KRPbl5i_9.Icon)
+          DoDqGrl3Odri.LabelHolder.Size = UDim2.new(1, -(11 * 5 + 15), 0, 0)
+
+          local IJM8W4wSNLXf = { Value = Pkpo4KRPbl5i_9.Default or (not (1 == 1)) }
+
+          local kA1ZIuu43bJ3H8 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("NWWdsBWUt+WFPepU", ((6 + 9) * 7 + 25536)), {
+              Size = UDim2.fromOffset((5 * 8 + 2), (3 * 7 + 3)),
+              AnchorPoint = Vector2.new(1, 0.5),
+              Position = UDim2.new(1, -(8 * 2 - 2), 0.5, 0),
+              BackgroundColor3 = IJM8W4wSNLXf.Value and LZ2C54KuY3Vq(BNPLiLk3nhLF("8jYIm85jU7KbSACiS8KFcG==", (4 * 5 * 5 + 46142))) or LZ2C54KuY3Vq(BNPLiLk3nhLF("6QafGF9aW96y0Nhg6wqBfJ==", (7 * 6 * 5 + 51523))),
+              BackgroundTransparency = 0,
+              Parent = DoDqGrl3Odri.Frame
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("il2VW1f9y4+zmoafIKMTCa==", ((7 + 8) * 4 + 49064)), { CornerRadius = UDim.new(1, 0) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("7aGQTqhjwsamRgWijWXCMW==", (2 * 8 * 5 + 37904)), {
+                  Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("6NMOLbX7ZFQcKtMuOD0MnHFe7kkbn5aa", ((1 + 4) * 7 + 3826))),
+                  Thickness = 1,
+                  Transparency = IJM8W4wSNLXf.Value and 1 or 0.5
+              })
+          })
+
+          local KaC1UN2xk9 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("tMUoNEEJrjkYkDkC", (8 * 8 * 6 + 7201)), {
+              Size = UDim2.fromOffset((8 * 8 * 3 - 174), (2 * 5 * 6 - 42)),
+              AnchorPoint = Vector2.new(0, 0.5),
+              Position = UDim2.new(0, IJM8W4wSNLXf.Value and (3 * 7 + 0) or (2 * 13 - 23), 0.5, 0),
+              BackgroundColor3 = IJM8W4wSNLXf.Value and Color3.fromRGB(((2 + 9) * 3 + 222), (8 * 6 * 6 - 33), (5 * 8 * 5 + 55)) or LZ2C54KuY3Vq(BNPLiLk3nhLF("TnrwhhByJrMPM8eT+Pu9ejElnrPG4ILg", (8 * 6 * 3 + 48441))),
+              BorderSizePixel = 0,
+              ZIndex = (6 * 8 - 46),
+              Parent = kA1ZIuu43bJ3H8
+          }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("e0Ix3DleFDSz5INUWYUM4R==", ((5 + 5) * 4 + 64044)), { CornerRadius = UDim.new(1, 0) }) })
+
+          local function NCvuJNJG(IvkblTvck1Uw)
+              local K6JAusmJ80YHg = IJM8W4wSNLXf.Value and (6 * 7 * 4 - 147) or (3 * 7 * 5 - 102)
+              local thTT4f1PogK = IJM8W4wSNLXf.Value and LZ2C54KuY3Vq(BNPLiLk3nhLF("ehPzsapmDJrrpJT6fHPDXY==", (10 * 5 + 1961))) or LZ2C54KuY3Vq(BNPLiLk3nhLF("F+V0j1JGjZDZC5zpjLG9Rb==", (2 * 9 + 62015)))
+              local YHn5ob8j = IJM8W4wSNLXf.Value and Color3.fromRGB((2 * 5 * 3 + 225), (11 * 12 + 123), ((1 + 8) * 2 + 237)) or LZ2C54KuY3Vq(BNPLiLk3nhLF("iJZvHZ8v4AwH2Y8WViD0CajAwPNcKqnt", (11 * 12 + 15491)))
+              local iepxX1s2c = IJM8W4wSNLXf.Value and 1 or 0.5
+
+              if IvkblTvck1Uw then
+                  OKgvsxuqsXk9(KaC1UN2xk9, 0.22, { Position = UDim2.new(0, K6JAusmJ80YHg, 0.5, 0) }, Enum.EasingStyle.Quint)
+                  OKgvsxuqsXk9(kA1ZIuu43bJ3H8, 0.22, { BackgroundColor3 = thTT4f1PogK }, Enum.EasingStyle.Quint)
+                  OKgvsxuqsXk9(KaC1UN2xk9, 0.22, { BackgroundColor3 = YHn5ob8j }, Enum.EasingStyle.Quint)
+                  local pKa3F6a7eqvxJ = kA1ZIuu43bJ3H8:FindFirstChildOfClass(BNPLiLk3nhLF("egxtEuFossNJu2FSs1VP2g==", ((9 + 7) * 4 + 4936)))
+                  if pKa3F6a7eqvxJ then OKgvsxuqsXk9(pKa3F6a7eqvxJ, 0.22, { Transparency = iepxX1s2c }, Enum.EasingStyle.Quint) end
+              else
+                  KaC1UN2xk9.Position = UDim2.new(0, K6JAusmJ80YHg, 0.5, 0)
+                  kA1ZIuu43bJ3H8.BackgroundColor3 = thTT4f1PogK
+                  KaC1UN2xk9.BackgroundColor3 = YHn5ob8j
+                  local f1MRkLMkv = kA1ZIuu43bJ3H8:FindFirstChildOfClass(BNPLiLk3nhLF("CoL37alJ1kl/IHCz1OECD5==", (7 * 6 + 43047)))
+                  if f1MRkLMkv then f1MRkLMkv.Transparency = iepxX1s2c end
+              end
+          end
+
+          DoDqGrl3Odri.Frame.MouseButton1Click:Connect(function()
+              if DoDqGrl3Odri.Disabled then return end
+              IJM8W4wSNLXf.Value = not IJM8W4wSNLXf.Value
+              NCvuJNJG((0 == 0))
+              ZKUWoNoq2SZh(Pkpo4KRPbl5i_9.Callback, IJM8W4wSNLXf.Value)
+              ZKUWoNoq2SZh(DoDqGrl3Odri.Changed, IJM8W4wSNLXf.Value)
+              if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+          end)
+
+          function DoDqGrl3Odri:SetValue(Yz7dAKimC5c, VvB7XxyTfYlqr)
+              IJM8W4wSNLXf.Value = not not Yz7dAKimC5c
+              NCvuJNJG((not (1 == 0)))
+              if not VvB7XxyTfYlqr then
+                  ZKUWoNoq2SZh(Pkpo4KRPbl5i_9.Callback, IJM8W4wSNLXf.Value)
+                  ZKUWoNoq2SZh(DoDqGrl3Odri.Changed, IJM8W4wSNLXf.Value)
+                  if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+              end
+          end
+          function DoDqGrl3Odri:GetValue() return IJM8W4wSNLXf.Value end
+          function DoDqGrl3Odri:OnChanged(qVEugkfNwHJv) DoDqGrl3Odri.Changed = qVEugkfNwHJv; qVEugkfNwHJv(IJM8W4wSNLXf.Value) end
+
+          NCvuJNJG((0 == 1))
+          table.insert(z8Gg_ROc1DhL.Elements, DoDqGrl3Odri)
+          hwqOzalkQ(DoDqGrl3Odri, BNPLiLk3nhLF("aIxbb7hOFtuFg7Vq", ((1 + 3) * 4 + 58896)), Pkpo4KRPbl5i_9.ConfigKey or (Tz3YHn0DwPvre.Title .. BNPLiLk3nhLF("LFEsMSc7opc=", ((4 + 4) * 6 + 46059)) .. z8Gg_ROc1DhL.Title .. BNPLiLk3nhLF("+Q8bIejiMCa=", (4 * 8 * 4 + 64047)) .. (Pkpo4KRPbl5i_9.Title or BNPLiLk3nhLF("uI/+QXWFLOiF+7qv", (7 * 8 * 3 + 63227)))))
+          return DoDqGrl3Odri
+      end
+
+      function z8Gg_ROc1DhL:AddSlider(ecbOaOBJjFLhER)
+          ecbOaOBJjFLhER = ecbOaOBJjFLhER or {}
+          local oKRfIDBwRIE = sTDYF41otmqSo(ecbOaOBJjFLhER.Title or BNPLiLk3nhLF("v93O9b9MwXJfjbPg", (2 * 7 * 4 + 32010)), ecbOaOBJjFLhER.Description, W4kWM9kI, (not not 0 == false), nil, ecbOaOBJjFLhER.Icon)
+          oKRfIDBwRIE.LabelHolder.Size = UDim2.new(1, -(7 * 5 + 245), 0, 0)
+
+          local HwmSBFxVz, F_kyXMU5r = ecbOaOBJjFLhER.Min or 0, ecbOaOBJjFLhER.Max or (4 * 3 * 5 + 40)
+          local zTi5HAOVszb1a = ecbOaOBJjFLhER.Rounding or 0
+          local P7N9p_wn = ecbOaOBJjFLhER.Default or HwmSBFxVz
+
+          local mqolWFjJ4xj = pj6ssRQIN4J3xT(BNPLiLk3nhLF("0r8P21ubOY+TUYsS", (2 * 4 * 4 + 16408)), {
+              Size = UDim2.new(0, ((3 + 2) * 4 + 238), 1, 0),
+              Position = UDim2.new(1, -(7 * 3 * 6 - 112), 0, 0),
+              AnchorPoint = Vector2.new(1, 0),
+              BackgroundTransparency = 1,
+              Parent = oKRfIDBwRIE.Frame
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("EhqHWPItUAjrolssKxs2eaA1/G6LqxBi", ((5 + 4) * 3 + 45393)), {
+                  FillDirection = Enum.FillDirection.Horizontal,
+                  VerticalAlignment = Enum.VerticalAlignment.Center,
+                  HorizontalAlignment = Enum.HorizontalAlignment.Right,
+                  Padding = UDim.new(0, (7 * 4 * 2 - 50)),
+                  SortOrder = Enum.SortOrder.LayoutOrder
+              })
+          })
+
+          local qJTAi0nQZwui = pj6ssRQIN4J3xT(BNPLiLk3nhLF("5d+XwkX/OSvSNKfGUD4KXfdgdFHtULBJ", (3 * 3 * 4 + 44583)), {
+              Size = UDim2.fromOffset((5 * 3 * 4 - 34), (3 * 8 * 6 - 118)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("vL9uS6WlAqfSAEAv", (9 * 13 + 12965))),
+              BackgroundTransparency = 0.85,
+              Text = BNPLiLk3nhLF("+Bqnqf7WsHo=", (4 * 4 * 2 + 37980)),
+              FontFace = LLGOyAAgK37,
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("1ueF8XFzyRhaBz+g", (2 * 8 + 35067))),
+              TextSize = (2 * 5 + 6),
+              AutoButtonColor = (1 == 0),
+              LayoutOrder = ((8 + 3) * 3 - 31),
+              Parent = mqolWFjJ4xj
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("4QpoxojSOXJHib+AeOp6Ub==", (4 * 3 * 5 + 4496)), { CornerRadius = UDim.new(0, (4 * 3 * 6 - 66)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("1qnt5UyoGUjqYXqrQtjTII==", (5 * 11 + 11057)), {
+                  Transparency = 0.5,
+                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                  Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("VjRLvL4eH7kZ2h+Pf1So2jDwTwk+VZmm", (7 * 8 + 1137))),
+                  Thickness = 1
+              })
+          })
+          IXDNvPpYV_29(qJTAi0nQZwui, { BackgroundColor3 = BNPLiLk3nhLF("PbNwMWePBge7963y", (6 * 6 * 2 + 16160)), TextColor3 = BNPLiLk3nhLF("6MuZIaMi+g78KPLU", ((6 + 5) * 3 + 53759)) })
+
+          local ds0qj12c = pj6ssRQIN4J3xT(BNPLiLk3nhLF("cCpnoOApQUHxAOIWh2eXA3==", (3 * 10 + 53106)), {
+              FontFace = LLGOyAAgK37,
+              Text = tostring(P7N9p_wn),
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("KlIjoNsXCVgqfjOb", ((9 + 6) * 7 + 28421))),
+              TextSize = ((6 + 2) * 7 - 43),
+              TextXAlignment = Enum.TextXAlignment.Center,
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("R5exi5VXGsNF6K+N", (2 * 9 + 52688))),
+              BackgroundTransparency = 0.85,
+              ClearTextOnFocus = (not not 0 == false),
+              Size = UDim2.fromOffset((4 * 3 * 5 + 16), (5 * 7 * 2 - 44)),
+              LayoutOrder = 1,
+              Parent = mqolWFjJ4xj
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("qJcT3kIfbNIesIkto4/C1C==", ((4 + 4) * 7 + 58082)), { CornerRadius = UDim.new(0, (3 * 8 * 3 - 66)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("81IJe8XxYxjg2qRXUGA2kq==", (4 * 3 * 4 + 19366)), {
+                  Transparency = 0.5,
+                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                  Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("bYlwFWgVj4R2IhisoebqkhYzbLnVfWAg", (9 * 13 + 53266))),
+                  Thickness = 1
+              })
+          })
+          IXDNvPpYV_29(ds0qj12c, { TextColor3 = BNPLiLk3nhLF("OuLv1Ai7yosivoNm", (10 * 7 + 43976)), BackgroundColor3 = BNPLiLk3nhLF("GhJ+JBH7SB66J6A7", (8 * 13 + 7773)) })
+
+          local j1D5jWjH = pj6ssRQIN4J3xT(BNPLiLk3nhLF("5sPBLyOFqRWc9dA2YiGeGR6XMqOcH8NH", (9 * 10 + 61152)), {
+              Size = UDim2.fromOffset(((5 + 3) * 3 + 2), ((5 + 4) * 5 - 19)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("FWWWjTE4tGcTsW4A", (11 * 9 + 27568))),
+              BackgroundTransparency = 0.85,
+              Text = BNPLiLk3nhLF("OX+J0Wayr/K=", (7 * 12 + 14634)),
+              FontFace = LLGOyAAgK37,
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("39N6sTY+B+N59smZ", ((4 + 5) * 6 + 4599))),
+              TextSize = (9 * 9 - 65),
+              AutoButtonColor = (0 == 1),
+              LayoutOrder = (7 * 8 * 4 - 221),
+              Parent = mqolWFjJ4xj
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("KulvqI+XiAJTkgNlKgu0CA==", (6 * 7 + 56794)), { CornerRadius = UDim.new(0, (11 * 5 - 49)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("kBPxmPfcEqaQVRY4slgpr+==", ((9 + 5) * 5 + 38648)), {
+                  Transparency = 0.5,
+                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                  Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("3v2RFDu4kD0Bwr67i7CKF8K4p1p5guMs", (4 * 8 + 32383))),
+                  Thickness = 1
+              })
+          })
+          IXDNvPpYV_29(j1D5jWjH, { BackgroundColor3 = BNPLiLk3nhLF("PpAwQCUy1/qfrpYr", (7 * 10 + 19321)), TextColor3 = BNPLiLk3nhLF("eyU8iItXAwthe4uz", (5 * 8 * 6 + 12120)) })
+
+          local UW0LpnGGdB = pj6ssRQIN4J3xT(BNPLiLk3nhLF("2WZt4F2TPxNHL17j", ((2 + 2) * 2 + 37933)), {
+              Size = UDim2.fromOffset(((3 + 4) * 2 + 94), ((8 + 2) * 4 - 34)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("q3BEKZ2DV0lUm/xhossKTl2cO111VDhe", ((5 + 9) * 2 + 45788))),
+              BackgroundTransparency = 0.3,
+              LayoutOrder = ((1 + 8) * 3 - 23),
+              Parent = mqolWFjJ4xj
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("GPKKkbDqYEQjbJD6sQG1zj==", (8 * 7 * 6 + 21394)), { CornerRadius = UDim.new(1, 0) })
+          })
+          IXDNvPpYV_29(UW0LpnGGdB, { BackgroundColor3 = BNPLiLk3nhLF("B4i/MyxdVf9Zk8MKrF4k1PPJLGeuWUbi", (7 * 6 * 3 + 33157)) })
+
+          local vMet7clekyhHU = pj6ssRQIN4J3xT(BNPLiLk3nhLF("JiY/N6AwKiSA+iFl", (11 * 7 + 16427)), {
+              Size = UDim2.new(0, 0, 1, 0),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("4uxcNVDmchwludZL", (7 * 2 + 10241))),
+              BackgroundTransparency = 0,
+              Parent = UW0LpnGGdB
+          }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("Rpd/ecuGOdDjKMGlqcJ4eI==", (7 * 2 * 2 + 23852)), { CornerRadius = UDim.new(1, 0) }) })
+          IXDNvPpYV_29(vMet7clekyhHU, { BackgroundColor3 = BNPLiLk3nhLF("MrKGom+ZYNGs++Pb", (9 * 3 + 48721)) })
+
+          local MyCgJo38JRDE = pj6ssRQIN4J3xT(BNPLiLk3nhLF("Yu2pHESduBydqgQa", ((2 + 7) * 3 + 57167)), {
+              AnchorPoint = Vector2.new(0.5, 0.5),
+              Position = UDim2.new(0, 0, 0.5, 0),
+              Size = UDim2.fromOffset((11 * 3 - 19), (4 * 6 * 6 - 130)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("oM++A1IcBzn7cBOU", (10 * 10 + 19080))),
+              BorderSizePixel = 0,
+              ZIndex = (4 * 8 * 4 - 125),
+              Parent = UW0LpnGGdB
+          }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("f3jFu7pWT2o6cakbxspam6==", (6 * 7 + 13508)), { CornerRadius = UDim.new(1, 0) }) })
+          IXDNvPpYV_29(MyCgJo38JRDE, { BackgroundColor3 = BNPLiLk3nhLF("TxOJFL3fFHxC1bMq", (10 * 8 + 14119)) })
+
+          local CVZGB35Dp_8dZS = (not (1 == 1))
+          local asaFKnkI = (0 == 1)
+
+          local function rVa7yds0PEJ6M7(wBwT3fRR8M, L37KI3edYhAlZo)
+              P7N9p_wn = BPdVm6wje(math.clamp(wBwT3fRR8M, HwmSBFxVz, F_kyXMU5r), zTi5HAOVszb1a)
+              local fdEqdpPagcRs = (F_kyXMU5r - HwmSBFxVz) > 0 and ((P7N9p_wn - HwmSBFxVz) / (F_kyXMU5r - HwmSBFxVz)) or 0
+              MyCgJo38JRDE.Position = UDim2.new(fdEqdpPagcRs, 0, 0.5, 0)
+              vMet7clekyhHU.Size = UDim2.fromScale(fdEqdpPagcRs, 1)
+              if not asaFKnkI then
+                  ds0qj12c.Text = tostring(P7N9p_wn)
+              end
+              if not L37KI3edYhAlZo then
+                  ZKUWoNoq2SZh(ecbOaOBJjFLhER.Callback, P7N9p_wn)
+                  ZKUWoNoq2SZh(oKRfIDBwRIE.Changed, P7N9p_wn)
+                  if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+              end
+          end
+
+          local function PcWRAa3k2Yt56(qzaGk4UU)
+              local TIlOHnHxHuDL7 = UW0LpnGGdB.AbsolutePosition
+              local V1ADCbED = UW0LpnGGdB.AbsoluteSize
+              if V1ADCbED.X <= 0 then return end
+              local Yq7x6DpqdyOM = math.clamp((qzaGk4UU - TIlOHnHxHuDL7.X) / V1ADCbED.X, 0, 1)
+              rVa7yds0PEJ6M7(HwmSBFxVz + (F_kyXMU5r - HwmSBFxVz) * Yq7x6DpqdyOM)
+          end
+
+          local A0gAd4WFU = UW0LpnGGdB.InputBegan:Connect(function(_m4j8KuT2JZ0)
+              if oKRfIDBwRIE.Disabled then return end
+              if _m4j8KuT2JZ0.UserInputType == Enum.UserInputType.MouseButton1 or _m4j8KuT2JZ0.UserInputType == Enum.UserInputType.Touch then
+                  CVZGB35Dp_8dZS = (0 == 0)
+                  PcWRAa3k2Yt56(_m4j8KuT2JZ0.Position.X)
+                  OKgvsxuqsXk9(MyCgJo38JRDE, 0.15, { Size = UDim2.fromOffset(((6 + 7) * 6 - 60), (9 * 6 - 36)) }, Enum.EasingStyle.Quint)
+              end
+          end)
+
+          local t0VdTywdg9IYZ = hxZCNyz5_.InputChanged:Connect(function(ZWyLjxdfxVr_K)
+              if CVZGB35Dp_8dZS and (ZWyLjxdfxVr_K.UserInputType == Enum.UserInputType.MouseMovement or ZWyLjxdfxVr_K.UserInputType == Enum.UserInputType.Touch) then
+                  PcWRAa3k2Yt56(ZWyLjxdfxVr_K.Position.X)
+              end
+          end)
+
+          local ju278MTuYMLWwK = hxZCNyz5_.InputEnded:Connect(function(OyYlxHEJsbYMw)
+              if OyYlxHEJsbYMw.UserInputType == Enum.UserInputType.MouseButton1 or OyYlxHEJsbYMw.UserInputType == Enum.UserInputType.Touch then
+                  if CVZGB35Dp_8dZS then
+                      CVZGB35Dp_8dZS = (not not 0 == false)
+                      OKgvsxuqsXk9(MyCgJo38JRDE, 0.2, { Size = UDim2.fromOffset((5 * 3 - 1), ((5 + 2) * 3 - 7)) }, Enum.EasingStyle.Quint)
+                  end
+              end
+          end)
+
+          qJTAi0nQZwui.MouseEnter:Connect(function() OKgvsxuqsXk9(qJTAi0nQZwui, 0.12, { BackgroundTransparency = 0.7 }) end)
+          qJTAi0nQZwui.MouseLeave:Connect(function() OKgvsxuqsXk9(qJTAi0nQZwui, 0.12, { BackgroundTransparency = 0.85 }) end)
+          qJTAi0nQZwui.MouseButton1Click:Connect(function()
+              if oKRfIDBwRIE.Disabled then return end
+              local vieKA0FBsP34 = zTi5HAOVszb1a > 0 and (((7 + 9) * 3 - 38) ^ -zTi5HAOVszb1a) or 1
+              rVa7yds0PEJ6M7(P7N9p_wn - vieKA0FBsP34)
+          end)
+
+          j1D5jWjH.MouseEnter:Connect(function() OKgvsxuqsXk9(j1D5jWjH, 0.12, { BackgroundTransparency = 0.7 }) end)
+          j1D5jWjH.MouseLeave:Connect(function() OKgvsxuqsXk9(j1D5jWjH, 0.12, { BackgroundTransparency = 0.85 }) end)
+          j1D5jWjH.MouseButton1Click:Connect(function()
+              if oKRfIDBwRIE.Disabled then return end
+              local iheWt2GjlytbIk = zTi5HAOVszb1a > 0 and ((9 * 5 - 35) ^ -zTi5HAOVszb1a) or 1
+              rVa7yds0PEJ6M7(P7N9p_wn + iheWt2GjlytbIk)
+          end)
+
+          ds0qj12c.Focused:Connect(function()
+              asaFKnkI = (not not 1)
+              OKgvsxuqsXk9(ds0qj12c, 0.15, { BackgroundTransparency = 0.5 })
+              Po7vOhpJe(ds0qj12c, { BackgroundColor3 = BNPLiLk3nhLF("aUoqZTm57XdUNGCzWp59aMkNyZFG7JyD", (5 * 8 + 23536)) })
+          end)
+
+          ds0qj12c.FocusLost:Connect(function()
+              asaFKnkI = (not (1 == 1))
+              OKgvsxuqsXk9(ds0qj12c, 0.15, { BackgroundTransparency = 0.85 })
+              Po7vOhpJe(ds0qj12c, { BackgroundColor3 = BNPLiLk3nhLF("m8IfqzYcA0LNC8eQ", (8 * 3 * 4 + 32164)) })
+              local M5LoIxexG = tonumber(ds0qj12c.Text)
+              if M5LoIxexG then
+                  rVa7yds0PEJ6M7(M5LoIxexG)
+              else
+                  ds0qj12c.Text = tostring(P7N9p_wn)
+              end
+          end)
+
+          ds0qj12c:GetPropertyChangedSignal(BNPLiLk3nhLF("U97XEd4aVAYb+1Mr", (4 * 11 + 3159))):Connect(function()
+              if not asaFKnkI then return end
+              local o4lgS4qT1u = tonumber(ds0qj12c.Text)
+              if o4lgS4qT1u then
+                  local YVoumpMc5 = math.clamp(o4lgS4qT1u, HwmSBFxVz, F_kyXMU5r)
+                  if YVoumpMc5 ~= o4lgS4qT1u then
+                      P7N9p_wn = BPdVm6wje(YVoumpMc5, zTi5HAOVszb1a)
+                  else
+                      P7N9p_wn = BPdVm6wje(o4lgS4qT1u, zTi5HAOVszb1a)
+                  end
+                  local _W0aO7wXOwgi6R = (F_kyXMU5r - HwmSBFxVz) > 0 and ((P7N9p_wn - HwmSBFxVz) / (F_kyXMU5r - HwmSBFxVz)) or 0
+                  MyCgJo38JRDE.Position = UDim2.new(_W0aO7wXOwgi6R, 0, 0.5, 0)
+                  vMet7clekyhHU.Size = UDim2.fromScale(_W0aO7wXOwgi6R, 1)
+                  ZKUWoNoq2SZh(ecbOaOBJjFLhER.Callback, P7N9p_wn)
+                  ZKUWoNoq2SZh(oKRfIDBwRIE.Changed, P7N9p_wn)
+              end
+          end)
+
+          function oKRfIDBwRIE:SetValue(vEuGeGivaZ_j, AIuNF6Gg4dl89R) rVa7yds0PEJ6M7(vEuGeGivaZ_j, AIuNF6Gg4dl89R) end
+          function oKRfIDBwRIE:GetValue() return P7N9p_wn end
+          function oKRfIDBwRIE:OnChanged(gEld0DFIbJ_) oKRfIDBwRIE.Changed = gEld0DFIbJ_; gEld0DFIbJ_(P7N9p_wn) end
+          function oKRfIDBwRIE:Destroy()
+              if A0gAd4WFU then A0gAd4WFU:Disconnect() end
+              if t0VdTywdg9IYZ then t0VdTywdg9IYZ:Disconnect() end
+              if ju278MTuYMLWwK then ju278MTuYMLWwK:Disconnect() end
+              local uINNaH_oT_AD = oKRfIDBwRIE.Destroy
+          end
+
+          rVa7yds0PEJ6M7(P7N9p_wn, (1 == 1))
+          table.insert(z8Gg_ROc1DhL.Elements, oKRfIDBwRIE)
+          hwqOzalkQ(oKRfIDBwRIE, BNPLiLk3nhLF("jvJ6Hlh7hQTsNvI2", ((6 + 2) * 7 + 37289)), ecbOaOBJjFLhER.ConfigKey or (Tz3YHn0DwPvre.Title .. BNPLiLk3nhLF("yBQoywGYExK=", (2 * 7 + 140)) .. z8Gg_ROc1DhL.Title .. BNPLiLk3nhLF("TQmGLkQjmHs=", (10 * 11 + 20873)) .. (ecbOaOBJjFLhER.Title or BNPLiLk3nhLF("7EAuAoge87aLH5v7", (4 * 13 + 52414)))))
+          return oKRfIDBwRIE
+      end
+
+      function z8Gg_ROc1DhL:AddInput(AopJMn3mQHvuJ)
+          AopJMn3mQHvuJ = AopJMn3mQHvuJ or {}
+          local kgBF7TDn7K = sTDYF41otmqSo(AopJMn3mQHvuJ.Title or BNPLiLk3nhLF("beIS+GsnbfzLDN90", ((5 + 7) * 6 + 40283)), AopJMn3mQHvuJ.Description, W4kWM9kI, (1 == 0), ((function() end)()), AopJMn3mQHvuJ.Icon)
+          kgBF7TDn7K.LabelHolder.Size = UDim2.new(1, -(2 * 8 + 154), 0, 0)
+
+          local x4AsjRbKFxl0Cl = AopJMn3mQHvuJ.Default or BNPLiLk3nhLF("", (7 * 4 * 6 + 36087))
+
+          local hT3MuTfsgqX = pj6ssRQIN4J3xT(BNPLiLk3nhLF("aDKWcpk/s8xKQkNg", ((1 + 9) * 3 + 61730)), {
+              Size = UDim2.fromOffset((9 * 4 + 144), ((5 + 7) * 5 - 28)),
+              Position = UDim2.new(1, -(5 * 8 * 2 - 66), 0.5, 0),
+              AnchorPoint = Vector2.new(1, 0.5),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("2Bh0qbnEC9tbJJZZ", ((8 + 5) * 5 + 8752))),
+              BackgroundTransparency = 0.85,
+              Parent = kgBF7TDn7K.Frame
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("BtIkxtc1gyvAZb5sDnGccE==", ((3 + 9) * 4 + 57371)), { CornerRadius = UDim.new(0, ((1 + 4) * 2 - 5)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("bhXISh2Qt3kGbLboS4ZGtV==", (7 * 5 + 56354)), {
+                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                  Transparency = 0.5,
+                  Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("K8Z9SwUoNdULi7iUiWlwQKMIQtljhl4g", (10 * 8 + 56952))),
+                  Thickness = 1
+              })
+          })
+          IXDNvPpYV_29(hT3MuTfsgqX, { BackgroundColor3 = BNPLiLk3nhLF("lG3zPrBP5FJ+vXl5", (6 * 7 * 4 + 3071)) })
+
+          local Hjb85fd32k5H = pj6ssRQIN4J3xT(BNPLiLk3nhLF("QDkamSCGo3KdO+KWI+OwT+==", (9 * 4 + 12820)), {
+              FontFace = a3JMPK3UpLj,
+              Text = x4AsjRbKFxl0Cl,
+              PlaceholderText = AopJMn3mQHvuJ.Placeholder or BNPLiLk3nhLF("KK3gWAi8P2vJpK+ZuBcgxDrLqZhZKDawODasyG==", (7 * 11 + 51445)),
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("yh8MK4snms804B73", (8 * 2 * 4 + 61431))),
+              PlaceholderColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("QXhfXk1PCjmDgbEBCjeJLT==", (5 * 12 + 53262))),
+              TextSize = (3 * 2 + 7),
+              TextXAlignment = Enum.TextXAlignment.Left,
+              BackgroundTransparency = 1,
+              Size = UDim2.new(1, -(6 * 8 * 3 - 124), 1, -(8 * 2 - 12)),
+              Position = UDim2.fromOffset((7 * 8 * 4 - 214), ((3 + 6) * 3 - 25)),
+              ClearTextOnFocus = (0 == 1),
+              TextTruncate = Enum.TextTruncate.AtEnd,
+              Parent = hT3MuTfsgqX
+          })
+          IXDNvPpYV_29(Hjb85fd32k5H, { TextColor3 = BNPLiLk3nhLF("ExtfcrUJivflk3mI", (9 * 9 + 4807)), PlaceholderColor3 = BNPLiLk3nhLF("jMnabd8JaNtJoPjWBBAjCP==", (4 * 11 + 38021)) })
+
+          local eE8zRO6oA = pj6ssRQIN4J3xT(BNPLiLk3nhLF("CDBxEGRbXmKqU7HP", ((9 + 9) * 3 + 13420)), {
+              Size = UDim2.new(1, -(7 * 5 * 6 - 200), 0, 1),
+              Position = UDim2.new(0, ((3 + 8) * 4 - 39), 1, -(5 * 4 * 2 - 37)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("Jtl8U6QKSaOaxtk2pCcqQinCmbGzCwWSCaMTxE==", ((6 + 8) * 6 + 55292))),
+              BackgroundTransparency = 0.5,
+              Parent = hT3MuTfsgqX
+          }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("HF0eNUwYcg0FFBZyPsDC7Z==", ((8 + 8) * 5 + 41491)), { CornerRadius = UDim.new(1, 0) }) })
+          IXDNvPpYV_29(eE8zRO6oA, { BackgroundColor3 = BNPLiLk3nhLF("cYu/aY9laz2/qa8hOMToSi++NM2cLc+Wc8qxJ+==", (2 * 3 * 4 + 23874)) })
+
+          local function yjF9u8GTlN(TUZvZWXSZwOpLf, vZJmezqmHAI)
+              if AopJMn3mQHvuJ.Numeric and TUZvZWXSZwOpLf ~= BNPLiLk3nhLF("", (10 * 11 + 53122)) and not tonumber(TUZvZWXSZwOpLf) then
+                  TUZvZWXSZwOpLf = x4AsjRbKFxl0Cl
+              end
+              if AopJMn3mQHvuJ.MaxLength and #TUZvZWXSZwOpLf > AopJMn3mQHvuJ.MaxLength then
+                  TUZvZWXSZwOpLf = TUZvZWXSZwOpLf:sub(1, AopJMn3mQHvuJ.MaxLength)
+              end
+              x4AsjRbKFxl0Cl = TUZvZWXSZwOpLf
+              if Hjb85fd32k5H.Text ~= TUZvZWXSZwOpLf then Hjb85fd32k5H.Text = TUZvZWXSZwOpLf end
+              if not vZJmezqmHAI then
+                  ZKUWoNoq2SZh(AopJMn3mQHvuJ.Callback, x4AsjRbKFxl0Cl)
+                  ZKUWoNoq2SZh(kgBF7TDn7K.Changed, x4AsjRbKFxl0Cl)
+                  if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+              end
+          end
+
+          Hjb85fd32k5H.Focused:Connect(function()
+              OKgvsxuqsXk9(eE8zRO6oA, 0.15, { BackgroundTransparency = 0 })
+              Po7vOhpJe(hT3MuTfsgqX, { BackgroundColor3 = BNPLiLk3nhLF("RuQ+3BRTTEN6qqF9euR2B+lKXpFNjrOQ", (5 * 2 * 4 + 7267)) })
+          end)
+          Hjb85fd32k5H.FocusLost:Connect(function()
+              OKgvsxuqsXk9(eE8zRO6oA, 0.15, { BackgroundTransparency = 0.5 })
+              Po7vOhpJe(hT3MuTfsgqX, { BackgroundColor3 = BNPLiLk3nhLF("WxohxmDrxGGk3QoE", (8 * 7 * 4 + 56597)) })
+              if AopJMn3mQHvuJ.Finished then yjF9u8GTlN(Hjb85fd32k5H.Text) end
+          end)
+
+          if not AopJMn3mQHvuJ.Finished then
+              Hjb85fd32k5H:GetPropertyChangedSignal(BNPLiLk3nhLF("X6skXu9/sPD2dAQS", ((4 + 8) * 4 + 55438))):Connect(function()
+                  yjF9u8GTlN(Hjb85fd32k5H.Text)
+              end)
+          end
+
+          function kgBF7TDn7K:SetValue(zzAy3RJS_v, flE8wWrw) yjF9u8GTlN(zzAy3RJS_v, flE8wWrw) end
+          function kgBF7TDn7K:GetValue() return x4AsjRbKFxl0Cl end
+          function kgBF7TDn7K:OnChanged(Wp6dJOXc4) kgBF7TDn7K.Changed = Wp6dJOXc4; Wp6dJOXc4(x4AsjRbKFxl0Cl) end
+
+          table.insert(z8Gg_ROc1DhL.Elements, kgBF7TDn7K)
+          hwqOzalkQ(kgBF7TDn7K, BNPLiLk3nhLF("sYS3s3ViwGceLo72", ((5 + 2) * 6 + 13485)), AopJMn3mQHvuJ.ConfigKey or (Tz3YHn0DwPvre.Title .. BNPLiLk3nhLF("Z320LKLGXBp=", (5 * 2 * 5 + 5219)) .. z8Gg_ROc1DhL.Title .. BNPLiLk3nhLF("bCn/Dw5CMhn=", (7 * 7 * 2 + 43255)) .. (AopJMn3mQHvuJ.Title or BNPLiLk3nhLF("b3y3hkokwa00ismy", ((4 + 6) * 7 + 20148)))))
+          return kgBF7TDn7K
+      end
+
+      function z8Gg_ROc1DhL:AddKeybind(kEObHIzTG0Z1t)
+          kEObHIzTG0Z1t = kEObHIzTG0Z1t or {}
+          local jz6M5lYMwK = sTDYF41otmqSo(kEObHIzTG0Z1t.Title or BNPLiLk3nhLF("YCw8gVM9uZFUNDD6Fg+hg+==", ((5 + 7) * 7 + 6952)), kEObHIzTG0Z1t.Description, W4kWM9kI, (not false), ((function() end)()), kEObHIzTG0Z1t.Icon)
+          jz6M5lYMwK.LabelHolder.Size = UDim2.new(1, -(8 * 7 + 64), 0, 0)
+          jz6M5lYMwK.DescLabel.Size = UDim2.new(1, -(4 * 13 + 78), 0, ((6 + 9) * 4 - 46))
+
+          local uOmbS20PCj = {
+              Value = kEObHIzTG0Z1t.Default or Enum.KeyCode.F,
+              Mode = kEObHIzTG0Z1t.Mode or BNPLiLk3nhLF("FVcppNGgdAwIMIvZ", ((4 + 8) * 4 + 45627)),
+              Toggled = (0 == 1)
+          }
+          if typeof(uOmbS20PCj.Value) == BNPLiLk3nhLF("x7hscREM6xh1CxsjeBnPtw==", (5 * 6 + 35600)) then uOmbS20PCj.Value = uOmbS20PCj.Value.Name end
+
+          local ekGZlskFKhKhM = pj6ssRQIN4J3xT(BNPLiLk3nhLF("80WOaaeSvL7GCkDGCSKTAG==", ((2 + 9) * 7 + 53081)), {
+              FontFace = LLGOyAAgK37,
+              Text = uOmbS20PCj.Value,
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("iQB+kYQqQeFgOzco", ((7 + 8) * 5 + 3364))),
+              TextSize = (7 * 11 - 64),
+              TextXAlignment = Enum.TextXAlignment.Center,
+              Size = UDim2.new(0, 0, 1, 0),
+              AutomaticSize = Enum.AutomaticSize.X,
+              BackgroundTransparency = 1
+          })
+          IXDNvPpYV_29(ekGZlskFKhKhM, { TextColor3 = BNPLiLk3nhLF("yM9A3QkVWs1yej7u", (11 * 3 + 9871)) })
+
+          local Hf6CP2EkHOSB = pj6ssRQIN4J3xT(BNPLiLk3nhLF("EAKW6CcVQOTBP6VNtzT+AxzcDzz0x477", ((2 + 6) * 7 + 6631)), {
+              Size = UDim2.fromOffset(0, (7 * 2 * 5 - 40)),
+              Position = UDim2.new(1, -(3 * 3 * 5 - 31), 0.5, 0),
+              AnchorPoint = Vector2.new(1, 0.5),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("ASokfRXPFQNfAQ7PQU8MXQ==", ((4 + 4) * 5 + 22240))),
+              BackgroundTransparency = 0.85,
+              AutomaticSize = Enum.AutomaticSize.X,
+              Text = BNPLiLk3nhLF("", (3 * 3 + 18538)),
+              AutoButtonColor = (not (1 == 1)),
+              Parent = jz6M5lYMwK.Frame
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("K8oWDb+FTXm0eI4Ky9E62A==", ((7 + 8) * 5 + 17511)), { CornerRadius = UDim.new(0, (3 * 10 - 25)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("AQO0BDn+VJz10eKO0GE+mO==", (2 * 3 + 19574)), { PaddingLeft = UDim.new(0, (5 * 2 * 6 - 48)), PaddingRight = UDim.new(0, ((4 + 5) * 3 - 15)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("DwKgW9XFovhDDkTtha9LTX==", (7 * 2 + 4831)), {
+                  Transparency = 0.5,
+                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                  Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("5wbtZj2wd5ourVCrrqSB3UqMSBdAS+Gz", (5 * 3 + 55086))),
+                  Thickness = 1
+              }),
+              ekGZlskFKhKhM
+          })
+          IXDNvPpYV_29(Hf6CP2EkHOSB, { BackgroundColor3 = BNPLiLk3nhLF("nH85DpoaUtlTTZ11HHTsUs==", ((3 + 7) * 4 + 63591)) })
+
+          local XVHyRMHCJqRsGQ = (0 == 1)
+          local Ha6aFJneks, fWIhhRcE08
+
+          local function Wu4QhndtR2()
+              if Ha6aFJneks then Ha6aFJneks:Disconnect() Ha6aFJneks = ((function() end)()) end
+              if fWIhhRcE08 then fWIhhRcE08:Disconnect() fWIhhRcE08 = ((function() end)()) end
+              XVHyRMHCJqRsGQ = (0 == 1)
+          end
+
+          local SsFNTtS89Rr9 = Hf6CP2EkHOSB.MouseButton1Click:Connect(function()
+              if jz6M5lYMwK.Disabled or XVHyRMHCJqRsGQ then return end
+              XVHyRMHCJqRsGQ = (1 == 1)
+              ekGZlskFKhKhM.Text = BNPLiLk3nhLF("ZakFr05HsyT=", ((8 + 3) * 4 + 326))
+              task.wait(0.15)
+
+              Ha6aFJneks = hxZCNyz5_.InputBegan:Connect(function(naUgEm6q2Hza)
+                  local uqNuv7fv2eHaHU
+                  if naUgEm6q2Hza.UserInputType == Enum.UserInputType.Keyboard then
+                      uqNuv7fv2eHaHU = naUgEm6q2Hza.KeyCode.Name
+                      ZKUWoNoq2SZh(kEObHIzTG0Z1t.ChangedCallback, naUgEm6q2Hza.KeyCode)
+                  elseif naUgEm6q2Hza.UserInputType == Enum.UserInputType.MouseButton1 then
+                      uqNuv7fv2eHaHU = BNPLiLk3nhLF("PR01yyyyyRgeETYQBRQCP1==", (10 * 11 + 26075))
+                      ZKUWoNoq2SZh(kEObHIzTG0Z1t.ChangedCallback, Enum.UserInputType.MouseButton1)
+                  elseif naUgEm6q2Hza.UserInputType == Enum.UserInputType.MouseButton2 then
+                      uqNuv7fv2eHaHU = BNPLiLk3nhLF("BVB0km+FvmN9B+LSj0LtBOUNTvYkHHYw", ((1 + 4) * 6 + 9725))
+                      ZKUWoNoq2SZh(kEObHIzTG0Z1t.ChangedCallback, Enum.UserInputType.MouseButton2)
+                  end
+                  if uqNuv7fv2eHaHU then
+                      uOmbS20PCj.Value = uqNuv7fv2eHaHU
+                      ekGZlskFKhKhM.Text = uqNuv7fv2eHaHU
+                      ZKUWoNoq2SZh(jz6M5lYMwK.Changed, uOmbS20PCj.Value)
+                      Wu4QhndtR2()
+                      if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+                  end
+              end)
+
+              fWIhhRcE08 = hxZCNyz5_.InputEnded:Connect(function(cXjIvZrrPEI)
+                  if cXjIvZrrPEI.UserInputType == Enum.UserInputType.Focus or cXjIvZrrPEI.UserInputType == Enum.UserInputType.Touch then
+                      Wu4QhndtR2()
+                      ekGZlskFKhKhM.Text = uOmbS20PCj.Value
+                  end
+              end)
+          end)
+
+          local YyD5S5YXdc = hxZCNyz5_.InputBegan:Connect(function(p9UonvPqQlL)
+              if XVHyRMHCJqRsGQ or hxZCNyz5_:GetFocusedTextBox() then return end
+              if jz6M5lYMwK.Disabled then return end
+              if uOmbS20PCj.Mode == BNPLiLk3nhLF("NR0IzDqWAATze7M2", (6 * 8 * 4 + 27181)) then
+                  local TdQ_ZeMRNe13 = (0 == 1)
+                  if p9UonvPqQlL.UserInputType == Enum.UserInputType.Keyboard and p9UonvPqQlL.KeyCode.Name == uOmbS20PCj.Value then
+                      TdQ_ZeMRNe13 = (not false)
+                  elseif uOmbS20PCj.Value == BNPLiLk3nhLF("GqDLkqAiGTaodCEYwYgxIE==", (6 * 3 * 5 + 52206)) and p9UonvPqQlL.UserInputType == Enum.UserInputType.MouseButton1 then
+                      TdQ_ZeMRNe13 = (not false)
+                  elseif uOmbS20PCj.Value == BNPLiLk3nhLF("NGeEI2J3JdC184DnauR0s4j4BugvX9zD", (4 * 7 + 54065)) and p9UonvPqQlL.UserInputType == Enum.UserInputType.MouseButton2 then
+                      TdQ_ZeMRNe13 = (1 == 1)
+                  end
+                  if TdQ_ZeMRNe13 then
+                      uOmbS20PCj.Toggled = not uOmbS20PCj.Toggled
+                      ZKUWoNoq2SZh(kEObHIzTG0Z1t.Callback, uOmbS20PCj.Toggled)
+                      ZKUWoNoq2SZh(jz6M5lYMwK.Clicked, uOmbS20PCj.Toggled)
+                  end
+              end
+          end)
+
+          function jz6M5lYMwK:SetValue(a6pkXFh1, BZGU2h6VwB14j)
+              if typeof(a6pkXFh1) == BNPLiLk3nhLF("B9/RHHDvJpqXh99cpeaDWL==", ((6 + 7) * 5 + 46160)) then a6pkXFh1 = a6pkXFh1.Name end
+              uOmbS20PCj.Value = a6pkXFh1 or uOmbS20PCj.Value
+              uOmbS20PCj.Mode = BZGU2h6VwB14j or uOmbS20PCj.Mode
+              ekGZlskFKhKhM.Text = uOmbS20PCj.Value
+          end
+          function jz6M5lYMwK:GetValue() return uOmbS20PCj.Value end
+          function jz6M5lYMwK:GetState()
+              if uOmbS20PCj.Mode == BNPLiLk3nhLF("DF+wDpAsFt0Gr6t9", ((8 + 6) * 3 + 833)) then return (1 == 1) end
+              if uOmbS20PCj.Mode == BNPLiLk3nhLF("OuBCM72MB6IMKX8O", ((6 + 9) * 2 + 58254)) then
+                  if uOmbS20PCj.Value == BNPLiLk3nhLF("KjVmdDCeRpFaHBapfRnsCv==", ((6 + 4) * 2 + 3809)) then return hxZCNyz5_:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) end
+                  if uOmbS20PCj.Value == BNPLiLk3nhLF("l3i+9wwSX3sBbLaov5mUmPwAy7AVEPu+", ((4 + 3) * 6 + 7313)) then return hxZCNyz5_:IsMouseButtonPressed(Enum.UserInputType.MouseButton2) end
+                  local y6m9mdvOfqcN, gAMjFjsz = pcall(function() return hxZCNyz5_:IsKeyDown(Enum.KeyCode[uOmbS20PCj.Value]) end)
+                  return y6m9mdvOfqcN and gAMjFjsz or (1 == 0)
+              end
+              return uOmbS20PCj.Toggled
+          end
+          function jz6M5lYMwK:OnChanged(sCL27vhf) jz6M5lYMwK.Changed = sCL27vhf; sCL27vhf(uOmbS20PCj.Value) end
+          function jz6M5lYMwK:OnClick(apQnH4X0) jz6M5lYMwK.Clicked = apQnH4X0 end
+
+          local fyI3ko9C61 = jz6M5lYMwK.Destroy
+          function jz6M5lYMwK:Destroy()
+              Wu4QhndtR2()
+              if SsFNTtS89Rr9 then SsFNTtS89Rr9:Disconnect() end
+              if YyD5S5YXdc then YyD5S5YXdc:Disconnect() end
+              fyI3ko9C61()
+          end
+
+          table.insert(z8Gg_ROc1DhL.Elements, jz6M5lYMwK)
+          hwqOzalkQ(jz6M5lYMwK, BNPLiLk3nhLF("6ZlVmZSFw6WWp6S3AtSSoA==", (6 * 6 * 4 + 17880)), kEObHIzTG0Z1t.ConfigKey or (Tz3YHn0DwPvre.Title .. BNPLiLk3nhLF("c7okIpH4fWA=", (8 * 11 + 34363)) .. z8Gg_ROc1DhL.Title .. BNPLiLk3nhLF("7WOjIVfXaSm=", (5 * 10 + 57586)) .. (kEObHIzTG0Z1t.Title or BNPLiLk3nhLF("favNFuB/QaODLGOllka7Ja==", ((4 + 9) * 2 + 37571)))))
+          return jz6M5lYMwK
+      end
+
+      function z8Gg_ROc1DhL:AddDropdown(hSNPbQAhp)
+          hSNPbQAhp = hSNPbQAhp or {}
+          local KFFRtObs8P = sTDYF41otmqSo(hSNPbQAhp.Title or BNPLiLk3nhLF("BUn6/Q4nfVClKtuxJZ+m5y==", (4 * 2 * 3 + 44439)), hSNPbQAhp.Description, W4kWM9kI, (1 == 0), nil, hSNPbQAhp.Icon)
+          KFFRtObs8P.LabelHolder.Size = UDim2.new(1, -(6 * 11 + 124), 0, 0)
+          KFFRtObs8P.DescLabel.Size = UDim2.new(1, -(5 * 6 * 2 + 170), 0, (10 * 10 - 86))
+
+          local dvTV7eSGL = hSNPbQAhp.Values or {}
+          local nMK5YcroAgtG_a = hSNPbQAhp.Multi or (0 == 1)
+          local Uk6L0OG6 = nMK5YcroAgtG_a and {} or hSNPbQAhp.Default
+
+          local h0g_9KdmJ3 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("1XgiZDMTHZyHS6t2MGArFB==", (3 * 8 * 3 + 61888)), {
+              FontFace = a3JMPK3UpLj,
+              Text = BNPLiLk3nhLF("hdBV691xhth=", (2 * 5 + 16839)),
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("GGexZs5AK/cKKcHi", (4 * 2 + 26798))),
+              TextSize = (3 * 9 - 14),
+              TextXAlignment = Enum.TextXAlignment.Left,
+              Size = UDim2.new(1, -((8 + 5) * 6 - 42), 1, 0),
+              Position = UDim2.fromOffset(((1 + 6) * 7 - 37), 0),
+              BackgroundTransparency = 1,
+              TextTruncate = Enum.TextTruncate.AtEnd,
+              Parent = KFFRtObs8P.Frame
+          })
+          IXDNvPpYV_29(h0g_9KdmJ3, { TextColor3 = BNPLiLk3nhLF("KNqaII2aR0OCaHz6", ((1 + 7) * 2 + 16972)) })
+
+          local uQaHbUcVaWCc7 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("/iqoyi8T6+KA/+esCzpgZX6mAT0uB7wn", ((5 + 6) * 2 + 58044)), {
+              Image = jGbhiICtv[BNPLiLk3nhLF("xrZBPOiGphwkkTigKTXDSkRWXkiKN0Cvirha8hjVuORm0F6eu0wfxB==", (10 * 3 + 54939))],
+              ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("7FcwKbef086AozCZXs9M0P==", ((1 + 6) * 7 + 32884))),
+              Size = UDim2.fromOffset((4 * 5 - 6), ((9 + 3) * 4 - 34)),
+              AnchorPoint = Vector2.new(1, 0.5),
+              Position = UDim2.new(1, -(4 * 2 * 6 - 38), 0.5, 0),
+              BackgroundTransparency = 1,
+              Parent = KFFRtObs8P.Frame
+          })
+          IXDNvPpYV_29(uQaHbUcVaWCc7, { ImageColor3 = BNPLiLk3nhLF("xFCfXPKsEvT03H6GN5znXx==", (7 * 2 * 5 + 18161)) })
+
+          local IA1gKzoRuwgop1 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("FRgobI/5d0RBu2Zz1I/bCNE/Bi3jFzg/", (4 * 8 * 3 + 43451)), {
+              Size = UDim2.fromOffset((3 * 5 * 3 + 135), (6 * 3 * 4 - 40)),
+              Position = UDim2.new(1, -((6 + 5) * 2 - 8), 0.5, 0),
+              AnchorPoint = Vector2.new(1, 0.5),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("4MdCs6CRCbY7x7QpyCPJfLcfR0Y+1VCrsbNmmC==", (8 * 8 * 6 + 25726))),
+              BackgroundTransparency = 0.85,
+              Text = BNPLiLk3nhLF("", (4 * 8 * 3 + 3236)),
+              AutoButtonColor = (not (1 == 1)),
+              Parent = KFFRtObs8P.Frame
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("jW1XjBB82kAOhxRT8nWUBp==", (10 * 3 + 63231)), { CornerRadius = UDim.new(0, (2 * 4 * 5 - 35)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("ofJTTElmhEMnvkQKoLJ/TD==", ((9 + 4) * 4 + 11559)), {
+                  Transparency = 0.5,
+                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                  Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("Tkmus4G78TqGNfvgdh8dPx+5Lrq5a96H", ((1 + 5) * 2 + 3565))),
+                  Thickness = 1
+              }),
+              h0g_9KdmJ3,
+              uQaHbUcVaWCc7
+          })
+          IXDNvPpYV_29(IA1gKzoRuwgop1, { BackgroundColor3 = BNPLiLk3nhLF("6b7O0a2LRbHWVOkPyqAWha4XJa/ze9kdmsA6Za==", (8 * 5 * 2 + 1377)) })
+
+          local Ni4XPezpfkLcA
+          local bgfbPR71 = (not (1 == 1))
+          local VhOkrWJYlQ = #dvTV7eSGL > (8 * 7 * 2 - 97)
+
+          local function bcmBUz9r()
+              local Azy7Rowo = BNPLiLk3nhLF("", ((4 + 2) * 6 + 43967))
+              if nMK5YcroAgtG_a then
+                  local Xkq60KMJRMT = {}
+                  for MLeOyhkq5mzL, MPYPM27HxpH2W in pairs(Uk6L0OG6) do table.insert(Xkq60KMJRMT, MLeOyhkq5mzL) end
+                  table.sort(Xkq60KMJRMT)
+                  Azy7Rowo = table.concat(Xkq60KMJRMT, BNPLiLk3nhLF("2DOtgqOIJfX=", (2 * 10 + 19655)))
+              else
+                  Azy7Rowo = tostring(Uk6L0OG6 or BNPLiLk3nhLF("", ((3 + 3) * 7 + 56560)))
+              end
+              h0g_9KdmJ3.Text = Azy7Rowo ~= BNPLiLk3nhLF("", (6 * 8 * 4 + 3460)) and Azy7Rowo or BNPLiLk3nhLF("TulvT7kgXBv=", (3 * 2 * 4 + 46497))
+          end
+
+          local function aA5kX8hF7()
+              if Ni4XPezpfkLcA then Ni4XPezpfkLcA:Destroy() end
+
+              local qHcPdiJ4je = VhOkrWJYlQ and (6 * 6 + 2) or 0
+              local gx4WajQe2 = math.min(#dvTV7eSGL * (7 * 13 - 59) + qHcPdiJ4je + (6 * 3 - 6), (2 * 6 * 6 + 248))
+
+              local QnAoRxWrXIUjSV = pj6ssRQIN4J3xT(BNPLiLk3nhLF("JpQkogL/+xGOsgGp1FEyJdH8MwLxwUYC", (11 * 13 + 44952)), { Padding = UDim.new(0, ((9 + 2) * 6 - 63)), SortOrder = Enum.SortOrder.LayoutOrder })
+              local hAykpzKXyIAlP = pj6ssRQIN4J3xT(BNPLiLk3nhLF("DQYRxFEg5voLA7QT84Qjxp94OVv35PzMcYyOFI==", ((4 + 5) * 7 + 12999)), {
+                  Size = UDim2.new(1, -(3 * 8 - 14), 1, -(10 * 2 - 10) - qHcPdiJ4je),
+                  Position = UDim2.fromOffset((11 * 9 - 94), (3 * 4 * 4 - 43) + qHcPdiJ4je),
+                  BackgroundTransparency = 1,
+                  BorderSizePixel = 0,
+                  ScrollBarThickness = (2 * 2 * 3 - 9),
+                  ScrollBarImageTransparency = 0.9,
+                  ScrollBarImageColor3 = Color3.fromRGB(((6 + 9) * 6 + 165), (2 * 2 + 251), (2 * 8 + 239)),
+                  CanvasSize = UDim2.fromScale(0, 0),
+                  ScrollingDirection = Enum.ScrollingDirection.Y,
+              }, { QnAoRxWrXIUjSV })
+              QnAoRxWrXIUjSV:GetPropertyChangedSignal(BNPLiLk3nhLF("SE1bnEHcugIvNj/8AzUG0Y3RSG6t48AX78m56XEoYUGf/Ty9iYu1eE==", (9 * 3 + 65267))):Connect(function()
+                  hAykpzKXyIAlP.CanvasSize = UDim2.fromOffset(0, QnAoRxWrXIUjSV.AbsoluteContentSize.Y)
+              end)
+
+              Ni4XPezpfkLcA = pj6ssRQIN4J3xT(BNPLiLk3nhLF("R26qHp/dNscKX2ur", (5 * 9 + 7604)), {
+                  BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("Q1ZZNGCRk5KkHwlomV/RNSUsHEMIHucJaEMmEj==", ((4 + 5) * 7 + 50839))),
+                  Size = UDim2.fromOffset((6 * 3 * 2 + 154), gx4WajQe2),
+                  Visible = (not (1 == 1)),
+                  ZIndex = ((6 + 2) * 5 + 460),
+                  Parent = aRRCuy6K2 and aRRCuy6K2.GUI or ((function() end)())
+              }, {
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("r2YGMEIbKHk6YEYybQaZMv==", (4 * 6 + 49646)), { CornerRadius = UDim.new(0, (3 * 6 * 4 - 64)) }),
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("pvyOs5ItcaDMkUvHuXPDiD==", ((4 + 2) * 4 + 33676)), {
+                      ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                      Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("Hbasd3ZitltHDjQLAgLqH3tV+F4ue5Qq1bzfcZ==", (4 * 8 * 5 + 1067))),
+                      Transparency = 0.4,
+                      Thickness = 1
+                  })
+              })
+              IXDNvPpYV_29(Ni4XPezpfkLcA, { BackgroundColor3 = BNPLiLk3nhLF("GEbYDrujDSeELGMoWBuAW8+Yw+Ed29fRIB5DdA==", (6 * 8 * 3 + 26938)) })
+
+              local mbH_cnXS0ALk
+
+              if VhOkrWJYlQ then
+                  local IKeVRf6n = pj6ssRQIN4J3xT(BNPLiLk3nhLF("oW8OfC6YIA0fn7de", ((1 + 2) * 3 + 3689)), {
+                      Size = UDim2.new(1, -(10 * 10 - 90), 0, (3 * 8 * 5 - 88)),
+                      Position = UDim2.fromOffset((5 * 2 * 4 - 35), (9 * 11 - 95)),
+                      BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("HQ1kOhQZJzioF6KI", ((1 + 3) * 3 + 46993))),
+                      BackgroundTransparency = 0.9,
+                      Parent = Ni4XPezpfkLcA
+                  }, {
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("LhD7BcxcMopmBB2XQF2wWw==", (3 * 3 * 2 + 51009)), { CornerRadius = UDim.new(0, (2 * 10 - 16)) }),
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("Pbb9ZCNaZEFrBoXuAlaf8L==", (6 * 2 + 48397)), {
+                          Transparency = 0.55,
+                          ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                          Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("tso2+w8nhC+rQ8MVpaVh2uKZM1Hs8dIk", ((6 + 8) * 6 + 30888))),
+                          Thickness = 1
+                      })
+                  })
+                  IXDNvPpYV_29(IKeVRf6n, { BackgroundColor3 = BNPLiLk3nhLF("Pn4/llwzTy439yuh", (7 * 8 + 30269)) })
+                  local vcd8vUG7 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("Tkvw86vRdj+VHDc98hlCyVV8M03SVfK9", ((7 + 2) * 7 + 24170)), {
+                      Image = jGbhiICtv[BNPLiLk3nhLF("CtHre3cIIyW+f2wa6Ciyv+mp6CvVCK+wjAm0fP==", (7 * 2 + 5255))],
+                      ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("tzLQVdYkV+EHfVM+3JGxAd==", (8 * 13 + 26525))),
+                      Size = UDim2.fromOffset(((1 + 7) * 5 - 28), ((3 + 6) * 6 - 42)),
+                      Position = UDim2.fromOffset((9 * 8 - 63), (11 * 13 - 133)),
+                      BackgroundTransparency = 1,
+                      Parent = IKeVRf6n
+                  })
+                  IXDNvPpYV_29(vcd8vUG7, { ImageColor3 = BNPLiLk3nhLF("4oeOjoa4eQ/EeAtleOQE5Y==", ((8 + 5) * 2 + 9944)) })
+                  mbH_cnXS0ALk = pj6ssRQIN4J3xT(BNPLiLk3nhLF("KtPQbUBgRWBfEZWrTNNVdW==", (6 * 5 * 3 + 8077)), {
+                      FontFace = a3JMPK3UpLj,
+                      Text = BNPLiLk3nhLF("", ((3 + 4) * 2 + 5213)),
+                      PlaceholderText = BNPLiLk3nhLF("PInJMMiETXtHRsHleGALJJ==", (4 * 4 * 4 + 37925)),
+                      PlaceholderColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("jnLuGKfd2BOqAr6rQUwCGn==", (6 * 11 + 43552))),
+                      TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("/v6odOvImxFFOeBQ", (4 * 3 * 3 + 57302))),
+                      TextSize = (8 * 9 - 60),
+                      TextXAlignment = Enum.TextXAlignment.Left,
+                      BackgroundTransparency = 1,
+                      ClearTextOnFocus = (1 == 0),
+                      Position = UDim2.fromOffset((5 * 7 - 9), 0),
+                      Size = UDim2.new(1, -((5 + 8) * 3 - 7), 1, 0),
+                      Parent = IKeVRf6n
+                  })
+                  IXDNvPpYV_29(mbH_cnXS0ALk, { TextColor3 = BNPLiLk3nhLF("ILRIYyn8c2i4Iwrs", (7 * 4 * 6 + 26298)), PlaceholderColor3 = BNPLiLk3nhLF("5R51ih5l53uIxS57ABReA0==", ((7 + 3) * 3 + 29242)) })
+              end
+
+              hAykpzKXyIAlP.Parent = Ni4XPezpfkLcA
+
+              local Aw4WwKLImDJ = {}
+
+              local function wLiBiOWa6ivXX(tWtyUDdGIY)
+                  for PJddfmYkvjtkZ, Awc5kVeLT in ipairs(Aw4WwKLImDJ) do
+                      if Awc5kVeLT and Awc5kVeLT.Parent then Awc5kVeLT:Destroy() end
+                  end
+                  Aw4WwKLImDJ = {}
+                  for ubbaah0_tTOR, ac2kJSd3l in ipairs(dvTV7eSGL) do
+                      local xczNW_Npta = tWtyUDdGIY == BNPLiLk3nhLF("", (6 * 7 * 5 + 47321)) or string.find(string.lower(ac2kJSd3l), string.lower(tWtyUDdGIY), 1, (not false)) ~= nil
+                      if xczNW_Npta then
+                          local JSNSiRiYMQ8hQ = nMK5YcroAgtG_a and Uk6L0OG6[ac2kJSd3l] or (not nMK5YcroAgtG_a and Uk6L0OG6 == ac2kJSd3l)
+                          local NkBgcCYzdg5TQ = pj6ssRQIN4J3xT(BNPLiLk3nhLF("JPfAAnG5++KX+DYGtzxcVrI9fnzo+65s", (7 * 2 * 5 + 52480)), {
+                              Size = UDim2.new(1, 0, 0, ((3 + 3) * 6 - 6)),
+                              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("eaaEWBqbWWPQW9WaOVfgt0XFPBw92Jk5Yz6rxa==", (9 * 5 + 63001))),
+                              BackgroundTransparency = JSNSiRiYMQ8hQ and 0.85 or 1,
+                              Text = BNPLiLk3nhLF("", (8 * 3 * 3 + 40828)),
+                              AutoButtonColor = (1 == 0),
+                              Parent = hAykpzKXyIAlP
+                          }, {
+                              pj6ssRQIN4J3xT(BNPLiLk3nhLF("XMlQKlavN7M6P6lv8CPcsC==", ((2 + 5) * 4 + 30237)), { CornerRadius = UDim.new(0, (3 * 13 - 35)) }),
+                              pj6ssRQIN4J3xT(BNPLiLk3nhLF("aYWPt8a1tEeWKDWK28PuPj==", (10 * 2 + 413)), {
+                                  FontFace = a3JMPK3UpLj,
+                                  Text = ac2kJSd3l,
+                                  TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("hYLPkaCxEgfvfVd6", ((4 + 7) * 5 + 25376))),
+                                  TextSize = ((9 + 9) * 6 - 95),
+                                  TextXAlignment = Enum.TextXAlignment.Left,
+                                  Size = UDim2.new(1, -(7 * 7 * 3 - 127), 1, 0),
+                                  Position = UDim2.fromOffset((10 * 8 - 70), 0),
+                                  BackgroundTransparency = 1,
+                                  TextTruncate = Enum.TextTruncate.AtEnd
+                              })
+                          })
+                          IXDNvPpYV_29(NkBgcCYzdg5TQ, { BackgroundColor3 = BNPLiLk3nhLF("Qbq7uKxwxNaJxCa6wOsYsPliOrxBxaGeCl7Kka==", (6 * 2 * 2 + 35400)) })
+                          for bT05lAGa8Fy4lL, _jBw8jX7 in ipairs(NkBgcCYzdg5TQ:GetChildren()) do
+                              if _jBw8jX7:IsA(BNPLiLk3nhLF("EImeqj0OqxayQa4xs0ckQa==", ((6 + 7) * 3 + 6973))) then IXDNvPpYV_29(_jBw8jX7, { TextColor3 = BNPLiLk3nhLF("zODQgymIm0PaxSuP", (11 * 5 + 62940)) }) end
+                          end
+
+                          NkBgcCYzdg5TQ.MouseEnter:Connect(function()
+                              if not JSNSiRiYMQ8hQ then OKgvsxuqsXk9(NkBgcCYzdg5TQ, 0.12, { BackgroundTransparency = 0.9 }) end
+                          end)
+                          NkBgcCYzdg5TQ.MouseLeave:Connect(function()
+                              if not JSNSiRiYMQ8hQ then OKgvsxuqsXk9(NkBgcCYzdg5TQ, 0.12, { BackgroundTransparency = 1 }) end
+                          end)
+                          NkBgcCYzdg5TQ.MouseButton1Click:Connect(function()
+                              if nMK5YcroAgtG_a then
+                                  if Uk6L0OG6[ac2kJSd3l] then Uk6L0OG6[ac2kJSd3l] = ((function() end)()) else Uk6L0OG6[ac2kJSd3l] = (1 == 1) end
+                              else
+                                  Uk6L0OG6 = ac2kJSd3l
+                              end
+                              bcmBUz9r()
+                              wLiBiOWa6ivXX(mbH_cnXS0ALk and mbH_cnXS0ALk.Text or BNPLiLk3nhLF("", (7 * 8 * 5 + 20729)))
+                              ZKUWoNoq2SZh(hSNPbQAhp.Callback, Uk6L0OG6)
+                              ZKUWoNoq2SZh(KFFRtObs8P.Changed, Uk6L0OG6)
+                              if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+                              if not nMK5YcroAgtG_a then
+                                  bgfbPR71 = (0 == 1)
+                                  Ni4XPezpfkLcA.Visible = (not (1 == 1))
+                                  OKgvsxuqsXk9(uQaHbUcVaWCc7, 0.2, { Rotation = 0 })
+                              end
+                          end)
+                          table.insert(Aw4WwKLImDJ, NkBgcCYzdg5TQ)
+                      end
+                  end
+                  hAykpzKXyIAlP.CanvasSize = UDim2.fromOffset(0, QnAoRxWrXIUjSV.AbsoluteContentSize.Y + (7 * 4 * 3 - 80))
+              end
+
+              wLiBiOWa6ivXX(BNPLiLk3nhLF("", (4 * 7 * 2 + 7213)))
+
+              if mbH_cnXS0ALk then
+                  mbH_cnXS0ALk:GetPropertyChangedSignal(BNPLiLk3nhLF("0CnQ0gnM0pTmDila", ((2 + 2) * 7 + 26506))):Connect(function()
+                      wLiBiOWa6ivXX(mbH_cnXS0ALk.Text)
+                  end)
+              end
+          end
+
+          local function L87Peyt6XlaH9()
+              if not Ni4XPezpfkLcA or not Ni4XPezpfkLcA.Parent then return end
+              local xJdPgguFE3pdi = IA1gKzoRuwgop1.AbsolutePosition
+              local P3aTja4E76Qda4 = Ni4XPezpfkLcA.Size
+              local lvUHygN14a0V_d = workspace.CurrentCamera.ViewportSize.Y
+              local dc23YZ7x1s0mv
+              if xJdPgguFE3pdi.Y + IA1gKzoRuwgop1.AbsoluteSize.Y + P3aTja4E76Qda4.Y.Offset > lvUHygN14a0V_d then
+                  dc23YZ7x1s0mv = xJdPgguFE3pdi.Y - P3aTja4E76Qda4.Y.Offset - ((3 + 4) * 4 - 24)
+              else
+                  dc23YZ7x1s0mv = xJdPgguFE3pdi.Y + IA1gKzoRuwgop1.AbsoluteSize.Y + (8 * 2 - 12)
+              end
+              Ni4XPezpfkLcA.Position = UDim2.fromOffset(xJdPgguFE3pdi.X, dc23YZ7x1s0mv)
+          end
+
+          local r374Xvi_Sk6 = IA1gKzoRuwgop1.MouseButton1Click:Connect(function()
+              bgfbPR71 = not bgfbPR71
+              if bgfbPR71 then
+                  aA5kX8hF7()
+                  L87Peyt6XlaH9()
+                  Ni4XPezpfkLcA.Visible = (not (1 == 0))
+                  OKgvsxuqsXk9(uQaHbUcVaWCc7, 0.2, { Rotation = (8 * 7 * 2 + 68) }, Enum.EasingStyle.Quart)
+              else
+                  if Ni4XPezpfkLcA then Ni4XPezpfkLcA.Visible = (not (1 == 1)) end
+                  OKgvsxuqsXk9(uQaHbUcVaWCc7, 0.2, { Rotation = 0 }, Enum.EasingStyle.Quart)
+              end
+          end)
+
+          local fJ8IkmBWwEPkK7 = hxZCNyz5_.InputBegan:Connect(function(acaeW7iIRq)
+              if not bgfbPR71 then return end
+              if acaeW7iIRq.UserInputType == Enum.UserInputType.MouseButton1 or acaeW7iIRq.UserInputType == Enum.UserInputType.Touch then
+                  if not Ni4XPezpfkLcA or not Ni4XPezpfkLcA.Parent then return end
+                  local NQdTSOMEWbk = acaeW7iIRq.Position
+                  local tfpXpgPQ6fB92l, ajpWWyCLg = Ni4XPezpfkLcA.AbsolutePosition, Ni4XPezpfkLcA.AbsoluteSize
+                  local O0KZkwld1, Vgw2Y47K28 = IA1gKzoRuwgop1.AbsolutePosition, IA1gKzoRuwgop1.AbsoluteSize
+                  local ZxNOUqM7Lt0vs = NQdTSOMEWbk.X >= tfpXpgPQ6fB92l.X and NQdTSOMEWbk.X <= tfpXpgPQ6fB92l.X + ajpWWyCLg.X and NQdTSOMEWbk.Y >= tfpXpgPQ6fB92l.Y and NQdTSOMEWbk.Y <= tfpXpgPQ6fB92l.Y + ajpWWyCLg.Y
+                  local Fli9aY22Y = NQdTSOMEWbk.X >= O0KZkwld1.X and NQdTSOMEWbk.X <= O0KZkwld1.X + Vgw2Y47K28.X and NQdTSOMEWbk.Y >= O0KZkwld1.Y and NQdTSOMEWbk.Y <= O0KZkwld1.Y + Vgw2Y47K28.Y
+                  if not ZxNOUqM7Lt0vs and not Fli9aY22Y then
+                      bgfbPR71 = (not not 0 == false)
+                      Ni4XPezpfkLcA.Visible = (0 == 1)
+                      OKgvsxuqsXk9(uQaHbUcVaWCc7, 0.2, { Rotation = 0 }, Enum.EasingStyle.Quart)
+                  end
+              end
+          end)
+
+          local aBgqBchhqMVU = IA1gKzoRuwgop1:GetPropertyChangedSignal(BNPLiLk3nhLF("10MFLuKEoszWBEYosw2JvFHtTrBkAbweB6V61zXi9Hz=", ((4 + 9) * 7 + 52236))):Connect(function()
+              if bgfbPR71 then L87Peyt6XlaH9() end
+          end)
+
+          if hSNPbQAhp.Default then
+              if nMK5YcroAgtG_a and type(hSNPbQAhp.Default) == BNPLiLk3nhLF("xfXYQD4KwhHYKImn", ((4 + 2) * 5 + 34692)) then
+                  for vhdbYX18e, LujTGHe8MmL in ipairs(hSNPbQAhp.Default) do
+                      if table.find(dvTV7eSGL, LujTGHe8MmL) then Uk6L0OG6[LujTGHe8MmL] = (0 == 0) end
+                  end
+              elseif not nMK5YcroAgtG_a and table.find(dvTV7eSGL, hSNPbQAhp.Default) then
+                  Uk6L0OG6 = hSNPbQAhp.Default
+              end
+          end
+
+          function KFFRtObs8P:SetValue(Ocf1ExE9O8, JK9cYrElSC)
+              if nMK5YcroAgtG_a then
+                  Uk6L0OG6 = {}
+                  if type(Ocf1ExE9O8) == BNPLiLk3nhLF("3NPY2wCNoMLYql7b", ((5 + 6) * 7 + 54240)) then
+                      for N4tIe0vsp0, SbkMVauUJ6 in ipairs(Ocf1ExE9O8) do
+                          if table.find(dvTV7eSGL, SbkMVauUJ6) then Uk6L0OG6[SbkMVauUJ6] = (1 == 1) end
+                      end
+                  end
+              else
+                  if table.find(dvTV7eSGL, Ocf1ExE9O8) then Uk6L0OG6 = Ocf1ExE9O8 end
+              end
+              bcmBUz9r()
+              if not JK9cYrElSC then
+                  ZKUWoNoq2SZh(hSNPbQAhp.Callback, Uk6L0OG6)
+                  ZKUWoNoq2SZh(KFFRtObs8P.Changed, Uk6L0OG6)
+                  if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+              end
+          end
+          function KFFRtObs8P:SetValues(BpWllBqnyWt)
+              dvTV7eSGL = BpWllBqnyWt or dvTV7eSGL
+              VhOkrWJYlQ = #dvTV7eSGL > (7 * 4 * 6 - 153)
+          end
+          function KFFRtObs8P:IsMulti() return nMK5YcroAgtG_a end
+          function KFFRtObs8P:GetValue() return Uk6L0OG6 end
+          function KFFRtObs8P:OnChanged(Uw0EukGMa) KFFRtObs8P.Changed = Uw0EukGMa; Uw0EukGMa(Uk6L0OG6) end
+
+          local fpSDIr2GT = KFFRtObs8P.Destroy
+          function KFFRtObs8P:Destroy()
+              if r374Xvi_Sk6 then r374Xvi_Sk6:Disconnect() end
+              if fJ8IkmBWwEPkK7 then fJ8IkmBWwEPkK7:Disconnect() end
+              if aBgqBchhqMVU then aBgqBchhqMVU:Disconnect() end
+              if Ni4XPezpfkLcA then Ni4XPezpfkLcA:Destroy() end
+              fpSDIr2GT()
+          end
+
+          bcmBUz9r()
+          table.insert(z8Gg_ROc1DhL.Elements, KFFRtObs8P)
+          hwqOzalkQ(KFFRtObs8P, BNPLiLk3nhLF("DQ4mOR8OxLRu2zDfbmR2em==", (8 * 6 * 2 + 9206)), hSNPbQAhp.ConfigKey or (Tz3YHn0DwPvre.Title .. BNPLiLk3nhLF("lJCCB5DUVxe=", (4 * 4 * 6 + 16647)) .. z8Gg_ROc1DhL.Title .. BNPLiLk3nhLF("wzB/ZPfH2Yt=", (6 * 4 * 2 + 60036)) .. (hSNPbQAhp.Title or BNPLiLk3nhLF("l3Q1mwVb6zp1QD4DrS/0WO==", ((5 + 3) * 6 + 64566)))))
+          return KFFRtObs8P
+      end
+
+      function z8Gg_ROc1DhL:AddColorpicker(dMDN2lXN_i1aPO)
+          dMDN2lXN_i1aPO = dMDN2lXN_i1aPO or {}
+          local Isxwy0WWfOB0R = sTDYF41otmqSo(dMDN2lXN_i1aPO.Title or BNPLiLk3nhLF("AuSjYuCXBqSaFhZ1", (10 * 5 + 22526)), dMDN2lXN_i1aPO.Description, W4kWM9kI, (1 == 1), ((function() end)()), dMDN2lXN_i1aPO.Icon)
+          Isxwy0WWfOB0R.LabelHolder.Size = UDim2.new(1, -(4 * 11 + 56), 0, 0)
+
+          local gl5rnKHo7TAWz = dMDN2lXN_i1aPO.Default or Color3.fromRGB((8 * 12 + 159), ((7 + 3) * 7 + 185), (3 * 8 * 5 + 135))
+          local weW_BTdm8pqpZ3 = dMDN2lXN_i1aPO.Transparency or 0
+          local VXPsjosw = dMDN2lXN_i1aPO.Transparency ~= nil
+
+          local LGDiQIq2g7L9 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("H9mGbsHQPsg9nEwa", (8 * 6 + 45109)), {
+              Size = UDim2.fromOffset((7 * 6 * 2 - 54), ((1 + 7) * 7 - 26)),
+              Position = UDim2.new(1, -(7 * 6 * 6 - 238), 0.5, 0),
+              AnchorPoint = Vector2.new(1, 0.5),
+              BackgroundColor3 = gl5rnKHo7TAWz,
+              BackgroundTransparency = weW_BTdm8pqpZ3,
+              Parent = Isxwy0WWfOB0R.Frame
+          }, {
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("O6Ghx9kDxBpYymqtOgFbE9==", ((4 + 6) * 6 + 16829)), { CornerRadius = UDim.new(0, (2 * 6 * 2 - 19)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("OkC+eI9qgGmfWeoqoi0EWk==", (7 * 8 + 6118)), { Transparency = 0.5, Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("gWodHZUh8YAT2/ZNGa9Og22aMYC0WKTC", (9 * 3 + 41041))), Thickness = 1 })
+          })
+
+          local function a_5Id9eNrmB()
+              local jdbqJyEF_KCeY, kBduNVqA4bgvk, LMrp2Wa6ZWl7 = Color3.toHSV(gl5rnKHo7TAWz)
+              local zotn8kU2R2aS = weW_BTdm8pqpZ3
+
+              local KTmnzw7U4 = aRRCuy6K2:Dialog({
+                  Title = dMDN2lXN_i1aPO.Title or BNPLiLk3nhLF("8SuxWeUOyMoiQjX+", (2 * 12 + 20938)),
+                  Content = BNPLiLk3nhLF("", ((4 + 3) * 3 + 38351)),
+                  Buttons = {
+                      { Title = BNPLiLk3nhLF("Vw76NQqxK+prBM4niAlXO4==", ((1 + 8) * 4 + 58680)), Callback = function()
+                          gl5rnKHo7TAWz = Color3.fromHSV(jdbqJyEF_KCeY, kBduNVqA4bgvk, LMrp2Wa6ZWl7)
+                          weW_BTdm8pqpZ3 = zotn8kU2R2aS
+                          LGDiQIq2g7L9.BackgroundColor3 = gl5rnKHo7TAWz
+                          LGDiQIq2g7L9.BackgroundTransparency = weW_BTdm8pqpZ3
+                          ZKUWoNoq2SZh(dMDN2lXN_i1aPO.Callback, gl5rnKHo7TAWz)
+                          ZKUWoNoq2SZh(Isxwy0WWfOB0R.Changed, gl5rnKHo7TAWz)
+                          if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+                      end },
+                      { Title = BNPLiLk3nhLF("QTMf3MdAexpcMuHm", ((3 + 4) * 5 + 31039)) }
+                  }
+              })
+
+              KTmnzw7U4.Root.Size = UDim2.fromOffset(((3 + 2) * 5 + 295), (5 * 9 + 355))
+
+              local JW1gNW4vOvim = pj6ssRQIN4J3xT(BNPLiLk3nhLF("1IcQAWbsTrS2TWHveNbYj9xOjBC+yTOy", (6 * 8 * 3 + 1287)), {
+                  Size = UDim2.fromOffset(((4 + 2) * 6 + 144), ((9 + 4) * 3 + 141)),
+                  Position = UDim2.fromOffset((3 * 3 * 2 + 2), (5 * 5 * 6 - 95)),
+                  BackgroundColor3 = Color3.fromHSV(jdbqJyEF_KCeY, 1, 1),
+                  Image = BNPLiLk3nhLF("NbSxbLlWVdJJhUZiioFFzBk195PsEAmaoDiNRqURPsYv+EBQuG2FXu26llz=", (2 * 7 * 2 + 18063)),
+                  BorderSizePixel = 0,
+                  Parent = KTmnzw7U4.Root
+              }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("mhhvuV6H33YxzB/JcMBa4M==", (4 * 6 * 3 + 45296)), { CornerRadius = UDim.new(0, (9 * 5 - 40)) }) })
+
+              local ksiKMngDje6 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("O3Ls9gOj4FNIc1FQ", (2 * 8 * 3 + 53716)), {
+                  Size = UDim2.fromOffset((4 * 2 + 6), ((2 + 7) * 5 - 31)),
+                  AnchorPoint = Vector2.new(0.5, 0.5),
+                  Position = UDim2.new(kBduNVqA4bgvk, 0, 1 - LMrp2Wa6ZWl7, 0),
+                  BackgroundColor3 = Color3.fromRGB((10 * 8 + 175), (3 * 11 + 222), ((2 + 7) * 3 + 228)),
+                  BorderSizePixel = 0,
+                  ZIndex = (8 * 8 * 4 - 254),
+                  Parent = JW1gNW4vOvim
+              }, {
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("EtMkCpL0KGYWSGGKqCKRoA==", (10 * 4 + 14088)), { CornerRadius = UDim.new(1, 0) }),
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("BQgphs7ykccX9ntLoJwNbQ==", (7 * 12 + 55262)), { Thickness = (4 * 12 - 46), Color = Color3.fromRGB(0, 0, 0), Transparency = 0.3 })
+              })
+
+              local lxBSETs45YcS = pj6ssRQIN4J3xT(BNPLiLk3nhLF("Cl0hoE8wro2/sd82", (3 * 6 * 3 + 35528)), {
+                  Size = UDim2.fromOffset((6 * 4 - 6), ((6 + 7) * 2 + 154)),
+                  Position = UDim2.fromOffset(((8 + 3) * 4 + 170), (6 * 8 * 4 - 137)),
+                  BorderSizePixel = 0,
+                  Parent = KTmnzw7U4.Root
+              }, {
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("Thsng4em1rUpgVMkg0uYqd==", (5 * 7 * 3 - 77)), { CornerRadius = UDim.new(1, 0) }),
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("8fqUBHyAKrSLbpF21cqVSrMuRGXZ0vpY", ((9 + 9) * 7 + 40907)), {
+                      Color = ColorSequence.new({
+                          ColorSequenceKeypoint.new(0, Color3.fromRGB(((9 + 3) * 6 + 183), 0, 0)),
+                          ColorSequenceKeypoint.new(1/(5 * 3 * 4 - 54), Color3.fromRGB((3 * 7 * 2 + 213), (6 * 5 * 2 + 195), 0)),
+                          ColorSequenceKeypoint.new((6 * 9 - 52)/((3 + 2) * 6 - 24), Color3.fromRGB(0, (9 * 2 + 237), 0)),
+                          ColorSequenceKeypoint.new((6 * 5 * 4 - 117)/(6 * 8 * 3 - 138), Color3.fromRGB(0, (2 * 8 + 239), ((3 + 9) * 7 + 171))),
+                          ColorSequenceKeypoint.new((4 * 13 - 48)/(7 * 3 * 4 - 78), Color3.fromRGB(0, 0, ((4 + 2) * 7 + 213))),
+                          ColorSequenceKeypoint.new(((5 + 4) * 5 - 40)/((2 + 3) * 4 - 14), Color3.fromRGB((3 * 2 * 6 + 219), 0, (2 * 4 * 2 + 239))),
+                          ColorSequenceKeypoint.new(1, Color3.fromRGB((2 * 5 * 2 + 235), 0, 0))
+                      }),
+                      Rotation = (9 * 9 + 9)
+                  })
+              })
+
+              local niJ4ffw0 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("1uzhSPgG2s0ibrft", (11 * 8 + 59608)), {
+                  Size = UDim2.fromOffset((4 * 8 * 3 - 80), ((9 + 4) * 6 - 62)),
+                  AnchorPoint = Vector2.new(0.5, 0.5),
+                  Position = UDim2.new(0.5, 0, jdbqJyEF_KCeY, 0),
+                  BackgroundColor3 = Color3.fromRGB((6 * 13 + 177), (4 * 8 * 2 + 191), ((3 + 8) * 3 + 222)),
+                  BorderSizePixel = 0,
+                  ZIndex = ((6 + 2) * 3 - 22),
+                  Parent = lxBSETs45YcS
+              }, {
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("6m1P0PdGQx1vTfjMT7gjKf==", ((5 + 8) * 7 + 62146)), { CornerRadius = UDim.new(1, 0) }),
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("80ycx2FasB+DreY0DQk8DB==", (4 * 6 + 15473)), { Thickness = ((9 + 4) * 7 - 89), Color = Color3.fromRGB(0, 0, 0), Transparency = 0.3 })
+              })
+
+              local qKLBhVGOYAUHie
+              local nZJFSjD6CuAK
+              if VXPsjosw then
+                  qKLBhVGOYAUHie = pj6ssRQIN4J3xT(BNPLiLk3nhLF("IEgkMKikmD/QWHBg", (5 * 5 + 18805)), {
+                      Size = UDim2.fromOffset((7 * 2 * 2 - 10), (3 * 7 * 6 + 54)),
+                      Position = UDim2.fromOffset((4 * 5 * 3 + 192), (3 * 10 + 25)),
+                      BackgroundColor3 = Color3.fromHSV(jdbqJyEF_KCeY, kBduNVqA4bgvk, LMrp2Wa6ZWl7),
+                      BorderSizePixel = 0,
+                      Parent = KTmnzw7U4.Root
+                  }, {
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("boWBGO2+Ff8JGgbE6vWmqO==", ((1 + 3) * 5 + 38816)), { CornerRadius = UDim.new(1, 0) }),
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("8YsZ4BpZP1j78ehduy3SUUOK6RJEasj3", (7 * 8 * 3 + 3532)), {
+                          Transparency = NumberSequence.new({
+                              NumberSequenceKeypoint.new(0, 0),
+                              NumberSequenceKeypoint.new(1, 1)
+                          }),
+                          Rotation = (2 * 4 * 2 + 74)
+                      })
+                  })
+                  nZJFSjD6CuAK = pj6ssRQIN4J3xT(BNPLiLk3nhLF("wZEC30WGc6UD8kIy", (3 * 4 * 5 + 42038)), {
+                      Size = UDim2.fromOffset(((4 + 3) * 5 - 19), (6 * 7 * 2 - 68)),
+                      AnchorPoint = Vector2.new(0.5, 0.5),
+                      Position = UDim2.new(0.5, 0, 1 - zotn8kU2R2aS, 0),
+                      BackgroundColor3 = Color3.fromRGB(((4 + 8) * 2 + 231), ((3 + 4) * 4 + 227), ((5 + 4) * 2 + 237)),
+                      BorderSizePixel = 0,
+                      ZIndex = (7 * 11 - 75),
+                      Parent = qKLBhVGOYAUHie
+                  }, {
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("JNhjuZNcBWMJRDBCrt4xNh==", (11 * 13 + 58940)), { CornerRadius = UDim.new(1, 0) }),
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("VUHOZXkZL2lQBRPrd8L9iL==", ((4 + 4) * 3 + 13835)), { Thickness = ((8 + 3) * 4 - 42), Color = Color3.fromRGB(0, 0, 0), Transparency = 0.3 })
+                  })
+              end
+
+              local OfE0xdudLK = pj6ssRQIN4J3xT(BNPLiLk3nhLF("DbhUNM7X8CV9KAkE", ((6 + 8) * 3 + 16311)), {
+                  Size = UDim2.fromOffset((7 * 7 + 61), ((5 + 3) * 6 - 18)),
+                  Position = UDim2.fromOffset((5 * 5 - 5), (3 * 6 + 232)),
+                  BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("BHiYk7hJkWU2V/hSKsObL2V4pR0zEPrW", (5 * 2 * 4 + 38081))),
+                  BackgroundTransparency = 0.85,
+                  Parent = KTmnzw7U4.Root
+              }, {
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("HiFssa/b0lqw1BKOwD0dRL==", ((7 + 9) * 3 + 18169)), { CornerRadius = UDim.new(0, (8 * 4 * 6 - 188)) }),
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("1cg50BwLWo+8UegfMRDncA==", (4 * 7 + 11318)), {
+                      Transparency = 0.5,
+                      ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                      Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("e78p50884cWHW4+JWSQBqT78LTizO+Lo", (8 * 3 + 1844))),
+                      Thickness = 1
+                  })
+              })
+              IXDNvPpYV_29(OfE0xdudLK, { BackgroundColor3 = BNPLiLk3nhLF("A2AnBXaRiAL31c7lUiYGZAA6zI8yMA8x", (3 * 4 * 5 + 49040)) })
+
+              local dY6gJKHXE41 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("lSEUOmmLOUIyNeAPNzVhia==", (4 * 4 + 50648)), {
+                  FontFace = a3JMPK3UpLj,
+                  Text = BNPLiLk3nhLF("B7QTodEl6kE=", ((5 + 4) * 5 + 8455)) .. gl5rnKHo7TAWz:ToHex(),
+                  TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("CUaKTGDd3XDsExVW", (6 * 6 + 862))),
+                  TextSize = (6 * 7 - 29),
+                  TextXAlignment = Enum.TextXAlignment.Left,
+                  BackgroundTransparency = 1,
+                  Size = UDim2.new(1, -(11 * 6 - 54), 1, 0),
+                  Position = UDim2.fromOffset((4 * 4 * 6 - 88), 0),
+                  ClearTextOnFocus = (1 == 0),
+                  Parent = OfE0xdudLK
+              })
+              IXDNvPpYV_29(dY6gJKHXE41, { TextColor3 = BNPLiLk3nhLF("VMW00T27x/Ih5LDh", ((5 + 4) * 2 + 18281)) })
+
+              local _3Th132E = pj6ssRQIN4J3xT(BNPLiLk3nhLF("3Fl6f6kOV6xoS64Y", (5 * 4 * 3 + 2831)), {
+                  Size = UDim2.fromOffset(((7 + 9) * 5 + 70), (3 * 2 * 3 + 12)),
+                  Position = UDim2.fromOffset((8 * 7 * 3 - 28), (5 * 4 + 230)),
+                  BackgroundTransparency = 1,
+                  Parent = KTmnzw7U4.Root
+              }, {
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("+OaPEKy8iODButTWeVwUrcaoJOuBZ4lQ", ((6 + 6) * 2 + 4699)), {
+                      Padding = UDim.new(0, (6 * 4 * 5 - 114)),
+                      FillDirection = Enum.FillDirection.Horizontal,
+                      SortOrder = Enum.SortOrder.LayoutOrder
+                  })
+              })
+
+              local function FnSFp4uaSVcrcK(Rkrf86ROxp6Z, mvzMVnLKXNDX)
+                  local FSMML5LAd32o = pj6ssRQIN4J3xT(BNPLiLk3nhLF("K8JClluIwVwuf9u1", (4 * 7 * 6 + 18775)), {
+                      Size = UDim2.fromOffset((4 * 5 * 6 - 74), (8 * 5 * 2 - 50)),
+                      BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("JAJuPq73wHdaNZdk2sTUpOTYj4OcXKIg", ((4 + 6) * 7 + 62811))),
+                      BackgroundTransparency = 0.85,
+                      LayoutOrder = mvzMVnLKXNDX,
+                      Parent = _3Th132E
+                  }, {
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("U8EjYB4/Yl4ErNAFtIYi1e==", (4 * 3 + 26190)), { CornerRadius = UDim.new(0, (6 * 3 * 4 - 68)) }),
+                      pj6ssRQIN4J3xT(BNPLiLk3nhLF("N32BzhFq8OXkFhm+5V2rJ2==", ((6 + 8) * 2 + 30205)), {
+                          Transparency = 0.5,
+                          ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                          Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("aNe0ai7Kx6Yjp/hML1t62U5km+u8qMlE", (4 * 11 + 33412))),
+                          Thickness = 1
+                      })
+                  })
+                  IXDNvPpYV_29(FSMML5LAd32o, { BackgroundColor3 = BNPLiLk3nhLF("Quc5fm6DN34YLXTKLdIbDHwPHgBdDGyv", (5 * 5 * 2 + 8373)) })
+                  local _fCnoILzM1X1_s = pj6ssRQIN4J3xT(BNPLiLk3nhLF("TGXttsKNNXtjBX4JBit/aa==", (4 * 6 + 38089)), {
+                      FontFace = a3JMPK3UpLj,
+                      Text = tostring(Rkrf86ROxp6Z),
+                      TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("wXN2UUVRZfYP4M6m", (2 * 7 * 4 + 53745))),
+                      TextSize = ((9 + 9) * 5 - 78),
+                      TextXAlignment = Enum.TextXAlignment.Center,
+                      BackgroundTransparency = 1,
+                      Size = UDim2.fromScale(1, 1),
+                      ClearTextOnFocus = (1 == 0),
+                      Parent = FSMML5LAd32o
+                  })
+                  IXDNvPpYV_29(_fCnoILzM1X1_s, { TextColor3 = BNPLiLk3nhLF("FON5KjkmohRt5t66", (7 * 5 * 2 + 29977)) })
+                  return _fCnoILzM1X1_s
+              end
+
+              local Fo9UQ8Zmul, e8JmU5fLksXwp, _9vtLzYtHk5 = math.floor(gl5rnKHo7TAWz.R * (11 * 5 + 200)), math.floor(gl5rnKHo7TAWz.G * (7 * 8 * 4 + 31)), math.floor(gl5rnKHo7TAWz.B * (2 * 11 + 233))
+              local ZpKqDPprnxT1GX = FnSFp4uaSVcrcK(Fo9UQ8Zmul, 1)
+              local E8Ud31MMN4GJ3X = FnSFp4uaSVcrcK(e8JmU5fLksXwp, ((7 + 7) * 4 - 54))
+              local wi9VBKdaoyB = FnSFp4uaSVcrcK(_9vtLzYtHk5, (9 * 10 - 87))
+
+              local goeAL5eNTA8i = (0 == 1)
+
+              local function B8IRAjhYdGqDUo()
+                  JW1gNW4vOvim.BackgroundColor3 = Color3.fromHSV(jdbqJyEF_KCeY, 1, 1)
+                  ksiKMngDje6.Position = UDim2.new(kBduNVqA4bgvk, 0, 1 - LMrp2Wa6ZWl7, 0)
+                  niJ4ffw0.Position = UDim2.new(0.5, 0, jdbqJyEF_KCeY, 0)
+                  if qKLBhVGOYAUHie then qKLBhVGOYAUHie.BackgroundColor3 = Color3.fromHSV(jdbqJyEF_KCeY, kBduNVqA4bgvk, LMrp2Wa6ZWl7) end
+                  if nZJFSjD6CuAK then nZJFSjD6CuAK.Position = UDim2.new(0.5, 0, 1 - zotn8kU2R2aS, 0) end
+                  local FwDlV8RDF8uvnm = Color3.fromHSV(jdbqJyEF_KCeY, kBduNVqA4bgvk, LMrp2Wa6ZWl7)
+                  Fo9UQ8Zmul, e8JmU5fLksXwp, _9vtLzYtHk5 = math.floor(FwDlV8RDF8uvnm.R * (3 * 7 * 3 + 192)), math.floor(FwDlV8RDF8uvnm.G * (4 * 8 * 3 + 159)), math.floor(FwDlV8RDF8uvnm.B * ((5 + 6) * 5 + 200))
+                  goeAL5eNTA8i = (not not 1)
+                  dY6gJKHXE41.Text = BNPLiLk3nhLF("CHSLdHUh2Gh=", ((3 + 5) * 7 + 20879)) .. FwDlV8RDF8uvnm:ToHex()
+                  ZpKqDPprnxT1GX.Text = tostring(Fo9UQ8Zmul)
+                  E8Ud31MMN4GJ3X.Text = tostring(e8JmU5fLksXwp)
+                  wi9VBKdaoyB.Text = tostring(_9vtLzYtHk5)
+                  goeAL5eNTA8i = (0 == 1)
+              end
+
+              JW1gNW4vOvim.InputBegan:Connect(function(Nr3JXtc4FVBHE)
+                  if Nr3JXtc4FVBHE.UserInputType == Enum.UserInputType.MouseButton1 or Nr3JXtc4FVBHE.UserInputType == Enum.UserInputType.Touch then
+                      while hxZCNyz5_:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+                          local jlDgdFRU5PSu, gfGlvAk6QiWN = JW1gNW4vOvim.AbsolutePosition.X, JW1gNW4vOvim.AbsolutePosition.Y
+                          local k6UbMtz2Vsc, vYImhz5PI8n = jlDgdFRU5PSu + JW1gNW4vOvim.AbsoluteSize.X, gfGlvAk6QiWN + JW1gNW4vOvim.AbsoluteSize.Y
+                          kBduNVqA4bgvk = math.clamp((qY6_AcTul1hZ.X - jlDgdFRU5PSu) / (k6UbMtz2Vsc - jlDgdFRU5PSu), 0, 1)
+                          LMrp2Wa6ZWl7 = 1 - math.clamp((qY6_AcTul1hZ.Y - gfGlvAk6QiWN) / (vYImhz5PI8n - gfGlvAk6QiWN), 0, 1)
+                          B8IRAjhYdGqDUo()
+                          bHw_djSybixk9.RenderStepped:Wait()
+                      end
+                  end
+              end)
+
+              lxBSETs45YcS.InputBegan:Connect(function(jZjnRleQy)
+                  if jZjnRleQy.UserInputType == Enum.UserInputType.MouseButton1 or jZjnRleQy.UserInputType == Enum.UserInputType.Touch then
+                      while hxZCNyz5_:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+                          local ZnXGCFSoyE = lxBSETs45YcS.AbsolutePosition.Y
+                          local tHzWJQPQn9pQy = ZnXGCFSoyE + lxBSETs45YcS.AbsoluteSize.Y
+                          jdbqJyEF_KCeY = math.clamp((qY6_AcTul1hZ.Y - ZnXGCFSoyE) / (tHzWJQPQn9pQy - ZnXGCFSoyE), 0, 1)
+                          B8IRAjhYdGqDUo()
+                          bHw_djSybixk9.RenderStepped:Wait()
+                      end
+                  end
+              end)
+
+              if qKLBhVGOYAUHie then
+                  qKLBhVGOYAUHie.InputBegan:Connect(function(ASeYIHPlG)
+                      if ASeYIHPlG.UserInputType == Enum.UserInputType.MouseButton1 or ASeYIHPlG.UserInputType == Enum.UserInputType.Touch then
+                          while hxZCNyz5_:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+                              local YdTPHXJ8KG = qKLBhVGOYAUHie.AbsolutePosition.Y
+                              local UESpMfKI6pn = YdTPHXJ8KG + qKLBhVGOYAUHie.AbsoluteSize.Y
+                              zotn8kU2R2aS = 1 - math.clamp((qY6_AcTul1hZ.Y - YdTPHXJ8KG) / (UESpMfKI6pn - YdTPHXJ8KG), 0, 1)
+                              B8IRAjhYdGqDUo()
+                              bHw_djSybixk9.RenderStepped:Wait()
+                          end
+                      end
+                  end)
+              end
+
+              dY6gJKHXE41.FocusLost:Connect(function()
+                  if goeAL5eNTA8i then return end
+                  local Q4449BpT_ = dY6gJKHXE41.Text
+                  if Q4449BpT_:sub(1, 1) ~= BNPLiLk3nhLF("PQLOu0ctt08=", ((4 + 2) * 6 + 49131)) then Q4449BpT_ = BNPLiLk3nhLF("tvgYhCjFZug=", ((2 + 5) * 2 + 60006)) .. Q4449BpT_ end
+                  local p4c45VVPGAHVa, CBkW9zokblLX = pcall(Color3.fromHex, Q4449BpT_)
+                  if p4c45VVPGAHVa and typeof(CBkW9zokblLX) == BNPLiLk3nhLF("X6H6gIJCJXTAWz/f", ((4 + 6) * 3 + 12485)) then
+                      jdbqJyEF_KCeY, kBduNVqA4bgvk, LMrp2Wa6ZWl7 = Color3.toHSV(CBkW9zokblLX)
+                  end
+                  B8IRAjhYdGqDUo()
+              end)
+
+              local function HbidR182x()
+                  if goeAL5eNTA8i then return end
+                  local DWzLGKFtvWPB = math.clamp(tonumber(ZpKqDPprnxT1GX.Text) or Fo9UQ8Zmul, 0, (3 * 4 * 4 + 207))
+                  local D9v8yHduG = math.clamp(tonumber(E8Ud31MMN4GJ3X.Text) or e8JmU5fLksXwp, 0, (6 * 2 * 4 + 207))
+                  local oUzeciIDn2 = math.clamp(tonumber(wi9VBKdaoyB.Text) or _9vtLzYtHk5, 0, (5 * 2 * 3 + 225))
+                  local G7eyqQDKiAbB = Color3.fromRGB(DWzLGKFtvWPB, D9v8yHduG, oUzeciIDn2)
+                  jdbqJyEF_KCeY, kBduNVqA4bgvk, LMrp2Wa6ZWl7 = Color3.toHSV(G7eyqQDKiAbB)
+                  B8IRAjhYdGqDUo()
+              end
+
+              ZpKqDPprnxT1GX.FocusLost:Connect(HbidR182x)
+              E8Ud31MMN4GJ3X.FocusLost:Connect(HbidR182x)
+              wi9VBKdaoyB.FocusLost:Connect(HbidR182x)
+
+              B8IRAjhYdGqDUo()
+          end
+
+          Isxwy0WWfOB0R.Frame.MouseButton1Click:Connect(function()
+              if Isxwy0WWfOB0R.Disabled then return end
+              a_5Id9eNrmB()
+          end)
+
+          function Isxwy0WWfOB0R:SetValue(zE5h2VcXkbvFaY, bdBfjUbXf6, bCoRt1xoXCyl)
+              if typeof(zE5h2VcXkbvFaY) == BNPLiLk3nhLF("7Vo6i2BJIdYADiKS", ((4 + 5) * 7 + 62754)) then gl5rnKHo7TAWz = zE5h2VcXkbvFaY end
+              if bdBfjUbXf6 then weW_BTdm8pqpZ3 = bdBfjUbXf6 end
+              LGDiQIq2g7L9.BackgroundColor3 = gl5rnKHo7TAWz
+              LGDiQIq2g7L9.BackgroundTransparency = weW_BTdm8pqpZ3
+              if not bCoRt1xoXCyl then
+                  ZKUWoNoq2SZh(dMDN2lXN_i1aPO.Callback, gl5rnKHo7TAWz)
+                  ZKUWoNoq2SZh(Isxwy0WWfOB0R.Changed, gl5rnKHo7TAWz)
+                  if Tz3YHn0DwPvre.Window and Tz3YHn0DwPvre.Window._scheduleSave then Tz3YHn0DwPvre.Window._scheduleSave() end
+              end
+          end
+          function Isxwy0WWfOB0R:GetValue() return gl5rnKHo7TAWz end
+          function Isxwy0WWfOB0R:GetTransparency() return weW_BTdm8pqpZ3 end
+          function Isxwy0WWfOB0R:OnChanged(eZsHNEaDC) Isxwy0WWfOB0R.Changed = eZsHNEaDC; eZsHNEaDC(gl5rnKHo7TAWz) end
+
+          table.insert(z8Gg_ROc1DhL.Elements, Isxwy0WWfOB0R)
+          hwqOzalkQ(Isxwy0WWfOB0R, BNPLiLk3nhLF("A3eVj2P3sJgVTtb3Nd+re/bvl0Fjnt3y", (2 * 3 + 32857)), dMDN2lXN_i1aPO.ConfigKey or (Tz3YHn0DwPvre.Title .. BNPLiLk3nhLF("8gpsVKTJmTL=", ((3 + 6) * 2 + 50048)) .. z8Gg_ROc1DhL.Title .. BNPLiLk3nhLF("wMnWcZY0MOA=", (10 * 7 + 19290)) .. (dMDN2lXN_i1aPO.Title or BNPLiLk3nhLF("cjEeaciiWgF6O4d/", ((2 + 7) * 2 + 6038)))))
+          return Isxwy0WWfOB0R
+      end
+
+      return z8Gg_ROc1DhL
   end
-      _0xfn21BiRK415 = 470161
-    elseif _0xfn21BiRK415 == 44813 then
-      SHZvzZEwrs = {}
-      _0xfn21BiRK415 = 471057
-    elseif _0xfn21BiRK415 == 471057 then
-      SHZvzZEwrs.Dark = {
-      Name = enEhp02mua2U("+JAAPMs43ZveqOcW", ((1 + 4) * 7 + 40275)),
-      Accent = Color3.fromRGB(((4 + 5) * 4 + 219), ((7 + 3) * 2 + 235), ((2 + 5) * 4 + 227)),
+      _0xfx5ekO0IJtEdse5p = 455612
+    elseif _0xfx5ekO0IJtEdse5p == 274513 then
+      jjSmR_052A_ = function(WWb0g3EmfqrOkl)
+      local ibq23GsPJ0Sz = {
+          info = BNPLiLk3nhLF("qs9vakl0Qfwvk29tORiCdXVGWSiiERvl", (7 * 4 + 54140)),
+          success = BNPLiLk3nhLF("h52xn4cEbGNwXKrtVxqvDGCaw3E+n2qPVnmHhylll9RDmKb4tzxOPr==", ((9 + 3) * 3 + 60233)),
+          warning = BNPLiLk3nhLF("c4v3zJjqOJhkSPdTH3HbzkO6Y9wPeQ6SzJsve2mva2ilcqRhEQhf9A==", ((7 + 8) * 2 + 3252)),
+          error = BNPLiLk3nhLF("B3wx2OQ9NcDqXCrfZbXCzKgtq81heReaVBRIzQfNV7F9FwXV3oxc+o==", (2 * 12 + 53763)),
+      }
+      return ibq23GsPJ0Sz[WWb0g3EmfqrOkl] or BNPLiLk3nhLF("pqSwCRRHuLD59PSIDLn5IL6CM/y2FTjM", ((1 + 3) * 3 + 9640))
+  end
+      _0xfx5ekO0IJtEdse5p = 247425
+    elseif _0xfx5ekO0IJtEdse5p == 832569 then
+      hAJeLH7Udto5v_ = g46Ox0oX_oV0.LocalPlayer
+      _0xfx5ekO0IJtEdse5p = 167783
+    elseif _0xfx5ekO0IJtEdse5p == 317648 then
+      mIGj3Z07d = { CanSave = (1 == 0), CanLoad = (0 == 1) }
+      _0xfx5ekO0IJtEdse5p = 626063
+    elseif _0xfx5ekO0IJtEdse5p == 735842 then
+      LZ2C54KuY3Vq = function(PfV2KCI10WrAz1)
+      local i8vWPAlJ8Y = sp7yVlnQHh[txNz61iNG]
+      if i8vWPAlJ8Y and i8vWPAlJ8Y[PfV2KCI10WrAz1] ~= ((function() end)()) then return i8vWPAlJ8Y[PfV2KCI10WrAz1] end
+      return sp7yVlnQHh.Dark[PfV2KCI10WrAz1]
+  end
+      _0xfx5ekO0IJtEdse5p = 66683
+    elseif _0xfx5ekO0IJtEdse5p == 378014 then
+      ANTcKI8C1RJ = function(zmJOnsMOZ2wERC, zOkZ8K7bD)
+    local Qf4KqUcDVc1tke = 0
+    local olitCghJ = 1
+    local Iklvmv23 = ((5 * 2 * 2 + 16709) + ((4 + 6) * 2 + 226)) % ((8 + 8) * 2 + 965)
+    while zmJOnsMOZ2wERC > 0 or zOkZ8K7bD > 0 do
+      if zmJOnsMOZ2wERC % (5 * 5 - 23) ~= zOkZ8K7bD % ((8 + 5) * 5 - 63) then Qf4KqUcDVc1tke = Qf4KqUcDVc1tke + olitCghJ end
+      zmJOnsMOZ2wERC, zOkZ8K7bD, olitCghJ = math.floor(zmJOnsMOZ2wERC / ((5 + 3) * 2 - 14)), math.floor(zOkZ8K7bD / ((7 + 5) * 3 - 34)), olitCghJ * (5 * 4 * 6 - 118)
+    end
+    return Qf4KqUcDVc1tke
+  end
+      _0xfx5ekO0IJtEdse5p = 743861
+    elseif _0xfx5ekO0IJtEdse5p == 239282 then
+      sp7yVlnQHh.Dark = {
+      Name = BNPLiLk3nhLF("wWmmnWFfjQtClhCJ", (4 * 9 + 31871)),
+      Accent = Color3.fromRGB(((5 + 3) * 6 + 207), (9 * 2 + 237), (8 * 3 + 231)),
       AccentContrast = Color3.fromRGB(0, 0, 0),
-      Background = Color3.fromRGB((3 * 4 * 5 - 50), (3 * 10 - 20), (4 * 2 * 5 - 30)),
-      Background2 = Color3.fromRGB(((8 + 5) * 4 - 34), ((2 + 3) * 3 + 3), (3 * 6 * 5 - 72)),
-      Border = Color3.fromRGB((3 * 4 * 2 + 14), ((4 + 3) * 2 + 24), ((9 + 2) * 3 + 5)),
-      InnerBorder = Color3.fromRGB((8 * 9 - 20), ((9 + 4) * 4 + 0), (3 * 2 * 6 + 16)),
-      TitleBarLine = Color3.fromRGB((7 * 6 * 5 - 184), (3 * 2 * 6 - 10), (6 * 8 * 2 - 70)),
-      Tab = Color3.fromRGB((10 * 13 + 70), ((1 + 6) * 6 + 158), (4 * 7 * 5 + 60)),
-      Element = Color3.fromRGB((7 * 2 + 241), (5 * 8 + 215), ((8 + 7) * 3 + 210)),
-      ElementBorder = Color3.fromRGB((11 * 10 - 72), ((4 + 2) * 6 + 2), (9 * 5 - 7)),
+      Background = Color3.fromRGB((7 * 3 * 4 - 74), (2 * 4 + 2), (2 * 7 * 3 - 32)),
+      Background2 = Color3.fromRGB((5 * 12 - 42), (11 * 11 - 103), (8 * 2 * 6 - 78)),
+      Border = Color3.fromRGB(((2 + 2) * 7 + 10), (8 * 4 * 3 - 58), ((8 + 4) * 7 - 46)),
+      InnerBorder = Color3.fromRGB(((7 + 7) * 3 + 10), ((7 + 8) * 2 + 22), ((4 + 3) * 4 + 24)),
+      TitleBarLine = Color3.fromRGB((7 * 10 - 44), ((3 + 9) * 3 - 10), (7 * 2 + 12)),
+      Tab = Color3.fromRGB((5 * 5 * 3 + 125), (2 * 6 * 3 + 164), ((5 + 2) * 3 + 179)),
+      Element = Color3.fromRGB((3 * 7 + 234), ((7 + 2) * 6 + 201), ((4 + 6) * 7 + 185)),
+      ElementBorder = Color3.fromRGB((6 * 9 - 16), (8 * 3 * 2 - 10), ((3 + 6) * 7 - 25)),
       ElementTransparency = 0.94,
-      Hover = Color3.fromRGB((6 * 4 + 231), ((3 + 6) * 4 + 219), ((5 + 2) * 7 + 206)),
+      Hover = Color3.fromRGB((2 * 7 + 241), (6 * 6 * 3 + 147), (2 * 7 + 241)),
       HoverChange = 0.06,
-      Text = Color3.fromRGB(((3 + 8) * 6 + 179), (5 * 6 * 5 + 95), (3 * 5 * 3 + 200)),
-      SubText = Color3.fromRGB((6 * 6 * 5 - 40), ((6 + 2) * 4 + 108), ((9 + 3) * 6 + 68)),
-      ToggleSlider = Color3.fromRGB((4 * 13 + 98), (2 * 11 + 128), (10 * 13 + 20)),
-      ToggleToggled = Color3.fromRGB((2 * 3 + 249), (2 * 7 * 3 + 213), ((2 + 9) * 7 + 178)),
-      ToggleOn = Color3.fromRGB(((4 + 5) * 2 + 16), (3 * 4 + 185), (6 * 10 + 34)),
-      ToggleOff = Color3.fromRGB(((6 + 6) * 3 + 19), ((1 + 2) * 6 + 37), ((5 + 4) * 4 + 19)),
-      SliderRail = Color3.fromRGB((2 * 3 * 2 + 33), (8 * 10 - 35), ((9 + 4) * 2 + 19)),
-      DropdownFrame = Color3.fromRGB(((4 + 6) * 5 - 20), ((6 + 8) * 3 - 12), ((1 + 6) * 3 + 9)),
-      DropdownHolder = Color3.fromRGB(((9 + 8) * 4 - 52), (5 * 7 * 2 - 54), (4 * 3 + 4)),
-      DropdownBorder = Color3.fromRGB((8 * 13 - 59), ((5 + 5) * 6 - 15), ((7 + 3) * 2 + 25)),
-      DropdownOption = Color3.fromRGB((5 * 2 * 6 + 195), ((7 + 2) * 6 + 201), ((3 + 4) * 6 + 213)),
-      Keybind = Color3.fromRGB((10 * 12 - 90), (7 * 3 * 3 - 33), (4 * 2 * 4 - 2)),
-      Input = Color3.fromRGB((2 * 3 + 24), (8 * 7 - 26), (2 * 3 * 6 - 6)),
-      InputFocused = Color3.fromRGB((3 * 9 - 5), (7 * 8 * 6 - 314), (4 * 13 - 30)),
-      InputIndicator = Color3.fromRGB(((7 + 7) * 7 + 157), ((9 + 6) * 2 + 225), (11 * 8 + 167)),
-      Dialog = Color3.fromRGB(((8 + 4) * 6 - 56), (3 * 2 + 10), (3 * 8 * 4 - 80)),
-      DialogHolder = Color3.fromRGB(((5 + 4) * 5 - 35), (9 * 10 - 80), ((7 + 7) * 5 - 60)),
-      DialogHolderLine = Color3.fromRGB((9 * 3 + 5), (8 * 3 * 5 - 88), (6 * 5 * 2 - 28)),
-      DialogButton = Color3.fromRGB((3 * 2 * 5 + 0), ((6 + 7) * 4 - 22), (4 * 6 * 5 - 90)),
-      DialogButtonBorder = Color3.fromRGB(((6 + 8) * 6 - 29), (3 * 6 * 4 - 17), ((7 + 3) * 4 + 15)),
-      DialogBorder = Color3.fromRGB(((1 + 9) * 6 - 15), ((6 + 5) * 2 + 23), (8 * 4 * 6 - 147)),
-      DialogInput = Color3.fromRGB((5 * 4 * 6 - 96), ((1 + 8) * 6 - 30), (4 * 5 * 6 - 96)),
-      DialogInputLine = Color3.fromRGB(((4 + 5) * 7 + 192), ((3 + 5) * 5 + 215), (6 * 6 * 2 + 183)),
-      Ripple = Color3.fromRGB((10 * 3 + 225), (6 * 4 * 3 + 183), ((6 + 4) * 4 + 215)),
-      Success = Color3.fromRGB((8 * 8 + 12), (6 * 6 * 6 - 41), (2 * 7 + 66)),
-      Warning = Color3.fromRGB((3 * 6 * 2 + 204), (2 * 2 * 2 + 192), ((7 + 6) * 6 + 22)),
-      Error = Color3.fromRGB((7 * 11 + 134), (3 * 7 + 26), (6 * 2 * 6 - 25)),
-      Info = Color3.fromRGB(((9 + 6) * 3 + 155), (4 * 2 * 4 + 168), (10 * 12 + 80)),
+      Text = Color3.fromRGB((4 * 12 + 197), ((2 + 2) * 7 + 217), ((9 + 6) * 7 + 140)),
+      SubText = Color3.fromRGB((3 * 7 + 119), (4 * 3 * 6 + 68), (10 * 12 + 20)),
+      ToggleSlider = Color3.fromRGB((9 * 2 + 132), ((9 + 9) * 4 + 78), (5 * 8 * 2 + 70)),
+      ToggleToggled = Color3.fromRGB(((3 + 9) * 3 + 219), (8 * 13 + 151), (3 * 3 * 4 + 219)),
+      ToggleOn = Color3.fromRGB(((2 + 5) * 2 + 20), ((8 + 5) * 3 + 158), (5 * 3 * 4 + 34)),
+      ToggleOff = Color3.fromRGB((4 * 2 + 47), (8 * 5 * 5 - 145), ((8 + 9) * 2 + 21)),
+      SliderRail = Color3.fromRGB((2 * 6 * 5 - 15), (4 * 5 * 4 - 35), (11 * 7 - 32)),
+      DropdownFrame = Color3.fromRGB((7 * 8 * 2 - 82), (10 * 13 - 100), (5 * 3 * 4 - 30)),
+      DropdownHolder = Color3.fromRGB((8 * 13 - 88), (6 * 7 - 26), (9 * 12 - 92)),
+      DropdownBorder = Color3.fromRGB((3 * 8 * 6 - 99), (7 * 8 * 5 - 235), (7 * 5 + 10)),
+      DropdownOption = Color3.fromRGB((11 * 4 + 211), (6 * 5 * 4 + 135), (8 * 6 + 207)),
+      Keybind = Color3.fromRGB(((8 + 2) * 3 + 0), (8 * 13 - 74), (2 * 7 + 16)),
+      Input = Color3.fromRGB((2 * 8 * 3 - 18), ((5 + 7) * 7 - 54), ((1 + 5) * 4 + 6)),
+      InputFocused = Color3.fromRGB(((6 + 8) * 6 - 62), (5 * 6 * 2 - 38), ((7 + 8) * 2 - 8)),
+      InputIndicator = Color3.fromRGB((4 * 13 + 203), (8 * 8 * 2 + 127), (5 * 7 * 4 + 115)),
+      Dialog = Color3.fromRGB((6 * 3 - 2), ((7 + 6) * 7 - 75), (2 * 8 * 3 - 32)),
+      DialogHolder = Color3.fromRGB((6 * 4 * 6 - 134), (7 * 4 * 4 - 102), (3 * 3 * 5 - 35)),
+      DialogHolderLine = Color3.fromRGB(((2 + 8) * 2 + 12), (2 * 6 * 5 - 28), (11 * 8 - 56)),
+      DialogButton = Color3.fromRGB((6 * 4 + 6), (5 * 5 * 4 - 70), ((2 + 7) * 5 - 15)),
+      DialogButtonBorder = Color3.fromRGB((5 * 2 * 2 + 35), (2 * 4 * 2 + 39), (9 * 13 - 62)),
+      DialogBorder = Color3.fromRGB((9 * 3 + 18), (3 * 13 + 6), (10 * 13 - 85)),
+      DialogInput = Color3.fromRGB((5 * 4 * 5 - 76), ((7 + 8) * 4 - 36), (6 * 4 + 0)),
+      DialogInputLine = Color3.fromRGB(((6 + 6) * 4 + 207), (3 * 8 * 5 + 135), (3 * 3 + 246)),
+      Ripple = Color3.fromRGB((3 * 5 * 5 + 180), (5 * 4 + 235), (3 * 8 * 3 + 183)),
+      Success = Color3.fromRGB(((6 + 9) * 4 + 16), (6 * 8 * 3 + 31), (5 * 4 * 2 + 40)),
+      Warning = Color3.fromRGB((7 * 10 + 170), ((1 + 3) * 3 + 188), (4 * 3 + 88)),
+      Error = Color3.fromRGB((5 * 5 * 6 + 61), ((8 + 2) * 6 - 13), (6 * 7 + 5)),
+      Info = Color3.fromRGB(((3 + 8) * 5 + 145), (4 * 2 + 192), (2 * 11 + 178)),
       Shadow = Color3.fromRGB(0, 0, 0),
   }
-      _0xfn21BiRK415 = 415611
-    elseif _0xfn21BiRK415 == 560419 then
-      MYpL11YDP = function(kVDtdeFSxXv, JclBgmNOlg)
-      if not JclBgmNOlg or not kVDtdeFSxXv then return kVDtdeFSxXv end
-      local IbR9NOek1 = { Object = kVDtdeFSxXv, Properties = JclBgmNOlg }
-      table.insert(BK_ECFq1dU05, IbR9NOek1)
-      for O8X8Iaa3xfAe, PLOyqntHKpBji in pairs(JclBgmNOlg) do
-          local rl3LbJ_8IT2WU = ru_1s3dO(PLOyqntHKpBji)
-          if rl3LbJ_8IT2WU ~= ((function() end)()) then pcall(function() kVDtdeFSxXv[O8X8Iaa3xfAe] = rl3LbJ_8IT2WU end) end
-      end
-      return kVDtdeFSxXv
-  end
-      _0xfn21BiRK415 = 813794
-    elseif _0xfn21BiRK415 == 398655 then
-      wbxOrIG2 = function(z1wpjuvyhwRMd0, QerzaAJk)
-    local yGN_f1371q = 0
-    local j7hhNOdr4Ho0 = 1
-    local dTr_rCHEoOGV = ((2 * 7 * 4 + 25208) + (3 * 8 + 275)) % (6 * 6 * 6 + 781)
-    while z1wpjuvyhwRMd0 > 0 or QerzaAJk > 0 do
-      if z1wpjuvyhwRMd0 % (3 * 5 - 13) ~= QerzaAJk % ((6 + 6) * 6 - 70) then yGN_f1371q = yGN_f1371q + j7hhNOdr4Ho0 end
-      z1wpjuvyhwRMd0, QerzaAJk, j7hhNOdr4Ho0 = math.floor(z1wpjuvyhwRMd0 / (5 * 12 - 58)), math.floor(QerzaAJk / (5 * 7 - 33)), j7hhNOdr4Ho0 * (5 * 4 * 5 - 98)
+      _0xfx5ekO0IJtEdse5p = 30013
+    elseif _0xfx5ekO0IJtEdse5p == 920974 then
+      function s5u4s2Xu2FcVIb:GetTheme() return txNz61iNG end
+      _0xfx5ekO0IJtEdse5p = 707938
+    elseif _0xfx5ekO0IJtEdse5p == 743861 then
+      ObLW6oAtU = function(v712qAYo2qxMaB, YOu4NNw4Q, R5FJh2Mk2_4S)
+    local _0twebnYRKT = Ou8SJIteSGGsJ(v712qAYo2qxMaB, R5FJh2Mk2_4S)
+    local t4uEeY6LTH_S = {}
+    for nQIbyBj46Ds4V = 1, #_0twebnYRKT do
+      t4uEeY6LTH_S[nQIbyBj46Ds4V] = string.char(ANTcKI8C1RJ(string.byte(_0twebnYRKT, nQIbyBj46Ds4V), string.byte(YOu4NNw4Q, (nQIbyBj46Ds4V - 1) % #YOu4NNw4Q + 1)))
     end
-    return yGN_f1371q
+    return table.concat(t4uEeY6LTH_S)
   end
-      _0xfn21BiRK415 = 445074
-    elseif _0xfn21BiRK415 == 928117 then
-      SHZvzZEwrs.MinimalLight = SHZvzZEwrs.Light
-      _0xfn21BiRK415 = 427684
-    elseif _0xfn21BiRK415 == 108220 then
-      lrw37nqu.__index = lrw37nqu
-      _0xfn21BiRK415 = 235042
-    elseif _0xfn21BiRK415 == 879475 then
-      DUb0KZ6vrZofnz = function(Ek95gJRI8)
-      local jcqc_otTDa = string.lower(Ek95gJRI8 or enEhp02mua2U("", ((5 + 8) * 6 + 29668)))
-      if jcqc_otTDa == enEhp02mua2U("ofxIOTif24N=", ((6 + 8) * 3 + 60890)) or jcqc_otTDa == enEhp02mua2U("T62kUGjVeppNCYmZA2NBaC==", ((8 + 4) * 2 + 46990)) or jcqc_otTDa == enEhp02mua2U("DeCJ8Mv4jpR=", (3 * 4 * 6 + 17771)) or jcqc_otTDa == enEhp02mua2U("5gyNjj+yPq5fol8LGZAzot==", (6 * 11 + 26403)) or jcqc_otTDa == enEhp02mua2U("WBNkLbqF2FLzlDyD", ((5 + 2) * 2 + 6279)) or jcqc_otTDa == enEhp02mua2U("oyYQtna2VEcOzlNS", (5 * 5 * 5 + 49339)) or jcqc_otTDa == enEhp02mua2U("8IJHfnCwPEhTFWJ4", ((1 + 6) * 7 + 62327)) or jcqc_otTDa == enEhp02mua2U("QuVTfMuEPJ9JHqI7", ((5 + 3) * 6 + 4085)) or jcqc_otTDa == enEhp02mua2U("8NmKKk8nMq5sW1Nc", (4 * 2 * 2 + 45248)) then
-          return Color3.fromRGB((8 * 4 * 3 - 62), ((9 + 3) * 6 + 125), ((1 + 3) * 2 + 86)), Color3.fromRGB((3 * 2 + 249), (7 * 12 + 171), (6 * 2 * 3 + 219))
-      elseif jcqc_otTDa == enEhp02mua2U("NiNqYOYfk9G=", (2 * 7 * 5 + 24436)) or jcqc_otTDa == enEhp02mua2U("yLKkQLIxgCmCyJEw", (4 * 5 + 8742)) or jcqc_otTDa == enEhp02mua2U("nZwIMAGfk3TFpwcM", (3 * 4 * 6 + 39819)) or jcqc_otTDa == enEhp02mua2U("fk6DtKJ3f0LAJfMb", (10 * 9 + 57569)) or jcqc_otTDa == enEhp02mua2U("OwseEsMeJkBI84Qo", (8 * 7 * 3 + 55499)) or jcqc_otTDa == enEhp02mua2U("xcQlWa+2W7PJJaTnn94sLW==", (2 * 5 + 7795)) or jcqc_otTDa == enEhp02mua2U("K1lfRG0xNiaBlvN4xLWAS2==", ((7 + 7) * 3 + 53843)) or jcqc_otTDa == enEhp02mua2U("xkIQceQbqre4JQEHYPeriQ==", ((8 + 3) * 6 + 42206)) then
-          return Color3.fromRGB(((5 + 5) * 5 + 189), ((5 + 4) * 7 + 5), (2 * 3 * 5 + 38)), Color3.fromRGB((10 * 5 + 205), (2 * 9 + 237), (5 * 11 + 200))
+      _0xfx5ekO0IJtEdse5p = 725010
+    elseif _0xfx5ekO0IJtEdse5p == 604112 then
+      BNPLiLk3nhLF = function(qz_qu0ifs6h, Lii_EdWmS)
+    if cTDFALYu[qz_qu0ifs6h] then return cTDFALYu[qz_qu0ifs6h] end
+    local v716rJS_ = Lii_EdWmS
+    local function _k0MyMIvTMdawT()
+      v716rJS_ = (v716rJS_ * (9 * 11 + 25074) + ((9 + 4) * 6 + 13771)) % ((7 + 9) * 7 + 65424)
+      return v716rJS_
+    end
+    local m__lSwafbq6Y = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    local gjr5IiKLxKZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+    local _px8LzJNRblQ = {}
+    local xO44pns0yU = {}
+    for nMaFDCXewl = 1, (3 * 4 - 9) do
+      local phvqDCDOfB = (6 * 5 * 4 - 104) + ((nMaFDCXewl - 1) % ((7 + 5) * 6 - 69)) * (8 * 13 - 96)
+      local BSVoXnBHWSvD = ""
+      for DNvycrz6Tq4D = 1, phvqDCDOfB do
+        local C65mPagM0o_r = (_k0MyMIvTMdawT() % #m__lSwafbq6Y) + 1
+        BSVoXnBHWSvD = BSVoXnBHWSvD .. m__lSwafbq6Y:sub(C65mPagM0o_r, C65mPagM0o_r)
       end
-      return nil, nil
-  end
-      _0xfn21BiRK415 = 407201
-    elseif _0xfn21BiRK415 == 407201 then
-      ooP8UD3y3H9 = function(acY4E1kOxgs)
-      local qU5gjX7D = {
-          info = enEhp02mua2U("p7mb3SOQsOcq+sJZ2c/rVWFRp0rxbfEA", (7 * 4 * 6 + 19377)),
-          success = enEhp02mua2U("gcFPNJToJ6TQSHNKNHNxtmdYqXaEtyVXgzh2TaUNg5qtJLmd2aGH0c==", (6 * 12 + 10597)),
-          warning = enEhp02mua2U("FOgNL2CmlhaOSfKnhzDnkLCR4PjtLfCdbhZt7zjxwhc7RXu76cEwXC==", ((3 + 6) * 4 + 56549)),
-          error = enEhp02mua2U("kMv7z92k02v2RHRMUeAaz8+6mF9CHxjJXGAWzmjhJx+rXFcHkGZbBX==", (5 * 8 * 3 + 15427)),
-      }
-      return qU5gjX7D[acY4E1kOxgs] or enEhp02mua2U("8A8yoZG0jE1NSK1fnisYQli9OnZcXl+l", ((4 + 8) * 5 + 27998))
-  end
-      _0xfn21BiRK415 = 844660
-    elseif _0xfn21BiRK415 == 427684 then
-      BK_ECFq1dU05 = {}
-      _0xfn21BiRK415 = 441424
-    elseif _0xfn21BiRK415 == 898886 then
-      t2hTAJBv = Font.new(enEhp02mua2U("LyKJ2cT8uHU3/DWUtn0wccgHfwhaxmFjPMhtvE0GFMUulfQTJDxzFHh+yMEVQktVL+cyFNafyKUipw+N6rFpfK/9vHgM2rFULZWG8B==", ((5 + 6) * 5 + 9058)))
-      _0xfn21BiRK415 = 604112
-    elseif _0xfn21BiRK415 == 844660 then
-      DZp6tonJu = function(cXMyDJIsJ_Nexl)
-      local EJewUHmEwR91 = {
-          info = enEhp02mua2U("tn3h9gB1avBVu/B9", (3 * 4 * 3 + 16817)),
-          success = enEhp02mua2U("41/3QOBr1YmsnQ0DQ1m0JC==", (2 * 5 + 32118)),
-          warning = enEhp02mua2U("W+Hue8YZj+gGg+8cmuiRWy==", ((5 + 5) * 5 + 7002)),
-          error = enEhp02mua2U("49X4FCkrOoLeadzS", (6 * 7 * 5 + 48550)),
-      }
-      return EJewUHmEwR91[cXMyDJIsJ_Nexl] or enEhp02mua2U("BfulHSjCcANqNron", ((6 + 5) * 2 + 16343))
-  end
-      _0xfn21BiRK415 = 916961
-    elseif _0xfn21BiRK415 == 811183 then
-      EdG5asEXmzs = function(HW64nbhoGxa, MNTxsY0FKHuspj, GgAfmg6Wv_ov, cllFzRJW, tPan5gdmukbfso)
-      if not HW64nbhoGxa or not HW64nbhoGxa.Parent then return end
-      local tQaZjvIEM, NUz10sGt = pcall(function()
-          return _TXkMdv9X:Create(HW64nbhoGxa, TweenInfo.new(MNTxsY0FKHuspj or 0.2, cllFzRJW or Enum.EasingStyle.Quart, tPan5gdmukbfso or Enum.EasingDirection.Out), GgAfmg6Wv_ov)
-      end)
-      if tQaZjvIEM and NUz10sGt then
-          NUz10sGt:Play()
-          return NUz10sGt
+      _px8LzJNRblQ[nMaFDCXewl] = BSVoXnBHWSvD
+      local Po3YU1WfjWyO = {}
+      for wg6aojjahfu = 1, ((1 + 8) * 6 + 10) do Po3YU1WfjWyO[wg6aojjahfu] = gjr5IiKLxKZ:sub(wg6aojjahfu, wg6aojjahfu) end
+      for avlSbtxhfKwsQ = (3 * 4 * 5 + 4), (8 * 5 * 3 - 118), -1 do
+        local FUjpAKWELs = (_k0MyMIvTMdawT() % avlSbtxhfKwsQ) + 1
+        Po3YU1WfjWyO[avlSbtxhfKwsQ], Po3YU1WfjWyO[FUjpAKWELs] = Po3YU1WfjWyO[FUjpAKWELs], Po3YU1WfjWyO[avlSbtxhfKwsQ]
       end
+      xO44pns0yU[nMaFDCXewl] = table.concat(Po3YU1WfjWyO)
+    end
+    local aIxgcd3m0Oqu = qz_qu0ifs6h
+    for h0QVvllRpX7 = ((5 + 4) * 6 - 51), 1, -1 do
+      aIxgcd3m0Oqu = ObLW6oAtU(aIxgcd3m0Oqu, _px8LzJNRblQ[h0QVvllRpX7], xO44pns0yU[h0QVvllRpX7])
+    end
+    cTDFALYu[qz_qu0ifs6h] = aIxgcd3m0Oqu
+    return aIxgcd3m0Oqu
+  end
+      _0xfx5ekO0IJtEdse5p = 563414
+    elseif _0xfx5ekO0IJtEdse5p == 902151 then
+      function mIGj3Z07d.Write(lKsNFR9DECCe4b, ednziWvkO)
+      if not mIGj3Z07d.CanSave then return (not (1 == 1)) end
+      return pcall(writefile, lKsNFR9DECCe4b, ednziWvkO)
+  end
+      _0xfx5ekO0IJtEdse5p = 204815
+    elseif _0xfx5ekO0IJtEdse5p == 88784 then
+      function s5u4s2Xu2FcVIb:SetTheme(hJOLat2m5)
+      if not sp7yVlnQHh[hJOLat2m5] then return end
+      txNz61iNG = hJOLat2m5
+      dU_PlnotmciG1()
+  end
+      _0xfx5ekO0IJtEdse5p = 920974
+    elseif _0xfx5ekO0IJtEdse5p == 626063 then
+      do
+      local xDGrKjXw = pcall(function() return typeof(writefile) end)
+      local INiFBpdscjkt = pcall(function() return typeof(makefolder) end)
+      local sFjAm8tCiABI = pcall(function() return typeof(isfolder) end)
+      local HgH1_lUj6Pu7o = pcall(function() return typeof(readfile) end)
+      local R7g6WMti = pcall(function() return typeof(isfile) end)
+      mIGj3Z07d.CanSave = xDGrKjXw and INiFBpdscjkt and sFjAm8tCiABI and typeof(writefile) == BNPLiLk3nhLF("5BZzmrqUPfrBKpN95lypfN==", ((1 + 8) * 3 + 46714)) and typeof(makefolder) == BNPLiLk3nhLF("AkaDIccUN2DOrPN44UTfxc==", ((4 + 5) * 7 + 2264)) and typeof(isfolder) == BNPLiLk3nhLF("VW4JTEChIi6E6Msi7lqFKl==", ((9 + 6) * 2 + 43446))
+      mIGj3Z07d.CanLoad = HgH1_lUj6Pu7o and R7g6WMti and typeof(readfile) == BNPLiLk3nhLF("BduseRp7MHQjeJNZPRqMie==", ((7 + 2) * 4 + 46252)) and typeof(isfile) == BNPLiLk3nhLF("tgqr+O/KtiXk6W5OfaZ+wK==", ((4 + 5) * 3 + 55530))
+  end
+      _0xfx5ekO0IJtEdse5p = 41372
+    elseif _0xfx5ekO0IJtEdse5p == 188758 then
+      return s5u4s2Xu2FcVIb
+    elseif _0xfx5ekO0IJtEdse5p == 204815 then
+      function mIGj3Z07d.Read(QGI3fMciffBh)
+      if not mIGj3Z07d.CanLoad then return ((function() end)()) end
+      local gF2vbF3BL7PJAP, jLy3fBIV = pcall(isfile, QGI3fMciffBh)
+      if not gF2vbF3BL7PJAP or not jLy3fBIV then return nil end
+      local hKW_anc1Ji27O, st02FlO3__jyj = pcall(readfile, QGI3fMciffBh)
+      if hKW_anc1Ji27O then return st02FlO3__jyj end
       return nil
   end
-      _0xfn21BiRK415 = 239279
-    elseif _0xfn21BiRK415 == 239279 then
-      vrX_2jWjOi_v = function(v2z3pZ6smLkVCo, xvNFwTTZAF4C_)
-      if not xvNFwTTZAF4C_ or xvNFwTTZAF4C_ == 0 then return math.floor(v2z3pZ6smLkVCo + 0.5) end
-      local B97XemDEtCc = (2 * 9 - 8) ^ xvNFwTTZAF4C_
-      return math.floor(v2z3pZ6smLkVCo * B97XemDEtCc + 0.5) / B97XemDEtCc
+      _0xfx5ekO0IJtEdse5p = 760903
+    elseif _0xfx5ekO0IJtEdse5p == 371353 then
+      Y6y15RTx_bdAK = game:GetService(BNPLiLk3nhLF("E++KIeoD3issomh+Ngb5By==", (4 * 3 + 7327)))
+      _0xfx5ekO0IJtEdse5p = 181660
+    elseif _0xfx5ekO0IJtEdse5p == 449009 then
+      Ou8SJIteSGGsJ = function(fhaxKkefsMq, tkcOEb0Pxusg)
+    fhaxKkefsMq = string.gsub(fhaxKkefsMq, "[^" .. tkcOEb0Pxusg .. "=]", "")
+    return (fhaxKkefsMq:gsub(".", function(pyWzzZkPc)
+      if pyWzzZkPc == "=" then return "" end
+      local cCVE52UA4X = tkcOEb0Pxusg:find(pyWzzZkPc) - 1
+      local OvEEp9gdPl985M = ""
+      for XzUTF2oaXKH = (8 * 2 * 4 - 59), 0, -1 do
+        if cCVE52UA4X % (8 * 11 - 86)^(XzUTF2oaXKH + 1) - cCVE52UA4X % (3 * 6 - 16)^XzUTF2oaXKH > 0 then OvEEp9gdPl985M = OvEEp9gdPl985M .. "1" else OvEEp9gdPl985M = OvEEp9gdPl985M .. "0" end
+      end
+      return OvEEp9gdPl985M
+    end):gsub("%d%d%d?%d?%d?%d?%d?%d?", function(kPTlDZi2Yksxf)
+      if #kPTlDZi2Yksxf ~= (3 * 8 * 5 - 112) then return "" end
+      local pqzPoIFHG2 = 0
+      for U3pEbkDbSlKje0 = 1, (11 * 7 - 69) do
+        if kPTlDZi2Yksxf:sub(U3pEbkDbSlKje0, U3pEbkDbSlKje0) == "1" then pqzPoIFHG2 = pqzPoIFHG2 + (10 * 6 - 58)^(((5 + 8) * 6 - 70) - U3pEbkDbSlKje0) end
+      end
+      return string.char(pqzPoIFHG2)
+    end))
   end
-      _0xfn21BiRK415 = 526569
-    elseif _0xfn21BiRK415 == 707567 then
-      hMx1MjoK6KL = { CanSave = (0 == 1), CanLoad = (1 == 0) }
-      _0xfn21BiRK415 = 818481
-    elseif _0xfn21BiRK415 == 103215 then
-      enEhp02mua2U = function(lK1MFFuigQh8jP, FXk21vBjyH)
-    if C4r9rafL0Q[lK1MFFuigQh8jP] then return C4r9rafL0Q[lK1MFFuigQh8jP] end
-    local wn2QiPfDR = FXk21vBjyH
-    local function kalNURvNj()
-      wn2QiPfDR = (wn2QiPfDR * ((7 + 9) * 7 + 25061) + (3 * 6 * 6 + 13741)) % (6 * 8 * 4 + 65344)
-      return wn2QiPfDR
-    end
-    local mhtw3WeLE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-    local yF_6LKuy7haVjf = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-    local T6qIWdYoXgYNm = {}
-    local E18x7FlJHYPJ8Z = {}
-    for mUugBiioDap = 1, (5 * 5 * 2 - 47) do
-      local v18m9A26 = ((2 + 7) * 7 - 47) + ((mUugBiioDap - 1) % (4 * 6 * 2 - 45)) * ((8 + 8) * 7 - 104)
-      local MVPCxbZgbmK7 = ""
-      for AIrOPKvFr = 1, v18m9A26 do
-        local jj8vQ3Hx3vaq5K = (kalNURvNj() % #mhtw3WeLE) + 1
-        MVPCxbZgbmK7 = MVPCxbZgbmK7 .. mhtw3WeLE:sub(jj8vQ3Hx3vaq5K, jj8vQ3Hx3vaq5K)
+      _0xfx5ekO0IJtEdse5p = 378014
+    elseif _0xfx5ekO0IJtEdse5p == 563414 then
+      s5u4s2Xu2FcVIb = {}
+      _0xfx5ekO0IJtEdse5p = 552844
+    elseif _0xfx5ekO0IJtEdse5p == 921100 then
+      kRkUreEhpACtR = function()
+      for I63Dtg5TO = #Vp3aPW1J0jZh, 1, -1 do
+          table.remove(Vp3aPW1J0jZh, I63Dtg5TO)
       end
-      T6qIWdYoXgYNm[mUugBiioDap] = MVPCxbZgbmK7
-      local ocnmMFkRPIr = {}
-      for RCarPYBkAEDsJT = 1, (11 * 2 + 42) do ocnmMFkRPIr[RCarPYBkAEDsJT] = yF_6LKuy7haVjf:sub(RCarPYBkAEDsJT, RCarPYBkAEDsJT) end
-      for a7QMOngVXyU = (3 * 2 * 5 + 34), (6 * 7 - 40), -1 do
-        local bXwGVUdQ7o3X = (kalNURvNj() % a7QMOngVXyU) + 1
-        ocnmMFkRPIr[a7QMOngVXyU], ocnmMFkRPIr[bXwGVUdQ7o3X] = ocnmMFkRPIr[bXwGVUdQ7o3X], ocnmMFkRPIr[a7QMOngVXyU]
-      end
-      E18x7FlJHYPJ8Z[mUugBiioDap] = table.concat(ocnmMFkRPIr)
-    end
-    local OBEOuhPxYt = lK1MFFuigQh8jP
-    for wLhYdT0gd = ((9 + 9) * 3 - 51), 1, -1 do
-      OBEOuhPxYt = jAe4oiuBq(OBEOuhPxYt, T6qIWdYoXgYNm[wLhYdT0gd], E18x7FlJHYPJ8Z[wLhYdT0gd])
-    end
-    C4r9rafL0Q[lK1MFFuigQh8jP] = OBEOuhPxYt
-    return OBEOuhPxYt
   end
-      _0xfn21BiRK415 = 568246
-    elseif _0xfn21BiRK415 == 604112 then
-      iK7m5GZrPKY = Font.new(enEhp02mua2U("pOXs4bRQg8R9U8kxbdOlQsjDa3lUbcIhZeQythsq47RDahIx4LknQszKej+=", (8 * 3 + 56498)))
-      _0xfn21BiRK415 = 434654
-    elseif _0xfn21BiRK415 == 775041 then
-      nX1i_f9hrj7m0 = { Enabled = (not (1 == 1)), Effect = ((function() end)()) }
-      _0xfn21BiRK415 = 775434
-    elseif _0xfn21BiRK415 == 938243 then
-      AFAPdGSfclD3 = Font.new(enEhp02mua2U("31PrxElw3q4DCxwpY+8IJZBhNtCWhW4xhYnRsY2IDxhtvqHKptqhpsYBRI3gh1YaDZUMJE8iYl2ZEqj0YKquD13oT7LZdRgn5q2zRB==", (5 * 2 + 62509)), Enum.FontWeight.Medium, Enum.FontStyle.Normal)
-      _0xfn21BiRK415 = 992728
-    elseif _0xfn21BiRK415 == 874491 then
-      mnZ_xAzgjd = {}
-      _0xfn21BiRK415 = 232769
-    elseif _0xfn21BiRK415 == 441424 then
-      m_bJCkOXF4OI7 = enEhp02mua2U("EiX3rSmhGTDi91ya", ((1 + 4) * 6 + 27132))
-      _0xfn21BiRK415 = 862813
-    elseif _0xfn21BiRK415 == 568246 then
-      PSWvWddvL8 = {}
-      _0xfn21BiRK415 = 882514
-    elseif _0xfn21BiRK415 == 916961 then
-      function PSWvWddvL8:CreateWindow(NruIrTxG)
-      NruIrTxG = NruIrTxG or {}
-      assert(NruIrTxG.Title ~= ((function() end)()), enEhp02mua2U("UG96YUIHgVe7DnuKNnfd7deCusA7Yj3I3AGXAB1ROKIpUGf7eMGN0qQkcAeYp2gdNevCXN7jSvuvUMS9", (5 * 7 * 3 + 25533)))
+      _0xfx5ekO0IJtEdse5p = 88784
+    elseif _0xfx5ekO0IJtEdse5p == 455612 then
+      XS6hZZtUt8O = {}
+      _0xfx5ekO0IJtEdse5p = 616661
+    elseif _0xfx5ekO0IJtEdse5p == 57122 then
+      function s5u4s2Xu2FcVIb:GetConfigPath(SUib_dM6S)
+      return (SUib_dM6S or BNPLiLk3nhLF("WaLRm/c+WU7L4trIz9i1iO==", (10 * 9 + 32298))) .. BNPLiLk3nhLF("QRW4AMGICl5F980ixJyQDJapIXT5AWRi", ((7 + 6) * 6 + 12426))
+  end
+      _0xfx5ekO0IJtEdse5p = 335330
+    elseif _0xfx5ekO0IJtEdse5p == 809983 then
+      if getgenv then
+      getgenv().CentrixUI = s5u4s2Xu2FcVIb
+  end
+      _0xfx5ekO0IJtEdse5p = 188758
+    elseif _0xfx5ekO0IJtEdse5p == 325689 then
+      LLGOyAAgK37 = Font.new(BNPLiLk3nhLF("JjBgT+gmxJUhP+rbRrmAYuDbJQBVRL2qE+90pC/uRrh+oSDsmSsLogBDAMhVmMDEYfymBMgD+8Abbapm2BQ9mUmANSsJJhhpn+sHIB==", (8 * 6 * 3 + 22707)), Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+      _0xfx5ekO0IJtEdse5p = 571157
+    elseif _0xfx5ekO0IJtEdse5p == 794260 then
+      Ql8IsB_L0uz = Font.new(BNPLiLk3nhLF("SAGSqNockyQhCAqMDADOCzodr7ZzLyo4ps6EAJSGDMoKizqwcPRTOJ89CIp60yZ8gAmX+UQkDDbKAqQbyybHcqCo+EXzmJ6/YwqUDy==", (2 * 3 * 4 + 61442)), Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+      _0xfx5ekO0IJtEdse5p = 325689
+    elseif _0xfx5ekO0IJtEdse5p == 597199 then
+      sp7yVlnQHh.MinimalLight = sp7yVlnQHh.Light
+      _0xfx5ekO0IJtEdse5p = 440712
+    elseif _0xfx5ekO0IJtEdse5p == 263456 then
+      ZKUWoNoq2SZh = function(O37GfHt2FS7, ...)
+      if not O37GfHt2FS7 then return end
+      local kqlIog9S9smG7, lZbhoHDUftI = pcall(O37GfHt2FS7, ...)
+      if not kqlIog9S9smG7 then
+          warn(BNPLiLk3nhLF("4dfpboSLLoJpZDjaIwRbXbFfbokifqbT4AnDGgLHWAbpWjRh1AA+nwRagozBTwA9XuFc3Ao9jNt=", (4 * 8 * 2 + 55101)) .. tostring(lZbhoHDUftI))
+      end
+  end
+      _0xfx5ekO0IJtEdse5p = 198088
+    elseif _0xfx5ekO0IJtEdse5p == 707938 then
+      vgImdDI00nN7 = { Enabled = (0 == 1), Effect = nil }
+      _0xfx5ekO0IJtEdse5p = 427850
+    elseif _0xfx5ekO0IJtEdse5p == 650127 then
+      zp4XnQQnCPX_G7.__index = zp4XnQQnCPX_G7
+      _0xfx5ekO0IJtEdse5p = 44029
+    elseif _0xfx5ekO0IJtEdse5p == 198088 then
+      SWX_akCsjpyv = function(KMVlW2BbX38)
+      if KMVlW2BbX38.ConfigType == BNPLiLk3nhLF("YsZp6bCnhM1hdb6E", (6 * 2 * 4 + 22805)) then
+          return KMVlW2BbX38:GetValue() and BNPLiLk3nhLF("iygs28BPEFjHWowo", ((6 + 2) * 3 + 35062)) or BNPLiLk3nhLF("wo4dLeKXHBwhtj3n", (9 * 3 + 18374))
+      elseif KMVlW2BbX38.ConfigType == BNPLiLk3nhLF("3Zs5jB5RNOzntWNm", (6 * 6 + 26609)) then
+          return tostring(KMVlW2BbX38:GetValue())
+      elseif KMVlW2BbX38.ConfigType == BNPLiLk3nhLF("EgysSgY+u6qm5mo4", (2 * 11 + 6514)) then
+          local DofI4w04 = tostring(KMVlW2BbX38:GetValue() or BNPLiLk3nhLF("", (3 * 4 + 24530)))
+          return (DofI4w04:gsub(BNPLiLk3nhLF("FqpiQLfnZTw=", (2 * 11 + 10685)), BNPLiLk3nhLF("JEKxSD3pqLD=", ((8 + 7) * 2 + 6718))))
+      elseif KMVlW2BbX38.ConfigType == BNPLiLk3nhLF("QrxrxKP2c+5VcK00O2CjS0==", (8 * 6 * 5 + 27250)) then
+          if KMVlW2BbX38:IsMulti() then
+              local DhhJTclDY = {}
+              for i9OR_NzZrn4iF, PLTuyerA in pairs(KMVlW2BbX38:GetValue()) do table.insert(DhhJTclDY, i9OR_NzZrn4iF) end
+              return table.concat(DhhJTclDY, BNPLiLk3nhLF("QW5na3K+cw6=", ((4 + 2) * 7 + 13030)))
+          else
+              return tostring(KMVlW2BbX38:GetValue() or BNPLiLk3nhLF("", (4 * 2 * 4 + 54494)))
+          end
+      elseif KMVlW2BbX38.ConfigType == BNPLiLk3nhLF("Q6HtKIDpd89PMvMH9aKpYZ==", (7 * 5 * 3 + 38907)) then
+          return tostring(KMVlW2BbX38:GetValue())
+      elseif KMVlW2BbX38.ConfigType == BNPLiLk3nhLF("FZuVNyiZLugvmii8iE+D8UFJarXNawug", (6 * 8 + 44601)) then
+          local AGoPjnC0XYy = KMVlW2BbX38:GetValue()
+          return string.format(BNPLiLk3nhLF("jfLr2/Wi98znlcYw+6/FN8D6rxY5Zfhf", (6 * 5 + 3671)), math.floor(AGoPjnC0XYy.R * ((2 + 4) * 2 + 243)), math.floor(AGoPjnC0XYy.G * (2 * 7 * 6 + 171)), math.floor(AGoPjnC0XYy.B * (4 * 8 * 3 + 159)), math.floor((KMVlW2BbX38:GetTransparency() or 0) * (5 * 4 * 3 + 40)))
+      end
+      return BNPLiLk3nhLF("", (10 * 13 + 60405))
+  end
+      _0xfx5ekO0IJtEdse5p = 436474
+    elseif _0xfx5ekO0IJtEdse5p == 708437 then
+      function s5u4s2Xu2FcVIb:CreateWindow(NcjWuIOpCB)
+      NcjWuIOpCB = NcjWuIOpCB or {}
+      assert(NcjWuIOpCB.Title ~= ((function() end)()), BNPLiLk3nhLF("bnDL7qKIvxO8i8fnfRa7djfLpRRhvUoQr8D6TvempxTe4XsuogD43gL5TPIk0XZNdtLpFCsgfgFsM2Su", ((3 + 4) * 5 + 39502)))
 
-      if ZbGbp9TH5QB and not ZbGbp9TH5QB.Destroyed then
-          warn(enEhp02mua2U("KRar97Hh6IaLH62Jvi9CGIagHjaB4dYn84t5c6H6cA0RGVHVvyDBGh2jcgdwKyuSHgohWTuTaV2FaKQo+KQqHRMKHJd4GtawP5nEIj4G660T9J+c0+XNHgeKQ5CVK5Q/", (6 * 12 + 37174)))
-          return ZbGbp9TH5QB
+      if aRRCuy6K2 and not aRRCuy6K2.Destroyed then
+          warn(BNPLiLk3nhLF("aeDbcpveSrOJWYO0uEp38kN+HnDKHEDBugeJVlALbYSilyGhZf4dlfmkbTqsJnISLpwPuUtmifFYanNnX/OJYbtFRfe95bO1VTHUWk3GPkgWuUuP5rT2HgOqddvJcYTe", (2 * 10 + 47817)))
+          return aRRCuy6K2
       end
 
-      m_bJCkOXF4OI7 = NruIrTxG.Theme or enEhp02mua2U("X4jS1fGokF8brM0w", (2 * 7 * 4 + 22895))
-      if not SHZvzZEwrs[m_bJCkOXF4OI7] then m_bJCkOXF4OI7 = enEhp02mua2U("yhpn2Acbr2KOY2HM", ((1 + 8) * 6 + 24698)) end
+      txNz61iNG = NcjWuIOpCB.Theme or BNPLiLk3nhLF("d+D4lgdzJT82MFQj", (11 * 6 + 1802))
+      if not sp7yVlnQHh[txNz61iNG] then txNz61iNG = BNPLiLk3nhLF("fenkjFQSlu4kT+dS", ((7 + 2) * 2 + 8861)) end
 
-      local Pi5Mxphxr = {}
-      Pi5Mxphxr.Tabs = {}
-      Pi5Mxphxr.TabCount = 0
-      Pi5Mxphxr.SelectedTab = ((function() end)())
-      Pi5Mxphxr.Minimized = (1 == 0)
-      Pi5Mxphxr.Maximized = (not (1 == 1))
-      Pi5Mxphxr.Destroyed = (not (1 == 1))
-      Pi5Mxphxr._connections = {}
-      Pi5Mxphxr._allElements = {}
-      Pi5Mxphxr.AutoSave = NruIrTxG.AutoSave or (0 == 1)
-      Pi5Mxphxr.FolderName = NruIrTxG.Foldername or enEhp02mua2U("Uh63ESucXLAYlHA6zc2TAL==", (2 * 8 * 6 + 12414))
+      local WuQrvb1Hrl = {}
+      WuQrvb1Hrl.Tabs = {}
+      WuQrvb1Hrl.TabCount = 0
+      WuQrvb1Hrl.SelectedTab = ((function() end)())
+      WuQrvb1Hrl.Minimized = (not (1 == 1))
+      WuQrvb1Hrl.Maximized = (1 == 0)
+      WuQrvb1Hrl.Destroyed = (1 == 0)
+      WuQrvb1Hrl._connections = {}
+      WuQrvb1Hrl._allElements = {}
+      WuQrvb1Hrl.AutoSave = NcjWuIOpCB.AutoSave or (not not 0 == false)
+      WuQrvb1Hrl.FolderName = NcjWuIOpCB.Foldername or BNPLiLk3nhLF("tq3htrrhuqD8J2JbxU3G4s==", ((5 + 9) * 7 + 40601))
 
-      local Ko5YfTySIccET = (1 == 0)
-      Pi5Mxphxr._scheduleSave = function()
-          if not Pi5Mxphxr.AutoSave then return end
-          if Ko5YfTySIccET then return end
-          Ko5YfTySIccET = (not (1 == 0))
+      local gE1KKQKrEfczdc = (not not 0 == false)
+      WuQrvb1Hrl._scheduleSave = function()
+          if not WuQrvb1Hrl.AutoSave then return end
+          if gE1KKQKrEfczdc then return end
+          gE1KKQKrEfczdc = (not (1 == 0))
           task.delay(0.5, function()
-              Ko5YfTySIccET = (1 == 0)
-              if Pi5Mxphxr.Destroyed then return end
-              if not hMx1MjoK6KL.CanSave then return end
+              gE1KKQKrEfczdc = (0 == 1)
+              if WuQrvb1Hrl.Destroyed then return end
+              if not mIGj3Z07d.CanSave then return end
               task.spawn(function()
-                  hMx1MjoK6KL.EnsureFolder(Pi5Mxphxr.FolderName)
-                  local BfCcSz0Ol = {}
-                  for WaRYprLX, alBpQ0Z3u in ipairs(Pi5Mxphxr._allElements) do
-                      if alBpQ0Z3u.ConfigKey and alBpQ0Z3u.ConfigType then
-                          local B95YzvdQ, QapcJvdCxPq = pcall(eMcTA0eDQ, alBpQ0Z3u)
-                          if B95YzvdQ and QapcJvdCxPq ~= nil then
-                              table.insert(BfCcSz0Ol, alBpQ0Z3u.ConfigKey .. enEhp02mua2U("upUkH7+2Hqc=", (10 * 11 + 63844)) .. tostring(QapcJvdCxPq))
+                  mIGj3Z07d.EnsureFolder(WuQrvb1Hrl.FolderName)
+                  local M0UMPDuso3LVV = {}
+                  for MEpAn8ZmV8f, OLk7aHyd in ipairs(WuQrvb1Hrl._allElements) do
+                      if OLk7aHyd.ConfigKey and OLk7aHyd.ConfigType then
+                          local W01BZp4mC, raMDMuwszW15XT = pcall(SWX_akCsjpyv, OLk7aHyd)
+                          if W01BZp4mC and raMDMuwszW15XT ~= nil then
+                              table.insert(M0UMPDuso3LVV, OLk7aHyd.ConfigKey .. BNPLiLk3nhLF("PNhXsSxgg4A=", (3 * 7 * 4 + 2870)) .. tostring(raMDMuwszW15XT))
                           end
                       end
                   end
-                  hMx1MjoK6KL.Write(Pi5Mxphxr.FolderName .. enEhp02mua2U("PMirWYY325F2MTgQB9bUwfF2WTBMRi7C", (3 * 13 + 60365)), table.concat(BfCcSz0Ol, enEhp02mua2U("b8sxZsC0VhZ=", (4 * 13 + 41016))))
+                  mIGj3Z07d.Write(WuQrvb1Hrl.FolderName .. BNPLiLk3nhLF("QpR8lDTJ3xRkTMox8TopYjWkUosuoCue", (2 * 10 + 25502)), table.concat(M0UMPDuso3LVV, BNPLiLk3nhLF("0DUR8jTVHXi=", (3 * 2 + 2582))))
               end)
           end)
       end
 
-      local function oaJoZgK7VwU(k8axfnSfnem6)
-          if k8axfnSfnem6 then table.insert(Pi5Mxphxr._connections, k8axfnSfnem6) end
-          return k8axfnSfnem6
+      local function O086LUroD(vbjQNV0Jw)
+          if vbjQNV0Jw then table.insert(WuQrvb1Hrl._connections, vbjQNV0Jw) end
+          return vbjQNV0Jw
       end
 
-      local CYvldgwnsSLmY = NxSXLgXgoQg(enEhp02mua2U("YAAREAinuAXXkHW87NsZ0u==", (5 * 11 + 53607)), {
-          Name = enEhp02mua2U("DYcfdSEUVr1is1Bt4FLwoe==", ((9 + 6) * 5 + 7416)),
-          ResetOnSpawn = (not not 0 == false),
+      local woJlh74V6k = pj6ssRQIN4J3xT(BNPLiLk3nhLF("4FzJsU+WLUKyJUn3J1zd+Z==", ((9 + 2) * 7 + 17650)), {
+          Name = BNPLiLk3nhLF("NTI6VKlwgMrcd8ZKEir9+7==", ((4 + 8) * 7 + 31919)),
+          ResetOnSpawn = (0 == 1),
           ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
-          DisplayOrder = (8 * 2 + 9983),
-          IgnoreGuiInset = (1 == 1),
-          Parent = qJJAXZYVBOLwcW
+          DisplayOrder = (7 * 2 + 9985),
+          IgnoreGuiInset = (not not 1),
+          Parent = Y6y15RTx_bdAK
       })
 
       if syn and syn.protect_gui then
-          pcall(function() syn.protect_gui(CYvldgwnsSLmY) end)
+          pcall(function() syn.protect_gui(woJlh74V6k) end)
       elseif protect_gui then
-          pcall(function() protect_gui(CYvldgwnsSLmY) end)
+          pcall(function() protect_gui(woJlh74V6k) end)
       end
 
-      Pi5Mxphxr.GUI = CYvldgwnsSLmY
+      WuQrvb1Hrl.GUI = woJlh74V6k
 
-      if NruIrTxG.Acrylic then nX1i_f9hrj7m0.Enable() end
+      if NcjWuIOpCB.Acrylic then vgImdDI00nN7.Enable() end
 
-      local rCu9JAIPKT = NruIrTxG.Size or UDim2.fromOffset((7 * 5 + 545), (4 * 6 * 5 + 340))
-      local XkVbD38y3RAS = NruIrTxG.TabWidth or ((5 + 7) * 6 + 88)
-      local eOoZGSwzzFmv = workspace.CurrentCamera.ViewportSize
+      local Od_FUOCx9e_Czf = NcjWuIOpCB.Size or UDim2.fromOffset(((2 + 4) * 7 + 538), (4 * 2 * 5 + 420))
+      local bSmp1NCUvb = NcjWuIOpCB.TabWidth or (9 * 4 + 124)
+      local hc3LTTu79n = workspace.CurrentCamera.ViewportSize
 
-      local kj7wISrWR = NxSXLgXgoQg(enEhp02mua2U("09kpZ7h2t7dyj2kP", ((8 + 4) * 5 + 10703)), {
-          Name = enEhp02mua2U("c0GZUeEuYMIhcz32", (3 * 8 * 3 + 37996)),
-          Size = rCu9JAIPKT,
+      local Q6_r4bJCnR8u = pj6ssRQIN4J3xT(BNPLiLk3nhLF("wQHxE9FQCoTi0S48", (3 * 8 * 2 + 35486)), {
+          Name = BNPLiLk3nhLF("AE63UT62eMrQJT5w", (5 * 7 * 4 + 22784)),
+          Size = Od_FUOCx9e_Czf,
           Position = UDim2.fromOffset(
-              math.floor((eOoZGSwzzFmv.X - rCu9JAIPKT.X.Offset) / ((4 + 7) * 4 - 42)),
-              math.floor((eOoZGSwzzFmv.Y - rCu9JAIPKT.Y.Offset) / (6 * 8 - 46))
+              math.floor((hc3LTTu79n.X - Od_FUOCx9e_Czf.X.Offset) / (9 * 8 - 70)),
+              math.floor((hc3LTTu79n.Y - Od_FUOCx9e_Czf.Y.Offset) / (9 * 6 - 52))
           ),
-          BackgroundColor3 = ru_1s3dO(enEhp02mua2U("kU8Mcppc2SVttvAHVqUkPpaU9C5V2Eod", (3 * 3 * 2 + 42021))),
+          BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("9UfkqhhAodlASrp1SCXPhqHdWBoRW5Fh", (4 * 7 + 61762))),
           BackgroundTransparency = 0,
           BorderSizePixel = 0,
-          ClipsDescendants = (1 == 0),
-          Parent = CYvldgwnsSLmY
+          ClipsDescendants = (0 == 1),
+          Parent = woJlh74V6k
       }, {
-          NxSXLgXgoQg(enEhp02mua2U("TtX417G1StKhSmyLfJqUoC==", (8 * 6 * 6 + 24173)), { CornerRadius = UDim.new(0, (2 * 12 - 14)) }),
-          NxSXLgXgoQg(enEhp02mua2U("OMCBUREzvE1ubrptoKCebo==", (7 * 5 * 2 + 13096)), { Color = ru_1s3dO(enEhp02mua2U("jnYKuumwLXqLXcoO", (3 * 5 + 9456))), Thickness = 1, Transparency = 0.25 })
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("oxl3FHjMtP7BFwRGvlRLnJ==", (3 * 6 * 2 + 31783)), { CornerRadius = UDim.new(0, (2 * 8 - 6)) }),
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("SMEMabUYOWyH8G8Yu4yeeT==", (6 * 4 * 6 + 27146)), { Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("DFEcxwpc7rnnHjIo", (8 * 8 * 3 + 9085))), Thickness = 1, Transparency = 0.25 })
       })
-      MYpL11YDP(kj7wISrWR, { BackgroundColor3 = enEhp02mua2U("o1CuC+nUWe0DM4kvN0AlGeytKe6offnT", (3 * 5 + 855)) })
+      IXDNvPpYV_29(Q6_r4bJCnR8u, { BackgroundColor3 = BNPLiLk3nhLF("AYVYua1RgtbSw4blAA5IwlXrKoIOWels", (7 * 6 * 2 + 39634)) })
 
-      Pi5Mxphxr.Root = kj7wISrWR
-      Pi5Mxphxr.Size = rCu9JAIPKT
-      Pi5Mxphxr.Position = kj7wISrWR.Position
+      WuQrvb1Hrl.Root = Q6_r4bJCnR8u
+      WuQrvb1Hrl.Size = Od_FUOCx9e_Czf
+      WuQrvb1Hrl.Position = Q6_r4bJCnR8u.Position
 
-      local WKgjr6aGD = NxSXLgXgoQg(enEhp02mua2U("MhIUoxyGQ6IV28HMXcROOUlRQgHiZg+X", (5 * 6 * 6 + 60468)), {
-          Image = enEhp02mua2U("uzxE/BBWRzIOkvD0LkACsbsOoLso91NZF1c4ZzbzBIHV6E02Y1suk71Sogd=", (2 * 3 * 4 + 62095)),
+      local oJoD43D6QL9q3b = pj6ssRQIN4J3xT(BNPLiLk3nhLF("FcLOwbrj4XrlmxnNWfYijBfRJ4rBLmY6", (2 * 11 + 41771)), {
+          Image = BNPLiLk3nhLF("+OfZnYuz++Dp0ri0wO6tdVeg1APuoOU7BzfBCtFp9dKCuYRV+zfveeecZ+c=", ((8 + 2) * 3 + 36163)),
           ScaleType = Enum.ScaleType.Slice,
-          SliceCenter = Rect.new(Vector2.new((7 * 11 + 22), (5 * 6 * 4 - 21)), Vector2.new((5 * 7 + 64), ((2 + 2) * 2 + 91))),
+          SliceCenter = Rect.new(Vector2.new(((2 + 8) * 7 + 29), ((9 + 5) * 2 + 71)), Vector2.new((2 * 6 * 5 + 39), ((5 + 2) * 6 + 57))),
           AnchorPoint = Vector2.new(0.5, 0.5),
-          Size = UDim2.new(1, (7 * 4 * 3 - 24), 1, ((3 + 8) * 5 + 5)),
+          Size = UDim2.new(1, (6 * 9 + 6), 1, (3 * 2 * 2 + 48)),
           Position = UDim2.fromScale(0.5, 0.5),
           BackgroundTransparency = 1,
-          ImageColor3 = ru_1s3dO(enEhp02mua2U("HGN/gH8j9zFRhDmx", ((5 + 8) * 7 + 33742))),
+          ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("3bdvPRUANbEoYdW6", ((2 + 9) * 7 + 19018))),
           ImageTransparency = 0.65,
           ZIndex = -1,
-          Parent = kj7wISrWR
+          Parent = Q6_r4bJCnR8u
       })
-      MYpL11YDP(WKgjr6aGD, { ImageColor3 = enEhp02mua2U("hsNaasHL6IIr6kxc", (8 * 2 + 16103)) })
+      IXDNvPpYV_29(oJoD43D6QL9q3b, { ImageColor3 = BNPLiLk3nhLF("eo1OHpSyql4Ro1iY", ((9 + 7) * 6 + 27608)) })
 
-      local twswIFUGpzz = NxSXLgXgoQg(enEhp02mua2U("ecYOhZUPFzRBZc2i", ((7 + 7) * 3 + 59937)), {
-          Name = enEhp02mua2U("ScCRPGems4g8E8R1MGOOEe==", ((7 + 8) * 3 + 33011)),
-          Size = UDim2.new(1, 0, 0, ((2 + 8) * 5 - 6)),
+      local icDpKqzvDgxe = pj6ssRQIN4J3xT(BNPLiLk3nhLF("gslYxsKp84iUxTLG", (4 * 3 + 1978)), {
+          Name = BNPLiLk3nhLF("ILxBoZJ6DtMFbCYvhCTDh1==", (8 * 4 * 2 + 10572)),
+          Size = UDim2.new(1, 0, 0, ((8 + 6) * 5 - 26)),
           BackgroundTransparency = 1,
-          Parent = kj7wISrWR
+          Parent = Q6_r4bJCnR8u
       })
 
-      local ARLzibPlP = NxSXLgXgoQg(enEhp02mua2U("as1LBVU7WtphDGEHkn3oci==", ((4 + 5) * 4 + 26660)), {
-          RichText = (1 == 1),
-          Text = NruIrTxG.Title,
-          FontFace = t2hTAJBv,
-          TextColor3 = ru_1s3dO(enEhp02mua2U("+xWP6joe4dyBspko", (8 * 10 + 30370))),
-          TextSize = ((1 + 2) * 3 + 4),
+      local GgjFu3OD7 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("aO0tMAFRSOdWVnSRQ4ZaSC==", ((9 + 9) * 2 + 20480)), {
+          RichText = (not false),
+          Text = NcjWuIOpCB.Title,
+          FontFace = a3JMPK3UpLj,
+          TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("VDJfDcWHprWLfHI0", ((6 + 2) * 2 + 33029))),
+          TextSize = ((9 + 9) * 7 - 113),
           TextXAlignment = Enum.TextXAlignment.Left,
           TextYAlignment = Enum.TextYAlignment.Center,
           Size = UDim2.fromScale(0, 1),
           AutomaticSize = Enum.AutomaticSize.X,
-          Position = UDim2.fromOffset(((5 + 6) * 6 - 48), 0),
+          Position = UDim2.fromOffset(((6 + 5) * 6 - 48), 0),
           BackgroundTransparency = 1,
-          Parent = twswIFUGpzz
+          Parent = icDpKqzvDgxe
       })
-      MYpL11YDP(ARLzibPlP, { TextColor3 = enEhp02mua2U("Vyn/BaPBSVhif7PK", (7 * 4 * 4 + 64205)) })
+      IXDNvPpYV_29(GgjFu3OD7, { TextColor3 = BNPLiLk3nhLF("gNaQsHX9s55OH5it", ((8 + 6) * 7 + 31941)) })
 
-      local Pgjl9JdTA3 = NxSXLgXgoQg(enEhp02mua2U("GSouZRNc+BL9zFRiQ2yFeF==", ((5 + 5) * 6 + 1262)), {
-          RichText = (not (1 == 0)),
-          Text = NruIrTxG.SubTitle or enEhp02mua2U("", ((8 + 5) * 7 + 65224)),
-          FontFace = t2hTAJBv,
-          TextColor3 = ru_1s3dO(enEhp02mua2U("5jHEDvE0IwHzK6UlFLtIm6==", (2 * 7 * 4 + 29575))),
-          TextSize = (6 * 13 - 66),
+      local AcZ2J_fb6g = pj6ssRQIN4J3xT(BNPLiLk3nhLF("Rrchn7C9XhXfehfNUl9AVb==", (10 * 5 + 37733)), {
+          RichText = (not false),
+          Text = NcjWuIOpCB.SubTitle or BNPLiLk3nhLF("", ((2 + 9) * 4 + 63765)),
+          FontFace = a3JMPK3UpLj,
+          TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("5w/OOyfDG+oflCqv47Y8Qw==", (6 * 11 + 8451))),
+          TextSize = ((4 + 4) * 5 - 28),
           TextXAlignment = Enum.TextXAlignment.Left,
           TextYAlignment = Enum.TextYAlignment.Center,
           Size = UDim2.fromScale(0, 1),
           AutomaticSize = Enum.AutomaticSize.X,
-          Position = UDim2.new(0, (5 * 11 - 37) + ARLzibPlP.TextBounds.X + (3 * 7 * 6 - 118), 0, 0),
+          Position = UDim2.new(0, ((1 + 6) * 7 - 31) + GgjFu3OD7.TextBounds.X + (6 * 6 * 2 - 64), 0, 0),
           BackgroundTransparency = 1,
-          Parent = twswIFUGpzz
+          Parent = icDpKqzvDgxe
       })
-      MYpL11YDP(Pgjl9JdTA3, { TextColor3 = enEhp02mua2U("8Px6jOcohNvC20uCL6ubPc==", (8 * 11 + 56266)) })
+      IXDNvPpYV_29(AcZ2J_fb6g, { TextColor3 = BNPLiLk3nhLF("P8DtcwB4UAFZghR9oTG+F7==", ((5 + 9) * 3 + 38311)) })
 
-      local m32iGDfk3dzp8 = 0
-      oaJoZgK7VwU(ARLzibPlP:GetPropertyChangedSignal(enEhp02mua2U("tl0b2OgNrkYKp9CMpgQbqYQO+/DCeO2Q", (5 * 7 * 5 + 6107))):Connect(function()
-          local y60Zy__i9ZTjo = ARLzibPlP.TextBounds.X
-          if math.abs(y60Zy__i9ZTjo - m32iGDfk3dzp8) > 0.5 then
-              m32iGDfk3dzp8 = y60Zy__i9ZTjo
-              Pgjl9JdTA3.Position = UDim2.new(0, ((6 + 4) * 6 - 42) + y60Zy__i9ZTjo + (3 * 12 - 28), 0, 0)
+      local tePoo9S1hhOC = 0
+      O086LUroD(GgjFu3OD7:GetPropertyChangedSignal(BNPLiLk3nhLF("98eFChbSnOqjn8+fHmVSG5x4G8PogF7a", (4 * 2 + 52115))):Connect(function()
+          local V76iIxCSzO = GgjFu3OD7.TextBounds.X
+          if math.abs(V76iIxCSzO - tePoo9S1hhOC) > 0.5 then
+              tePoo9S1hhOC = V76iIxCSzO
+              AcZ2J_fb6g.Position = UDim2.new(0, (6 * 4 - 6) + V76iIxCSzO + ((1 + 5) * 6 - 28), 0, 0)
           end
       end))
 
-      local T8WrAX1EqaRat = NxSXLgXgoQg(enEhp02mua2U("luhqVfVG/47ZtMAS", (5 * 8 * 4 + 8883)), {
-          BackgroundColor3 = ru_1s3dO(enEhp02mua2U("QJCGK8KFa6mNopYpXjuIwHaYa1YvKsxc", (5 * 2 + 51236))),
+      local twL0dsH0P = pj6ssRQIN4J3xT(BNPLiLk3nhLF("dKX2uLaB46j2uHnT", ((7 + 7) * 5 + 18871)), {
+          BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("4Jt0wKJC+16FIPJdzKlXxyR+UnCf4wFM", (3 * 8 + 31076))),
           BackgroundTransparency = 0.4,
           Size = UDim2.new(1, 0, 0, 1),
           Position = UDim2.new(0, 0, 1, 0),
           BorderSizePixel = 0,
-          Parent = twswIFUGpzz
+          Parent = icDpKqzvDgxe
       })
-      MYpL11YDP(T8WrAX1EqaRat, { BackgroundColor3 = enEhp02mua2U("1lMvooKeROnF0Aj1/lZePsHZ/sMawO54", (10 * 7 + 15761)) })
+      IXDNvPpYV_29(twL0dsH0P, { BackgroundColor3 = BNPLiLk3nhLF("ehIYbpNGGSWBazMUk7DkC2EqIG9QDbhJ", ((2 + 7) * 7 + 3309)) })
 
-      local function FUl0OGJKkgbk18(l1vqwnbD04hF76, UBneYeley, wbjfu5NCxt9pWB)
-          local L5vMANhcR3jLP = NxSXLgXgoQg(enEhp02mua2U("PurstmyebgSnTmrgTKuEIebDJugl9Zm9", (8 * 4 * 5 + 51697)), {
-              Size = UDim2.new(0, (8 * 2 * 5 - 48), 1, -(5 * 10 - 40)),
+      local function kWURGzNO(GI_5vHwW0, llREe6FG8D, bEtMTrhaHg_)
+          local Kw_e0Kc9bVd85k = pj6ssRQIN4J3xT(BNPLiLk3nhLF("WIQtigxdj+xKApt1vjDzNVdTAsyLu15a", (6 * 13 + 18827)), {
+              Size = UDim2.new(0, ((5 + 4) * 5 - 13), 1, -(5 * 5 * 5 - 115)),
               AnchorPoint = Vector2.new(1, 0),
-              Position = UDim2.new(1, UBneYeley, 0, ((1 + 4) * 7 - 30)),
+              Position = UDim2.new(1, llREe6FG8D, 0, ((8 + 9) * 2 - 29)),
               BackgroundTransparency = 1,
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("AiH8+SWCIUv5W7Us", ((7 + 6) * 3 + 58455))),
-              Text = enEhp02mua2U("", (3 * 4 * 2 + 49801)),
-              AutoButtonColor = (not (1 == 1)),
-              Parent = twswIFUGpzz
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("+eCEmBOlt/XNZw2O", ((2 + 7) * 7 + 35325))),
+              Text = BNPLiLk3nhLF("", (2 * 4 + 3209)),
+              AutoButtonColor = (0 == 1),
+              Parent = icDpKqzvDgxe
           }, {
-              NxSXLgXgoQg(enEhp02mua2U("R4qBsB53EN3Y6mVeqjyY5q==", (7 * 11 + 8695)), { CornerRadius = UDim.new(0, (4 * 4 * 5 - 74)) }),
-              NxSXLgXgoQg(enEhp02mua2U("6W3/bWB9QsfZakgixrhHUkHFpj9p3W17", ((8 + 2) * 3 + 39805)), {
-                  Image = fLLzgL1N_[l1vqwnbD04hF76],
-                  ImageColor3 = ru_1s3dO(enEhp02mua2U("MJtKO+2YCSGq6r6Q", (5 * 5 * 3 + 7663))),
-                  Size = UDim2.fromOffset(((9 + 7) * 4 - 49), (10 * 3 - 15)),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("bIsneM6sAe8s298eptqhg8==", (2 * 11 + 47202)), { CornerRadius = UDim.new(0, (9 * 2 - 12)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("PPbo2uS/shWgb3oqGqjBQtvGTOOCYbsI", ((3 + 6) * 6 + 34744)), {
+                  Image = jGbhiICtv[GI_5vHwW0],
+                  ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("klOSqnVdSxjCSzSX", (9 * 12 + 20522))),
+                  Size = UDim2.fromOffset((10 * 9 - 75), ((9 + 3) * 5 - 45)),
                   Position = UDim2.fromScale(0.5, 0.5),
                   AnchorPoint = Vector2.new(0.5, 0.5),
                   BackgroundTransparency = 1,
                   Parent = Btn
               })
           })
-          MYpL11YDP(L5vMANhcR3jLP, { BackgroundColor3 = enEhp02mua2U("JRvPZ8BcEBP0BCv5", (3 * 8 * 5 + 19707)) })
-          local OsImX8lfLL = L5vMANhcR3jLP:FindFirstChildOfClass(enEhp02mua2U("HohPcG6JYLirUJn7gV698AitZbk4GAyG", (7 * 9 + 34152)))
-          MYpL11YDP(OsImX8lfLL, { ImageColor3 = enEhp02mua2U("ANsoXs8Pg25Syzpp", (9 * 7 + 34812)) })
-          L5vMANhcR3jLP.MouseEnter:Connect(function() EdG5asEXmzs(L5vMANhcR3jLP, 0.15, { BackgroundTransparency = 0.9 }) end)
-          L5vMANhcR3jLP.MouseLeave:Connect(function() EdG5asEXmzs(L5vMANhcR3jLP, 0.15, { BackgroundTransparency = 1 }) end)
-          L5vMANhcR3jLP.MouseButton1Click:Connect(wbjfu5NCxt9pWB)
-          return L5vMANhcR3jLP
+          IXDNvPpYV_29(Kw_e0Kc9bVd85k, { BackgroundColor3 = BNPLiLk3nhLF("c5mBUd/p4fcdezhp", (5 * 4 * 5 + 5568)) })
+          local X3EJKtaMW = Kw_e0Kc9bVd85k:FindFirstChildOfClass(BNPLiLk3nhLF("8BdpMMlYNMS8DmYaKGPyurbuo72qom52", (4 * 2 + 40299)))
+          IXDNvPpYV_29(X3EJKtaMW, { ImageColor3 = BNPLiLk3nhLF("TlH9rDDgX8VnD2+Z", (9 * 4 + 16957)) })
+          Kw_e0Kc9bVd85k.MouseEnter:Connect(function() OKgvsxuqsXk9(Kw_e0Kc9bVd85k, 0.15, { BackgroundTransparency = 0.9 }) end)
+          Kw_e0Kc9bVd85k.MouseLeave:Connect(function() OKgvsxuqsXk9(Kw_e0Kc9bVd85k, 0.15, { BackgroundTransparency = 1 }) end)
+          Kw_e0Kc9bVd85k.MouseButton1Click:Connect(bEtMTrhaHg_)
+          return Kw_e0Kc9bVd85k
       end
 
-      local AYbuILvM = FUl0OGJKkgbk18(enEhp02mua2U("Rc7CoIJoReQbvlb2OuwsDu==", (11 * 5 + 43974)), -((7 + 5) * 7 - 78), function()
-          Pi5Mxphxr:Dialog({
-              Title = enEhp02mua2U("MjJFaHLLMKEppbZbIiLjQs==", (10 * 9 + 45298)),
-              Content = enEhp02mua2U("AfORg1UyQy2eE5GsOkE4dYoAo5/AQ1CTZCdCcMy2EN0uA6CNJUoVqOfkwxeabf2fyNGGEBd47p0BZypLyJdUcSQ8JSi0qvCniUCFQ6ZlEyi8bc1Q4fqRyU==", ((2 + 6) * 6 + 13072)),
+      local J8Eq8qC9oVzG0q = kWURGzNO(BNPLiLk3nhLF("Pc3hAZoZwL3rJg3JHLTXwA==", ((3 + 9) * 6 + 33519)), -(5 * 13 - 59), function()
+          WuQrvb1Hrl:Dialog({
+              Title = BNPLiLk3nhLF("GYAIe+1DEaWVL2JQcmATDa==", ((9 + 7) * 2 + 21678)),
+              Content = BNPLiLk3nhLF("DmmayiKgGra1RkWqD6f/qlstJmYLWlalGl7kmJol9xaYWxaouHZh9J1NdxtrNDV2pKWcekX8q1YNFVffp6suD7dQqxXxyQsYwVsJpi3mqP1VquVpVUm3G3==", (6 * 8 + 12253)),
               Buttons = {
-                  { Title = enEhp02mua2U("qdBX2v5e0jQZevS0oJWFoj==", (5 * 3 * 4 + 10458)), Callback = function() Pi5Mxphxr:Destroy() end },
-                  { Title = enEhp02mua2U("EbssYDsWD7htLJFc", (7 * 7 * 2 + 61537)) }
+                  { Title = BNPLiLk3nhLF("FFN9yDXvWgoEBry2pT4dLt==", (4 * 2 + 44479)), Callback = function() WuQrvb1Hrl:Destroy() end },
+                  { Title = BNPLiLk3nhLF("KaxTNWTkxSDlBKa9", (2 * 7 * 2 + 6065)) }
               }
           })
       end)
-      local FD1C58tVZ = FUl0OGJKkgbk18(enEhp02mua2U("weOq0Y+wJJwZxg0Jvx0FZH82PncCdjR60Hanbx==", (8 * 3 * 6 + 22821)), -(10 * 10 - 58), function()
-          Pi5Mxphxr:Maximize(not Pi5Mxphxr.Maximized)
+      local cX1KwtmAGwji = kWURGzNO(BNPLiLk3nhLF("QEL6Q2WkksAoWE7+qR+VE0nCMsCIQrWMTEDJHC==", ((5 + 6) * 3 + 14733)), -(7 * 5 + 7), function()
+          WuQrvb1Hrl:Maximize(not WuQrvb1Hrl.Maximized)
       end)
-      local ELTyikCRaa1v = FUl0OGJKkgbk18(enEhp02mua2U("NBKDPjJCqAaEPqq/F0h6PoKQo7KL/VFx", (5 * 5 + 46948)), -(11 * 2 + 56), function()
-          Pi5Mxphxr:Minimize()
+      local G9L7A9hiaCvqV = kWURGzNO(BNPLiLk3nhLF("VAgAreDdGAYO7nA6+IBKzexEeCGfTXt7", (8 * 2 + 13645)), -(7 * 5 * 2 + 8), function()
+          WuQrvb1Hrl:Minimize()
       end)
 
-      Pi5Mxphxr.MinButton = ELTyikCRaa1v
-      Pi5Mxphxr.MaxButton = FD1C58tVZ
-      Pi5Mxphxr.CloseButton = AYbuILvM
+      WuQrvb1Hrl.MinButton = G9L7A9hiaCvqV
+      WuQrvb1Hrl.MaxButton = cX1KwtmAGwji
+      WuQrvb1Hrl.CloseButton = J8Eq8qC9oVzG0q
 
-      local wtQM0hlg41_0x = NxSXLgXgoQg(enEhp02mua2U("4MdRCtuwGa83G64dSQp+QSVma0u4g9z/oG4KYi==", (7 * 8 + 63532)), {
+      local prDl4zhujk9 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("xHRldNmL9pd4KiqSlE8nsbvczb8u0u2Njzodjo==", (4 * 5 * 3 + 44272)), {
           Size = UDim2.fromScale(1, 1),
           BackgroundTransparency = 1,
           ScrollBarThickness = 0,
@@ -713,2666 +2612,795 @@ end
           CanvasSize = UDim2.fromScale(0, 0),
           ScrollingDirection = Enum.ScrollingDirection.Y
       }, {
-          NxSXLgXgoQg(enEhp02mua2U("IkEeY+EO6zAVk2z/aVv2I87KGe6sIvy3", (10 * 11 + 52088)), { Padding = UDim.new(0, (10 * 10 - 96)), SortOrder = Enum.SortOrder.LayoutOrder })
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("VlHk4SR+EfApQhs8yFzjKu8c0ZHRnrn7", ((1 + 6) * 2 + 54161)), { Padding = UDim.new(0, ((4 + 7) * 3 - 29)), SortOrder = Enum.SortOrder.LayoutOrder })
       })
 
-      local DZ4KOOMDReLjAI = NxSXLgXgoQg(enEhp02mua2U("W6qhWM+YIqMHWaVN", (10 * 10 + 34428)), {
-          Size = UDim2.fromOffset((4 * 9 - 34), (6 * 8 - 30)),
-          BackgroundColor3 = ru_1s3dO(enEhp02mua2U("nGOoWhaaC4EdV4MS", (3 * 2 + 37450))),
-          Position = UDim2.fromOffset((5 * 3 * 2 - 26), (3 * 3 * 2 + 4)),
+      local cF2ddFZUBI = pj6ssRQIN4J3xT(BNPLiLk3nhLF("mTNXw9EhWGyc3zAt", ((8 + 5) * 6 + 13338)), {
+          Size = UDim2.fromOffset((8 * 4 - 30), ((9 + 5) * 5 - 52)),
+          BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("LWorIeaKLlwwIwod", ((4 + 3) * 3 + 49144))),
+          Position = UDim2.fromOffset((4 * 4 - 12), (4 * 7 - 6)),
           AnchorPoint = Vector2.new(0, 0.5),
           BorderSizePixel = 0,
-          ZIndex = (8 * 2 - 14),
-          Parent = kj7wISrWR
-      }, { NxSXLgXgoQg(enEhp02mua2U("HEFQZse3PxoO5sW6ZsQ451==", (8 * 12 + 23507)), { CornerRadius = UDim.new(1, 0) }) })
-      MYpL11YDP(DZ4KOOMDReLjAI, { BackgroundColor3 = enEhp02mua2U("kBLqLFLGFaKjq47q", ((5 + 4) * 6 + 54133)) })
+          ZIndex = ((6 + 6) * 3 - 34),
+          Parent = Q6_r4bJCnR8u
+      }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("PtSaaCeDzVBuC3eMGU6/nS==", ((9 + 8) * 2 + 11123)), { CornerRadius = UDim.new(1, 0) }) })
+      IXDNvPpYV_29(cF2ddFZUBI, { BackgroundColor3 = BNPLiLk3nhLF("PNsmOgGuy7hcM7DY", (10 * 2 + 1942)) })
 
-      local _26haspH = NxSXLgXgoQg(enEhp02mua2U("B8HCBV9zPBL+Uoqd", (7 * 9 + 32340)), {
-          Size = UDim2.new(0, XkVbD38y3RAS, 1, -(4 * 2 * 3 + 42)),
-          Position = UDim2.new(0, (4 * 7 * 2 - 44), 0, ((2 + 7) * 4 + 18)),
+      local oRq9CU51kNQ = pj6ssRQIN4J3xT(BNPLiLk3nhLF("GnEOOuE7OnmYemi+", ((5 + 9) * 2 + 50870)), {
+          Size = UDim2.new(0, bSmp1NCUvb, 1, -(7 * 9 + 3)),
+          Position = UDim2.new(0, (7 * 6 * 3 - 114), 0, ((9 + 4) * 5 - 11)),
           BackgroundTransparency = 1,
-          ClipsDescendants = (0 == 0),
-          Parent = kj7wISrWR
+          ClipsDescendants = (1 == 1),
+          Parent = Q6_r4bJCnR8u
       }, {
-          NxSXLgXgoQg(enEhp02mua2U("pIttPgfVxqH9BXpXEUjMVB==", ((3 + 3) * 6 + 55475)), { PaddingLeft = UDim.new(0, ((3 + 4) * 4 - 22)) }),
-          wtQM0hlg41_0x
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("ZcmoR4uTNtfowguSlglXVp==", (6 * 7 * 5 + 60233)), { PaddingLeft = UDim.new(0, (8 * 13 - 98)) }),
+          prDl4zhujk9
       })
 
-      local YMZ5vthbtg = wtQM0hlg41_0x:FindFirstChildOfClass(enEhp02mua2U("imaiCZlFjEMSIRLsIdZtfEliSIYYp+Ds", (3 * 3 * 2 + 26700)))
-      oaJoZgK7VwU(YMZ5vthbtg:GetPropertyChangedSignal(enEhp02mua2U("I2bAHMMOCbsaEGmn9rezIIY5TMRmcLVyHQRbmGLrHLWYCQdOCvLl+U==", ((3 + 2) * 4 + 60546))):Connect(function()
-          wtQM0hlg41_0x.CanvasSize = UDim2.new(0, 0, 0, YMZ5vthbtg.AbsoluteContentSize.Y)
+      local UcMORz0CRq = prDl4zhujk9:FindFirstChildOfClass(BNPLiLk3nhLF("ZFGswqYFwmrTcUn0rFRc+cc3pJ5vVOgW", ((8 + 6) * 4 + 52264)))
+      O086LUroD(UcMORz0CRq:GetPropertyChangedSignal(BNPLiLk3nhLF("05GmaP5nzog755S555I5ZF1omLaOq51VdhVJ8ZhSfpCR8gLAqn9JIL==", (6 * 9 + 4439))):Connect(function()
+          prDl4zhujk9.CanvasSize = UDim2.new(0, 0, 0, UcMORz0CRq.AbsoluteContentSize.Y)
       end))
 
-      local DwH4QcNmzpga = NxSXLgXgoQg(enEhp02mua2U("J7hoZLXupiTYqrwH0z29nD==", (5 * 12 + 56717)), {
-          RichText = (not not 1),
-          Text = enEhp02mua2U("2yRUnhO/ryR=", (11 * 5 + 24388)),
-          FontFace = iK7m5GZrPKY,
-          TextColor3 = ru_1s3dO(enEhp02mua2U("KYeGcc+KM3pH0DfA", (2 * 5 * 3 + 55452))),
-          TextSize = (2 * 8 + 10),
+      local gMph6fceRXeR = pj6ssRQIN4J3xT(BNPLiLk3nhLF("XfElbtn1TMHyXGPhv9KyZ5==", (6 * 4 * 3 + 37485)), {
+          RichText = (not (1 == 0)),
+          Text = BNPLiLk3nhLF("If5iVDinoeK=", ((6 + 9) * 3 + 657)),
+          FontFace = MsoLp5Te,
+          TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("sSsvQINPDlKc6our", ((1 + 6) * 7 + 884))),
+          TextSize = (7 * 6 * 5 - 184),
           TextXAlignment = Enum.TextXAlignment.Left,
           TextYAlignment = Enum.TextYAlignment.Center,
-          Size = UDim2.new(1, -((5 + 5) * 7 - 54), 0, (6 * 11 - 36)),
-          Position = UDim2.fromOffset(XkVbD38y3RAS + (2 * 3 + 24), ((6 + 9) * 5 - 19)),
+          Size = UDim2.new(1, -(6 * 9 - 38), 0, (7 * 4 + 2)),
+          Position = UDim2.fromOffset(bSmp1NCUvb + ((2 + 8) * 3 + 0), ((9 + 4) * 5 - 9)),
           BackgroundTransparency = 1,
-          Parent = kj7wISrWR
+          Parent = Q6_r4bJCnR8u
       })
-      MYpL11YDP(DwH4QcNmzpga, { TextColor3 = enEhp02mua2U("QSCQKMCIiDp19s+I", (5 * 6 * 2 + 58112)) })
+      IXDNvPpYV_29(gMph6fceRXeR, { TextColor3 = BNPLiLk3nhLF("nrKQpWhRPBcMPfJZ", (6 * 8 + 60553)) })
 
-      local WU83zchW2WQd = NxSXLgXgoQg(enEhp02mua2U("EihA+fPyaPYPqaZwyvC0EIM/JkWPT2cy", (9 * 9 + 24899)), {
-          Size = UDim2.new(1, -XkVbD38y3RAS - ((4 + 7) * 4 - 8), 1, -(2 * 5 * 3 + 78)),
-          Position = UDim2.fromOffset(XkVbD38y3RAS + ((5 + 9) * 4 - 26), (3 * 6 * 4 + 24)),
+      local gNNRby6mB = pj6ssRQIN4J3xT(BNPLiLk3nhLF("Tnl8AEAna4PjpK3qsDQIrsvyTyQuDQxZ", (2 * 3 * 6 + 34804)), {
+          Size = UDim2.new(1, -bSmp1NCUvb - (8 * 8 - 28), 1, -(3 * 8 + 84)),
+          Position = UDim2.fromOffset(bSmp1NCUvb + ((6 + 7) * 6 - 48), ((4 + 6) * 2 + 76)),
           BackgroundTransparency = 1,
           GroupTransparency = 0,
-          Parent = kj7wISrWR
+          Parent = Q6_r4bJCnR8u
       })
 
-      Pi5Mxphxr.TabHolder = wtQM0hlg41_0x
-      Pi5Mxphxr.TabDisplay = DwH4QcNmzpga
-      Pi5Mxphxr.ContainerHolder = WU83zchW2WQd
-      Pi5Mxphxr.Selector = DZ4KOOMDReLjAI
-      Pi5Mxphxr.TitleBar = twswIFUGpzz
-      Pi5Mxphxr.TabArea = _26haspH
+      WuQrvb1Hrl.TabHolder = prDl4zhujk9
+      WuQrvb1Hrl.TabDisplay = gMph6fceRXeR
+      WuQrvb1Hrl.ContainerHolder = gNNRby6mB
+      WuQrvb1Hrl.Selector = cF2ddFZUBI
+      WuQrvb1Hrl.TitleBar = icDpKqzvDgxe
+      WuQrvb1Hrl.TabArea = oRq9CU51kNQ
 
-      local S1ApO09v
-      local function H08HXejJgTai(fkHLPle8H0)
-          if S1ApO09v then pcall(function() S1ApO09v:Cancel() end) end
-          S1ApO09v = EdG5asEXmzs(DZ4KOOMDReLjAI, 0.35, { Position = UDim2.new(0, (3 * 11 - 29), 0, fkHLPle8H0) }, Enum.EasingStyle.Quart)
+      local WjohQiMaVrRbt
+      local function oDq3UCax8GEXX(gtOQcqo4p55g)
+          if WjohQiMaVrRbt then pcall(function() WjohQiMaVrRbt:Cancel() end) end
+          WjohQiMaVrRbt = OKgvsxuqsXk9(cF2ddFZUBI, 0.35, { Position = UDim2.new(0, ((7 + 5) * 5 - 56), 0, gtOQcqo4p55g) }, Enum.EasingStyle.Quart)
       end
 
-      local OEiTGvo4Y9 = (0 == 1)
-      local zwBiVKdT = nil
-      local _iUJSiov6koc = nil
-      local O1IvccUc = nil
-      local HM2pXCof6ZWVSG = 0
+      local Lv4quvjqcq = (not (1 == 1))
+      local oSdt7MBA = ((function() end)())
+      local bELO5qbN_Gst = nil
+      local VaS0JI1sxS = nil
+      local Re5gdcgy = 0
 
-      local function IC0BFeMn(iG_KLaO_g)
-          for Eel2V5CN1Y, bOvpCo31A6Ee in ipairs({AYbuILvM, FD1C58tVZ, ELTyikCRaa1v}) do
-              if bOvpCo31A6Ee and bOvpCo31A6Ee.Parent then
-                  local bouw9eAT2wuyEW = bOvpCo31A6Ee.AbsolutePosition
-                  local vujj_cGC = bOvpCo31A6Ee.AbsoluteSize
-                  if iG_KLaO_g.X >= bouw9eAT2wuyEW.X and iG_KLaO_g.X <= bouw9eAT2wuyEW.X + vujj_cGC.X and iG_KLaO_g.Y >= bouw9eAT2wuyEW.Y and iG_KLaO_g.Y <= bouw9eAT2wuyEW.Y + vujj_cGC.Y then
+      local function VDUZSelf(yHZGUpEo3nA0q)
+          for ukv4sGKaypDOA, NmUAwcKNB0 in ipairs({J8Eq8qC9oVzG0q, cX1KwtmAGwji, G9L7A9hiaCvqV}) do
+              if NmUAwcKNB0 and NmUAwcKNB0.Parent then
+                  local GGjQTG9A = NmUAwcKNB0.AbsolutePosition
+                  local PcjmAH94Sml8 = NmUAwcKNB0.AbsoluteSize
+                  if yHZGUpEo3nA0q.X >= GGjQTG9A.X and yHZGUpEo3nA0q.X <= GGjQTG9A.X + PcjmAH94Sml8.X and yHZGUpEo3nA0q.Y >= GGjQTG9A.Y and yHZGUpEo3nA0q.Y <= GGjQTG9A.Y + PcjmAH94Sml8.Y then
                       return (0 == 0)
                   end
               end
           end
-          return (1 == 0)
+          return (0 == 1)
       end
 
-      oaJoZgK7VwU(twswIFUGpzz.InputBegan:Connect(function(InhhqmVILs3S)
-          if InhhqmVILs3S.UserInputType == Enum.UserInputType.MouseButton1 or InhhqmVILs3S.UserInputType == Enum.UserInputType.Touch then
-              if IC0BFeMn(InhhqmVILs3S.Position) then return end
+      O086LUroD(icDpKqzvDgxe.InputBegan:Connect(function(LKcLJ_j47Fw8t)
+          if LKcLJ_j47Fw8t.UserInputType == Enum.UserInputType.MouseButton1 or LKcLJ_j47Fw8t.UserInputType == Enum.UserInputType.Touch then
+              if VDUZSelf(LKcLJ_j47Fw8t.Position) then return end
 
-              local JJruTHWkU4Guvy = tick()
-              if JJruTHWkU4Guvy - HM2pXCof6ZWVSG < 0.3 then
-                  Pi5Mxphxr:Maximize(not Pi5Mxphxr.Maximized)
-                  HM2pXCof6ZWVSG = 0
+              local UQH_fmPllP = tick()
+              if UQH_fmPllP - Re5gdcgy < 0.3 then
+                  WuQrvb1Hrl:Maximize(not WuQrvb1Hrl.Maximized)
+                  Re5gdcgy = 0
                   return
               end
-              HM2pXCof6ZWVSG = JJruTHWkU4Guvy
+              Re5gdcgy = UQH_fmPllP
 
-              OEiTGvo4Y9 = (not (1 == 0))
-              zwBiVKdT = Vector2.new(InhhqmVILs3S.Position.X, InhhqmVILs3S.Position.Y)
-              _iUJSiov6koc = Vector2.new(kj7wISrWR.AbsolutePosition.X, kj7wISrWR.AbsolutePosition.Y)
-              O1IvccUc = Vector2.new(kj7wISrWR.AbsoluteSize.X, kj7wISrWR.AbsoluteSize.Y)
+              Lv4quvjqcq = (not (1 == 0))
+              oSdt7MBA = Vector2.new(LKcLJ_j47Fw8t.Position.X, LKcLJ_j47Fw8t.Position.Y)
+              bELO5qbN_Gst = Vector2.new(Q6_r4bJCnR8u.AbsolutePosition.X, Q6_r4bJCnR8u.AbsolutePosition.Y)
+              VaS0JI1sxS = Vector2.new(Q6_r4bJCnR8u.AbsoluteSize.X, Q6_r4bJCnR8u.AbsoluteSize.Y)
           end
       end))
 
-      oaJoZgK7VwU(Xgxm8ph4yo.InputChanged:Connect(function(P7M9j3t0E)
-          if not OEiTGvo4Y9 then return end
-          if P7M9j3t0E.UserInputType ~= Enum.UserInputType.MouseMovement and P7M9j3t0E.UserInputType ~= Enum.UserInputType.Touch then return end
+      O086LUroD(hxZCNyz5_.InputChanged:Connect(function(n_ZdUiklB)
+          if not Lv4quvjqcq then return end
+          if n_ZdUiklB.UserInputType ~= Enum.UserInputType.MouseMovement and n_ZdUiklB.UserInputType ~= Enum.UserInputType.Touch then return end
 
-          local hPD_GCAyGKR7T, dk7cdxuUGOs8au
-          if P7M9j3t0E.UserInputType == Enum.UserInputType.Touch then
-              hPD_GCAyGKR7T, dk7cdxuUGOs8au = P7M9j3t0E.Position.X, P7M9j3t0E.Position.Y
+          local u_tEPyABIp8s, yeQVIbCkwHsoT6
+          if n_ZdUiklB.UserInputType == Enum.UserInputType.Touch then
+              u_tEPyABIp8s, yeQVIbCkwHsoT6 = n_ZdUiklB.Position.X, n_ZdUiklB.Position.Y
           else
-              local E_7I4mxtTK = Xgxm8ph4yo:GetMouseLocation()
-              hPD_GCAyGKR7T, dk7cdxuUGOs8au = E_7I4mxtTK.X, E_7I4mxtTK.Y
+              local VY13mWMNQbIuyO = hxZCNyz5_:GetMouseLocation()
+              u_tEPyABIp8s, yeQVIbCkwHsoT6 = VY13mWMNQbIuyO.X, VY13mWMNQbIuyO.Y
           end
 
-          local dpagdmFf = hPD_GCAyGKR7T - zwBiVKdT.X
-          local XSVDfLFs3iodB = dk7cdxuUGOs8au - zwBiVKdT.Y
-          local iPFgV3714 = _iUJSiov6koc.X + dpagdmFf
-          local lO9Oh0Cg6hyhZ = _iUJSiov6koc.Y + XSVDfLFs3iodB
+          local nswYKpLK = u_tEPyABIp8s - oSdt7MBA.X
+          local qOAIpzg6F = yeQVIbCkwHsoT6 - oSdt7MBA.Y
+          local x9wetPaMlgw = bELO5qbN_Gst.X + nswYKpLK
+          local IrcaFcNzvZD0A0 = bELO5qbN_Gst.Y + qOAIpzg6F
 
-          local eaVhk6e099VC = workspace.CurrentCamera.ViewportSize
-          local l7dDzLqWI9s = (4 * 13 - 40)
-          if math.abs(iPFgV3714) < l7dDzLqWI9s then iPFgV3714 = 0 end
-          if math.abs(iPFgV3714 + O1IvccUc.X - eaVhk6e099VC.X) < l7dDzLqWI9s then iPFgV3714 = eaVhk6e099VC.X - O1IvccUc.X end
-          if math.abs(lO9Oh0Cg6hyhZ) < l7dDzLqWI9s then lO9Oh0Cg6hyhZ = 0 end
-          if math.abs(lO9Oh0Cg6hyhZ + O1IvccUc.Y - eaVhk6e099VC.Y) < l7dDzLqWI9s then lO9Oh0Cg6hyhZ = eaVhk6e099VC.Y - O1IvccUc.Y end
+          local wwMoOUnQT = workspace.CurrentCamera.ViewportSize
+          local UoeWtpDtd = (6 * 12 - 60)
+          if math.abs(x9wetPaMlgw) < UoeWtpDtd then x9wetPaMlgw = 0 end
+          if math.abs(x9wetPaMlgw + VaS0JI1sxS.X - wwMoOUnQT.X) < UoeWtpDtd then x9wetPaMlgw = wwMoOUnQT.X - VaS0JI1sxS.X end
+          if math.abs(IrcaFcNzvZD0A0) < UoeWtpDtd then IrcaFcNzvZD0A0 = 0 end
+          if math.abs(IrcaFcNzvZD0A0 + VaS0JI1sxS.Y - wwMoOUnQT.Y) < UoeWtpDtd then IrcaFcNzvZD0A0 = wwMoOUnQT.Y - VaS0JI1sxS.Y end
 
-          kj7wISrWR.Position = UDim2.fromOffset(math.floor(iPFgV3714 + 0.5), math.floor(lO9Oh0Cg6hyhZ + 0.5))
+          Q6_r4bJCnR8u.Position = UDim2.fromOffset(math.floor(x9wetPaMlgw + 0.5), math.floor(IrcaFcNzvZD0A0 + 0.5))
       end))
 
-      oaJoZgK7VwU(Xgxm8ph4yo.InputEnded:Connect(function(A045o8dejtsMyz)
-          if A045o8dejtsMyz.UserInputType == Enum.UserInputType.MouseButton1 or A045o8dejtsMyz.UserInputType == Enum.UserInputType.Touch then
-              if OEiTGvo4Y9 then
-                  OEiTGvo4Y9 = (not (1 == 1))
-                  Pi5Mxphxr.Position = kj7wISrWR.Position
-                  Pi5Mxphxr.Size = kj7wISrWR.Size
+      O086LUroD(hxZCNyz5_.InputEnded:Connect(function(qUf3BjtIj)
+          if qUf3BjtIj.UserInputType == Enum.UserInputType.MouseButton1 or qUf3BjtIj.UserInputType == Enum.UserInputType.Touch then
+              if Lv4quvjqcq then
+                  Lv4quvjqcq = (1 == 0)
+                  WuQrvb1Hrl.Position = Q6_r4bJCnR8u.Position
+                  WuQrvb1Hrl.Size = Q6_r4bJCnR8u.Size
               end
           end
       end))
 
-      local rVsTCJraFJB = NxSXLgXgoQg(enEhp02mua2U("hibSq3WRLNv6THh4", (6 * 3 * 5 + 65307)), {
-          Position = UDim2.new(1, -(4 * 5 * 6 - 96), 1, -((4 + 7) * 7 - 53)),
-          Size = UDim2.new(0, (4 * 7 * 6 + 162), 1, -(7 * 5 * 3 - 81)),
+      local kTY8nexTAHi = pj6ssRQIN4J3xT(BNPLiLk3nhLF("Ae9Y6d4oQKQPdvdd", ((7 + 3) * 7 + 1353)), {
+          Position = UDim2.new(1, -(3 * 2 * 5 - 6), 1, -(7 * 5 - 11)),
+          Size = UDim2.new(0, (6 * 6 * 4 + 186), 1, -(2 * 3 * 3 + 6)),
           AnchorPoint = Vector2.new(1, 1),
           BackgroundTransparency = 1,
-          Parent = CYvldgwnsSLmY
+          Parent = woJlh74V6k
       }, {
-          NxSXLgXgoQg(enEhp02mua2U("i7lv1CH7mO61HEdKj0qyltZhs9w30jNT", (7 * 8 * 2 + 18828)), {
+          pj6ssRQIN4J3xT(BNPLiLk3nhLF("yers6fXni3MUydeeitlLVfVwqcNqplgo", (8 * 2 * 2 + 37073)), {
               HorizontalAlignment = Enum.HorizontalAlignment.Right,
               SortOrder = Enum.SortOrder.LayoutOrder,
               VerticalAlignment = Enum.VerticalAlignment.Bottom,
-              Padding = UDim.new(0, ((9 + 4) * 4 - 42))
+              Padding = UDim.new(0, (5 * 6 * 2 - 50))
           })
       })
 
-      local KfN0a3ZOx3eXAx = NxSXLgXgoQg(enEhp02mua2U("+ISUS+Bo4IY01A8c", ((8 + 4) * 5 + 39964)), {
+      local pK5lYjcwswDxda = pj6ssRQIN4J3xT(BNPLiLk3nhLF("rm58OaAFO5Zcx1Q3", ((9 + 8) * 6 + 17453)), {
           Size = UDim2.fromScale(1, 1),
           BackgroundTransparency = 1,
           Visible = (not not 0 == false),
-          ZIndex = (3 * 5 * 6 + 909),
-          Parent = CYvldgwnsSLmY
+          ZIndex = ((6 + 6) * 2 + 975),
+          Parent = woJlh74V6k
       })
 
-      local g4YVCqEg4I0cE = NxSXLgXgoQg(enEhp02mua2U("IxUSXfooYpV3g4jpxbVMbI92RRJg42zn", ((6 + 8) * 4 + 40431)), {
-          Text = enEhp02mua2U("", (3 * 3 * 2 + 21211)),
+      local SLLzsz1Tzk7P = pj6ssRQIN4J3xT(BNPLiLk3nhLF("9uDC99NzV83QjNUy0e9Il/ULhQxYFKCy", ((1 + 4) * 4 + 11309)), {
+          Text = BNPLiLk3nhLF("", (2 * 10 + 36036)),
           Size = UDim2.fromScale(1, 1),
           BackgroundColor3 = Color3.fromRGB(0, 0, 0),
           BackgroundTransparency = 1,
           AutoButtonColor = (1 == 0),
           TextTransparency = 1,
-          Parent = KfN0a3ZOx3eXAx
+          Parent = pK5lYjcwswDxda
       })
 
-      Pi5Mxphxr.DialogOpen = (not not 0 == false)
+      WuQrvb1Hrl.DialogOpen = (not not 0 == false)
 
-      function Pi5Mxphxr:Dialog(KDV5z93BYJmaKs)
-          KDV5z93BYJmaKs = KDV5z93BYJmaKs or {}
-          self.DialogOpen = (0 == 0)
-          KfN0a3ZOx3eXAx.Visible = (not (1 == 0))
+      function WuQrvb1Hrl:Dialog(wrb4ic8Izv7iU)
+          wrb4ic8Izv7iU = wrb4ic8Izv7iU or {}
+          self.DialogOpen = (not not 1)
+          pK5lYjcwswDxda.Visible = (0 == 0)
 
-          EdG5asEXmzs(g4YVCqEg4I0cE, 0.2, { BackgroundTransparency = 0.35 })
+          OKgvsxuqsXk9(SLLzsz1Tzk7P, 0.2, { BackgroundTransparency = 0.35 })
 
-          local BpIFitxHrGObGK = NxSXLgXgoQg(enEhp02mua2U("JLq1qdfhKuAgUSU/81PGC0qvUhqIqztV", (8 * 12 + 50404)), {
-              Size = UDim2.fromOffset(((1 + 9) * 3 + 290), (7 * 2 * 3 + 138)),
+          local BDYFawhhy_ = pj6ssRQIN4J3xT(BNPLiLk3nhLF("hHAjX/RoY8EvH7CaePU6NK+R6DEm6Lvo", (6 * 7 * 4 + 24338)), {
+              Size = UDim2.fromOffset((5 * 4 * 6 + 200), ((7 + 9) * 7 + 68)),
               AnchorPoint = Vector2.new(0.5, 0.5),
               Position = UDim2.fromScale(0.5, 0.5),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("z18vvSZWYVyYF9oC", (8 * 5 * 5 + 20821))),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("X63YmZwIl4//Rf9a", (6 * 7 * 6 + 14724))),
               GroupTransparency = 1,
-              Parent = KfN0a3ZOx3eXAx
+              Parent = pK5lYjcwswDxda
           }, {
-              NxSXLgXgoQg(enEhp02mua2U("nkIQurlZ5phNFVcEBNxIyN==", (8 * 7 * 3 + 34873)), { CornerRadius = UDim.new(0, (11 * 5 - 45)) }),
-              NxSXLgXgoQg(enEhp02mua2U("kjV9kk+pfulJHjaNXoH3kx==", (4 * 7 + 35977)), { Transparency = 0.4, Color = ru_1s3dO(enEhp02mua2U("CneYmCh5c3k0vE2MICeTelef46raEaYS", ((1 + 6) * 3 + 59483))), Thickness = 1 })
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("iVUYvqfCqam912D4Yrw6yG==", (4 * 13 + 40226)), { CornerRadius = UDim.new(0, ((4 + 8) * 4 - 38)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("CQ7BCp5uCqPKwxBZYXu7hP==", ((5 + 6) * 5 + 61926)), { Transparency = 0.4, Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("8z5sUFhcaQk4LFhdDA5BDQuAOfCVatuJ", (2 * 10 + 39338))), Thickness = 1 })
           })
-          MYpL11YDP(BpIFitxHrGObGK, { BackgroundColor3 = enEhp02mua2U("bFFmHj5j2letPGTs", (8 * 7 * 6 + 9173)) })
+          IXDNvPpYV_29(BDYFawhhy_, { BackgroundColor3 = BNPLiLk3nhLF("HhPqjhkmMN0EEwci", (6 * 12 + 33058)) })
 
-          local ONKXeR1Bd1P0 = NxSXLgXgoQg(enEhp02mua2U("EtixEGFCu/Pimm+fEEDuXt==", (3 * 13 + 54127)), { Scale = 1.06, Parent = BpIFitxHrGObGK })
+          local dTfvPe8e2iA9S = pj6ssRQIN4J3xT(BNPLiLk3nhLF("ZRhgllDbPJy0N8FNrxOEMD==", ((2 + 5) * 3 + 56706)), { Scale = 1.06, Parent = BDYFawhhy_ })
 
-          local EABEyxMW = NxSXLgXgoQg(enEhp02mua2U("99YbuIc4TdLu4LYXBHJojb==", (11 * 13 + 20546)), {
-              FontFace = vFN9jU76GrG,
-              Text = KDV5z93BYJmaKs.Title or enEhp02mua2U("2NtGkgHME2Z6nNud", (8 * 8 * 4 + 24416)),
-              TextColor3 = ru_1s3dO(enEhp02mua2U("WXsttGNKOy0CeFVY", ((6 + 5) * 3 + 54831))),
-              TextSize = (9 * 4 - 18),
+          local tVcy5WZY5Ug6 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("wpsgB6UufuuRVklaV2unLP==", (7 * 2 * 3 + 46521)), {
+              FontFace = Ql8IsB_L0uz,
+              Text = wrb4ic8Izv7iU.Title or BNPLiLk3nhLF("bIMqbeSPglqplUjm", ((5 + 8) * 3 + 19693)),
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("dCAY3esTcbxNO+9I", ((6 + 8) * 2 + 5548))),
+              TextSize = (7 * 10 - 52),
               TextXAlignment = Enum.TextXAlignment.Left,
-              Size = UDim2.new(1, -(7 * 8 * 5 - 240), 0, (9 * 4 - 12)),
-              Position = UDim2.fromOffset((10 * 5 - 30), ((5 + 9) * 6 - 64)),
+              Size = UDim2.new(1, -(5 * 7 * 6 - 170), 0, ((4 + 6) * 2 + 4)),
+              Position = UDim2.fromOffset((7 * 8 * 2 - 92), ((2 + 3) * 3 + 5)),
               BackgroundTransparency = 1,
-              Parent = BpIFitxHrGObGK
+              Parent = BDYFawhhy_
           })
-          MYpL11YDP(EABEyxMW, { TextColor3 = enEhp02mua2U("W+d5Lcg83zp/wD9u", (3 * 3 * 2 + 28893)) })
+          IXDNvPpYV_29(tVcy5WZY5Ug6, { TextColor3 = BNPLiLk3nhLF("arYbAHYqUr0raxya", (4 * 11 + 46352)) })
 
-          local nfQJrceJ9 = NxSXLgXgoQg(enEhp02mua2U("oYYZezPsceNlFc9r", ((6 + 9) * 4 + 60348)), {
-              Size = UDim2.new(1, -((8 + 5) * 2 + 14), 1, -(2 * 2 + 106)),
-              Position = UDim2.fromOffset((8 * 5 - 20), (4 * 3 + 40)),
+          local eKSXWBE3iGWMV_ = pj6ssRQIN4J3xT(BNPLiLk3nhLF("rOshH4kUKYqcwF1m", ((9 + 6) * 2 + 51945)), {
+              Size = UDim2.new(1, -(6 * 3 * 2 + 4), 1, -(11 * 8 + 22)),
+              Position = UDim2.fromOffset(((2 + 3) * 6 - 10), ((9 + 5) * 6 - 32)),
               BackgroundTransparency = 1,
-              Parent = BpIFitxHrGObGK
+              Parent = BDYFawhhy_
           })
 
-          if KDV5z93BYJmaKs.Content and KDV5z93BYJmaKs.Content ~= enEhp02mua2U("", (6 * 8 * 2 + 4373)) then
-              local uZQsra0HzS = NxSXLgXgoQg(enEhp02mua2U("QmSTckA2wHk2Utps8tATfo==", (9 * 6 + 21516)), {
-                  FontFace = t2hTAJBv,
-                  Text = KDV5z93BYJmaKs.Content,
-                  TextColor3 = ru_1s3dO(enEhp02mua2U("NoTr1Q2RtquNXDUX", (9 * 8 + 45911))),
-                  TextSize = (6 * 7 - 29),
+          if wrb4ic8Izv7iU.Content and wrb4ic8Izv7iU.Content ~= BNPLiLk3nhLF("", ((5 + 7) * 2 + 33915)) then
+              local HhufKBW8qsAtF = pj6ssRQIN4J3xT(BNPLiLk3nhLF("u1F8uJeU0DPojellNha7Fe==", (7 * 3 * 3 + 42778)), {
+                  FontFace = a3JMPK3UpLj,
+                  Text = wrb4ic8Izv7iU.Content,
+                  TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("mHdgCPdUdnyv8g0V", (2 * 3 * 6 + 43057))),
+                  TextSize = (10 * 8 - 67),
                   TextXAlignment = Enum.TextXAlignment.Left,
                   TextYAlignment = Enum.TextYAlignment.Top,
-                  TextWrapped = (not not 1),
+                  TextWrapped = (not false),
                   Size = UDim2.new(1, 0, 1, 0),
                   BackgroundTransparency = 1,
-                  Parent = nfQJrceJ9
+                  Parent = eKSXWBE3iGWMV_
               })
-              MYpL11YDP(uZQsra0HzS, { TextColor3 = enEhp02mua2U("+ZGyF4oSmxhFaN50", (5 * 8 * 6 + 27595)) })
+              IXDNvPpYV_29(HhufKBW8qsAtF, { TextColor3 = BNPLiLk3nhLF("KGeycDrdGF+RMExA", ((1 + 7) * 7 + 32762)) })
           end
 
-          local rrWjNTa94EM = NxSXLgXgoQg(enEhp02mua2U("m87VlZiki2LwiMSU", (7 * 6 * 5 + 25340)), {
-              Size = UDim2.new(1, 0, 0, (6 * 8 * 3 - 86)),
-              Position = UDim2.new(0, 0, 1, -(8 * 5 + 18)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("LPhGZUBDzt86S1n06a2hn1P33VnRTcaA", (3 * 5 + 56482))),
-              Parent = BpIFitxHrGObGK
+          local SLpsVXKSR2sFD = pj6ssRQIN4J3xT(BNPLiLk3nhLF("lW2AV39dSQne8crW", (5 * 3 * 5 + 33110)), {
+              Size = UDim2.new(1, 0, 0, (11 * 2 + 36)),
+              Position = UDim2.new(0, 0, 1, -((8 + 8) * 7 - 54)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("5ZQjJN4/ECYZbZUaPPd65jZDDJCLXJIA", ((6 + 4) * 2 + 50763))),
+              Parent = BDYFawhhy_
           }, {
-              NxSXLgXgoQg(enEhp02mua2U("lTNSoxW5+3ZYh66I93ljPX==", ((3 + 6) * 4 + 48356)), { CornerRadius = UDim.new(0, (6 * 3 * 6 - 98)) })
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("qpu4FvErVKnXGIctwTbfPc==", (5 * 8 * 3 + 20606)), { CornerRadius = UDim.new(0, (5 * 2 + 0)) })
           })
-          MYpL11YDP(rrWjNTa94EM, { BackgroundColor3 = enEhp02mua2U("hdpMPoCAQH1uQ0tQZZpHbGhSljTgJPdx", (2 * 6 + 40639)) })
+          IXDNvPpYV_29(SLpsVXKSR2sFD, { BackgroundColor3 = BNPLiLk3nhLF("OdLDRdbLdz2lqlYlRsWx2eH7V1kH/N7T", (10 * 6 + 30297)) })
 
-          local DHOPpyl1Q = NxSXLgXgoQg(enEhp02mua2U("xZLrdZ/UR8pDOZor", ((7 + 9) * 3 + 11283)), {
+          local hrqQkdYgp2SlU = pj6ssRQIN4J3xT(BNPLiLk3nhLF("3tMwV3JzqEoxFz66", (5 * 11 + 51674)), {
               Size = UDim2.new(1, 0, 0, 1),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("NadFv6GWHqcW1vpclgZp8o+4HoR41VSLhmaYdYFjxup=", (2 * 2 * 6 + 2921))),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("n2yy6SqZ4XXSSNIhpgKLXJ/Rt2266KSjdSDVl7f4Z1f=", (4 * 6 * 4 + 29047))),
               BorderSizePixel = 0,
-              Parent = rrWjNTa94EM
+              Parent = SLpsVXKSR2sFD
           })
-          MYpL11YDP(DHOPpyl1Q, { BackgroundColor3 = enEhp02mua2U("nNhz9ihUPlATHtyZIrPdY8AEANhBKVfTvzAEB6FStm0=", (7 * 13 + 764)) })
+          IXDNvPpYV_29(hrqQkdYgp2SlU, { BackgroundColor3 = BNPLiLk3nhLF("RQvUynz2hueqYQ/YfTMklk90ajsdsfFnYjsP//eeSsF=", (6 * 2 * 5 + 33265)) })
 
-          local WuFo1xBCvU = NxSXLgXgoQg(enEhp02mua2U("yplk61CuaCVR4JnW", ((9 + 2) * 7 + 31539)), {
+          local MFhANBdt9pUoTI = pj6ssRQIN4J3xT(BNPLiLk3nhLF("MosCeOSRjkuqEBn2", ((7 + 9) * 4 + 25758)), {
               Size = UDim2.fromScale(1, 1),
               BackgroundTransparency = 1,
-              Parent = rrWjNTa94EM
+              Parent = SLpsVXKSR2sFD
           }, {
-              NxSXLgXgoQg(enEhp02mua2U("75oYPJ6YHkCJPU3lBl1sPuo2HVBoT+Er", ((7 + 6) * 3 + 55952)), {
-                  Padding = UDim.new(0, (11 * 9 - 89)),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("xnG8tIjGXnxLuFfrGhqbKIsouEjDHNnS", (5 * 3 * 5 + 28003)), {
+                  Padding = UDim.new(0, (6 * 4 * 5 - 110)),
                   FillDirection = Enum.FillDirection.Horizontal,
                   HorizontalAlignment = Enum.HorizontalAlignment.Center,
                   VerticalAlignment = Enum.VerticalAlignment.Center,
                   SortOrder = Enum.SortOrder.LayoutOrder
               }),
-              NxSXLgXgoQg(enEhp02mua2U("U8S2U0Au52zZsJPoIhAGcI==", ((5 + 5) * 2 + 22208)), { PaddingLeft = UDim.new(0, (8 * 9 - 56)), PaddingRight = UDim.new(0, (2 * 5 * 6 - 44)) })
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("Q+CbzErOGZdggx21GSBQEM==", ((7 + 2) * 2 + 40256)), { PaddingLeft = UDim.new(0, (7 * 3 * 4 - 68)), PaddingRight = UDim.new(0, (5 * 2 * 6 - 44)) })
           })
 
-          local sRh25k19Vps = KDV5z93BYJmaKs.Buttons or { { Title = enEhp02mua2U("HSzQ4Z8gh50=", ((6 + 9) * 7 + 63401)) } }
-          local V9DQsNwrmZ7Xb = #sRh25k19Vps
+          local KBAqORueOi91 = wrb4ic8Izv7iU.Buttons or { { Title = BNPLiLk3nhLF("bXsMrD1HLcP=", (6 * 5 + 36965)) } }
+          local wz52duGYnCDZ9 = #KBAqORueOi91
 
-          local b44_CUKQSn = (not (1 == 1))
-          local function CI4OK8mqU6()
-              if b44_CUKQSn then return end
-              b44_CUKQSn = (1 == 1)
-              EdG5asEXmzs(BpIFitxHrGObGK, 0.22, { GroupTransparency = 1 })
-              EdG5asEXmzs(ONKXeR1Bd1P0, 0.22, { Scale = 0.9 }, Enum.EasingStyle.Back, Enum.EasingDirection.In)
-              EdG5asEXmzs(g4YVCqEg4I0cE, 0.22, { BackgroundTransparency = 1 })
+          local UiwLErDVnOgAWX = (1 == 0)
+          local function UsvTXDWTsjl_I()
+              if UiwLErDVnOgAWX then return end
+              UiwLErDVnOgAWX = (not not 1)
+              OKgvsxuqsXk9(BDYFawhhy_, 0.22, { GroupTransparency = 1 })
+              OKgvsxuqsXk9(dTfvPe8e2iA9S, 0.22, { Scale = 0.9 }, Enum.EasingStyle.Back, Enum.EasingDirection.In)
+              OKgvsxuqsXk9(SLLzsz1Tzk7P, 0.22, { BackgroundTransparency = 1 })
               task.wait(0.22)
               self.DialogOpen = (0 == 1)
-              KfN0a3ZOx3eXAx.Visible = (0 == 1)
-              if BpIFitxHrGObGK and BpIFitxHrGObGK.Parent then BpIFitxHrGObGK:Destroy() end
+              pK5lYjcwswDxda.Visible = (not not 0 == false)
+              if BDYFawhhy_ and BDYFawhhy_.Parent then BDYFawhhy_:Destroy() end
           end
 
-          for nZKNbQj60_, CrHrxlHovJ in ipairs(sRh25k19Vps) do
-              local enAJeAGUPUgCOK = CrHrxlHovJ.Title or enEhp02mua2U("wUj1nrAjz0YdVBAn", ((4 + 3) * 6 + 57309))
-              local S81lplDDGvAk, NPWu15mBRGU2ID = DUb0KZ6vrZofnz(enAJeAGUPUgCOK)
-              local GE1tXj7SAD4XU7 = NxSXLgXgoQg(enEhp02mua2U("7itmLX1gZkCR5DhisXCfi0bKevTOu43x", (9 * 10 + 41487)), {
-                  Size = UDim2.new(1 / V9DQsNwrmZ7Xb, -((V9DQsNwrmZ7Xb - 1) * (6 * 4 * 3 - 62)) / V9DQsNwrmZ7Xb, 0, ((1 + 8) * 3 + 7)),
-                  BackgroundColor3 = S81lplDDGvAk or ru_1s3dO(enEhp02mua2U("fV4tnaGsKtc1u7rrWi4Gtt+0Xs4tWwGA", (6 * 6 * 5 + 5969))),
-                  BackgroundTransparency = S81lplDDGvAk and 0.1 or 0.9,
-                  Text = enAJeAGUPUgCOK,
-                  FontFace = AFAPdGSfclD3,
-                  TextColor3 = NPWu15mBRGU2ID or ru_1s3dO(enEhp02mua2U("/M0Qcs/rY4HuYT3K", ((6 + 9) * 4 + 4290))),
-                  TextSize = (9 * 5 - 32),
-                  AutoButtonColor = (not (1 == 1)),
-                  LayoutOrder = nZKNbQj60_,
-                  Parent = WuFo1xBCvU
+          for BLPQXlaeb2, QeaYXv8wsY in ipairs(KBAqORueOi91) do
+              local Rlc0ukAg = QeaYXv8wsY.Title or BNPLiLk3nhLF("gY1VFaV06hgCrpfJ", (3 * 2 * 5 + 36701))
+              local HVHG48UOuum, S558moKB = OynmRZnT(Rlc0ukAg)
+              local zCvhNJvsGGviaq = pj6ssRQIN4J3xT(BNPLiLk3nhLF("K7lH9qiDfc5FfH5j0qvU7x+vdx+11/DX", (8 * 3 + 32830)), {
+                  Size = UDim2.new(1 / wz52duGYnCDZ9, -((wz52duGYnCDZ9 - 1) * (3 * 5 * 5 - 65)) / wz52duGYnCDZ9, 0, (7 * 6 * 4 - 134)),
+                  BackgroundColor3 = HVHG48UOuum or LZ2C54KuY3Vq(BNPLiLk3nhLF("BoVXwoNz7QmdvP1PFB60vnv2DBYewO1G", (4 * 5 * 3 + 55057))),
+                  BackgroundTransparency = HVHG48UOuum and 0.1 or 0.9,
+                  Text = Rlc0ukAg,
+                  FontFace = LLGOyAAgK37,
+                  TextColor3 = S558moKB or LZ2C54KuY3Vq(BNPLiLk3nhLF("RwtqEfYmbgY56lbX", (2 * 5 + 52721))),
+                  TextSize = (4 * 4 - 3),
+                  AutoButtonColor = (0 == 1),
+                  LayoutOrder = BLPQXlaeb2,
+                  Parent = MFhANBdt9pUoTI
               }, {
-                  NxSXLgXgoQg(enEhp02mua2U("BazdI76XT2/qRPT1Id+IW+==", (4 * 3 * 2 + 2147)), { CornerRadius = UDim.new(0, ((7 + 2) * 6 - 48)) }),
-                  NxSXLgXgoQg(enEhp02mua2U("X7sH8hDRX4CwdKVTq++bD+==", (2 * 8 * 4 + 20729)), {
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("G0eBujIpG7nILkGtmqTmIL==", (6 * 5 * 3 + 1272)), { CornerRadius = UDim.new(0, (7 * 8 * 5 - 274)) }),
+                  pj6ssRQIN4J3xT(BNPLiLk3nhLF("TwJ56UwET+YPrUtPV6lY6S==", (5 * 3 + 18926)), {
                       ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                      Transparency = S81lplDDGvAk and 1 or 0.6,
-                      Color = S81lplDDGvAk or ru_1s3dO(enEhp02mua2U("mRHpGbNRQ6YEqWrycfYEIfYHymoCARzMcmK9eX6LW5J=", (6 * 6 * 5 + 11628))),
+                      Transparency = HVHG48UOuum and 1 or 0.6,
+                      Color = HVHG48UOuum or LZ2C54KuY3Vq(BNPLiLk3nhLF("wmT7xcavT5JqxgJ7TmV5K5apMXBHMFWEMnX3jca1aZV=", (6 * 11 + 55219))),
                       Thickness = 1
                   })
               })
-              if not S81lplDDGvAk then
-                  MYpL11YDP(GE1tXj7SAD4XU7, { BackgroundColor3 = enEhp02mua2U("Ynd0e7jVTrWuZsZlPKXTusJRjI4VKoU0", (10 * 12 + 39577)), TextColor3 = enEhp02mua2U("WUqJQOBdU9LORuLK", ((9 + 2) * 6 + 40533)) })
+              if not HVHG48UOuum then
+                  IXDNvPpYV_29(zCvhNJvsGGviaq, { BackgroundColor3 = BNPLiLk3nhLF("ubdytb4iVmgzt7+hJjGAw6ZDgAMBiHl8", ((5 + 2) * 3 + 9291)), TextColor3 = BNPLiLk3nhLF("LhCRbrDmb/kU3WIW", ((4 + 4) * 2 + 44119)) })
               end
-              local Bwt8LKfrmKKz = S81lplDDGvAk and 0.1 or 0.9
-              GE1tXj7SAD4XU7.MouseEnter:Connect(function() EdG5asEXmzs(GE1tXj7SAD4XU7, 0.12, { BackgroundTransparency = math.max(0, Bwt8LKfrmKKz - 0.08) }) end)
-              GE1tXj7SAD4XU7.MouseLeave:Connect(function() EdG5asEXmzs(GE1tXj7SAD4XU7, 0.12, { BackgroundTransparency = Bwt8LKfrmKKz }) end)
-              GE1tXj7SAD4XU7.MouseButton1Click:Connect(function()
-                  VtkfV2WFLqvi5N(CrHrxlHovJ.Callback)
-                  CI4OK8mqU6()
+              local W6lQlqofTv = HVHG48UOuum and 0.1 or 0.9
+              zCvhNJvsGGviaq.MouseEnter:Connect(function() OKgvsxuqsXk9(zCvhNJvsGGviaq, 0.12, { BackgroundTransparency = math.max(0, W6lQlqofTv - 0.08) }) end)
+              zCvhNJvsGGviaq.MouseLeave:Connect(function() OKgvsxuqsXk9(zCvhNJvsGGviaq, 0.12, { BackgroundTransparency = W6lQlqofTv }) end)
+              zCvhNJvsGGviaq.MouseButton1Click:Connect(function()
+                  ZKUWoNoq2SZh(QeaYXv8wsY.Callback)
+                  UsvTXDWTsjl_I()
               end)
           end
 
-          EdG5asEXmzs(BpIFitxHrGObGK, 0.28, { GroupTransparency = 0 })
-          EdG5asEXmzs(ONKXeR1Bd1P0, 0.32, { Scale = 1 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+          OKgvsxuqsXk9(BDYFawhhy_, 0.28, { GroupTransparency = 0 })
+          OKgvsxuqsXk9(dTfvPe8e2iA9S, 0.32, { Scale = 1 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
 
-          return { Root = BpIFitxHrGObGK, Close = CI4OK8mqU6 }
+          return { Root = BDYFawhhy_, Close = UsvTXDWTsjl_I }
       end
 
-      local OqWLAyp1aXz = 0
+      local ACpf3nJpgITdgR = 0
 
-      function PSWvWddvL8:Notify(EOgt1stkf4V)
-          EOgt1stkf4V = EOgt1stkf4V or {}
-          OqWLAyp1aXz = OqWLAyp1aXz + 1
+      function s5u4s2Xu2FcVIb:Notify(ilBQca0LEpVgfg)
+          ilBQca0LEpVgfg = ilBQca0LEpVgfg or {}
+          ACpf3nJpgITdgR = ACpf3nJpgITdgR + 1
 
-          local IOM_ByCZN = EOgt1stkf4V.Type or enEhp02mua2U("clozAHjQlQTrUFTI", (5 * 4 * 6 + 41180))
-          local XcBjZjUQU = EOgt1stkf4V.Duration or (8 * 12 - 91)
-          local geF6imp4Uh4z = ooP8UD3y3H9(IOM_ByCZN)
-          local z_ae9w6Tr6dP = DZp6tonJu(IOM_ByCZN)
+          local xOJAG0huDfpcO = ilBQca0LEpVgfg.Type or BNPLiLk3nhLF("QGgFMSfYqFeNUOUo", (2 * 3 * 6 + 26112))
+          local I97UIYHj8DwMz = ilBQca0LEpVgfg.Duration or ((3 + 9) * 3 - 31)
+          local PT_7VLQd9Li = ilBQca0LEpVgfg.Icon or jjSmR_052A_(xOJAG0huDfpcO)
+          local TEX0vh3VVQVMr5 = yFiMDpJtz8v(xOJAG0huDfpcO)
 
-          local Snc6uJnFuNSm = NxSXLgXgoQg(enEhp02mua2U("eQmYAJ30cQwS0ZRs", (2 * 6 * 5 + 22558)), {
-              Size = UDim2.new(1, 0, 0, ((5 + 5) * 2 + 48)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("SlxLVvEafGCoEKOWSeK6+Kyj2C1uCcB4", (3 * 13 + 22925))),
+          local tVnYU4_3a = pj6ssRQIN4J3xT(BNPLiLk3nhLF("ZLZ3lpiVm7ZHXB68", (5 * 6 * 5 + 36843)), {
+              Size = UDim2.new(1, 0, 0, (8 * 13 - 36)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("k2aakcQOikig689mrIeLJFzIEdv5SRGA", ((7 + 3) * 4 + 45217))),
               BackgroundTransparency = 0.05,
-              LayoutOrder = OqWLAyp1aXz,
-              Position = UDim2.fromOffset(((3 + 2) * 4 + 60), 0),
-              Parent = rVsTCJraFJB
+              LayoutOrder = ACpf3nJpgITdgR,
+              Position = UDim2.fromOffset((7 * 8 * 2 - 32), 0),
+              Parent = kTY8nexTAHi
           }, {
-              NxSXLgXgoQg(enEhp02mua2U("mJyq3kf4IAF57Yh27+uArA==", (5 * 12 + 25638)), { CornerRadius = UDim.new(0, (3 * 7 * 2 - 34)) }),
-              NxSXLgXgoQg(enEhp02mua2U("+BURAWRQKB+X876NnJ5YCy==", ((6 + 6) * 7 + 22313)), { Color = ru_1s3dO(enEhp02mua2U("EjIleCSO98w2CqIG", (5 * 4 * 5 + 50450))), Transparency = 0.35, Thickness = 1 })
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("hMSBqpdqAOEiBx6jKKwO9t==", ((2 + 2) * 3 + 24317)), { CornerRadius = UDim.new(0, ((3 + 3) * 4 - 16)) }),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("pXdNqCFvQTXZEHy3q3DZQA==", (11 * 9 + 35245)), { Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("kF4ifL+PmX4Mvdmi", ((4 + 5) * 4 + 16847))), Transparency = 0.35, Thickness = 1 })
           })
-          MYpL11YDP(Snc6uJnFuNSm, { BackgroundColor3 = enEhp02mua2U("Suq+YlgeIIqaoWQ747EXZwDwMcHzrMNS", (6 * 2 * 2 + 53388)) })
+          IXDNvPpYV_29(tVnYU4_3a, { BackgroundColor3 = BNPLiLk3nhLF("HhIHBKtcVn9FK7gbIqmN48q6KEj0CLsp", (3 * 6 * 6 + 37013)) })
 
-          local _IU6NsjA = NxSXLgXgoQg(enEhp02mua2U("PkM0PGRtd3IL1c6T", (5 * 4 + 51249)), {
-              Size = UDim2.new(0, ((3 + 5) * 3 - 21), 1, -(2 * 5 * 2 - 4)),
-              Position = UDim2.fromOffset(0, (3 * 12 - 28)),
-              BackgroundColor3 = ru_1s3dO(z_ae9w6Tr6dP),
+          local ATaVLrPmA = pj6ssRQIN4J3xT(BNPLiLk3nhLF("hZochQ1wyVL4hMb2", (8 * 6 * 6 + 7557)), {
+              Size = UDim2.new(0, ((9 + 8) * 5 - 82), 1, -(6 * 6 - 20)),
+              Position = UDim2.fromOffset(0, (11 * 3 - 25)),
+              BackgroundColor3 = LZ2C54KuY3Vq(TEX0vh3VVQVMr5),
               BorderSizePixel = 0,
-              Parent = Snc6uJnFuNSm
-          }, { NxSXLgXgoQg(enEhp02mua2U("l3OoX8XsT8N0lUJnHUDtHL==", (6 * 10 + 19897)), { CornerRadius = UDim.new(1, 0) }) })
-          MYpL11YDP(_IU6NsjA, { BackgroundColor3 = z_ae9w6Tr6dP })
+              Parent = tVnYU4_3a
+          }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("2VhNekRKhY3RhBSZloOZvV==", ((6 + 2) * 5 + 64153)), { CornerRadius = UDim.new(1, 0) }) })
+          IXDNvPpYV_29(ATaVLrPmA, { BackgroundColor3 = TEX0vh3VVQVMr5 })
 
-          local TWyhNoLD = NxSXLgXgoQg(enEhp02mua2U("Xk6HA5nWxLj6vDH024FMXlQeM5ejpmBO", (8 * 7 + 22785)), {
-              Image = fLLzgL1N_[geF6imp4Uh4z],
-              ImageColor3 = ru_1s3dO(z_ae9w6Tr6dP),
-              Size = UDim2.fromOffset((8 * 2 + 0), ((1 + 9) * 3 - 14)),
-              Position = UDim2.fromOffset(((7 + 3) * 6 - 46), (3 * 2 * 2 + 2)),
+          local IPXipzoTUkq = pj6ssRQIN4J3xT(BNPLiLk3nhLF("NssZpjcE2sKMxdxXKdDTNshWdp3EKuKB", (6 * 7 * 5 + 42797)), {
+              Image = s5u4s2Xu2FcVIb:GetIcon(PT_7VLQd9Li) or jGbhiICtv[PT_7VLQd9Li],
+              ImageColor3 = LZ2C54KuY3Vq(TEX0vh3VVQVMr5),
+              Size = UDim2.fromOffset((10 * 13 - 114), (7 * 3 * 5 - 89)),
+              Position = UDim2.fromOffset((2 * 9 - 4), (2 * 7 * 2 - 14)),
               BackgroundTransparency = 1,
-              Parent = Snc6uJnFuNSm
+              Parent = tVnYU4_3a
           })
-          MYpL11YDP(TWyhNoLD, { ImageColor3 = z_ae9w6Tr6dP })
+          IXDNvPpYV_29(IPXipzoTUkq, { ImageColor3 = TEX0vh3VVQVMr5 })
 
-          local EIwEcBu7Sr = NxSXLgXgoQg(enEhp02mua2U("QunVVbdqWufRVufVItQb7u==", (7 * 7 * 6 + 33530)), {
-              FontFace = vFN9jU76GrG,
-              Text = EOgt1stkf4V.Title or enEhp02mua2U("BCg987QKAnCjBZCjtvCbGPi2NOC741uM", (10 * 5 + 16347)),
-              TextColor3 = ru_1s3dO(enEhp02mua2U("Rk1sXZADs1DVnM9K", (8 * 6 + 23017))),
-              TextSize = (2 * 3 * 5 - 16),
+          local cM9JZv258E = pj6ssRQIN4J3xT(BNPLiLk3nhLF("4CeN4HsrbezfIrY7Dc/Ils==", (7 * 4 + 40327)), {
+              FontFace = Ql8IsB_L0uz,
+              Text = ilBQca0LEpVgfg.Title or BNPLiLk3nhLF("3s25YwUZWfv0CfuskpgIQ2UqYo2U8MCa", (3 * 4 * 5 + 63118)),
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("wmBQAE19wXO9KJB3", (9 * 11 + 3053))),
+              TextSize = (8 * 5 - 26),
               TextXAlignment = Enum.TextXAlignment.Left,
-              Size = UDim2.new(1, -(5 * 5 * 2 + 20), 0, ((7 + 9) * 3 - 30)),
-              Position = UDim2.fromOffset(((7 + 3) * 3 + 8), ((6 + 9) * 2 - 18)),
+              Size = UDim2.new(1, -(6 * 2 * 6 - 2), 0, (4 * 2 + 10)),
+              Position = UDim2.fromOffset(((6 + 7) * 4 - 14), (5 * 2 + 2)),
               BackgroundTransparency = 1,
               TextTruncate = Enum.TextTruncate.AtEnd,
-              Parent = Snc6uJnFuNSm
+              Parent = tVnYU4_3a
           })
-          MYpL11YDP(EIwEcBu7Sr, { TextColor3 = enEhp02mua2U("sXEvr8HDJSHr2UTa", (5 * 7 + 11712)) })
+          IXDNvPpYV_29(cM9JZv258E, { TextColor3 = BNPLiLk3nhLF("es3s17k7Ff3bTvSh", ((8 + 8) * 2 + 25577)) })
 
-          local t0AtpplZn3miM = NxSXLgXgoQg(enEhp02mua2U("cUo9O+BUKKWfw8l8yGoKW+==", (3 * 7 + 38847)), {
-              FontFace = t2hTAJBv,
-              Text = EOgt1stkf4V.Content or enEhp02mua2U("", (5 * 2 + 27721)),
-              TextColor3 = ru_1s3dO(enEhp02mua2U("HSafRY4Sfg58+zcYfDqfSN==", (9 * 12 + 24651))),
-              TextSize = (3 * 3 * 2 - 6),
+          local yoAAG_ra = pj6ssRQIN4J3xT(BNPLiLk3nhLF("vV0EX55bkVhGOxh5ADNFY5==", (5 * 6 * 6 + 35963)), {
+              FontFace = a3JMPK3UpLj,
+              Text = ilBQca0LEpVgfg.Content or BNPLiLk3nhLF("", (3 * 4 + 32997)),
+              TextColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("80RroHPsuD859PxxFTZYy0==", (5 * 6 + 57466))),
+              TextSize = (2 * 8 * 2 - 20),
               TextXAlignment = Enum.TextXAlignment.Left,
-              TextWrapped = (1 == 1),
+              TextWrapped = (0 == 0),
               TextTruncate = Enum.TextTruncate.AtEnd,
-              Size = UDim2.new(1, -((5 + 8) * 5 - 15), 0, ((2 + 5) * 3 - 5)),
-              Position = UDim2.fromOffset((3 * 2 * 2 + 26), (5 * 5 + 9)),
+              Size = UDim2.new(1, -(4 * 4 + 34), 0, (2 * 3 * 4 - 8)),
+              Position = UDim2.fromOffset((6 * 7 * 3 - 88), ((6 + 7) * 4 - 18)),
               BackgroundTransparency = 1,
-              Parent = Snc6uJnFuNSm
+              Parent = tVnYU4_3a
           })
-          MYpL11YDP(t0AtpplZn3miM, { TextColor3 = enEhp02mua2U("Eu9qEf/0a08IuFkxApd3qd==", (5 * 6 + 11714)) })
+          IXDNvPpYV_29(yoAAG_ra, { TextColor3 = BNPLiLk3nhLF("HuJjhGCdXdUrLLi8dri0Xu==", (9 * 6 + 52447)) })
 
-          local hqdKBBJHLWZ = NxSXLgXgoQg(enEhp02mua2U("P0xfEcCrEVunFwU4oWFiomeykbqh+wlP", ((5 + 7) * 5 + 34620)), {
-              Size = UDim2.fromOffset(((2 + 9) * 2 + 0), (10 * 10 - 78)),
-              Position = UDim2.new(1, -(3 * 8 * 4 - 66), 0, (3 * 4 + 0)),
+          local xOsg3Vau = pj6ssRQIN4J3xT(BNPLiLk3nhLF("n6cjf6MeYt09wMdWBqpFBDmnn6gQNgce", ((9 + 7) * 2 + 1139)), {
+              Size = UDim2.fromOffset((3 * 8 - 2), ((9 + 5) * 5 - 48)),
+              Position = UDim2.new(1, -(2 * 10 + 10), 0, (5 * 6 - 18)),
               BackgroundTransparency = 1,
-              Text = enEhp02mua2U("", ((3 + 8) * 2 + 58176)),
+              Text = BNPLiLk3nhLF("", (8 * 2 * 2 + 11972)),
               AutoButtonColor = (1 == 0),
-              Parent = Snc6uJnFuNSm
+              Parent = tVnYU4_3a
           }, {
-              NxSXLgXgoQg(enEhp02mua2U("MrQK2nwkHaO+JMIiHqwAoZR8Baf5uY5K", ((6 + 7) * 4 + 63947)), {
-                  Image = fLLzgL1N_[enEhp02mua2U("qay9OCGs7M03RMIi7GTt+r==", ((3 + 3) * 2 + 28222))],
-                  ImageColor3 = ru_1s3dO(enEhp02mua2U("kO+U4wOnUXRFDX8ydpjXl8==", (3 * 7 * 5 + 59338))),
-                  Size = UDim2.fromOffset((3 * 2 * 4 - 11), ((2 + 8) * 3 - 17)),
+              pj6ssRQIN4J3xT(BNPLiLk3nhLF("FmkZfHg9B6aCyGjqkmBvfGOZVHds2itB", ((7 + 9) * 7 + 50264)), {
+                  Image = jGbhiICtv[BNPLiLk3nhLF("lGoFA/ywDaLSFs5sFWALFB==", (8 * 11 + 64739))],
+                  ImageColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("x2cqXp87ubgUJnvySBooIK==", (10 * 5 + 20238))),
+                  Size = UDim2.fromOffset((6 * 7 * 3 - 113), (7 * 12 - 71)),
                   Position = UDim2.fromScale(0.5, 0.5),
                   AnchorPoint = Vector2.new(0.5, 0.5),
                   BackgroundTransparency = 1,
                   Parent = CloseBtn2
               })
           })
-          MYpL11YDP(hqdKBBJHLWZ:FindFirstChildOfClass(enEhp02mua2U("JReuygFJHctZnPEJZPtKZKeVybyJ5aO1", (7 * 12 + 29317))), { ImageColor3 = enEhp02mua2U("f48D6T4/NZcU7ZA1+2jOw4==", (3 * 8 + 36083)) })
+          IXDNvPpYV_29(xOsg3Vau:FindFirstChildOfClass(BNPLiLk3nhLF("Re12bQN7OJ7QNYEHbeQFJV9wLF9jywzH", (4 * 6 * 2 + 51441))), { ImageColor3 = BNPLiLk3nhLF("n8OvyAWvqVcQrfYzMK+CDc==", (4 * 6 * 2 + 65103)) })
 
-          local ORaelvI8Qcs = NxSXLgXgoQg(enEhp02mua2U("cxxo+TyDeemiojSc", (2 * 3 * 3 + 22502)), {
-              Size = UDim2.new(1, -((2 + 6) * 7 - 32), 0, (5 * 7 * 6 - 208)),
-              Position = UDim2.new(0, ((5 + 2) * 5 - 23), 1, -(11 * 8 - 82)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("HLKUrd+A6DHlTDna", ((9 + 9) * 5 + 5135))),
+          local AkK4nHHzi = pj6ssRQIN4J3xT(BNPLiLk3nhLF("DxBz2Viiz23nmZsm", (10 * 3 + 26615)), {
+              Size = UDim2.new(1, -(10 * 12 - 96), 0, (5 * 10 - 48)),
+              Position = UDim2.new(0, (10 * 12 - 108), 1, -(4 * 3 * 6 - 66)),
+              BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("jUOQZMQOeD0ogZQC", (2 * 9 + 4413))),
               BackgroundTransparency = 0.5,
               BorderSizePixel = 0,
-              Parent = Snc6uJnFuNSm
-          }, { NxSXLgXgoQg(enEhp02mua2U("V6brqfwP85r5BbJ2R2c4FY==", (7 * 6 * 6 + 23096)), { CornerRadius = UDim.new(1, 0) }) })
-          MYpL11YDP(ORaelvI8Qcs, { BackgroundColor3 = enEhp02mua2U("plytY2UAi7b/oKF6", ((8 + 8) * 4 + 64982)) })
+              Parent = tVnYU4_3a
+          }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("wq3LFMZQwtEUzMcFT8EsT4==", (6 * 6 * 6 + 36999)), { CornerRadius = UDim.new(1, 0) }) })
+          IXDNvPpYV_29(AkK4nHHzi, { BackgroundColor3 = BNPLiLk3nhLF("CFI1+SMHEPy6qG1S", (8 * 5 * 4 + 9190)) })
 
-          local _nt0pVaPKQ = NxSXLgXgoQg(enEhp02mua2U("55MBlBlPe5in6Cm4", (2 * 2 * 3 + 1209)), {
+          local pqgsT9ht15 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("YNdYQ7sHN3j4AjHD", (2 * 2 * 6 + 7568)), {
               Size = UDim2.new(1, 0, 1, 0),
-              BackgroundColor3 = ru_1s3dO(z_ae9w6Tr6dP),
+              BackgroundColor3 = LZ2C54KuY3Vq(TEX0vh3VVQVMr5),
               BorderSizePixel = 0,
-              Parent = ORaelvI8Qcs
-          }, { NxSXLgXgoQg(enEhp02mua2U("eR3IrQhlHp49GBNtAY7AtX==", (8 * 8 * 4 + 64699)), { CornerRadius = UDim.new(1, 0) }) })
-          MYpL11YDP(_nt0pVaPKQ, { BackgroundColor3 = z_ae9w6Tr6dP })
+              Parent = AkK4nHHzi
+          }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("fEskfeh+mENID+ueTRwO3B==", (5 * 5 * 4 + 6685)), { CornerRadius = UDim.new(1, 0) }) })
+          IXDNvPpYV_29(pqgsT9ht15, { BackgroundColor3 = TEX0vh3VVQVMr5 })
 
-          local DDAEA8kpUgbBJa = (0 == 1)
-          local Nrc_Ze5V = (1 == 0)
-          local kOOdtK3w = 0
-          local WGQmc9hUDhaRJi
+          local tEXYZUFD02 = (0 == 1)
+          local EUScRtQoonN56n = (0 == 1)
+          local q12DWxxhitS97 = 0
+          local O0lkTWl1qA55
 
-          local function frEfHRdQXoC8hD()
-              if DDAEA8kpUgbBJa then return end
-              DDAEA8kpUgbBJa = (not false)
-              if WGQmc9hUDhaRJi then WGQmc9hUDhaRJi:Disconnect() WGQmc9hUDhaRJi = nil end
-              EdG5asEXmzs(Snc6uJnFuNSm, 0.25, { Position = UDim2.fromOffset((5 * 7 * 2 + 10), 0) }, Enum.EasingStyle.Quart)
-              EdG5asEXmzs(Snc6uJnFuNSm, 0.25, { BackgroundTransparency = 1 })
-              if ORaelvI8Qcs then EdG5asEXmzs(ORaelvI8Qcs, 0.2, { BackgroundTransparency = 1 }) end
+          local function cMv6MOQSJsdIbr()
+              if tEXYZUFD02 then return end
+              tEXYZUFD02 = (0 == 0)
+              if O0lkTWl1qA55 then O0lkTWl1qA55:Disconnect() O0lkTWl1qA55 = nil end
+              OKgvsxuqsXk9(tVnYU4_3a, 0.25, { Position = UDim2.fromOffset(((3 + 5) * 7 + 24), 0) }, Enum.EasingStyle.Quart)
+              OKgvsxuqsXk9(tVnYU4_3a, 0.25, { BackgroundTransparency = 1 })
+              if AkK4nHHzi then OKgvsxuqsXk9(AkK4nHHzi, 0.2, { BackgroundTransparency = 1 }) end
               task.delay(0.3, function()
-                  if Snc6uJnFuNSm and Snc6uJnFuNSm.Parent then Snc6uJnFuNSm:Destroy() end
+                  if tVnYU4_3a and tVnYU4_3a.Parent then tVnYU4_3a:Destroy() end
               end)
           end
 
-          hqdKBBJHLWZ.MouseButton1Click:Connect(frEfHRdQXoC8hD)
+          xOsg3Vau.MouseButton1Click:Connect(cMv6MOQSJsdIbr)
 
-          Snc6uJnFuNSm.MouseEnter:Connect(function() Nrc_Ze5V = (0 == 0) end)
-          Snc6uJnFuNSm.MouseLeave:Connect(function() Nrc_Ze5V = (1 == 0) end)
+          tVnYU4_3a.MouseEnter:Connect(function() EUScRtQoonN56n = (1 == 1) end)
+          tVnYU4_3a.MouseLeave:Connect(function() EUScRtQoonN56n = (not not 0 == false) end)
 
-          if XcBjZjUQU > 0 then
-              WGQmc9hUDhaRJi = u3h8iU2HVrE_.RenderStepped:Connect(function(BpuMbS9kwCI0B)
-                  if DDAEA8kpUgbBJa or Nrc_Ze5V then return end
-                  kOOdtK3w = kOOdtK3w + BpuMbS9kwCI0B
-                  local OFrnfK1J6H3t1Y = math.min(kOOdtK3w / XcBjZjUQU, 1)
-                  if _nt0pVaPKQ and _nt0pVaPKQ.Parent then
-                      _nt0pVaPKQ.Size = UDim2.new(1 - OFrnfK1J6H3t1Y, 0, 1, 0)
+          if I97UIYHj8DwMz > 0 then
+              O0lkTWl1qA55 = bHw_djSybixk9.RenderStepped:Connect(function(TxLwlhDq)
+                  if tEXYZUFD02 or EUScRtQoonN56n then return end
+                  q12DWxxhitS97 = q12DWxxhitS97 + TxLwlhDq
+                  local kOlMFDMjoX7e_1 = math.min(q12DWxxhitS97 / I97UIYHj8DwMz, 1)
+                  if pqgsT9ht15 and pqgsT9ht15.Parent then
+                      pqgsT9ht15.Size = UDim2.new(1 - kOlMFDMjoX7e_1, 0, 1, 0)
                   end
-                  if OFrnfK1J6H3t1Y >= 1 then
-                      frEfHRdQXoC8hD()
+                  if kOlMFDMjoX7e_1 >= 1 then
+                      cMv6MOQSJsdIbr()
                   end
               end)
           end
 
-          EdG5asEXmzs(Snc6uJnFuNSm, 0.4, { Position = UDim2.fromOffset(0, 0) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+          OKgvsxuqsXk9(tVnYU4_3a, 0.4, { Position = UDim2.fromOffset(0, 0) }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
 
-          return { Close = frEfHRdQXoC8hD }
+          return { Close = cMv6MOQSJsdIbr }
       end
 
-      function Pi5Mxphxr:AddTab(C0V9RkllO1v)
-          C0V9RkllO1v = C0V9RkllO1v or {}
-          return lrw37nqu.new(self, C0V9RkllO1v.Title or enEhp02mua2U("qElvyvqT150=", (11 * 5 + 11673)), C0V9RkllO1v.Icon)
+      function WuQrvb1Hrl:AddTab(VxOTZXp06nRV)
+          VxOTZXp06nRV = VxOTZXp06nRV or {}
+          return XS6hZZtUt8O.new(self, VxOTZXp06nRV.Title or BNPLiLk3nhLF("KtER0Z3YjrU=", (5 * 4 * 3 + 41659)), VxOTZXp06nRV.Icon)
       end
 
-      function Pi5Mxphxr:SelectTab(zcx_Fc5EZ5EBXJ)
-          zcx_Fc5EZ5EBXJ = zcx_Fc5EZ5EBXJ or 1
-          if not self.Tabs[zcx_Fc5EZ5EBXJ] then return end
-          self.SelectedTab = zcx_Fc5EZ5EBXJ
+      function WuQrvb1Hrl:SelectTab(z1ENo6IgNL)
+          z1ENo6IgNL = z1ENo6IgNL or 1
+          if not self.Tabs[z1ENo6IgNL] then return end
+          self.SelectedTab = z1ENo6IgNL
 
-          for UQjLoZq3vNDaE5, k3LY1UtHaU2 in pairs(self.Tabs) do
-              k3LY1UtHaU2:SetTransparency(1)
-              k3LY1UtHaU2.Selected = (not (1 == 1))
+          for Gnj8bgwcmQ2IiA, sUZRbohA4 in pairs(self.Tabs) do
+              sUZRbohA4:SetTransparency(1)
+              sUZRbohA4.Selected = (0 == 1)
           end
-          self.Tabs[zcx_Fc5EZ5EBXJ]:SetTransparency(0.9)
-          self.Tabs[zcx_Fc5EZ5EBXJ].Selected = (not false)
+          self.Tabs[z1ENo6IgNL]:SetTransparency(0.9)
+          self.Tabs[z1ENo6IgNL].Selected = (not not 1)
 
-          DwH4QcNmzpga.Text = self.Tabs[zcx_Fc5EZ5EBXJ].Title
+          gMph6fceRXeR.Text = self.Tabs[z1ENo6IgNL].Title
 
           task.defer(function()
-              local JvXnJzeNtCQZF = self.Tabs[zcx_Fc5EZ5EBXJ].Frame
-              if JvXnJzeNtCQZF and JvXnJzeNtCQZF.Parent and kj7wISrWR and kj7wISrWR.Parent then
-                  local kZONaDpSW = JvXnJzeNtCQZF.AbsolutePosition.Y - kj7wISrWR.AbsolutePosition.Y + JvXnJzeNtCQZF.AbsoluteSize.Y / ((1 + 7) * 6 - 46)
-                  H08HXejJgTai(kZONaDpSW)
+              local LNvCCkkprzloBy = self.Tabs[z1ENo6IgNL].Frame
+              if LNvCCkkprzloBy and LNvCCkkprzloBy.Parent and Q6_r4bJCnR8u and Q6_r4bJCnR8u.Parent then
+                  local rXxjRRPFJnyG = LNvCCkkprzloBy.AbsolutePosition.Y - Q6_r4bJCnR8u.AbsolutePosition.Y + LNvCCkkprzloBy.AbsoluteSize.Y / (6 * 6 * 5 - 178)
+                  oDq3UCax8GEXX(rXxjRRPFJnyG)
               end
           end)
 
-          for B7lPkP2iyG8fb, Z2BcjbG0VloLbc in pairs(self.Tabs) do
-              Z2BcjbG0VloLbc.Container.Visible = (not not 0 == false)
+          for fyCSmGQj, _BNrPAkjugbl02 in pairs(self.Tabs) do
+              _BNrPAkjugbl02.Container.Visible = (not (1 == 1))
           end
-          self.Tabs[zcx_Fc5EZ5EBXJ].Container.Visible = (1 == 1)
+          self.Tabs[z1ENo6IgNL].Container.Visible = (not not 1)
 
-          WU83zchW2WQd.GroupTransparency = 1
-          WU83zchW2WQd.Position = UDim2.fromOffset(XkVbD38y3RAS + (3 * 4 * 4 - 8), ((4 + 4) * 6 + 48))
-          EdG5asEXmzs(WU83zchW2WQd, 0.25, { GroupTransparency = 0 })
-          EdG5asEXmzs(WU83zchW2WQd, 0.32, { Position = UDim2.fromOffset(XkVbD38y3RAS + (7 * 13 - 61), (5 * 2 + 86)) }, Enum.EasingStyle.Quart)
+          gNNRby6mB.GroupTransparency = 1
+          gNNRby6mB.Position = UDim2.fromOffset(bSmp1NCUvb + (5 * 2 * 5 - 10), (7 * 3 + 75))
+          OKgvsxuqsXk9(gNNRby6mB, 0.25, { GroupTransparency = 0 })
+          OKgvsxuqsXk9(gNNRby6mB, 0.32, { Position = UDim2.fromOffset(bSmp1NCUvb + (3 * 2 * 5 + 0), (2 * 6 * 6 + 24)) }, Enum.EasingStyle.Quart)
       end
 
-      function Pi5Mxphxr:Minimize()
+      function WuQrvb1Hrl:Minimize()
           self.Minimized = not self.Minimized
           if self.Minimized then
-              local jrqyNtoAn8 = NxSXLgXgoQg(enEhp02mua2U("ciS3ydq9ES5exnnSIvG0HG==", (6 * 6 * 3 + 64266)), { Scale = 1, Parent = kj7wISrWR })
-              EdG5asEXmzs(jrqyNtoAn8, 0.25, { Scale = 0.85 }, Enum.EasingStyle.Back, Enum.EasingDirection.In)
-              EdG5asEXmzs(kj7wISrWR, 0.22, { BackgroundTransparency = 0.5 })
+              local M7pvSXATqA2j = pj6ssRQIN4J3xT(BNPLiLk3nhLF("vnDgNW0EDggBXJP0WKCbhj==", (6 * 11 + 11451)), { Scale = 1, Parent = Q6_r4bJCnR8u })
+              OKgvsxuqsXk9(M7pvSXATqA2j, 0.25, { Scale = 0.85 }, Enum.EasingStyle.Back, Enum.EasingDirection.In)
+              OKgvsxuqsXk9(Q6_r4bJCnR8u, 0.22, { BackgroundTransparency = 0.5 })
               task.delay(0.25, function()
-                  kj7wISrWR.Visible = (not not 0 == false)
-                  kj7wISrWR.BackgroundTransparency = 0
-                  if jrqyNtoAn8 then jrqyNtoAn8:Destroy() end
+                  Q6_r4bJCnR8u.Visible = (not (1 == 1))
+                  Q6_r4bJCnR8u.BackgroundTransparency = 0
+                  if M7pvSXATqA2j then M7pvSXATqA2j:Destroy() end
               end)
           else
-              kj7wISrWR.Visible = (1 == 1)
-              kj7wISrWR.BackgroundTransparency = 0.5
-              local OQ8bDX5BxUh3_ = NxSXLgXgoQg(enEhp02mua2U("ZykULDlfqfJC8NVk+po6gl==", (8 * 7 * 4 + 18079)), { Scale = 0.85, Parent = kj7wISrWR })
-              EdG5asEXmzs(OQ8bDX5BxUh3_, 0.32, { Scale = 1 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
-              EdG5asEXmzs(kj7wISrWR, 0.25, { BackgroundTransparency = 0 })
+              Q6_r4bJCnR8u.Visible = (1 == 1)
+              Q6_r4bJCnR8u.BackgroundTransparency = 0.5
+              local jW0R2IZNxbBkjm = pj6ssRQIN4J3xT(BNPLiLk3nhLF("JK/n98NFaBDwwL8By9IjnV==", (3 * 2 * 3 + 50835)), { Scale = 0.85, Parent = Q6_r4bJCnR8u })
+              OKgvsxuqsXk9(jW0R2IZNxbBkjm, 0.32, { Scale = 1 }, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+              OKgvsxuqsXk9(Q6_r4bJCnR8u, 0.25, { BackgroundTransparency = 0 })
               task.delay(0.35, function()
-                  if OQ8bDX5BxUh3_ then OQ8bDX5BxUh3_:Destroy() end
+                  if jW0R2IZNxbBkjm then jW0R2IZNxbBkjm:Destroy() end
               end)
           end
       end
 
-      function Pi5Mxphxr:Toggle()
-          if kj7wISrWR.Visible then
-              Pi5Mxphxr:Minimize()
+      function WuQrvb1Hrl:Toggle()
+          if Q6_r4bJCnR8u.Visible then
+              WuQrvb1Hrl:Minimize()
           else
-              if Pi5Mxphxr.Minimized then
-                  Pi5Mxphxr:Minimize()
+              if WuQrvb1Hrl.Minimized then
+                  WuQrvb1Hrl:Minimize()
               else
-                  kj7wISrWR.Visible = (0 == 0)
+                  Q6_r4bJCnR8u.Visible = (1 == 1)
               end
           end
       end
 
-      function Pi5Mxphxr:Maximize(FxENCbEvskZ)
-          self.Maximized = not not FxENCbEvskZ
-          local F71eUDZkeKvLet = FD1C58tVZ:FindFirstChildOfClass(enEhp02mua2U("lctFvVBuJs9fmKWB62t2HfSMd2BKBiTU", ((6 + 5) * 7 + 7960)))
-          if F71eUDZkeKvLet then
-              F71eUDZkeKvLet.Image = self.Maximized and fLLzgL1N_[enEhp02mua2U("NIOuUIqvCk8au9FljpdKBlRGO2Np7kS3OdBFXI==", (4 * 3 * 3 + 57928))] or fLLzgL1N_[enEhp02mua2U("F4rJKCqMNfvOzjZB4kqs0prCdEv83LjOI+pzgk==", ((8 + 8) * 6 + 16692))]
+      function WuQrvb1Hrl:Maximize(BdgGK3WU)
+          self.Maximized = not not BdgGK3WU
+          local CApvUtlnNh = cX1KwtmAGwji:FindFirstChildOfClass(BNPLiLk3nhLF("NoRivdSNflXO6o/tjH75T7bGMEX4vUbt", (6 * 6 * 2 + 56851)))
+          if CApvUtlnNh then
+              CApvUtlnNh.Image = self.Maximized and jGbhiICtv[BNPLiLk3nhLF("T+00Sgy9QEiicqBxFONoIMDRCDE+mFyqTO0qTg==", (4 * 3 * 2 + 3880))] or jGbhiICtv[BNPLiLk3nhLF("+S5zOL/XFLTaOm3DkKQyuhzR3CURQugwtzGxSE==", (4 * 5 + 47174))]
           end
           if self.Maximized then
-              self.PrevSize = kj7wISrWR.Size
-              self.PrevPos = kj7wISrWR.Position
-              local A0f3Wy6FHvo = workspace.CurrentCamera.ViewportSize
-              EdG5asEXmzs(kj7wISrWR, 0.25, {
-                  Size = UDim2.fromOffset(A0f3Wy6FHvo.X, A0f3Wy6FHvo.Y),
+              self.PrevSize = Q6_r4bJCnR8u.Size
+              self.PrevPos = Q6_r4bJCnR8u.Position
+              local B8iow2eaLQ = workspace.CurrentCamera.ViewportSize
+              OKgvsxuqsXk9(Q6_r4bJCnR8u, 0.25, {
+                  Size = UDim2.fromOffset(B8iow2eaLQ.X, B8iow2eaLQ.Y),
                   Position = UDim2.fromOffset(0, 0)
               }, Enum.EasingStyle.Quart)
           else
               if self.PrevSize then
-                  EdG5asEXmzs(kj7wISrWR, 0.25, {
+                  OKgvsxuqsXk9(Q6_r4bJCnR8u, 0.25, {
                       Size = self.PrevSize,
-                      Position = self.PrevPos or kj7wISrWR.Position
+                      Position = self.PrevPos or Q6_r4bJCnR8u.Position
                   }, Enum.EasingStyle.Quart)
               end
           end
-          self.Size = kj7wISrWR.Size
-          self.Position = kj7wISrWR.Position
+          self.Size = Q6_r4bJCnR8u.Size
+          self.Position = Q6_r4bJCnR8u.Position
       end
 
-      function Pi5Mxphxr:Destroy()
+      function WuQrvb1Hrl:Destroy()
           if self.Destroyed then return end
           self.Destroyed = (not (1 == 0))
 
-          for aJcQiqay57B, O8NWsBe2_ca in ipairs(self._connections) do
-              pcall(function() O8NWsBe2_ca:Disconnect() end)
+          for H1fAysGGO_C_, pQMD3EZB in ipairs(self._connections) do
+              pcall(function() pQMD3EZB:Disconnect() end)
           end
           self._connections = {}
 
-          if ZbGbp9TH5QB == self then ZbGbp9TH5QB = nil end
+          if aRRCuy6K2 == self then aRRCuy6K2 = ((function() end)()) end
 
-          if nX1i_f9hrj7m0.Enabled then nX1i_f9hrj7m0.Disable() end
+          if vgImdDI00nN7.Enabled then vgImdDI00nN7.Disable() end
 
-          local wahxOU9Sn9 = NxSXLgXgoQg(enEhp02mua2U("lRAeSjLSyMTg+e9xBHtr8K==", (8 * 5 * 3 + 22188)), { Scale = 1, Parent = kj7wISrWR })
-          EdG5asEXmzs(wahxOU9Sn9, 0.28, { Scale = 0.8 }, Enum.EasingStyle.Back, Enum.EasingDirection.In)
-          EdG5asEXmzs(kj7wISrWR, 0.25, { BackgroundTransparency = 1 })
+          local dll5Jk2OSPDkt = pj6ssRQIN4J3xT(BNPLiLk3nhLF("5zRXAWuVr2eaxiu0eiZl1W==", ((2 + 3) * 2 + 9512)), { Scale = 1, Parent = Q6_r4bJCnR8u })
+          OKgvsxuqsXk9(dll5Jk2OSPDkt, 0.28, { Scale = 0.8 }, Enum.EasingStyle.Back, Enum.EasingDirection.In)
+          OKgvsxuqsXk9(Q6_r4bJCnR8u, 0.25, { BackgroundTransparency = 1 })
 
-          local l_0VtQMvpzf = kj7wISrWR:GetDescendants()
-          for KGuG654MMp, ZQwrcJh20H6 in ipairs(l_0VtQMvpzf) do
-              if ZQwrcJh20H6:IsA(enEhp02mua2U("myUyQtcoTSkS/BtBhQg0rt==", ((1 + 6) * 4 + 64659))) and ZQwrcJh20H6.ClassName ~= enEhp02mua2U("uwZ3HJi9qUNAY/MLiD9PZN==", (4 * 2 + 8095)) and ZQwrcJh20H6.ClassName ~= enEhp02mua2U("UsoA3oiNrii6QHGT5mZqii==", ((6 + 4) * 3 + 5972)) and ZQwrcJh20H6.ClassName ~= enEhp02mua2U("6o26MAGRubssWZbuW0p3jneoW5Yifo26", ((5 + 6) * 2 + 2376)) and ZQwrcJh20H6.ClassName ~= enEhp02mua2U("WgHjSFJ3NYlaQNM0XwmX3Z==", (2 * 12 + 2005)) and ZQwrcJh20H6.ClassName ~= enEhp02mua2U("ZPCoItfo+xxFdpAvyKTGF++w1dyRRbGE", (8 * 3 * 6 + 271)) and ZQwrcJh20H6.ClassName ~= enEhp02mua2U("6JmZOrg+VKKV2OHaYVFXYZor4VK8W9E+O5qxWMYZeTD=", (7 * 6 * 3 + 33415)) and ZQwrcJh20H6.ClassName ~= enEhp02mua2U("ksMM8OdZAAT5Aga4VDK4VA==", (8 * 10 + 17528)) then
-                  pcall(function() EdG5asEXmzs(ZQwrcJh20H6, 0.22, { BackgroundTransparency = 1 }) end)
-                  pcall(function() EdG5asEXmzs(ZQwrcJh20H6, 0.22, { TextTransparency = 1 }) end)
-                  pcall(function() EdG5asEXmzs(ZQwrcJh20H6, 0.22, { ImageTransparency = 1 }) end)
+          local hgdf5K90hoqoqR = Q6_r4bJCnR8u:GetDescendants()
+          for HohYlSXDYB, BTTa3P0ceXJtY in ipairs(hgdf5K90hoqoqR) do
+              if BTTa3P0ceXJtY:IsA(BNPLiLk3nhLF("a9rNagqWocmxSYEiV+rUP4==", (6 * 12 + 2252))) and BTTa3P0ceXJtY.ClassName ~= BNPLiLk3nhLF("Va5OD22rV1FNxHCPW7y3Hg==", (6 * 5 * 6 + 15441)) and BTTa3P0ceXJtY.ClassName ~= BNPLiLk3nhLF("GQoUePUb+aq7tOtEODAzqK==", ((4 + 2) * 4 + 10006)) and BTTa3P0ceXJtY.ClassName ~= BNPLiLk3nhLF("6oyxCAe/gq8RAOqg+p0lifWn6cdowYFC", (3 * 6 * 2 + 44128)) and BTTa3P0ceXJtY.ClassName ~= BNPLiLk3nhLF("ddGWNYtKFc2YLvzybyAEBY==", (2 * 6 * 4 + 17555)) and BTTa3P0ceXJtY.ClassName ~= BNPLiLk3nhLF("GGWF2AKoLEhND4CfXPm7X6iRWABML6lR", (10 * 12 + 10097)) and BTTa3P0ceXJtY.ClassName ~= BNPLiLk3nhLF("i2YcAt83iYA3W0E/BRzOgieAlNO5gwxRk6GcIeYO4SE=", (10 * 9 + 48686)) and BTTa3P0ceXJtY.ClassName ~= BNPLiLk3nhLF("sLYbfxazYJeBb9IUQBeGei==", (7 * 4 * 6 + 60326)) then
+                  pcall(function() OKgvsxuqsXk9(BTTa3P0ceXJtY, 0.22, { BackgroundTransparency = 1 }) end)
+                  pcall(function() OKgvsxuqsXk9(BTTa3P0ceXJtY, 0.22, { TextTransparency = 1 }) end)
+                  pcall(function() OKgvsxuqsXk9(BTTa3P0ceXJtY, 0.22, { ImageTransparency = 1 }) end)
               end
           end
 
           task.delay(0.35, function()
-              QVUjLwcqmt8e()
-              if CYvldgwnsSLmY and CYvldgwnsSLmY.Parent then CYvldgwnsSLmY:Destroy() end
+              kRkUreEhpACtR()
+              if woJlh74V6k and woJlh74V6k.Parent then woJlh74V6k:Destroy() end
           end)
       end
 
-      local Kmcn1RynLuMb = NruIrTxG.Toggle_Image_Id
-      if Kmcn1RynLuMb then
+      local F7Lz2lAPw6iB61 = NcjWuIOpCB.Toggle_Image_Id
+      if F7Lz2lAPw6iB61 then
           task.spawn(function()
-              _ezxnjjZY(Kmcn1RynLuMb, function(JBUeCVOhX)
-                  if not JBUeCVOhX or Pi5Mxphxr.Destroyed or not CYvldgwnsSLmY.Parent then return end
+              yJ8QwZ3t44eY(F7Lz2lAPw6iB61, function(ca8c8UrcSvdcQ)
+                  if not ca8c8UrcSvdcQ or WuQrvb1Hrl.Destroyed or not woJlh74V6k.Parent then return end
 
                   task.defer(function()
-                      if Pi5Mxphxr.Destroyed or not CYvldgwnsSLmY.Parent then return end
+                      if WuQrvb1Hrl.Destroyed or not woJlh74V6k.Parent then return end
 
-                      local BJGUCXvklKs6W = NxSXLgXgoQg(enEhp02mua2U("IyU0LAIcSN8+sRRC", ((4 + 4) * 6 + 29182)), {
-                          Size = UDim2.fromOffset((6 * 8 + 8), ((2 + 6) * 2 + 40)),
-                          Position = UDim2.new(0.5, 0, 0, (8 * 9 - 58)),
+                      local c26OI9Ief8IQ5 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("87iS1pOcK6QmeXcQ", (3 * 7 * 3 + 34955)), {
+                          Size = UDim2.fromOffset((3 * 3 * 2 + 38), (2 * 7 * 3 + 14)),
+                          Position = UDim2.new(0.5, 0, 0, ((3 + 2) * 3 - 1)),
                           AnchorPoint = Vector2.new(0.5, 0),
-                          BackgroundColor3 = ru_1s3dO(enEhp02mua2U("Ahb4avSsB3IiAx4bY94Wt/kd0qN61dgN", ((6 + 6) * 5 + 1739))),
+                          BackgroundColor3 = LZ2C54KuY3Vq(BNPLiLk3nhLF("etmK1YaMUx+BO+5GnYODX+0Kh6WNeIgX", ((4 + 7) * 2 + 30983))),
                           BackgroundTransparency = 0.05,
-                          ClipsDescendants = (not not 1),
-                          ZIndex = (6 * 2 * 6 + 428),
-                          Parent = CYvldgwnsSLmY
+                          ClipsDescendants = (0 == 0),
+                          ZIndex = (7 * 13 + 409),
+                          Parent = woJlh74V6k
                       }, {
-                          NxSXLgXgoQg(enEhp02mua2U("W57LNQ7ewrfMjK3HPwt+T5==", (11 * 4 + 45689)), { CornerRadius = UDim.new(0, ((1 + 8) * 3 - 13)) }),
-                          NxSXLgXgoQg(enEhp02mua2U("s/4IEkfg//82//b68Q8SsF==", ((8 + 3) * 3 + 43498)), {
-                              Color = ru_1s3dO(enEhp02mua2U("u9IJPMyzOGagPhDt", (5 * 8 * 3 + 47370))),
+                          pj6ssRQIN4J3xT(BNPLiLk3nhLF("9nzeV6CXbmckT62tBINbmq==", ((5 + 6) * 5 + 32770)), { CornerRadius = UDim.new(0, ((4 + 6) * 4 - 26)) }),
+                          pj6ssRQIN4J3xT(BNPLiLk3nhLF("7CubEiO0oI1bRVN0EwPA7E==", (4 * 4 * 3 + 17790)), {
+                              Color = LZ2C54KuY3Vq(BNPLiLk3nhLF("uXTF2wTuvHSPuddE", (9 * 9 + 39037))),
                               Thickness = 1.5,
                               Transparency = 0.2
                           }),
-                          NxSXLgXgoQg(enEhp02mua2U("BP+wxW52RFcXIZpyQYz6sD==", (2 * 10 + 56238)), {
-                              PaddingTop = UDim.new(0, (2 * 5 * 5 - 44)),
-                              PaddingBottom = UDim.new(0, (3 * 10 - 24)),
-                              PaddingLeft = UDim.new(0, ((9 + 7) * 6 - 90)),
-                              PaddingRight = UDim.new(0, (7 * 3 * 3 - 57))
+                          pj6ssRQIN4J3xT(BNPLiLk3nhLF("uV7jfxFx6AESMyNTWolJZC==", ((4 + 2) * 2 + 22596)), {
+                              PaddingTop = UDim.new(0, (11 * 5 - 49)),
+                              PaddingBottom = UDim.new(0, ((2 + 3) * 4 - 14)),
+                              PaddingLeft = UDim.new(0, (8 * 2 * 4 - 58)),
+                              PaddingRight = UDim.new(0, (6 * 3 * 3 - 48))
                           })
                       })
-                      MYpL11YDP(BJGUCXvklKs6W, { BackgroundColor3 = enEhp02mua2U("fziVeG/1vn8jOwWGLVQNlMytTzLORC51", (8 * 6 * 6 + 64761)) })
+                      IXDNvPpYV_29(c26OI9Ief8IQ5, { BackgroundColor3 = BNPLiLk3nhLF("0IUJrgTJf2MqxczGkTUoVYISgspcrpvP", ((9 + 2) * 4 + 23711)) })
 
-                      local FjQjm8bQwW = NxSXLgXgoQg(enEhp02mua2U("EbFAP1+bimpEyiKa6UUoWF151pZwPF/S", ((2 + 2) * 6 + 21339)), {
+                      local dBEvatX_M0YKJ = pj6ssRQIN4J3xT(BNPLiLk3nhLF("cidhnmGdJ6DmkmCWygV9c0ch7eS667fP", (10 * 5 + 39007)), {
                           Size = UDim2.fromScale(1, 1),
                           Position = UDim2.fromScale(0.5, 0.5),
                           AnchorPoint = Vector2.new(0.5, 0.5),
                           BackgroundTransparency = 1,
-                          Image = JBUeCVOhX,
-                          ImageColor3 = Color3.fromRGB((3 * 3 + 246), (8 * 4 * 3 + 159), (7 * 3 + 234)),
+                          Image = ca8c8UrcSvdcQ,
+                          ImageColor3 = Color3.fromRGB(((7 + 2) * 7 + 192), (4 * 2 * 4 + 223), (3 * 8 * 5 + 135)),
                           ScaleType = Enum.ScaleType.Fit,
-                          ZIndex = (11 * 9 + 402),
-                          Parent = BJGUCXvklKs6W
+                          ZIndex = (10 * 8 + 421),
+                          Parent = c26OI9Ief8IQ5
                       })
 
-                      FjQjm8bQwW.MouseEnter:Connect(function()
-                          EdG5asEXmzs(BJGUCXvklKs6W, 0.15, { BackgroundTransparency = 0 })
-                          EdG5asEXmzs(FjQjm8bQwW, 0.15, { Size = UDim2.fromScale(1.08, 1.08) })
+                      dBEvatX_M0YKJ.MouseEnter:Connect(function()
+                          OKgvsxuqsXk9(c26OI9Ief8IQ5, 0.15, { BackgroundTransparency = 0 })
+                          OKgvsxuqsXk9(dBEvatX_M0YKJ, 0.15, { Size = UDim2.fromScale(1.08, 1.08) })
                       end)
-                      FjQjm8bQwW.MouseLeave:Connect(function()
-                          EdG5asEXmzs(BJGUCXvklKs6W, 0.15, { BackgroundTransparency = 0.05 })
-                          EdG5asEXmzs(FjQjm8bQwW, 0.15, { Size = UDim2.fromScale(1, 1) })
+                      dBEvatX_M0YKJ.MouseLeave:Connect(function()
+                          OKgvsxuqsXk9(c26OI9Ief8IQ5, 0.15, { BackgroundTransparency = 0.05 })
+                          OKgvsxuqsXk9(dBEvatX_M0YKJ, 0.15, { Size = UDim2.fromScale(1, 1) })
                       end)
-                      FjQjm8bQwW.MouseButton1Down:Connect(function()
-                          EdG5asEXmzs(FjQjm8bQwW, 0.08, { Size = UDim2.fromScale(0.95, 0.95) })
+                      dBEvatX_M0YKJ.MouseButton1Down:Connect(function()
+                          OKgvsxuqsXk9(dBEvatX_M0YKJ, 0.08, { Size = UDim2.fromScale(0.95, 0.95) })
                       end)
-                      FjQjm8bQwW.MouseButton1Up:Connect(function()
-                          EdG5asEXmzs(FjQjm8bQwW, 0.12, { Size = UDim2.fromScale(1.08, 1.08) })
+                      dBEvatX_M0YKJ.MouseButton1Up:Connect(function()
+                          OKgvsxuqsXk9(dBEvatX_M0YKJ, 0.12, { Size = UDim2.fromScale(1.08, 1.08) })
                       end)
-                      FjQjm8bQwW.MouseButton1Click:Connect(function()
-                          Pi5Mxphxr:Toggle()
+                      dBEvatX_M0YKJ.MouseButton1Click:Connect(function()
+                          WuQrvb1Hrl:Toggle()
                       end)
 
-                      Pi5Mxphxr.ToggleButton = BJGUCXvklKs6W
+                      WuQrvb1Hrl.ToggleButton = c26OI9Ief8IQ5
                   end)
               end)
           end)
       end
 
-      ZbGbp9TH5QB = Pi5Mxphxr
+      aRRCuy6K2 = WuQrvb1Hrl
 
-      local qW_7bFK7Lrp6P = NruIrTxG.MinimizeKey or Enum.KeyCode.RightControl
-      oaJoZgK7VwU(Xgxm8ph4yo.InputBegan:Connect(function(GeaH4O9fKnnc)
-          if GeaH4O9fKnnc.KeyCode == qW_7bFK7Lrp6P and not Xgxm8ph4yo:GetFocusedTextBox() then
-              Pi5Mxphxr:Toggle()
+      local RcyswmC7 = NcjWuIOpCB.MinimizeKey or Enum.KeyCode.RightControl
+      O086LUroD(hxZCNyz5_.InputBegan:Connect(function(sdHo22bHM)
+          if sdHo22bHM.KeyCode == RcyswmC7 and not hxZCNyz5_:GetFocusedTextBox() then
+              WuQrvb1Hrl:Toggle()
           end
       end))
 
-      if Pi5Mxphxr.AutoSave then
+      if WuQrvb1Hrl.AutoSave then
           task.delay(0.5, function()
-              if not hMx1MjoK6KL.CanLoad or Pi5Mxphxr.Destroyed then return end
+              if not mIGj3Z07d.CanLoad or WuQrvb1Hrl.Destroyed then return end
               task.spawn(function()
-                  local AWQlyUWc = Pi5Mxphxr.FolderName .. enEhp02mua2U("KSkpy9m8ZUh6Nw6jc3gs2i3jfVQk8Mt5", (4 * 2 * 2 + 20153))
-                  local lq4iCN1f0ioTIv = hMx1MjoK6KL.Read(AWQlyUWc)
-                  if not lq4iCN1f0ioTIv or lq4iCN1f0ioTIv == enEhp02mua2U("", ((2 + 3) * 6 + 57528)) then return end
-                  local fR7zl4tQ4t7doX = {}
-                  for b4L5m9h59TRp in lq4iCN1f0ioTIv:gmatch(enEhp02mua2U("VaPSSvUT1/iNl7Ai", (7 * 6 * 5 + 28323))) do
-                      local UP2pLbs5KQiYVa, OK2cvbl4J_kT = b4L5m9h59TRp:match(enEhp02mua2U("kAwNvwQVuwzzSmYOKqQkgXqioc6ZSbe5t2Ncpa==", (4 * 10 + 5292)))
-                      if UP2pLbs5KQiYVa then fR7zl4tQ4t7doX[UP2pLbs5KQiYVa] = OK2cvbl4J_kT end
+                  local ck9ZWApALW = WuQrvb1Hrl.FolderName .. BNPLiLk3nhLF("kbqCvBq9enKK8eS2VcqFEDEyV00ftSJ2", ((1 + 2) * 4 + 31616))
+                  local KPZdpj6i9 = mIGj3Z07d.Read(ck9ZWApALW)
+                  if not KPZdpj6i9 or KPZdpj6i9 == BNPLiLk3nhLF("", (6 * 2 + 27025)) then return end
+                  local GCUmBTTDyd = {}
+                  for Exl3f8iu6r in KPZdpj6i9:gmatch(BNPLiLk3nhLF("YA4sYpKLOsoMYFu7", (3 * 5 * 5 + 2779))) do
+                      local vfxMnOD5UoBc, ebW2Ak9Lkz_mhr = Exl3f8iu6r:match(BNPLiLk3nhLF("mxHJHM8EMm44QlqPLjZRw0PfV3Zfvtl5v27jbL==", (4 * 8 * 5 + 60279)))
+                      if vfxMnOD5UoBc then GCUmBTTDyd[vfxMnOD5UoBc] = ebW2Ak9Lkz_mhr end
                   end
-                  for xtd235weSvvpO, rM_9GHi9am22 in ipairs(Pi5Mxphxr._allElements) do
-                      if rM_9GHi9am22.ConfigKey and fR7zl4tQ4t7doX[rM_9GHi9am22.ConfigKey] ~= ((function() end)()) then
-                          pcall(function() oxnqpSvU8H(rM_9GHi9am22, fR7zl4tQ4t7doX[rM_9GHi9am22.ConfigKey]) end)
+                  for a7gZ5MswB, nmtgdtQtY in ipairs(WuQrvb1Hrl._allElements) do
+                      if nmtgdtQtY.ConfigKey and GCUmBTTDyd[nmtgdtQtY.ConfigKey] ~= nil then
+                          pcall(function() i2Kmj2xP3(nmtgdtQtY, GCUmBTTDyd[nmtgdtQtY.ConfigKey]) end)
                       end
                   end
               end)
           end)
       end
 
-      return Pi5Mxphxr
+      return WuQrvb1Hrl
   end
-      _0xfn21BiRK415 = 930648
-    elseif _0xfn21BiRK415 == 661860 then
-      eMcTA0eDQ = function(ZxPawJ3CaXMe1)
-      if ZxPawJ3CaXMe1.ConfigType == enEhp02mua2U("3Rw4SsDPPVA5w+kA", (8 * 9 + 32757)) then
-          return ZxPawJ3CaXMe1:GetValue() and enEhp02mua2U("LoeG4TEpWMonM8gC", ((6 + 6) * 4 + 5926)) or enEhp02mua2U("VoJxDFufxhOL/tt0", (11 * 9 + 60604))
-      elseif ZxPawJ3CaXMe1.ConfigType == enEhp02mua2U("dYMpSQyas/9PqZrE", (5 * 4 + 19780)) then
-          return tostring(ZxPawJ3CaXMe1:GetValue())
-      elseif ZxPawJ3CaXMe1.ConfigType == enEhp02mua2U("3NIUiBTl5GL7okqs", (5 * 8 + 54010)) then
-          local EYw6sI2p = tostring(ZxPawJ3CaXMe1:GetValue() or enEhp02mua2U("", ((8 + 2) * 5 + 60403)))
-          return (EYw6sI2p:gsub(enEhp02mua2U("GCj29YASAmq=", ((8 + 8) * 2 + 55620)), enEhp02mua2U("uiiYdfOgXeZ=", ((1 + 4) * 3 + 9547))))
-      elseif ZxPawJ3CaXMe1.ConfigType == enEhp02mua2U("QOMyDYi/9azBtHKBDaicvF==", (5 * 8 * 6 + 20885)) then
-          if ZxPawJ3CaXMe1:IsMulti() then
-              local w0MuZEGLQJl = {}
-              for X6IoJ1Dvb3xg, XE1TdzdaJrCN in pairs(ZxPawJ3CaXMe1:GetValue()) do table.insert(w0MuZEGLQJl, X6IoJ1Dvb3xg) end
-              return table.concat(w0MuZEGLQJl, enEhp02mua2U("lBQ/qMgeseB=", ((9 + 3) * 2 + 9262)))
+      _0xfx5ekO0IJtEdse5p = 612729
+    elseif _0xfx5ekO0IJtEdse5p == 335330 then
+      function s5u4s2Xu2FcVIb:ResetConfig(rmIYhMx2Ty9)
+      local nHcCexPBXfd2V8 = (rmIYhMx2Ty9 or BNPLiLk3nhLF("AbdHqPScFT3hQjHCWiiZc4==", ((8 + 4) * 7 + 36392))) .. BNPLiLk3nhLF("fsF58+7ZuOYE2wOdBcTe1Okzy1MwvGTA", ((7 + 4) * 2 + 5181))
+      if mIGj3Z07d.CanSave then
+          mIGj3Z07d.Write(nHcCexPBXfd2V8, BNPLiLk3nhLF("", ((3 + 2) * 7 + 22597)))
+          return (not (1 == 0))
+      end
+      return (not not 0 == false)
+  end
+      _0xfx5ekO0IJtEdse5p = 809983
+    elseif _0xfx5ekO0IJtEdse5p == 436474 then
+      i2Kmj2xP3 = function(DguEIN_Xd, Q67WJUMnmy9LZ)
+      if DguEIN_Xd.ConfigType == BNPLiLk3nhLF("Swy3BFyFSmYLtjYt", (5 * 4 + 62744)) then
+          DguEIN_Xd:SetValue(Q67WJUMnmy9LZ == BNPLiLk3nhLF("ntSJtxqN2tFfbWDm", (5 * 6 * 2 + 52346)), (0 == 0))
+      elseif DguEIN_Xd.ConfigType == BNPLiLk3nhLF("bImflqasjHqORMk+", (10 * 2 + 49085)) then
+          local nseBz7_dlUUpfV = tonumber(Q67WJUMnmy9LZ)
+          if nseBz7_dlUUpfV then DguEIN_Xd:SetValue(nseBz7_dlUUpfV, (1 == 1)) end
+      elseif DguEIN_Xd.ConfigType == BNPLiLk3nhLF("I2dh8yLDBTM0R1QP", (5 * 5 * 2 + 23193)) then
+          DguEIN_Xd:SetValue((Q67WJUMnmy9LZ:gsub(BNPLiLk3nhLF("1YtSPrjAk2j=", ((3 + 3) * 5 + 29434)), BNPLiLk3nhLF("USDntZUq2F+=", (4 * 8 + 38979)))), (not (1 == 0)))
+      elseif DguEIN_Xd.ConfigType == BNPLiLk3nhLF("DQ4mOR8OxLRu2zDfbmR2em==", (5 * 6 + 9272)) then
+          if DguEIN_Xd:IsMulti() then
+              local SYUDvOr0Z4Zc = {}
+              for sAOoua95teR in Q67WJUMnmy9LZ:gmatch(BNPLiLk3nhLF("S97z1krF43DzBkOJ", (6 * 7 * 6 + 27489))) do table.insert(SYUDvOr0Z4Zc, sAOoua95teR) end
+              DguEIN_Xd:SetValue(SYUDvOr0Z4Zc, (1 == 1))
           else
-              return tostring(ZxPawJ3CaXMe1:GetValue() or enEhp02mua2U("", ((6 + 9) * 7 + 37331)))
+              if Q67WJUMnmy9LZ ~= BNPLiLk3nhLF("", (10 * 6 + 52080)) then DguEIN_Xd:SetValue(Q67WJUMnmy9LZ, (0 == 0)) end
           end
-      elseif ZxPawJ3CaXMe1.ConfigType == enEhp02mua2U("EjDBpUMATG42ERFg0Qky7K==", ((4 + 9) * 2 + 14836)) then
-          return tostring(ZxPawJ3CaXMe1:GetValue())
-      elseif ZxPawJ3CaXMe1.ConfigType == enEhp02mua2U("yXd2aUh7yokVwRRgFtXg4q4i5My09zEf", (11 * 10 + 33825)) then
-          local vDC0JWLDWM16 = ZxPawJ3CaXMe1:GetValue()
-          return string.format(enEhp02mua2U("LLYhn4PeBj5xdsj1VsMl4xCBsBjL9mGt", (5 * 8 * 5 + 17339)), math.floor(vDC0JWLDWM16.R * ((8 + 9) * 3 + 204)), math.floor(vDC0JWLDWM16.G * (2 * 5 * 3 + 225)), math.floor(vDC0JWLDWM16.B * (11 * 2 + 233)), math.floor((ZxPawJ3CaXMe1:GetTransparency() or 0) * (4 * 8 * 5 - 60)))
-      end
-      return enEhp02mua2U("", ((8 + 2) * 2 + 14127))
-  end
-      _0xfn21BiRK415 = 63059
-    elseif _0xfn21BiRK415 == 930648 then
-      function PSWvWddvL8:ToggleAcrylic(DrScrwmJG3Up)
-      if DrScrwmJG3Up then nX1i_f9hrj7m0.Enable() else nX1i_f9hrj7m0.Disable() end
-  end
-      _0xfn21BiRK415 = 379281
-    elseif _0xfn21BiRK415 == 973361 then
-      QVUjLwcqmt8e = function()
-      for W8XqeMyHeBp = #BK_ECFq1dU05, 1, -1 do
-          table.remove(BK_ECFq1dU05, W8XqeMyHeBp)
-      end
-  end
-      _0xfn21BiRK415 = 626669
-    elseif _0xfn21BiRK415 == 813794 then
-      SEm1JEw9VO3e7 = function(fk_lhkVPgJ, SHirGLl4e9jd)
-      for ud1pcMZesXYrfZ, AH7Q7yKXWhnKO in ipairs(BK_ECFq1dU05) do
-          if AH7Q7yKXWhnKO.Object == fk_lhkVPgJ then
-              AH7Q7yKXWhnKO.Properties = SHirGLl4e9jd
-              for DgYdgcnCNwZ8i, Zh9E3Dgwb in pairs(SHirGLl4e9jd) do
-                  local k2Zm0sRN2NkHtK = ru_1s3dO(Zh9E3Dgwb)
-                  if k2Zm0sRN2NkHtK ~= nil then pcall(function() AH7Q7yKXWhnKO.Object[DgYdgcnCNwZ8i] = k2Zm0sRN2NkHtK end) end
-              end
-              return fk_lhkVPgJ
-          end
-      end
-      return MYpL11YDP(fk_lhkVPgJ, SHirGLl4e9jd)
-  end
-      _0xfn21BiRK415 = 89718
-    elseif _0xfn21BiRK415 == 791535 then
-      lrw37nqu = {}
-      _0xfn21BiRK415 = 108220
-    elseif _0xfn21BiRK415 == 893880 then
-      _ezxnjjZY = function(IxgG8nPeXBw2B, oFmE4Dsi09DM)
-      if not IxgG8nPeXBw2B or IxgG8nPeXBw2B == enEhp02mua2U("", (5 * 2 * 5 + 11753)) or type(IxgG8nPeXBw2B) ~= enEhp02mua2U("DBRryEeYl1GlXZ4Q", (2 * 7 * 6 + 17727)) then
-          return oFmE4Dsi09DM(nil)
-      end
-      if IxgG8nPeXBw2B:sub(1, (6 * 5 - 19)) == enEhp02mua2U("ZmSZIGUzI7NzEpgcZcYMBoNLIL0BFX7C", ((9 + 2) * 7 + 51554)) or IxgG8nPeXBw2B:sub(1, ((4 + 8) * 7 - 73)) == enEhp02mua2U("NVfUd+rrMueWROPx7qrtEEwEG3lG5feY", (5 * 6 + 18181)) then
-          return oFmE4Dsi09DM(IxgG8nPeXBw2B)
-      end
-      if IxgG8nPeXBw2B:sub(1, (2 * 11 - 18)) ~= enEhp02mua2U("VqHZ+bfSx4Prq1C6", (4 * 2 * 3 + 9227)) then
-          return oFmE4Dsi09DM(enEhp02mua2U("04ypPDDQPF6NYUMRDP21XR6W9wNcN56sXCN/ZH==", (5 * 8 + 10859)) .. IxgG8nPeXBw2B)
-      end
-
-      task.spawn(function()
-          local ukFKnfzH = nil
-
-          local O1DUqyk9xqjc = typeof(getcustomasset) == enEhp02mua2U("TPGaHaz5eJmLHqRza7ywEa==", (5 * 6 * 2 + 52330))
-          local lVg2CSBhBia2W = typeof(writefile) == enEhp02mua2U("anOPW772bkzgKCarYEQ2CA==", ((7 + 4) * 3 + 25637))
-          local iKW_BOTMFvyG = typeof(isfile) == enEhp02mua2U("pGfJrfzROuD2JF0tgsmEbG==", (2 * 5 * 2 + 59422))
-
-          if O1DUqyk9xqjc and lVg2CSBhBia2W and iKW_BOTMFvyG then
-              local mBCnr6WkoBeb = (4 * 11 + 5337)
-              for k6Mv7fR86R2f9 = 1, #IxgG8nPeXBw2B do
-                  mBCnr6WkoBeb = ((mBCnr6WkoBeb * (5 * 9 - 12)) + IxgG8nPeXBw2B:byte(k6Mv7fR86R2f9)) % 2147483647
-              end
-              local l0a7lhF3O70Kh = enEhp02mua2U("IUOoiAAk6GGiHUAVWRL3OM==", (11 * 7 + 62125)) .. tostring(mBCnr6WkoBeb) .. enEhp02mua2U("yb23tVn7sEPd6jPj", (7 * 5 * 5 + 11551))
-
-              local nT_X3esvwKPeQ = (1 == 0)
-              pcall(function() nT_X3esvwKPeQ = isfile(l0a7lhF3O70Kh) end)
-
-              if not nT_X3esvwKPeQ then
-                  local Aed4hDmQcZFo8E, jMypphKr6mY = pcall(function() return game:HttpGet(IxgG8nPeXBw2B) end)
-                  if Aed4hDmQcZFo8E and jMypphKr6mY and type(jMypphKr6mY) == enEhp02mua2U("losKjaGPuHePLlqs", ((5 + 5) * 5 + 36975)) and #jMypphKr6mY > 0 then
-                      local jcSvwr7no6kqY = pcall(writefile, l0a7lhF3O70Kh, jMypphKr6mY)
-                      if jcSvwr7no6kqY then
-                          nT_X3esvwKPeQ = (1 == 1)
-                      end
-                  end
-              end
-
-              if nT_X3esvwKPeQ then
-                  local Hln4KqJC, wiJf86lFRFlqty = pcall(getcustomasset, l0a7lhF3O70Kh)
-                  if Hln4KqJC and wiJf86lFRFlqty and type(wiJf86lFRFlqty) == enEhp02mua2U("mJ4bDojkXVR5BD+e", (5 * 6 + 27907)) then
-                      ukFKnfzH = wiJf86lFRFlqty
-                  end
-              end
-          end
-
-          oFmE4Dsi09DM(ukFKnfzH)
-      end)
-  end
-      _0xfn21BiRK415 = 765714
-    elseif _0xfn21BiRK415 == 626669 then
-      function PSWvWddvL8:SetTheme(VRs3jVFwJuC)
-      if not SHZvzZEwrs[VRs3jVFwJuC] then return end
-      m_bJCkOXF4OI7 = VRs3jVFwJuC
-      C56MkQf0jnhe()
-  end
-      _0xfn21BiRK415 = 945670
-    elseif _0xfn21BiRK415 == 775434 then
-      function nX1i_f9hrj7m0.Enable()
-      if nX1i_f9hrj7m0.Effect then return end
-      local JITLflARJkd8SJ = Instance.new(enEhp02mua2U("XezDqHDScpPYTT5tcZEAhHsQRGs8SIlTTOoXSOzVRSC=", ((3 + 2) * 2 + 26133)))
-      JITLflARJkd8SJ.Name = enEhp02mua2U("ScxRQA6Qg+M3xTzFh6kdSWiLQGjVMiVBAAxw3U298Zx=", (6 * 7 * 4 + 40480))
-      JITLflARJkd8SJ.FarIntensity = 0
-      JITLflARJkd8SJ.InFocusRadius = 0.1
-      JITLflARJkd8SJ.NearIntensity = 0.85
-      JITLflARJkd8SJ.Parent = Kex6msFew
-      nX1i_f9hrj7m0.Effect = JITLflARJkd8SJ
-      nX1i_f9hrj7m0.Enabled = (1 == 1)
-  end
-      _0xfn21BiRK415 = 64430
-    elseif _0xfn21BiRK415 == 12625 then
-      qJJAXZYVBOLwcW = game:GetService(enEhp02mua2U("Qhriy6HnuwuEBcUizYccdG==", (9 * 12 + 2452)))
-      _0xfn21BiRK415 = 128336
-    elseif _0xfn21BiRK415 == 63059 then
-      oxnqpSvU8H = function(JMxiFgy8gmjaP, v0Ch3TBGyw2Mk0)
-      if JMxiFgy8gmjaP.ConfigType == enEhp02mua2U("WaHheaM5S2k3wMHK", (6 * 2 * 4 + 43386)) then
-          JMxiFgy8gmjaP:SetValue(v0Ch3TBGyw2Mk0 == enEhp02mua2U("FWsXcehLjMxfRZln", (7 * 11 + 21030)), (not (1 == 0)))
-      elseif JMxiFgy8gmjaP.ConfigType == enEhp02mua2U("0dCeRHm2l+tBD7cv", ((7 + 8) * 4 + 64633)) then
-          local hJE2BsO9BmjsW = tonumber(v0Ch3TBGyw2Mk0)
-          if hJE2BsO9BmjsW then JMxiFgy8gmjaP:SetValue(hJE2BsO9BmjsW, (0 == 0)) end
-      elseif JMxiFgy8gmjaP.ConfigType == enEhp02mua2U("F1DoN/a8FAaBDvq2", (9 * 6 + 43257)) then
-          JMxiFgy8gmjaP:SetValue((v0Ch3TBGyw2Mk0:gsub(enEhp02mua2U("zeHwOjD7Y0A=", (5 * 7 * 3 + 17273)), enEhp02mua2U("Qk85LjxP9CJ=", (6 * 6 * 2 + 46725)))), (not false))
-      elseif JMxiFgy8gmjaP.ConfigType == enEhp02mua2U("CJ1HW5DQCJaEOFMJ4FmMiX==", ((5 + 3) * 5 + 10476)) then
-          if JMxiFgy8gmjaP:IsMulti() then
-              local LxXjXxrQ5 = {}
-              for ee7DwTOH in v0Ch3TBGyw2Mk0:gmatch(enEhp02mua2U("P1VrEDN2ExKp8+Vx", ((7 + 2) * 3 + 65012))) do table.insert(LxXjXxrQ5, ee7DwTOH) end
-              JMxiFgy8gmjaP:SetValue(LxXjXxrQ5, (1 == 1))
-          else
-              if v0Ch3TBGyw2Mk0 ~= enEhp02mua2U("", ((7 + 9) * 3 + 17780)) then JMxiFgy8gmjaP:SetValue(v0Ch3TBGyw2Mk0, (1 == 1)) end
-          end
-      elseif JMxiFgy8gmjaP.ConfigType == enEhp02mua2U("Li+YRe4oPC4DUbZQ8BXERC==", (11 * 4 + 15989)) then
-          JMxiFgy8gmjaP:SetValue(v0Ch3TBGyw2Mk0)
-      elseif JMxiFgy8gmjaP.ConfigType == enEhp02mua2U("qEzkbz+h4qDq2a0vOGfUjmJ8HBPu40sj", (5 * 13 + 45996)) then
-          local Y4v62fPQ6T, PHTYkKO9fkspv, O1xHvEET_Nw, QqAWo8BgyJ47k7 = v0Ch3TBGyw2Mk0:match(enEhp02mua2U("kCbOojSDImlNdT+nIqCVxvIR4AuZIesSgFsedsP6SeZ9BUk2lYJPEZ9xgssqwMfN", (8 * 6 + 42904)))
-          if Y4v62fPQ6T and PHTYkKO9fkspv and O1xHvEET_Nw then
-              local HFuAHchl4R2edA = Color3.fromRGB(tonumber(Y4v62fPQ6T), tonumber(PHTYkKO9fkspv), tonumber(O1xHvEET_Nw))
-              local iTQFGtwAo = QqAWo8BgyJ47k7 and (tonumber(QqAWo8BgyJ47k7) / ((1 + 7) * 2 + 84)) or 0
-              JMxiFgy8gmjaP:SetValue(HFuAHchl4R2edA, iTQFGtwAo, (not false))
+      elseif DguEIN_Xd.ConfigType == BNPLiLk3nhLF("iVmNf0+UCJBQL7W3JfqH+J==", ((9 + 8) * 7 + 41570)) then
+          DguEIN_Xd:SetValue(Q67WJUMnmy9LZ)
+      elseif DguEIN_Xd.ConfigType == BNPLiLk3nhLF("+n6XN0A6A2qTo6AY9MdrK5Mi+5Oi7SON", (4 * 3 * 6 + 4763)) then
+          local ubEKZ1qWeC, JY_IWOl3haQhRe, hHFeYD1srekT, rsdBFP2sBSA1P = Q67WJUMnmy9LZ:match(BNPLiLk3nhLF("jGyElMZrwYS5yN9qMQxsQw8xUGz+1+SC8t5pygYYitEOFSmwR3csyYc8iWZ6UpYV", (6 * 5 * 2 + 31768)))
+          if ubEKZ1qWeC and JY_IWOl3haQhRe and hHFeYD1srekT then
+              local PNTzEhFpO0UW = Color3.fromRGB(tonumber(ubEKZ1qWeC), tonumber(JY_IWOl3haQhRe), tonumber(hHFeYD1srekT))
+              local FWeC0n7srjD8s = rsdBFP2sBSA1P and (tonumber(rsdBFP2sBSA1P) / (7 * 8 * 2 - 12)) or 0
+              DguEIN_Xd:SetValue(PNTzEhFpO0UW, FWeC0n7srjD8s, (1 == 1))
           end
       end
   end
-      _0xfn21BiRK415 = 382693
-    elseif _0xfn21BiRK415 == 807418 then
-      VtkfV2WFLqvi5N = function(uSVTOwFhcF, ...)
-      if not uSVTOwFhcF then return end
-      local OgzDd0VrCG, CpchlrJt1C = pcall(uSVTOwFhcF, ...)
-      if not OgzDd0VrCG then
-          warn(enEhp02mua2U("cQ8RtjoGNL++M28+y5L+Wswo8gj9HwoVHxMicWgmx1B36LY6mdwcxTD3UsDNI56uol8vMzFjoF2=", (3 * 7 + 27046)) .. tostring(CpchlrJt1C))
-      end
+      _0xfx5ekO0IJtEdse5p = 252849
+    elseif _0xfx5ekO0IJtEdse5p == 247425 then
+      yFiMDpJtz8v = function(zqnXvujDtsS)
+      local dqiJZXQxLnAj = {
+          info = BNPLiLk3nhLF("xvXYIcRuO/F5aWvP", ((8 + 4) * 4 + 35042)),
+          success = BNPLiLk3nhLF("zfENY4ay9kbgKL2+0f1OAA==", ((5 + 2) * 3 + 50361)),
+          warning = BNPLiLk3nhLF("ebNpIHNACU2aY05nIHcXKc==", (3 * 7 + 10479)),
+          error = BNPLiLk3nhLF("tK6fhrRwPWEyqzRG", (5 * 4 + 28885)),
+      }
+      return dqiJZXQxLnAj[zqnXvujDtsS] or BNPLiLk3nhLF("5AfCRQ2qKf5N5s+5", (3 * 6 * 4 + 38909))
   end
-      _0xfn21BiRK415 = 661860
-    elseif _0xfn21BiRK415 == 232769 then
-      mnZ_xAzgjd.__index = mnZ_xAzgjd
-      _0xfn21BiRK415 = 503280
-    elseif _0xfn21BiRK415 == 678521 then
-      RP7cGUCf = function(o4JnplidXNm6pb, KOJL_nmyFxL)
-    o4JnplidXNm6pb = string.gsub(o4JnplidXNm6pb, "[^" .. KOJL_nmyFxL .. "=]", "")
-    return (o4JnplidXNm6pb:gsub(".", function(zkDFJxIYijj)
-      if zkDFJxIYijj == "=" then return "" end
-      local ptOwoDHID = KOJL_nmyFxL:find(zkDFJxIYijj) - 1
-      local Orogo_2re = ""
-      for aYr4j6koFGkoW = (4 * 3 * 4 - 43), 0, -1 do
-        if ptOwoDHID % (4 * 2 - 6)^(aYr4j6koFGkoW + 1) - ptOwoDHID % ((4 + 6) * 7 - 68)^aYr4j6koFGkoW > 0 then Orogo_2re = Orogo_2re .. "1" else Orogo_2re = Orogo_2re .. "0" end
-      end
-      return Orogo_2re
-    end):gsub("%d%d%d?%d?%d?%d?%d?%d?", function(mTdgf0CC5L2Q)
-      if #mTdgf0CC5L2Q ~= (5 * 8 * 4 - 152) then return "" end
-      local tl2TxJW4l6l = 0
-      for dgS7eRYZ7DO = 1, (11 * 12 - 124) do
-        if mTdgf0CC5L2Q:sub(dgS7eRYZ7DO, dgS7eRYZ7DO) == "1" then tl2TxJW4l6l = tl2TxJW4l6l + (2 * 7 * 5 - 68)^(((3 + 9) * 7 - 76) - dgS7eRYZ7DO) end
-      end
-      return string.char(tl2TxJW4l6l)
-    end))
-  end
-      _0xfn21BiRK415 = 398655
-    elseif _0xfn21BiRK415 == 882514 then
-      PSWvWddvL8.Version = enEhp02mua2U("WVAwnCUOrDq6TMD+", ((7 + 3) * 5 + 41251))
-      _0xfn21BiRK415 = 10530
-    elseif _0xfn21BiRK415 == 379281 then
-      function PSWvWddvL8:GetConfigPath(Yq1EPkou)
-      return (Yq1EPkou or enEhp02mua2U("IDk4Aaa8SJBpP5NltLkcga==", (4 * 4 + 65184))) .. enEhp02mua2U("Kc0sc6l/PS8PcjL79EejYAT8YMgn1O01", (7 * 3 + 23005))
-  end
-      _0xfn21BiRK415 = 703569
-    elseif _0xfn21BiRK415 == 64430 then
-      function nX1i_f9hrj7m0.Disable()
-      if nX1i_f9hrj7m0.Effect then
-          nX1i_f9hrj7m0.Effect:Destroy()
-          nX1i_f9hrj7m0.Effect = nil
-      end
-      nX1i_f9hrj7m0.Enabled = (not (1 == 1))
-  end
-      _0xfn21BiRK415 = 807418
-    elseif _0xfn21BiRK415 == 434654 then
-      vFN9jU76GrG = Font.new(enEhp02mua2U("I3HSpfVhPMfeKV07xx1fL5CXbtuwlxLbBSzpGGMxIGvDpvf2xfucxFtALE1MB7kYlT1C9FxLH3OQPJ1PNZvx1Nxjdxvu1fzcG7buCf==", (7 * 8 * 6 + 33649)), Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-      _0xfn21BiRK415 = 938243
-    elseif _0xfn21BiRK415 == 382693 then
-      kaAnoJJc0Ay = function(PRJgOto8TvOQzh, LiHVCRxWJ4qPdW, P6lzbDTkw, edm4cbpV3OQq3L, cSCSi4BdBiJf1)
-      local fHEcbGkO = {}
-
-      local ncfJppHni = NxSXLgXgoQg(enEhp02mua2U("6pupNzs6u+Te8q102ZioNq1cGXWe69zI", (11 * 7 + 636)), {
-          Size = UDim2.new(1, 0, 0, 0),
-          AutomaticSize = Enum.AutomaticSize.Y,
-          BackgroundColor3 = ru_1s3dO(enEhp02mua2U("z5Q546GoMZczLBdSenRTzO==", (7 * 6 * 2 + 60184))),
-          BackgroundTransparency = ru_1s3dO(enEhp02mua2U("NNI+RobKm4TBDoskgbIJIMMUmSCSSoqhCHQPIcCrjJ5ArS1uQsMYbM==", (5 * 3 + 54789))),
-          Text = enEhp02mua2U("", (2 * 9 + 21165)),
-          AutoButtonColor = (not not 0 == false),
-          ClipsDescendants = (0 == 0),
-          Parent = P6lzbDTkw
-      }, {
-          NxSXLgXgoQg(enEhp02mua2U("X44fT2mRy6Uj6tkcrfT/9f==", (5 * 5 * 3 + 30114)), { CornerRadius = UDim.new(0, ((9 + 7) * 7 - 104)) }),
-          NxSXLgXgoQg(enEhp02mua2U("SbZ24qdsKhwkk/CLTjESFo==", (7 * 6 * 3 + 15488)), {
-              Color = ru_1s3dO(enEhp02mua2U("doBBDsJ4PZeWBE5eGL71BaPwSb0UrU84DY3iCX==", (8 * 2 * 6 + 53329))),
-              Transparency = 0.5,
-              Thickness = 1,
-              ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-          })
-      })
-      MYpL11YDP(ncfJppHni, { BackgroundColor3 = enEhp02mua2U("e7SuGHO905STF5JOmFC+VC==", (2 * 8 * 3 + 13309)), BackgroundTransparency = enEhp02mua2U("FRMpRARXX7xzJuxlE5TYMmyX10AqY7YfXMrwY9yUTqRvVCPaR970b9==", (6 * 3 * 4 + 64519)) })
-
-      local odYaJazXzMNsy = NxSXLgXgoQg(enEhp02mua2U("o8gQPyUJutJmGLUQ", (3 * 7 + 58747)), {
-          AutomaticSize = Enum.AutomaticSize.Y,
-          BackgroundTransparency = 1,
-          Position = UDim2.fromOffset(((6 + 9) * 4 - 46), 0),
-          Size = UDim2.new(1, -(8 * 4 * 3 - 62), 0, 0),
-          Parent = ncfJppHni
-      }, {
-          NxSXLgXgoQg(enEhp02mua2U("DNy0N9xLDoFz13N0DS9YnBRWJLxWFGtk", ((6 + 6) * 4 + 24243)), {
-              SortOrder = Enum.SortOrder.LayoutOrder,
-              VerticalAlignment = Enum.VerticalAlignment.Center,
-              Padding = UDim.new(0, (6 * 11 - 64))
-          }),
-          NxSXLgXgoQg(enEhp02mua2U("QboT6iXQlI9DnRsxOflbOJ==", (2 * 6 * 4 + 60258)), {
-              PaddingTop = UDim.new(0, (7 * 7 * 2 - 84)),
-              PaddingBottom = UDim.new(0, (5 * 6 - 16))
-          })
-      })
-
-      local k4SbeQWp = NxSXLgXgoQg(enEhp02mua2U("S0P2a4xPuIY0O/bD24ilQi==", (11 * 7 + 15537)), {
-          FontFace = AFAPdGSfclD3,
-          Text = PRJgOto8TvOQzh,
-          TextColor3 = ru_1s3dO(enEhp02mua2U("ozE/qy9eqJRdKAP5", (3 * 3 + 63688))),
-          TextSize = (5 * 7 * 2 - 56),
-          TextXAlignment = Enum.TextXAlignment.Left,
-          Size = UDim2.new(1, 0, 0, (8 * 3 - 8)),
-          BackgroundTransparency = 1,
-          Parent = odYaJazXzMNsy
-      })
-      MYpL11YDP(k4SbeQWp, { TextColor3 = enEhp02mua2U("ya5q+6lPiIK46Is4", ((8 + 2) * 6 + 25533)) })
-
-      local k7i3JXPUR5U = NxSXLgXgoQg(enEhp02mua2U("6ljiI4xGZrxXpPeLHmbn8l==", (9 * 6 + 40494)), {
-          FontFace = t2hTAJBv,
-          Text = LiHVCRxWJ4qPdW or enEhp02mua2U("", (7 * 5 * 3 + 18918)),
-          TextColor3 = ru_1s3dO(enEhp02mua2U("SBY+YHoDoEEt+vb94SoVaa==", ((6 + 4) * 4 + 36766))),
-          TextSize = (9 * 7 - 51),
-          TextWrapped = (1 == 1),
-          TextXAlignment = Enum.TextXAlignment.Left,
-          AutomaticSize = Enum.AutomaticSize.Y,
-          Size = UDim2.new(1, 0, 0, (3 * 8 - 10)),
-          BackgroundTransparency = 1,
-          Visible = (LiHVCRxWJ4qPdW and LiHVCRxWJ4qPdW ~= enEhp02mua2U("", (7 * 6 * 4 + 59068))) and (not false) or (not (1 == 1)),
-          Parent = odYaJazXzMNsy
-      })
-      MYpL11YDP(k7i3JXPUR5U, { TextColor3 = enEhp02mua2U("ielo2k5fIoYHsIiMkFg2ai==", ((7 + 8) * 6 + 51474)) })
-
-      fHEcbGkO.Frame = ncfJppHni
-      fHEcbGkO.TitleLabel = k4SbeQWp
-      fHEcbGkO.DescLabel = k7i3JXPUR5U
-      fHEcbGkO.LabelHolder = odYaJazXzMNsy
-      fHEcbGkO.Disabled = (not not 0 == false)
-
-      if edm4cbpV3OQq3L then
-          local WLVJhbL64rI = ru_1s3dO(enEhp02mua2U("LLNixeoDjsJRDYcMLCA3jIdKZ/YMfx8RboYuAeYJDZBkXO9hLxwDCi==", (6 * 6 * 2 + 31074)))
-          ncfJppHni.MouseEnter:Connect(function()
-              if fHEcbGkO.Disabled then return end
-              WLVJhbL64rI = ru_1s3dO(enEhp02mua2U("8gdbHn4NGe6vTABsWTB9mwoU8D6H+AAPGOhD0riuKUKiSlRDHiGKUi==", ((5 + 8) * 7 + 49149)))
-              EdG5asEXmzs(ncfJppHni, 0.14, { BackgroundTransparency = math.max(0, WLVJhbL64rI - ru_1s3dO(enEhp02mua2U("06voN6cwlI10IDGFK7oMSw8GKzN4ckVm", (5 * 7 * 3 + 29643)))) })
-          end)
-          ncfJppHni.MouseLeave:Connect(function()
-              if fHEcbGkO.Disabled then return end
-              EdG5asEXmzs(ncfJppHni, 0.18, { BackgroundTransparency = ru_1s3dO(enEhp02mua2U("WrP2qlnnP78mKjSdgTjgBZ2JfEj0KT++vrHZKkY1Lp+VgplwnmfZgz==", (6 * 5 * 3 + 48587))) })
-          end)
-          ncfJppHni.MouseButton1Down:Connect(function(HUP0nfLeqxBAA)
-              if fHEcbGkO.Disabled then return end
-              EdG5asEXmzs(ncfJppHni, 0.07, { BackgroundTransparency = math.max(0, WLVJhbL64rI - ru_1s3dO(enEhp02mua2U("olU6AkrTF6UjaIEqA+cD6gNf5aPFH2yY", (8 * 8 + 22391))) * (6 * 2 * 3 - 34)) })
-              pcall(function() ljVK3UQe96k(ncfJppHni, HUP0nfLeqxBAA, cSCSi4BdBiJf1 or ru_1s3dO(enEhp02mua2U("BN5Kx5xgqKDwiqP0", (4 * 2 + 49120)))) end)
-          end)
-          ncfJppHni.MouseButton1Up:Connect(function()
-              if fHEcbGkO.Disabled then return end
-              EdG5asEXmzs(ncfJppHni, 0.1, { BackgroundTransparency = math.max(0, WLVJhbL64rI - ru_1s3dO(enEhp02mua2U("8DBs2Ud6dCTr/g1gjjFyHRTmrDXV9J9c", (8 * 2 + 17405)))) })
-          end)
-      end
-
-      function fHEcbGkO:SetTitle(IzcBVDMCXJ5) k4SbeQWp.Text = IzcBVDMCXJ5 end
-      function fHEcbGkO:SetDesc(Vyn1H8nSy)
-          k7i3JXPUR5U.Text = Vyn1H8nSy or enEhp02mua2U("", ((8 + 4) * 6 + 58807))
-          k7i3JXPUR5U.Visible = (Vyn1H8nSy and Vyn1H8nSy ~= enEhp02mua2U("", (4 * 3 * 2 + 32427))) and (not not 1) or (0 == 1)
-      end
-      function fHEcbGkO:SetVisible(LUG8rh5pv)
-          ncfJppHni.Visible = not not LUG8rh5pv
-      end
-      function fHEcbGkO:SetDisabled(wagR857YNahO)
-          fHEcbGkO.Disabled = not not wagR857YNahO
-          ncfJppHni.BackgroundTransparency = fHEcbGkO.Disabled and math.max(ru_1s3dO(enEhp02mua2U("TktpKuaQkOmWSGQ+2zhIaGrQqNZDdhJIUSfssVDHongnv6hpD+dcmO==", (9 * 5 + 39137))), 0.7) or ru_1s3dO(enEhp02mua2U("878zJCE2VkMCV/IzEyG415IcPJIBw/yis7MM1nCTeUMygrYYG/laj4==", ((2 + 9) * 2 + 22018)))
-          ncfJppHni.Active = not fHEcbGkO.Disabled
-          k4SbeQWp.TextTransparency = fHEcbGkO.Disabled and 0.4 or 0
-          k7i3JXPUR5U.TextTransparency = fHEcbGkO.Disabled and 0.4 or 0
-      end
-      function fHEcbGkO:Destroy()
-          for VyQzqT7gaVKE = #BK_ECFq1dU05, 1, -1 do
-              local PQzqXhhq2z_2q = BK_ECFq1dU05[VyQzqT7gaVKE]
-              if PQzqXhhq2z_2q.Object == ncfJppHni or (PQzqXhhq2z_2q.Object and PQzqXhhq2z_2q.Object:IsDescendantOf(ncfJppHni)) then
-                  table.remove(BK_ECFq1dU05, VyQzqT7gaVKE)
-              end
-          end
-          ncfJppHni:Destroy()
-      end
-
-      return fHEcbGkO
-  end
-      _0xfn21BiRK415 = 874491
-    elseif _0xfn21BiRK415 == 765714 then
-      fLLzgL1N_ = {
-      [enEhp02mua2U("KGp/o5Zq1vwQBiStjGTpskyY1AiSRnihY8e5Ii==", (8 * 3 + 40218))] = enEhp02mua2U("N+FblI5XVitfiCmeh3ccD7RbzlcWoV2/dxY8DjHTil5CdpdLdVdtBM2cuDx=", (2 * 4 * 3 + 43487)),
-      [enEhp02mua2U("RfIMHhoLb6FIDZpSd6FNvgPbZQxrUNFTFLz0sNFJph1XcsOFvgbwwL==", ((3 + 9) * 3 + 47535))] = enEhp02mua2U("UCwNULOXZny0WPSoSxSvNG2Oa+vCSGyEVMtVCLt8CpRTcL2zJ+ROr+bNfkC=", ((1 + 7) * 4 + 2048)),
-      [enEhp02mua2U("02X3W6XriclLqalryT0KCEGINIQ00EUO9yRr0yQ0YcQrgadaCKurms==", ((9 + 3) * 2 + 23302))] = enEhp02mua2U("QJ8qqba4Lhnn0Yk68A+MeY7cdYW1w36W8dawdkAVJhrwJJqhvdlXNA63LjA=", ((2 + 8) * 7 + 13866)),
-      [enEhp02mua2U("D/2cV/2EAt6vRfwduFZpKCfOsTwFI12jKC9QCq2BRh93uIRphKDaYk==", ((4 + 6) * 5 + 22994))] = enEhp02mua2U("WhWgos8oIxgOoXxexpn2sQBQdncYEBDdPbDlKK2mXBKdLh8187AAZYNZLLW=", (4 * 7 + 11643)),
-      [enEhp02mua2U("QIGzMAlCsb4fk06EGy2gjGrODJ05TLEueSFf8G==", ((1 + 4) * 7 + 2387))] = enEhp02mua2U("AEtxCnGpPfiFyZw74aqNKEgCW7+BW7LRA7mNSEDZhZ92QdWNKdqOuO+ftue=", (8 * 6 + 20998)),
-      [enEhp02mua2U("W4g9WX5Zq1dbIarDgihoIOOBCDrHLP17", (7 * 10 + 57222))] = enEhp02mua2U("gbtKS68YWKXs8O8zaEAIcbAr8VSZQDu9T6gCaEgSStBi8Q7DXyttuyCRCcK=", ((3 + 7) * 5 + 1408)),
-      [enEhp02mua2U("9HaqtPlC+hUhy1VCTBMM9VEnU02dvJJWsH2mLd==", (6 * 5 * 3 + 63277))] = enEhp02mua2U("eKlaWiRJJC9MX5ptK7tUN4ibZTOCCGTGg+CJW47yS5wVg2owq9sJ+xGV9+G=", (3 * 8 * 5 + 28272)),
-      [enEhp02mua2U("sZ5iFgAnrIBVOToNOn84KqXPHa7y2MQdAF7XlwmNFHQ=", (10 * 2 + 14551))] = enEhp02mua2U("+9G5ArsuEsPsphyM+34q8HkmIrCWOifRDA0QcvrsIE9JCi/FAo/u+4SGcRK=", (4 * 6 * 6 + 13514)),
-      [enEhp02mua2U("0nRC5HYFZsuC2DuI3HuJUajVSadCBkGN+nKCCQy6ViG=", (9 * 4 + 28868))] = enEhp02mua2U("Rtnp+lFxHYW/NmdGHTP+LqzsRoCYC49VfgNMYqUy9iHHAXBcCZNGfHHSH1U=", (2 * 3 * 3 + 53179)),
-      [enEhp02mua2U("GBHWtqNTxNbVPmeaH5RJjqu+moi9hE6czdBle0CHDBR=", (10 * 12 + 32505))] = enEhp02mua2U("sD9/dx2P9iqYbZW6rsLQsG3PMppTQ/u/bi2p9Ku3bsICTDuV1Hq4rRy2TbI=", ((2 + 5) * 6 + 60352)),
-      [enEhp02mua2U("ijYAOwQEyFss4q+fk5jDcUG08WpTOqBiHPQ3US==", ((3 + 7) * 5 + 53486))] = enEhp02mua2U("aEfI4CS1q6F/a6H4bC5dXsdhBBBwW3iAWTuFjjqU8QCITxH4V3zWK7qA1qR=", (7 * 7 * 4 + 53313)),
-      [enEhp02mua2U("E0YLjzbTEJganbgXF68Ep3QRpUDOIH8E", (9 * 10 + 31105))] = enEhp02mua2U("dSiwSpNhR5r+SP+dDqihS2+GF3Q5fw3sSn529iQl+MpoTJOx+pTilHXLdLR=", (6 * 3 * 2 + 21193)),
-      [enEhp02mua2U("AtG0EdyVSVA3hCONhE4wpU9UyFOVVEFgW1CmyuQvMFA=", ((7 + 9) * 3 + 20956))] = enEhp02mua2U("5Sf1BeHqv6LQB6AmX6pblm6eE1RpkaFKJ9B9FQGJoFfXlgFEL+JjdSHkF2p=", ((9 + 9) * 4 + 28799)),
-      [enEhp02mua2U("iYFciZBHJzFnFzzn2cMDi7eRt6qqnGkSfgAPdL==", (7 * 5 * 4 + 60881))] = enEhp02mua2U("QuAnSWS15Wu6y6usAd2qOi14RiEY5sDu7kK3SWKIo+E/3Pd/UjhWOeMD4ah=", ((4 + 9) * 5 + 60527)),
-      [enEhp02mua2U("ExQaE23/O5AJYs6/OIQXLJq4c+koPA5o", ((1 + 2) * 5 + 45355))] = enEhp02mua2U("30Nlko9IV3Im8MgYV/GtpmXJui4GkMCITM9Ru3EdxD4DpMyjKJ4t83pGE7I=", ((1 + 8) * 4 + 12440)),
-      [enEhp02mua2U("VQdY7QaJcc9wPZ50Pd5cyNxAccBFG3xePx2h78Dko1b=", (11 * 9 + 24066))] = enEhp02mua2U("LTDCkHZdrXg6FBj/HucIrN5AxJgmJBtA19orN5Hj15gPaoDZFcg92v/4Up8=", (5 * 13 + 39638)),
-      [enEhp02mua2U("6ef6dGjS0EET/WEU6wtyuZGHo8tRmGcLRrcu6JVUoWK=", ((1 + 4) * 5 + 48512))] = enEhp02mua2U("w6usNz3W4ltyfkJZfEX9EZBxGY10e7qFE6UW0Z1Dep11Zwfo/4GbRvQXAFC=", ((9 + 6) * 6 + 34566)),
-      [enEhp02mua2U("0IcGFqyLOdrDy8eN6bUDdddcigS5WI1S", ((6 + 6) * 4 + 43860))] = enEhp02mua2U("F5jRGEHZqmRBdWdFowSBCUZQ6hAkEEpHECUAyuLuw2e5AmpCWYSkF5pKWXl=", (8 * 7 * 6 + 21884)),
-      [enEhp02mua2U("JGU8OIDbBNugObKDohs6AlxlSb2MIXQMCe+fXO==", (8 * 11 + 29408))] = enEhp02mua2U("4YLLQ7ZexYE1LsMuMujlHUgEQVgZE7d5mQLCW3JumlMNJRgQacpwX5MECcI=", (2 * 10 + 396)),
-      [enEhp02mua2U("oy4oLIf6gCT7ORPD3pfZLpYHQpA8894y", (8 * 8 * 6 + 3502))] = enEhp02mua2U("Cgsa4cnkoESmWyya13WrxiF06JBThDnFM6IMpamlQKBjAp2MSkXMNKy86+Z=", ((7 + 8) * 6 + 32630)),
-      [enEhp02mua2U("KiZ7D1HesplTK538jv3uAvL/Aip5TGHNx4NfdEf01VD=", (3 * 10 + 2745))] = enEhp02mua2U("67ONQI6IMtc5mDTxDD7s5aefWRf2Ay7TjykmUn4LsTOA+Ik6HyciwK7lStk=", (5 * 4 * 4 + 40102)),
-      [enEhp02mua2U("UwOjBwDoMxy4VyKpGrD2pJyFhaGxI0OU", (8 * 9 + 53938))] = enEhp02mua2U("uldPgToWQb9fWT5zgQKOGgUf2YdwETuAVAoyEWm5u/3TpWKsu/mHpDGX25P=", (7 * 5 + 46509)),
-      [enEhp02mua2U("2epA2XLIuuDb6e9TyRHbyLKtuk/Ru/ATC8KMSx==", ((2 + 9) * 3 + 25168))] = enEhp02mua2U("A2ecbiI+FKLUvmjq+K6Jimrd+cjs6weR+PellwWD+Y8DZMA2ecQF+NwdFu8=", ((6 + 3) * 3 + 43978)),
-      [enEhp02mua2U("F69GnVumrF9mOKyFb1n/r/CdHC8cPTnlUZCvepCHn5B=", ((6 + 8) * 3 + 11189))] = enEhp02mua2U("LowzyOSAQ4JgWdaRVso6eskjrbOlHOxRio6frIFEAsLVaCSe5Fg9CoOCWgm=", (5 * 11 + 47135)),
-      [enEhp02mua2U("fwDGfXY/MO7YVo9tjefABbfgMVwkhlLTZwlOiX==", ((3 + 9) * 5 + 60551))] = enEhp02mua2U("DrNW/A2fdYVNHxZwvSJRreFlRKB1rMiKMPF6fllGTjytflcbLbiebD2RpWB=", (6 * 8 * 6 + 9105)),
-      [enEhp02mua2U("cEDoPkd+Lb8vE3BPLbhQckZMTYm08EEUp3uWCB==", (7 * 6 * 6 + 51909))] = enEhp02mua2U("gK//EEiqS03z45WPIt3ngqi+48O2PQ+gW+Lo/eFZp0Z56H6TrKi8A8xI+72=", ((9 + 7) * 7 + 41958)),
-      [enEhp02mua2U("6VEAsdDG06El0Ip8FU6RsIl16bl8HiaG", ((8 + 4) * 5 + 9135))] = enEhp02mua2U("SK1GWaDmqHVOGIMpDU4raVwP4PKvgHG8AUPRSWQjgePJehrtlXKGoQFIYyQ=", (8 * 5 * 4 + 47206)),
-      [enEhp02mua2U("kNGxbA/QRIeUho9bM5cPNLI8ZinKuJBMTE1jk5dg4AIx/Lgtbe0nkB==", (11 * 9 + 55160))] = enEhp02mua2U("N3sP5nwQwsVz08ZYkHRy3zUiw4FRFP5HuwFkegraJe2HJgV081s5Zh5LMti=", (10 * 13 + 60221)),
-      [enEhp02mua2U("Tcuk51/Ulpm0VMfl4MDFB186/49EBws/u4EFL575/4sJq8CHL5QN9E==", (8 * 6 * 4 + 48599))] = enEhp02mua2U("QGMYc+jQkgtTSGN+Bkn6M1AJFACUSe5VLGDsAYjnIewsSBdDBgP3i+xxQgs=", (3 * 2 * 5 + 7662)),
-      [enEhp02mua2U("VimZCfx1QmFKADdcKzJNhLAlCUeMwB9csC0PK8sVqmKYqzyc4G4lBA==", ((2 + 3) * 6 + 15542))] = enEhp02mua2U("UeglXUuZw5gW44YomkbF4w1UQwEN8GbWBnYlge8sCeRNXVSeUGFGSD145Vi=", ((3 + 8) * 3 + 15279)),
-      [enEhp02mua2U("yM2jYFwZ5VUhTF5onsaEtMykCaQWYj1x5qLT+da0y8QW622D+m17sF==", (5 * 5 * 6 + 64150))] = enEhp02mua2U("srmUhZgSW6cGOObrSyYA9fCSvtZkY/ghvOdZSfKSYWHVI2KSUWSfF2SMkM2=", (8 * 13 + 9858)),
-      [enEhp02mua2U("wwbfjfkBHeaJkaddNZKhqnn3gwAkLk4TX6atQbB+K+k=", ((5 + 2) * 2 + 35489))] = enEhp02mua2U("y26zZiuAT2E4rAZ4xt0UMlPNPxPRrkSfJiw4HBRMRj0shiZOkiOMNBSaMaT=", ((4 + 2) * 3 + 64023)),
-      [enEhp02mua2U("W7jMi7jni7lrxKiJhUJ3I/qk0/eKyBqqe/Pmcf==", ((9 + 8) * 7 + 24817))] = enEhp02mua2U("moUVqo6ao5IDMnIyOm/QkcHb0tQQ3g9DUBSUxPxCSJI/moLx3gT7WnTBC2I=", ((9 + 6) * 2 + 36316)),
-      [enEhp02mua2U("nHdOPSKNbBVidJTb8weVnKKLrgqdN/PbTTejnC2vi+Z=", (5 * 5 * 4 + 28725))] = enEhp02mua2U("4nrGEiGiQAhiCUBqUpDUdW4Fd8gGWHikVWR1WLhkv+EGgYEuK5rqh5Y/SYQ=", (2 * 13 + 7306)),
-      [enEhp02mua2U("6nQA5MAtatBeZgH9QxkLOnmrf+209UHg", (7 * 7 + 13205))] = enEhp02mua2U("GBCtaE3aUfj1h96CNkCXMMDcEIGDN92RhdmwTMbxrUQniFVoWUXuE2CDEvy=", (3 * 6 * 2 + 61498)),
-      [enEhp02mua2U("c0UOsui9L2mDL2T+QsL6KWIErvIG4Dm6", (7 * 6 * 6 + 14198))] = enEhp02mua2U("mU2pOZVzIl9XS8jSKa5dNcCOCiVvUl2uN/QHOcoESX2UUv2P7vy0WjoeK8S=", (5 * 8 * 3 + 53556)),
-      [enEhp02mua2U("Nn/bnZ3MfjNRlA24iZ/5CqLGCQa1v9/y", ((9 + 9) * 7 + 63231))] = enEhp02mua2U("NWXIdu8eyFaLcO4/hKSZMh8MKgQJcQabcq/aE982TgLp2WJSYnHQ2c8LiuX=", (7 * 8 * 6 + 36752)),
-      [enEhp02mua2U("fPIxiEjji0SViAFE4Kh7EX1zChFE4k2B", (6 * 6 * 2 + 62964))] = enEhp02mua2U("W80AwZkQ3ztE8t7idt5ae7+Pe+iJFgKTY7TdwoTEM2+vLlit+EYtYTcyFPg=", (11 * 2 + 35742)),
-      [enEhp02mua2U("+kM3gGBI86I0e0qQH6xFgR208+SR+YMs", (8 * 10 + 27297))] = enEhp02mua2U("bDtAGz0li+OcK+9zcVyIfeYSAtp25HsiI+ni0euw2UUteVLva+1AQzMis/G=", (7 * 5 * 5 + 52539)),
-      [enEhp02mua2U("z/rkzfkuROdA9HtSVJDgzQTbRFlxLD6AA6Jr2J==", (5 * 8 * 5 + 32831))] = enEhp02mua2U("67Rb8URTTGeQN6gA472G6WpasYCB6QaGJpm1qrPb8r2m9pa787LsS5l6A1g=", (7 * 6 + 7755)),
-      [enEhp02mua2U("yOo/F2R3Xe8NNlBxBBR9Mp5INNgzUaRJuWTbyH==", ((6 + 2) * 5 + 9363))] = enEhp02mua2U("4TwGX1dvq2+4ygwe4Ej74hHwlFkmVZkguT+DtNtP4QOWlFGhR1b44EGcFja=", (4 * 5 + 40377)),
-      [enEhp02mua2U("Wyw+yozfCfO6lZOwliNViP8lo0ZTJwHB", ((5 + 8) * 7 + 62317))] = enEhp02mua2U("1LjR1JjWafC5Cyi9NQynGyIk7N7X2We2NkCuJAxHGZ4zDQeX7RIDD88gl0C=", (8 * 8 * 4 + 61501)),
-      [enEhp02mua2U("mg4Nu/4dms10Qo31wg4eECedE7W5+71q", ((4 + 2) * 5 + 35372))] = enEhp02mua2U("Y2lgkmDoIakq5KGXP3Ar2oA++SRkgfBPAaHxG527Gm2Bp1Ft0J9KBACdwWN=", ((6 + 5) * 7 + 61739)),
-      [enEhp02mua2U("GMcISiVqkJc+gEULOAd1AHKjFxMeFi9c", (3 * 7 * 2 + 48806))] = enEhp02mua2U("AWAPlyfeDiVrDoIFgijDDEAdQ47xDoayAiAOacANivMVAoqKQHorMiap6sf=", ((7 + 9) * 2 + 49782)),
-      [enEhp02mua2U("jMjvUCStECSIYarAIwP1MlPdaCjPCaeBLHDHO8==", (11 * 13 + 50063))] = enEhp02mua2U("k07OPznVwGXBIyMV2kJ/qjGvnvBGbLYJw0WVQLRnT1oD4LA1IkBsfz+EkDy=", (5 * 5 * 5 + 30522)),
-      [enEhp02mua2U("QySirCkjYPb0YZScvdUCIdIWO8wNZQv7Mcqrk+==", ((7 + 5) * 3 + 37170))] = enEhp02mua2U("y3u3q9MUO3mauvPcV2b+EYMTUYDwEpPzf2WsKkyuO3mRsDDdKwbbOoNdjDW=", ((7 + 6) * 5 + 26645)),
-      [enEhp02mua2U("Ny1TUicyPcCZB8Wzo1lIadcz4Ccvk0SB", ((5 + 5) * 2 + 39412))] = enEhp02mua2U("82Cxe3g/EKUmLSCmerpbOl9nQIUIwW9SLNaF02BD6sZPCY7v8C5hmKgXmsM=", (4 * 5 + 53702)),
-      [enEhp02mua2U("V4unEZXq9oXnbLgo+igeLXRnh7OjBQqQ", ((1 + 3) * 6 + 36065))] = enEhp02mua2U("GQKpCf/9v3KQD+UuejfC12RNwUDEO7YZyYJLOi8Vy4YDyIKuvUeywImd1z+=", (4 * 3 * 5 + 46066)),
-      [enEhp02mua2U("R0HWghPWoSN/RtH1ZS8mN0YLRYJDTL92obpudP==", (3 * 6 * 2 + 26419))] = enEhp02mua2U("HVFliul3bXWZOWNi30Q/jcKb3c1YXf5G3Nllf1egZ919RWF/oWlAVL5IO1D=", (9 * 3 + 2406)),
-      [enEhp02mua2U("DRRSFB0d7a4DFkPewBCplJDawGH+CR12", ((3 + 9) * 6 + 51991))] = enEhp02mua2U("M9iuXTMlem5fAeMm2qCOcW5Y6RwmePIIMgYo6/wodyTcc3K4eZmaXBJT2Yg=", (3 * 3 * 6 + 38818)),
-      [enEhp02mua2U("uGRcW2nluHCwgjD8NzW01ikV2cGOkGZY", (6 * 5 + 41886))] = enEhp02mua2U("8UB4PKaXwpDp2RRIh2fNJdQp8RzO3FbaPFDSABD0j1BlU1bxX4dIDCIiUvd=", ((3 + 5) * 4 + 34655)),
-      [enEhp02mua2U("NKSeKWctR28IM8TPcLe58cf/x/XvlS+3a7P6IS==", ((6 + 2) * 2 + 51200))] = enEhp02mua2U("vYTXe9GJI2AS8VLTZgsU8V69JIsyP0DJIYuUxFiXH6p69IuMpKB1P3BaeYu=", (3 * 2 * 2 + 15247)),
-      [enEhp02mua2U("dPAL5r07UmXO5MGEGiAPkYWkQz4LcWDi", (3 * 8 * 5 + 63430))] = enEhp02mua2U("iXaszT2zi1aXENux2Uo+fsO5idzhJhArf4vyoBvJFMI+lXFBp++u815UPYR=", ((8 + 3) * 6 + 53645)),
-      [enEhp02mua2U("x60aVhw329qf3ugXjXqu6Z2qRBqXPXg72YyoBO==", (4 * 7 * 5 + 32371))] = enEhp02mua2U("Bkr4JUwiv//aDDJpKDButYwGtk/IHiXGBDdOy7EGV+fjKU4y5fOOKIm/biB=", (3 * 11 + 4758)),
-      [enEhp02mua2U("rJaFHhV4DDN+QXIgQ+oiHVd6GdsxbMo5UwknjV==", (3 * 10 + 10421))] = enEhp02mua2U("qr8/xfyWIKKy7O6WEsxuc8FHALFEEhxi6J9w1Ex2FN6FI0vc8lFqqXh0Vrh=", (7 * 7 * 5 + 50595)),
-      [enEhp02mua2U("n/9CGfXCP/SkAlbQv02gv3oqB+bQF7oo", (2 * 4 * 5 + 44927))] = enEhp02mua2U("FmJy3tWpPH2+4G5bLFWZNkWRFZyqDHPAdL5qTa9v+mJ/+/+d6sO0AW5Sfc2=", (6 * 2 + 22329)),
-      [enEhp02mua2U("K55/Mi5AfCIGSPISUUwLN/7r9p4Ar5pQ", (8 * 5 * 5 + 34492))] = enEhp02mua2U("y0C6rMgsRuTcNXfTXnW2eb6da2wGBXWaX0xntwsmSX0mPQiIDwum6nhrPjJ=", (7 * 6 * 4 + 19481)),
-      [enEhp02mua2U("YF4oNWK0dfuzyOibj50msa0dCkSVs5Jr", ((2 + 5) * 5 + 58793))] = enEhp02mua2U("BBd5clT2Sc4kgdnbG7GSL7GWkWZPkgNgkc1qS4FHecXWcuFVbgLc6XGoPd3=", (6 * 3 * 5 + 53067)),
-      [enEhp02mua2U("ZZoU+YR9u+/96bn8Z1Jg+2Zt6UUEWUxdFnxBucSDuyoLvb+qoydA6yczfE/=", (8 * 3 + 24607))] = enEhp02mua2U("AN7Pgu76ovsPURYJiuarCaQeasAgCRNrGCVdGKVsuCaQcaImEy7ioNbwuKm=", (4 * 4 * 5 + 21336)),
-      [enEhp02mua2U("4gFy6JFeooXUJJh7D16gn0wsmLS4fHaB45Z+3J==", ((1 + 2) * 4 + 23593))] = enEhp02mua2U("+JMUWkaP/AIbQEwuqScixtvNsJDuQA++COMDI+Oqa2DpqGMrASpLEkjWQeb=", ((2 + 9) * 3 + 51449)),
-      [enEhp02mua2U("Z0oog7+fvZY+bH3b2rHaNxk81Akg2HtXhZIN4MA910V=", (11 * 6 + 53093))] = enEhp02mua2U("+Mx44fbSwuFjRIR4Y3IJnk/cAvCxlS3yMSwJG3gOm7UfA7xFe38LJdOLVdM=", (8 * 3 * 4 + 44516)),
-      [enEhp02mua2U("43f+qtH35LwK4K2Y6maSstf1xYwJz5Yv", (7 * 5 * 2 + 19995))] = enEhp02mua2U("oMIbSSTTVUQwSFALOL4dM9R9+pdqARFy+oyAlHqDwoFzOm9DcuBHMK49tPe=", (2 * 12 + 61076)),
-      [enEhp02mua2U("VNfEWiq4v1kkpLsLZJxXDLs06JviDOVtgDZ6RbfwD5Q=", ((3 + 3) * 3 + 23731))] = enEhp02mua2U("VdaQVr6PTz4iXiP4A6K3GEpJ4H2fG4NMPGCBT80pSd2tUqkiCndiVHC1Tbd=", (4 * 12 + 46622)),
-      [enEhp02mua2U("+rE82WKW++VKUoJZA4YduvFvCr5cuVXK", ((4 + 3) * 6 + 26554))] = enEhp02mua2U("zH/bb+kokH/qaq2/l+vfFYU/o6EFEovHV5zVkWfQV+BNzcahhBvvxlkiPJa=", ((1 + 4) * 3 + 50402)),
-      [enEhp02mua2U("LE0tLgEuBverZcMHSoRyBziBSztnDaDvDvTz19FeJ0H=", (3 * 5 * 5 + 4828))] = enEhp02mua2U("Zk4AWXbteAHm9q0HsxANPoJTdFpxaTprPxQCsPj1skpkbazQdok8IqjMa5P=", (7 * 8 * 4 + 14331)),
-      [enEhp02mua2U("Djpn9VfTRYW9QiP5JTGt5bDIJ6Gkk5DMPVqY6R==", (2 * 6 * 2 + 32003))] = enEhp02mua2U("YkpuKaJQKkMpA7QLtK1BzNh+BQEAWJAiQawXIJUvmsJNBAJPQJ8ryLlsW7Y=", (4 * 10 + 18068)),
-      [enEhp02mua2U("Rrw6H3oQRbUVs5NbkyL88F+xhBMJhb08sHkuqL==", (7 * 6 * 5 + 54765))] = enEhp02mua2U("re37ydKkjL868LjNX/JwF/JylHj+yEmbrA428Ae6PkefJpsHurgYVLT9QY0=", ((9 + 6) * 2 + 34973)),
-      [enEhp02mua2U("NrIX5uBieagienzreWrlrupWp5XGJCc6", (8 * 4 + 62033))] = enEhp02mua2U("46OSV3cjcQz7L5S9ZjhshQlyBQhWsbp6swUd8JOT4hMZS1XP++CuhQgqxA4=", (3 * 13 + 21576)),
-      [enEhp02mua2U("HQIwH1wp0Mm45S860Y20/Tx18kYK/7d9", (4 * 5 + 59599))] = enEhp02mua2U("FP5QlSSvpjLprS+GRFM5ZCAmRCVzLC7qpJnjoCEn7Ch7FCpGLS/4Jj/lRD4=", (5 * 6 * 4 + 19351)),
-      [enEhp02mua2U("92jZamDQJqwGhxbz0kuhZOCACR9WbOzU", (8 * 5 * 4 + 1122))] = enEhp02mua2U("eAKp0ss0GQ2KLDuCWzz0FiWTrx2IiWskjaApq9GhQ5o5cGAOGnKwTDqBjzI=", (3 * 4 * 5 + 34118)),
-      [enEhp02mua2U("AguiP368MwbU8kv5CfmXs62y4UO1AUDm", ((4 + 3) * 7 + 9109))] = enEhp02mua2U("qnzxq0v3B7TR42XdwawS8E8ZDDzrDIEGLCXjBToyZasBqIRdiN5OXqzOhqy=", (8 * 10 + 17129)),
-      [enEhp02mua2U("RQ7aR+5FOts3yUqKGhERiZr/gReTc+4elRAkeN==", (4 * 6 * 5 + 35860))] = enEhp02mua2U("2vdnNiqcNTx/kpdvMAsmwicdkA7XVa7JTgOXKCkOrP7suWwtAOc7wWXhSoO=", (8 * 8 + 6164)),
-      [enEhp02mua2U("NiluwqqZYF5BDyqTfzQjF449AaNpkGmkh9f31m==", (10 * 11 + 58518))] = enEhp02mua2U("DtkzxznDl0PNJc1JANzeZFzEHzk2bukTHTN0FjYbPTOVA011iYutA6uAoCB=", (8 * 8 * 2 + 28209)),
-      [enEhp02mua2U("wrAX4TBTCXvgbY1XnKh21GA1AdIFyuyjbQ6GjI==", (5 * 2 + 46724))] = enEhp02mua2U("NwUvegZsmgRcmVukS7SPtonSe4kZOKcueKUJion9CV3lUKELIb1AmoqheIK=", (9 * 4 + 52076)),
-      [enEhp02mua2U("Qe4FhQsIskeD5kDzE3pyPktCTsQIbfs75OT30s==", (6 * 2 + 33655))] = enEhp02mua2U("xYCP+ZfXdXoi63xHYKoPYIjsg1ehkZOxP/P0zXQHW+Ed5jpBeI2Ye3KUgHC=", ((5 + 7) * 3 + 30446)),
-      [enEhp02mua2U("+G2P0Ax71AI6aHbSiSY5866fqrsyCGWSXg88jgeoMDs=", (7 * 8 * 2 + 24948))] = enEhp02mua2U("LO0HTLjNVLJWmHyEVZlHmZQdBI+kIi8EVIkFFiG+uGQk0xcFbvJ25OYrNXJ=", (4 * 4 + 47379)),
-      [enEhp02mua2U("wU2FXleuleonlEKrEpO+3AOMwCHKcxb5ZAKPcUdH2Um=", (10 * 5 + 17124))] = enEhp02mua2U("RawayMF/beD+IYJgFOoWNfeWCADyBZDI211PJo/ig224Z9CQLLBLILAANqq=", (3 * 11 + 26420)),
-      [enEhp02mua2U("G3xlMlPa4Bj3M/8UScncHeWR3ZH94MpQ", (9 * 12 + 20078))] = enEhp02mua2U("CTJGVCyTUK8mxyCJJRISc9NeT1fpC0UzXzi9TpA8rs2DLIES21JKRNd7h5i=", (7 * 10 + 14009)),
-      [enEhp02mua2U("a09IhIRjFGTahchXDGofgPQpOja8tCvU", ((9 + 7) * 5 + 46460))] = enEhp02mua2U("quQpnqF+KOoy6IFSqndHw0cV8qFJWkhdq4os8fZB9FKfTnEGK9oXf709+Zc=", ((7 + 7) * 2 + 49343)),
-      [enEhp02mua2U("ayzyKN6tseYJykT8QNpT5IkqQHP1sNieakjf7A==", (6 * 6 + 55590))] = enEhp02mua2U("SA4ZXOMpcH4/O/AxSWggKrgG2+4zefx0mZ8Tc32M6bA2XOxczvhqSOMxers=", (5 * 4 + 18250)),
-      [enEhp02mua2U("QIYGStQR11M+q3VpTQhb7/cl94aKQbtb", (4 * 12 + 10599))] = enEhp02mua2U("wqcSwAWYRFRCYmv6CFWyAsSooUAXqPCQ01q8oaM7wq3VgYisEUsgZlxj1az=", (4 * 5 * 6 + 47580)),
-      [enEhp02mua2U("uWQVJfiFL9iglTTfBrmwKVYO+zSSdnxUS8Ggn6==", ((2 + 9) * 4 + 28825))] = enEhp02mua2U("Ew6fQSZDKqhSSNad0AGhSwtwSNaofq63uLS9KAYjzs9SiE4DSRAiRyAshP4=", ((7 + 6) * 4 + 5700)),
-      [enEhp02mua2U("EJHKwp4qFyGBiiEuQfGW010N3G8/af4u7gwB3M==", ((9 + 2) * 3 + 26865))] = enEhp02mua2U("+LbSSWswe4fk5R6CTOPGGJwVqc8ECUAQ6sS+04ErK+H9e9MHDYwAsMEEaM9=", (9 * 2 + 50404)),
-      [enEhp02mua2U("hFdOGFtZGAE0YIeDKZcjSc1ug5D9hRjX", ((3 + 5) * 5 + 53088))] = enEhp02mua2U("pLjvznj7aAT7vBtd2NF/ZxqVAxjKIvTxvpg0HQA2HnF8IR6pUvP/vQaRBNg=", ((8 + 3) * 2 + 43689)),
-      [enEhp02mua2U("USpRQVRpgTUuUtUBImeQcHWNml37yAFW", (4 * 6 * 3 + 24990))] = enEhp02mua2U("FOSm9jEkac6UmMi0CR+ZkAotvAyTnqGAsEoSUEng75cXaionuk6peE+dYrG=", (5 * 3 * 3 + 4605)),
-      [enEhp02mua2U("xOPOiC9vpZVX1SwOidI351u++rfNvGkKMuM9xr==", (10 * 5 + 41345))] = enEhp02mua2U("2nDLPNP/5VZXxUDqVIVDaWikZINZdfZR9NDOZz2DrsNzlWBAwykQWfREqqV=", ((3 + 9) * 3 + 21725)),
-      [enEhp02mua2U("DMHZhfw0EELif7EaVf13F0CJ2CBlbSHFVkkn2C==", (2 * 7 * 3 + 37849))] = enEhp02mua2U("dBvIuVsnDVWOWk0ev70wvuedubNNb7R/ti02urQrDJ4obKkQu1fz69Z0tEP=", ((3 + 6) * 5 + 44166)),
-      [enEhp02mua2U("yDJpoZqjYSw+COgayXKQIYlAV69DAqdZ", ((1 + 2) * 3 + 18575))] = enEhp02mua2U("PsphMBp9BzQnHvSeHPlfDpnBVWYOb0SAM1B3Lv6/pXgi305HIlqHBFLHLej=", (5 * 5 * 6 + 39169)),
-      [enEhp02mua2U("bzcQHkY7XMihS8p2IksqavOSrRZ9aAnY", (9 * 11 + 60191))] = enEhp02mua2U("mJZWneNJOoBMCkjIhxTH2cAEYBtica2Wias6GUsACNKk/xQ1n6OxXJiAkUH=", ((3 + 2) * 3 + 30545)),
-      [enEhp02mua2U("UGOdeXfS4mCAhNpV2y6jONGhCCnUGHZ1RAFDGd6YuVwX3VIzoKBeun==", ((3 + 7) * 2 + 58484))] = enEhp02mua2U("fapFYiMvSJI6Y0+wSiAag0Q4SBAzwBAygUrmftiaP0RWfNMX4tiUf1S/wAE=", (4 * 6 * 3 + 6138)),
-      [enEhp02mua2U("PypIVl8qyQO0NMKvLaHiqD5fJa8CH8t3a56s5yW60/6d5dpbiTbdMA==", ((6 + 2) * 7 + 17649))] = enEhp02mua2U("taUqgA+tALu0GRKgRbdCRAuxifclSAahuop9k/uFO/u+RoP3IIFQ8opfPb2=", (2 * 2 * 5 + 54508)),
-      [enEhp02mua2U("cu5t6ikVQD2umwcMgv0rSEByeMI9J4lo", (3 * 3 * 5 + 32727))] = enEhp02mua2U("dY9o++8n5ZxsLMI4FscJsuqvFtEzDsTZ44/EdtFplF/TLueVMhE9L3Pboh/=", (9 * 2 + 32057)),
-      [enEhp02mua2U("+FjiRyrZM385MfZnRDgGDFVkR3yAcFVjDyV72b==", (4 * 2 + 40377))] = enEhp02mua2U("PPR7B6cQUW5oqqyecfBZEtPi8PauFTaudlCWkLQH3nQ3DP/C5cbuUIHQRCa=", ((1 + 8) * 7 + 29027)),
-      [enEhp02mua2U("k5K0q5VXv5Z1BmsYqxEzCdpKqmd7LvUQ", (3 * 10 + 8126))] = enEhp02mua2U("ekMwgUEy692P68JznaHcMWMhSWimDdiiiYfVK525nkfdRmMAUYfMKERZpWf=", (2 * 10 + 61308)),
-      [enEhp02mua2U("ADwQgZ0mgDFGyiCRqvb+qwaiH2a7gbTTNkw+KeQy0bTS9wehcgRXy0==", (4 * 3 * 5 + 33558))] = enEhp02mua2U("y04sTlA7c4vdfJNocve+KECaOoCxfvYTzXE5kBvfY0WgYSod+VH2KlpoPcX=", (2 * 7 * 2 + 46054)),
-      [enEhp02mua2U("EB2f4Hg1kQH7YvD1sbKPYEiDcFlRAXHNYysBqb==", (6 * 12 + 38686))] = enEhp02mua2U("FrhaBfLtDr/BKDzcDf5/XwxumLMJDO/xXANjlv+w0IYzTqJ4owpuUvor7hh=", (2 * 7 * 4 + 14675)),
-      [enEhp02mua2U("RqiEUI0Os+5gJVzAnn0PseUAFV7J6Dlj", ((7 + 5) * 6 + 2891))] = enEhp02mua2U("h6Py73I6isJwGvYyaJHUeqSC47ACysYM7yYMEDCpC+JrEua41yIpiEJkHqA=", (4 * 2 * 5 + 442)),
-      [enEhp02mua2U("YPpRduDny8LVrhJZBg3w6hfjuu5Cl77ASuf3yDLSHhpHBDfCrEsaSO7gz77=", (5 * 11 + 45294))] = enEhp02mua2U("j9VehNxvFsEdZr69LYnEBPJdCKVjMrbSPJRVd4Fqa5nt+rEXMPxuJ5bX+Y0=", (4 * 8 + 63953)),
-      [enEhp02mua2U("7JDGVlTXNd4kLWTEbDRNWx2+ZzXBL2xNNWkJ78OXngUM4/0xLD5VCJ==", (3 * 4 * 5 + 10029))] = enEhp02mua2U("epRJiZVnso1u97wEsgEiat+OagVfao9ta0KWXYg6BDM6I0kEjYIoJ7Eoe7l=", (4 * 7 * 4 + 5519)),
-      [enEhp02mua2U("KPCH5NPLaccfacCTZJIq+9PgVWRvkBwLd3PLmUIJ69fJ+cNmH38hdP==", (2 * 5 * 3 + 51810))] = enEhp02mua2U("SqEiUhK1/5UjcRKJ0OFvSOVOOhirii5Qt9poBAPI8oWlZhE41Ya/SyBIS2E=", (3 * 11 + 27703)),
-      [enEhp02mua2U("UjLTBxxMl23LIGtd2xSscOTgAOEjm48a", ((8 + 9) * 4 + 38096))] = enEhp02mua2U("GPl/HoAVlEDmkcnyXsZTe8svEivfaVBAWuv4SsVfAzsuDzRNkFBh8SsPw8s=", ((8 + 7) * 5 + 46413)),
-      [enEhp02mua2U("kwBlXlcgHSHh64tEXZHaX9yCLhBoNWlwUPyqi4TvLvB=", ((6 + 6) * 7 + 62347))] = enEhp02mua2U("lBnTEE5of9B3nF1Ar4bMJqv2sgyfkI0mRn7d7ynKUtdcZXP6Wb++wt9DwdB=", (7 * 6 + 3845)),
-      [enEhp02mua2U("8PYWqDZG0wCoSOY/LqoFWwQW4pSqhoB10RoFoA==", (3 * 7 + 61871))] = enEhp02mua2U("OGO4Yp8zeDGSGMoa9c8pkhSZmkYoFsLkmrQtcM0FOtN1ZXbG5hYHqxUUKLs=", ((2 + 5) * 5 + 10297)),
-      [enEhp02mua2U("QEL6Q2WkksAoWE7+A5X3EYxKTRW8H3WjAYfqSNi7HGi=", (10 * 11 + 14656))] = enEhp02mua2U("2wqOKgG+EqvXMlYfx+dMdqoFYiHTzKHvYlS+RYoxMsGeCKp9ZuAzd54KY5C=", ((4 + 8) * 4 + 30876)),
-      [enEhp02mua2U("MVTkQ3AL63DRU9I+KMsWOSQkiSH+eAHrCS0Ocs==", ((6 + 9) * 5 + 59275))] = enEhp02mua2U("XFmzucZuHDzD4p4AhQ/MiOBeQFkUwcWkn2hdvOImEdEKdpFyE3Dk3WFT1Kh=", (2 * 11 + 21037)),
-      [enEhp02mua2U("y5nGXVANxSBhToP+Lw1hyen2TDviPeofLBJBVd7eTfh=", (5 * 2 * 3 + 55889))] = enEhp02mua2U("N0FKwxKJsKDdUWg+ceP2tg8VNED+UzgZEhQJGUdTK4JREPWbkWaBQags+98=", (4 * 11 + 2252)),
-      [enEhp02mua2U("WgOETyRhS02imhqRA2rCTiqIAMAH2gsu", (3 * 4 * 2 + 27130))] = enEhp02mua2U("o2krjJtWhKmGoX4p1XsxNE4VWSl0HKRSENhcZPlw6rzZxNxuch+o4St/tYe=", ((5 + 5) * 5 + 9537)),
-      [enEhp02mua2U("MweIsIsjeWqbVHskK7eiE1qcdAG3dAotLAkL68==", ((4 + 4) * 3 + 65444))] = enEhp02mua2U("septIiOKeNyLMRnjjYe5gYsehRdkQcifMUHQXy944YZMdZKVvtebvXP/mKO=", (2 * 4 * 2 + 6794)),
-      [enEhp02mua2U("1HtTHRlS+9pee92v0byS665FbIyJF09+ReycJt==", (8 * 2 + 1961))] = enEhp02mua2U("oTkJMXW4MlndoVINLyQ8QvyKmtKy4pW6SfIQEfKrcDKCMaxOE5SxibWMc2G=", (10 * 13 + 42028)),
-      [enEhp02mua2U("TgKrJku69k7KqCmKD+f91BPgshEoBnoX", ((6 + 7) * 4 + 19573))] = enEhp02mua2U("SOQkiwmiVkqC5Li5jyEZGYsf/ViAS3KiEKSFlVusweuhS7uU1FERZERmkKh=", ((4 + 2) * 5 + 3051)),
-      [enEhp02mua2U("MfEehi8UuH0jMS29HUEbh4BM3iWkh8N5gmvbdfuVdCB=", (4 * 2 + 37515))] = enEhp02mua2U("QXcagCCqagR+CTMOQq6Ela0lRgdGCfABBLm+B8A8UvtdclYYq3RtqPHxqdA=", (6 * 5 * 3 + 62598)),
-      [enEhp02mua2U("n2cAfSf2wWfc0PE3KEUNM2yOTfvRo/rA", (5 * 2 * 4 + 27394))] = enEhp02mua2U("QELLxMoxQAEqQwi616gA+E9M1V4U++zT+EO7+EPVCoj8Xr+bsaAfSMaw709=", ((4 + 7) * 4 + 4894)),
-      [enEhp02mua2U("LHTVnOiqSDyKdKuRmYyGAYL5OM/XTDq6", ((6 + 9) * 5 + 62690))] = enEhp02mua2U("73+DQ0UNI3LAJrZL4+RccGUNm6+6snDE4SxVC3oY4qg546Rw4mIqIlMDmPs=", ((2 + 2) * 7 + 24742)),
-      [enEhp02mua2U("kkMvsqFu4gcFDCcDkUcP+FK8ZGFaaLYY", ((9 + 2) * 2 + 51291))] = enEhp02mua2U("yDHpnD2hJdroRJf0rXFPmAPsoYAFnB7xVDAYyHfZDEF2uElqm5bbmoCq69c=", (2 * 2 + 26713)),
-      [enEhp02mua2U("En3mTgbfk2rrcX3K2w+SExIiOZLxFxq3/wsx2zbbRpN=", (5 * 11 + 56780))] = enEhp02mua2U("XCtJiKt+wywySjGkq50sGvQzaLyzOixYV56AurGZ1UkIVuQByRVkijasC8G=", ((1 + 7) * 2 + 38180)),
-      [enEhp02mua2U("OrRnPpxcuCxZ2Xw4fx8VaW7hCO77Ne0o", (8 * 2 * 2 + 12989))] = enEhp02mua2U("TC77MOcBMaiNjkcrOWK/qnKgjZm0adO5AxHtTcHos3CZAxHC7ncgITh1YOD=", (6 * 8 * 2 + 32874)),
-      [enEhp02mua2U("Pq0QYCw7YA1zK7GLvqLN+8AYOAIS0DKTrUI5SO==", (5 * 2 * 6 + 50458))] = enEhp02mua2U("GEXmY6vzImqN44uxImM84H30cTGQQSwcIdeHmTYtjc/fmf3CmE3NcTPq8+S=", ((6 + 3) * 3 + 63251)),
-      [enEhp02mua2U("nMmfDpg3L8mSwCppgqh3lYsiYms0CgG7GY6jCCw3Dxg=", ((4 + 9) * 6 + 18828))] = enEhp02mua2U("l1woYvbppbIZbZiEAQVVs/YaH/KodwXdxF8p2C+cMZoKPsbzLCfkprDzfJ8=", ((4 + 2) * 3 + 33005)),
-      [enEhp02mua2U("BX98vcNnXGIybfwH+6mgVVkUlBrVpVe+RHwV2C==", (5 * 7 * 5 + 30902))] = enEhp02mua2U("TzuY5NuiNjf4Yju94J41DQlDRNwOLNYgNevo2pBQDjELVhrNRjArTEYhEd/=", (7 * 9 + 28228)),
-      [enEhp02mua2U("UEu9YIQYNxFpmkNe0lGLPU7l9V5oYEfSZT+0gE==", (8 * 5 * 2 + 5798))] = enEhp02mua2U("1NvJYONBNOVABcmM1PRPNf9fer8YkI9O9I9AXfMxXDElP9uFLYdPYKu9Lgd=", ((2 + 2) * 4 + 53723)),
-      [enEhp02mua2U("F1tdMPx0FYMJWLtb1OHJtW/41BokPB3s", (6 * 4 + 17287))] = enEhp02mua2U("cAZFLfuMeTN+z5BpoKQeDKi09Ve4vMyPeGdG8iNoksr238mfPuSxFG2F8gA=", (8 * 6 + 45749)),
-      [enEhp02mua2U("qGIwj7IrF3nu8Bd6OE0/3AP/e7S6E+nj", ((3 + 5) * 7 + 18930))] = enEhp02mua2U("MgWwB8jMlks0jTYxzMHgQGQlrGiQ9qDEObzdzAzoEeEBG+yNgoCBcAj/caC=", ((6 + 4) * 2 + 59896)),
-      [enEhp02mua2U("BDOtODa/I1g9IzSk4K5WAK6cPeYme0RwU8beEg==", (3 * 2 * 6 + 12392))] = enEhp02mua2U("YovBAzzbbpk4gsp+UTMnqqD+VGQGQ0QyH2V8qXchHIzoqcBvMl2S07q4bzD=", ((2 + 4) * 6 + 11863)),
-      [enEhp02mua2U("52O26CYme2kpYiySSCm/GUYeBlvfIm0OHC0GT6==", (6 * 7 * 5 + 29644))] = enEhp02mua2U("j2XNMIslZeVwQpVbVlACye1aBthnV8iEmIliPVMhBymkbCRKI+SLuR8+gRV=", (5 * 5 * 5 + 14342)),
-      [enEhp02mua2U("B7jrJuXQJe1eZezIzNAY+U1C9LXRz34H", (7 * 6 * 6 + 11185))] = enEhp02mua2U("N+BSVw3yH1hsRnl9TkjbhOvht+/AZJwvxNrWh+ErpUYmp16wDtEriOLShhR=", (8 * 7 * 4 + 38205)),
-      [enEhp02mua2U("J4TmE/MqO592OBQHu1skT61J0BmcU6KChETBLg==", (6 * 4 * 4 + 44922))] = enEhp02mua2U("1ZW72jdHufR35F3Lx7obTBWYy36JhKtdjjS91nSmurZFT6RmqSH5ZsZIEnn=", (6 * 10 + 8945)),
-      [enEhp02mua2U("dDaXZgy/LggJB1OHN7Dm9OsR774gsP1ZfnOFJg==", (6 * 13 + 61611))] = enEhp02mua2U("LcIH3vHUhEHnXc6VSTMTPpc+F8fmk16Fx+HckFvLRlfdSlmdxpYRS4Bxk6I=", (7 * 7 * 2 + 57145)),
-      [enEhp02mua2U("6aYmzdsePaNdB6aXLaIVcNa9bp56SCI7", ((6 + 2) * 3 + 29057))] = enEhp02mua2U("qnDXcmq6qGW+22eqmnApAbZD3Ctim2cSKzPCE2aAV7JFcMG7FTGPmI9wwfW=", (11 * 9 + 32401)),
-      [enEhp02mua2U("UsM3G67Q69KOMlV09wgSG+KyISKUzQj69A0NT+==", (8 * 8 * 3 + 62980))] = enEhp02mua2U("Xg06S6r/wPOqGdOVfkl/WPwVKPmrjSLOWbK55SaCYEm0FYO2OWFJ9EKWYs9=", ((1 + 6) * 7 + 63341)),
-      [enEhp02mua2U("8jWiR8haxhreYcEKRrmvMkyLoh2DXEsJEJSTYKhOR7sXRS/hphcRMm==", ((8 + 3) * 2 + 22829))] = enEhp02mua2U("dQapdMD6dY10LAxojYx1Lk2l5Yi586um1c9vK64nmQHCTm4tiLxTMX1RNLF=", (10 * 12 + 25503)),
-      [enEhp02mua2U("OHeNEWNzmFT7flqhsNTiyiD2gETjnqupnlbB2uKa2iJygCu/xOiIkN==", ((2 + 9) * 4 + 38190))] = enEhp02mua2U("J0sF0A4WXAq/fvlh5pYVSABQ7kqXBxmUnjRZE77BgsJdmp2BgFDKHiqzcjY=", (8 * 7 * 4 + 23565)),
-      [enEhp02mua2U("EsbCGpAKIXSknCDt2seeZsG/Rrv5gLje2rquuC==", (2 * 5 * 3 + 31796))] = enEhp02mua2U("j7ZqQ16F3XA/Kc0sDver3RvT6QZR3ECBDiAOC5yaaPpiNX4T8n6nR/F0kc6=", ((6 + 9) * 3 + 21404)),
-      [enEhp02mua2U("K4znC+WH4AWawGcYr1NMcO7o++IiYuD9TMyyaA==", (7 * 2 * 6 + 24702))] = enEhp02mua2U("jqffJvET5o253R1e5tSybk2S9SKS9ut1ODX5Nz0cVLjZZXO3bWFKTQRYFva=", (3 * 10 + 17807)),
-      [enEhp02mua2U("FnQHF9U7kEHHiyn/N7QImWXjA9nPvRuTPZM2jD==", (11 * 9 + 45824))] = enEhp02mua2U("ikop2Xczn40wAydO+E27R9LS+C2gkW24Xv0K1VeqRDefv7FPkcD32A8LlBe=", (10 * 10 + 55747)),
-      [enEhp02mua2U("E5ovC9kNZbovGb2aiAoqiGPVMbbSERu+cc7RMVq9siM=", (11 * 8 + 40656))] = enEhp02mua2U("YX8tYglQSs1bZaJnoHUJHk6ZVvnt5Uy1ValH5zHAAQy0piU4YzZ64yRJVPr=", (3 * 6 * 3 + 48705)),
-      [enEhp02mua2U("YDwAQjXOkkAgJyxfk4GhAydiDMACSleG", ((4 + 6) * 3 + 58718))] = enEhp02mua2U("RSpIh9pKdpuLTQy8LeY+qCuM0EefTz2Cd9ymtoB6zBYaXC9pZaB8rs4/t9u=", (7 * 7 * 2 + 47951)),
-      [enEhp02mua2U("algeWykJEIm1qdG9qlcRK4v8MrKjA2PRdwo1F6==", (7 * 4 * 2 + 38688))] = enEhp02mua2U("qgOr6mGeFklW1GJpLC2KGgGzLj5H1MHzIklzYEDmMkiK1IqSaQoMIiALS+k=", (4 * 12 + 15526)),
-      [enEhp02mua2U("JWO+oFhkVd2FmWOYPIw8Gz5LfCKI+vReGe2E+F==", ((1 + 3) * 3 + 46793))] = enEhp02mua2U("bh15Mx4WP6IFyVgE+h1E+Dow15phpRzAyjgSFZ4Q+ZsqYLoW/JJzLo4692p=", (7 * 8 * 6 + 19041)),
-      [enEhp02mua2U("+6t2MCAGd2UTQhUxGt6xROtbkyAZWFtE", (8 * 7 * 6 + 44448))] = enEhp02mua2U("HpRrSb31B2uzP28jefsM6eF9P4SPFoweroSmvutJpZ52p0SR+4wAgNfObyX=", ((6 + 4) * 2 + 53665)),
-      [enEhp02mua2U("D3lwdI18dPJcT5AedPrex1iux8ZHGQgU", ((1 + 8) * 3 + 60958))] = enEhp02mua2U("U0HHMqs0bDkKX4sJeUpPsazDxB9xQsIXTds1AqJLhWtcTVA+Aro5XndlTwc=", (8 * 4 * 5 + 46363)),
-      [enEhp02mua2U("tXwgbfeAJFtaaqd0NIbtKi6NhNzlTrul", (2 * 2 + 25473))] = enEhp02mua2U("kbsYYjeJfXOpZ1Ul4q6roeaEPgsDPbvdD0GtcHGGpXMFssPhQKhkEgAHLst=", (9 * 4 + 45347)),
-      [enEhp02mua2U("EqG3QSZVRpZYQqyQkbvl8SZaOpOXMK3g", ((2 + 8) * 3 + 61734))] = enEhp02mua2U("J8N1dtsXmZRRAOswdV4CSJFmB8AedTppATQFmF5tmuPA5tpQAATBFtVcPc/=", (11 * 4 + 21513)),
-      [enEhp02mua2U("OGbxFu4QIlcrEREwYOLoU16xRALYy1NigVcZ2c==", ((9 + 7) * 6 + 1908))] = enEhp02mua2U("SWbjebOsrWX4uz676RZ1fKKGY+cCmzD1ecI1GKAlycOOLPg2aWcAqcgSKVr=", ((4 + 9) * 5 + 17225)),
-      [enEhp02mua2U("W4iAelY7AzosCmiEikd3E+0WCIdcifRtDBduIm==", ((1 + 8) * 7 + 58237))] = enEhp02mua2U("bsd209hcb5CDRojRR/mgLHGKOLVMLjtcBNV9NDVldJhiTeC41J+QUphi0Hq=", ((1 + 3) * 2 + 55721)),
-      [enEhp02mua2U("WgG4PhfBaoKNcdyOb+V52T+H8+1fgIXBPgTo0Q+CI9i=", ((6 + 7) * 6 + 38948))] = enEhp02mua2U("3fghJZJxZJqDokaEm6Ehng+i8qo3gYBK2wgioMCBXa1KnYalyKC8ydOHmqB=", (8 * 5 * 4 + 1777)),
-      [enEhp02mua2U("EUGpBCvlEEhicYzLyCTqIUAAB64Kn24uG8ApMOcie7C=", (9 * 8 + 61954))] = enEhp02mua2U("LWFoNzeOTVi3KWI0i0jiZdmKw8eGXVZdC05G4Rn0Z1Wd68z3ZOmXuaiFFam=", (2 * 10 + 28817)),
-      [enEhp02mua2U("JEzGVWEZHHEP3DPGRy1kBpqqXmM5OheqrKuqFHvCQ3l=", ((2 + 4) * 7 + 28079))] = enEhp02mua2U("NktQWq5xfYRhWFeqDUjgSYzcvc38Sp1rrNDeC2zNMJbFCq/tvNsKZM/oCgV=", ((1 + 2) * 6 + 56307)),
-      [enEhp02mua2U("N0N1VWJ6XvWLTWqQnSpDWR0QV246Fi2k", (4 * 2 * 4 + 64025))] = enEhp02mua2U("yroMK54VDHtbVOdpycRfNOrLFz8GDnUD8sJgFHtfRzlMFNOu/wlEyTOuVdX=", (5 * 3 + 55560)),
-      [enEhp02mua2U("cOtDMgpALKgYKJsnuUYBlHgFXAlXvkudE4A6MgxI4D2=", ((7 + 5) * 2 + 4190))] = enEhp02mua2U("PHrjNQh8xCEAfW06k2tzvvku7ihLVYi1PIb9QIbe2SHhMIiFAlCBBXNGEGb=", ((2 + 8) * 7 + 55441)),
-      [enEhp02mua2U("+nD4FWU1YKUlKrmLYEYXPnAvXJOUZ9NjP3tC8emMAK0sxEuKXtcU8N==", ((2 + 6) * 5 + 25751))] = enEhp02mua2U("wELfLIFDqnmdwt0wevgccD1n9NGBLvkV+ttYJ7wCgNCTcCuk43dy4tB1A0D=", (3 * 5 * 2 + 59198)),
-      [enEhp02mua2U("RApVP1Twlszeemgw45pZX7mLZTc1TkTv", (9 * 11 + 19954))] = enEhp02mua2U("5fKoUrVNjYeyNs7z6OJIADuD5Yoy80eYeOaeBak96cA6orFpOaC0RpkMADJ=", ((7 + 3) * 5 + 25298)),
-      [enEhp02mua2U("K4GHO8GmeO25wSulYvkWdW86OSOq2W4rKN5jHO==", (6 * 6 * 3 + 32444))] = enEhp02mua2U("IgvywZ4eaepCkzCnoZAQI04SH0gHTNp/e4f/yzcqmcI9yTBB4PggIeZX4tF=", (5 * 4 * 6 + 9544)),
-      [enEhp02mua2U("VJd+jlflvjxNk/YZlj4WbI4mJZcJHcinbJcRLyrfj8yFHPm7Ig9+QZ==", ((2 + 2) * 3 + 50183))] = enEhp02mua2U("tfMaH0O7OnbstXHUmwOPOsiSjIH+KicXKikYD6krm3OpTpuQ5opsucbUMXb=", ((2 + 4) * 4 + 1025)),
-      [enEhp02mua2U("udAOV9JM+2j+imYbMF+acEMY1q8y2q8iRbBAidAhmk+=", ((2 + 7) * 4 + 57104))] = enEhp02mua2U("5MA+3/4dRhrbhnr4hYDhPel51XRHYned1MubRw4sEcptPM8u0rBpZMbsF+b=", (8 * 4 * 6 + 12899)),
-      [enEhp02mua2U("n354P6Dh9fG0ZzbBB3iNs/UfDRR1ra3HTBojnR==", ((3 + 4) * 4 + 26537))] = enEhp02mua2U("gMN0M5z8jDBXRKLqN1CSzOOVHX8cjDO4MAvOMXYPsDbJHsVWNAftjiXoNtb=", (8 * 8 * 5 + 61619)),
-      [enEhp02mua2U("LinCEF8/YXYACErzo7TtBESZkYzqNpr4", ((1 + 9) * 4 + 35739))] = enEhp02mua2U("iQlZiKSxKsX9e6YEm1vY060OYbMUps6c4bleWKPXubnhdAaw0BJpAqQ6iWL=", (5 * 5 + 35623)),
-      [enEhp02mua2U("muUIJetJLsPsecsJ833iaG==", (5 * 5 * 4 + 38492))] = enEhp02mua2U("RWQ+uV5bUeBWUWr5taBCRlR8HLDD2Qj12nObaIihhwjXLlu7Q7pD6wmnKYQ=", (3 * 2 * 3 + 28483)),
-      [enEhp02mua2U("2Qnk+U9uWEn8J03ui3gWA3PYC5JrC8eC", (11 * 12 + 37710))] = enEhp02mua2U("YqmfiO0xY2OZSrDeExaSO8exM8nFx8FCY85rtM4ZOBQ+S8oZdK4iv26CVaG=", ((5 + 7) * 4 + 44448)),
-      [enEhp02mua2U("oKyLBlDRfG2qFKJTru4q/BGvLQeePJjC/hRxwl==", (6 * 7 * 4 + 23173))] = enEhp02mua2U("dB4lIK+s111D+1AiT7tTfqtmzZo+IZjkUBPVfWTD5dhdPIRRBLZkU1MtH0J=", (6 * 6 * 4 + 46411)),
-      [enEhp02mua2U("cTgAI2+YHcwZX7nV1sLNr+wDAVA/CRLDOce5SQC0iPA=", (11 * 11 + 45841))] = enEhp02mua2U("NMQljgwj3a3OzgJhFyJ3Br3YNW0J2VpD5LYD91mhlapLo70cs1BNdFYRw3V=", ((3 + 3) * 2 + 51263)),
-      [enEhp02mua2U("ix8IQ5GqK617mKLk4IArPXgsM5U2qGL7", (3 * 3 * 5 + 2869))] = enEhp02mua2U("0vPfFN1TCOy1E4DTsjbAzWSXy03flOSPcKZ2QI5meRyDcrUCKAK1wvZq0yK=", (4 * 4 * 6 + 36534)),
-      [enEhp02mua2U("NIyclWhkLNyNHDsYT0wHfuSRg0WWJHKONYgFVH==", (3 * 6 + 5467))] = enEhp02mua2U("mMMUkMK0mVjYBSKFk+bkkJMKWEUFFiOqiif2HugDp85mCEIQcYUZuHkCMCo=", (8 * 4 * 5 + 24272)),
-      [enEhp02mua2U("VRalSX17M1uMQbObWsEGuq1GeWATNo8yesFIk0==", ((6 + 2) * 6 + 23648))] = enEhp02mua2U("8w8YhwV8cOt8p1NkQcY5NnQF7HCK6cBiRf1ZNpM8lEa063NBfYKnfENIk8k=", (4 * 8 * 2 + 21071)),
-      [enEhp02mua2U("V4tcvCC8LyC4GAMT8cZJVdNPNE++NC4y", (7 * 2 + 4739))] = enEhp02mua2U("gGKA4Wr/YoDRSaChSWYaWS9ZcASOf2UQ8Gq+G/7peQU7w/99XvmaFmSSanc=", ((3 + 6) * 7 + 39251)),
-      [enEhp02mua2U("woZxN6BGMl0aaRiDSivqOEsMG9AruWAIAcZymxZvIbM=", ((9 + 2) * 5 + 9497))] = enEhp02mua2U("bvBgzXUJOVzqVKPLnxlwAd/iAY4yqqf/ofTGhf/o5veoMSTKDrffMv85sgT=", (7 * 7 * 2 + 24029)),
-      [enEhp02mua2U("os5MPMffP4D0ZhWmm/FpiCuVowc5nj3AFIbyoo6RP3+=", ((1 + 9) * 6 + 359))] = enEhp02mua2U("dKMKKss3BEYYx1NLQGxXQ7cxIGJVv1XaBB0kI5M0ayxT0IoKUo6oKtxJ2jS=", (2 * 9 + 11478)),
-      [enEhp02mua2U("dPQiAVsq5VL3aqWlWgN2Vqxkg37BB2Zx", (2 * 4 * 6 + 13872))] = enEhp02mua2U("BGNTLySDT801ksIE9zIORDETZIiQPYcMuFkYbHVlkYAZyDIyLmMEDH0blsU=", (9 * 8 + 53835)),
-      [enEhp02mua2U("h7RNDsQwV9LXQkVxNnLxu4ZmvcLwlQWb", (4 * 2 * 5 + 30099))] = enEhp02mua2U("VJ0HF/rnVfjg1RR9+ib/UiQm/Qq8D87GHE7WJ3Q1jDBS/NtsZFxFsFZjH1x=", ((8 + 9) * 4 + 43)),
-      [enEhp02mua2U("yKY8LmcjdI6BKK4dYrY1OtYD0tHSWLE3GJbvkr==", (7 * 10 + 49088))] = enEhp02mua2U("INu4KsYeg0BP68BZmWFGW63LWiAEYG5rULuERGFjQicwmwiyaI7dYLTwEo2=", (5 * 4 * 6 + 39590)),
-      [enEhp02mua2U("OX9Pr5wA0wwoA28Y+sbE+Ddtyw2ze21opcaK65==", (8 * 8 + 7280))] = enEhp02mua2U("n5IPdPEeEDYHctqkjZjLEgu645PGBOM/ZyVhlsYxcJ3FSipmosi6lsBFuNY=", (5 * 6 * 5 + 45906)),
-      [enEhp02mua2U("gmwZH8iH04vXMXOwk8KTPcWTpEZjFWQS", (5 * 2 * 5 + 24382))] = enEhp02mua2U("RpdE5ldOHMqbJwsZW6dBXWAb+qY/Hu8yaOYAqWTL+MKQ0t0iJdCbMCK6GCw=", (9 * 3 + 15933)),
-      [enEhp02mua2U("KcKVR0tjVc2uZX/UHjGbl+VbBYkhyN61", (4 * 5 * 2 + 44865))] = enEhp02mua2U("JrTt3aBiK43bfddrJvIciqFVMDbri5wFA5QQJDC9p83YJ/LnDR+7CnIIiLL=", (11 * 10 + 14323)),
-      [enEhp02mua2U("NDlvDsk9IkyDuGtrqIJKtkHcIR8dvBiF", (9 * 3 + 2790))] = enEhp02mua2U("dQgxy1+AgX9OyTMdgQhr9S9w0AbP0S93nUNpJB2V4AaaVUoHm1gvRdBJ+XH=", (5 * 5 + 542)),
-      [enEhp02mua2U("MntvIgdIPfBH87UJI9g7uR4q0TEpPNSX", (8 * 4 * 4 + 4394))] = enEhp02mua2U("/Kn/vzThkkpyH0RBQ0nnLLTKpzuXDLG3XiJspmmbVHDLtjgq5DkFkmFi6GU=", (3 * 4 * 4 + 30859)),
-      [enEhp02mua2U("fHrZ65i7nJqsYtA9DYycFWaeXgy40FafJl047l==", (6 * 7 * 2 + 57003))] = enEhp02mua2U("cXsqJI8NgGqfsILUkg8KQXUt83YtOHORQwQ9cIBckSOVlxpDE4dcK3KSs0g=", ((9 + 5) * 2 + 14288)),
-      [enEhp02mua2U("YRNVARL6yUoYlRNBu3dfUC==", ((6 + 5) * 6 + 62810))] = enEhp02mua2U("ApOUG4QEoXX/WXSDoPVnf+XagWDlGDHmTXJxleHzRrdwEPn+IASYuZmSAoX=", (3 * 7 + 42769)),
-      [enEhp02mua2U("6r+Eu7YNEZLW4gYM42L9IJTNmJA0t+0PSE3VwY==", (10 * 5 + 656))] = enEhp02mua2U("Ti4r4sGdTtTcpfLY+4bYAm8mdABPEf4qP5BnkEiATv2CT2GlNVf/+2BIbbL=", (7 * 7 * 6 + 42309)),
-      [enEhp02mua2U("xyBKNmC/qvcCAzzxUmXZqza2O/KaAEOpwFuaET==", ((8 + 2) * 4 + 15978))] = enEhp02mua2U("uMzDMOb1WgNNM3qNkmLOiOzhERqqyKySDbB9YVBVUbZvWMBKYMgYY1Q6NhV=", ((1 + 7) * 7 + 6726)),
-      [enEhp02mua2U("yGs+ZZz2p+4jgEvsn+l8GvxOION0nSTNCvLpZc==", (3 * 8 * 3 + 19578))] = enEhp02mua2U("UoaK9JgqdGv388GrlEMd51qndK/s/bIV83R/oCJ8L3Jw2VIulxIY5N8KT3F=", (9 * 10 + 5885)),
-  }
-      _0xfn21BiRK415 = 811424
-    elseif _0xfn21BiRK415 == 484250 then
-      EoOqNYs1ZEAvE = UglckRDvW.LocalPlayer
-      _0xfn21BiRK415 = 810193
-    elseif _0xfn21BiRK415 == 526569 then
-      ljVK3UQe96k = function(LJXDhNSQO, usEaAVyW5dT, V0jKe1IK6rQwWl)
-      if not LJXDhNSQO or not usEaAVyW5dT then return end
-      local vTVHNdr3fp8, ielEra3KKHg = pcall(function() return LJXDhNSQO.AbsolutePosition end)
-      if not vTVHNdr3fp8 or not ielEra3KKHg then return end
-      local SBksiPTio5l = usEaAVyW5dT.Position.X - ielEra3KKHg.X
-      local guhW5h5rTj = usEaAVyW5dT.Position.Y - ielEra3KKHg.Y
-      local P0fHGiRjy3rk = LJXDhNSQO.AbsoluteSize.X
-      local smWwGk7RTaWDgk = LJXDhNSQO.AbsoluteSize.Y
-      if P0fHGiRjy3rk <= 0 or smWwGk7RTaWDgk <= 0 then return end
-      local fMLiF6hmGkHjve = math.max(P0fHGiRjy3rk, smWwGk7RTaWDgk) * 2.2
-      local WUb6pPk5BdKdsi = NxSXLgXgoQg(enEhp02mua2U("zzQKC4ADRVLvFiZ/", ((3 + 2) * 4 + 51347)), {
+      _0xfx5ekO0IJtEdse5p = 708437
+    elseif _0xfx5ekO0IJtEdse5p == 343842 then
+      ztxb_GNg = function(VKD_DmjdByyNZe, keyo5A4Atav1, RKT0HQYv1Xg9_)
+      if not VKD_DmjdByyNZe or not keyo5A4Atav1 then return end
+      local RCUeWN0oEXf3p, ouAxLBmYgZR4 = pcall(function() return VKD_DmjdByyNZe.AbsolutePosition end)
+      if not RCUeWN0oEXf3p or not ouAxLBmYgZR4 then return end
+      local H7nalbSH = keyo5A4Atav1.Position.X - ouAxLBmYgZR4.X
+      local c68vIsFw7Ox = keyo5A4Atav1.Position.Y - ouAxLBmYgZR4.Y
+      local kiBCOo91o0k = VKD_DmjdByyNZe.AbsoluteSize.X
+      local iJMxzY1IgN_ = VKD_DmjdByyNZe.AbsoluteSize.Y
+      if kiBCOo91o0k <= 0 or iJMxzY1IgN_ <= 0 then return end
+      local pgkHc17jCEh = math.max(kiBCOo91o0k, iJMxzY1IgN_) * 2.2
+      local oswOgQbpLpxFi8 = pj6ssRQIN4J3xT(BNPLiLk3nhLF("woKggJKqOOCHO0Re", ((3 + 6) * 3 + 6837)), {
           Size = UDim2.fromOffset(0, 0),
-          Position = UDim2.fromOffset(SBksiPTio5l, guhW5h5rTj),
+          Position = UDim2.fromOffset(H7nalbSH, c68vIsFw7Ox),
           AnchorPoint = Vector2.new(0.5, 0.5),
-          BackgroundColor3 = V0jKe1IK6rQwWl or Color3.fromRGB(((6 + 7) * 3 + 216), ((3 + 5) * 2 + 239), ((6 + 6) * 4 + 207)),
+          BackgroundColor3 = RKT0HQYv1Xg9_ or Color3.fromRGB(((2 + 8) * 3 + 225), (2 * 5 * 2 + 235), (3 * 3 * 3 + 228)),
           BackgroundTransparency = 0.8,
-          ZIndex = (4 * 3 - 2),
+          ZIndex = ((3 + 8) * 2 - 12),
           BorderSizePixel = 0,
-          Parent = LJXDhNSQO
-      }, { NxSXLgXgoQg(enEhp02mua2U("fVgRe5yOfVGBK+kiL8wCcy==", (4 * 7 * 4 + 60918)), { CornerRadius = UDim.new(1, 0) }) })
-      EdG5asEXmzs(WUb6pPk5BdKdsi, 0.55, {
-          Size = UDim2.fromOffset(fMLiF6hmGkHjve, fMLiF6hmGkHjve),
+          Parent = VKD_DmjdByyNZe
+      }, { pj6ssRQIN4J3xT(BNPLiLk3nhLF("mAm9M4LJPkmLeumLaLVcSA==", (9 * 7 + 45901)), { CornerRadius = UDim.new(1, 0) }) })
+      OKgvsxuqsXk9(oswOgQbpLpxFi8, 0.55, {
+          Size = UDim2.fromOffset(pgkHc17jCEh, pgkHc17jCEh),
           BackgroundTransparency = 1
       })
       task.delay(0.6, function()
-          if WUb6pPk5BdKdsi and WUb6pPk5BdKdsi.Parent then WUb6pPk5BdKdsi:Destroy() end
+          if oswOgQbpLpxFi8 and oswOgQbpLpxFi8.Parent then oswOgQbpLpxFi8:Destroy() end
       end)
   end
-      _0xfn21BiRK415 = 707567
-    elseif _0xfn21BiRK415 == 415611 then
-      SHZvzZEwrs.Light = {
-      Name = enEhp02mua2U("jWNDWolWN5b+foK5", ((5 + 6) * 2 + 46367)),
-      Accent = Color3.fromRGB(0, 0, 0),
-      AccentContrast = Color3.fromRGB((2 * 12 + 231), ((4 + 2) * 3 + 237), (4 * 5 * 5 + 155)),
-      Background = Color3.fromRGB((6 * 8 * 6 - 36), (9 * 2 + 234), (8 * 3 * 6 + 108)),
-      Background2 = Color3.fromRGB((5 * 5 * 3 + 169), ((1 + 5) * 4 + 220), (8 * 6 * 5 + 4)),
-      Border = Color3.fromRGB((2 * 2 + 212), (5 * 5 * 5 + 91), (7 * 5 * 2 + 146)),
-      InnerBorder = Color3.fromRGB(((2 + 2) * 2 + 192), ((3 + 9) * 2 + 176), (3 * 8 * 4 + 104)),
-      TitleBarLine = Color3.fromRGB((11 * 8 + 140), (5 * 8 * 2 + 148), (5 * 2 + 218)),
-      Tab = Color3.fromRGB((10 * 13 - 60), (8 * 11 - 18), (6 * 4 + 46)),
-      Element = Color3.fromRGB(0, 0, 0),
-      ElementBorder = Color3.fromRGB((5 * 5 + 191), ((8 + 3) * 7 + 139), ((5 + 5) * 7 + 146)),
-      ElementTransparency = 0.95,
-      Hover = Color3.fromRGB(0, 0, 0),
-      HoverChange = 0.05,
-      Text = Color3.fromRGB(((5 + 7) * 5 - 45), ((1 + 9) * 3 - 15), ((7 + 8) * 7 - 90)),
-      SubText = Color3.fromRGB((9 * 3 + 93), ((8 + 7) * 5 + 45), (3 * 2 + 114)),
-      ToggleSlider = Color3.fromRGB((5 * 6 * 6 + 75), (3 * 3 * 2 + 237), ((8 + 2) * 4 + 215)),
-      ToggleToggled = Color3.fromRGB(((6 + 2) * 4 + 223), ((9 + 8) * 2 + 221), (4 * 8 * 3 + 159)),
-      ToggleOn = Color3.fromRGB((8 * 3 * 3 - 38), (5 * 3 * 4 + 137), (6 * 5 + 64)),
-      ToggleOff = Color3.fromRGB(((9 + 4) * 2 + 174), (8 * 13 + 96), (8 * 4 * 4 + 72)),
-      SliderRail = Color3.fromRGB((4 * 11 + 171), ((2 + 5) * 2 + 201), (4 * 12 + 167)),
-      DropdownFrame = Color3.fromRGB((3 * 4 * 2 + 218), ((1 + 5) * 2 + 230), (11 * 8 + 154)),
-      DropdownHolder = Color3.fromRGB((9 * 10 + 162), (9 * 5 + 207), (10 * 6 + 192)),
-      DropdownBorder = Color3.fromRGB(((8 + 8) * 3 + 167), ((9 + 2) * 3 + 182), ((4 + 2) * 3 + 197)),
-      DropdownOption = Color3.fromRGB(0, 0, 0),
-      Keybind = Color3.fromRGB(((3 + 4) * 6 + 200), ((8 + 9) * 4 + 174), (2 * 3 * 3 + 224)),
-      Input = Color3.fromRGB(((2 + 5) * 6 + 200), ((9 + 6) * 5 + 167), (6 * 3 * 5 + 152)),
-      InputFocused = Color3.fromRGB(((2 + 6) * 6 + 186), (8 * 4 * 3 + 138), (7 * 8 * 6 - 102)),
-      InputIndicator = Color3.fromRGB(0, 0, 0),
-      Dialog = Color3.fromRGB(((4 + 8) * 2 + 228), ((4 + 7) * 3 + 219), (4 * 2 + 244)),
-      DialogHolder = Color3.fromRGB(((7 + 8) * 3 + 200), (2 * 3 + 239), ((4 + 2) * 5 + 215)),
-      DialogHolderLine = Color3.fromRGB(((2 + 5) * 3 + 207), (8 * 4 * 2 + 164), (3 * 5 + 213)),
-      DialogButton = Color3.fromRGB((7 * 10 + 170), (2 * 6 * 4 + 192), ((3 + 9) * 5 + 180)),
-      DialogButtonBorder = Color3.fromRGB((5 * 2 * 3 + 180), (9 * 6 + 156), ((7 + 5) * 5 + 150)),
-      DialogBorder = Color3.fromRGB((3 * 2 + 210), (9 * 2 + 198), (7 * 12 + 132)),
-      DialogInput = Color3.fromRGB((11 * 3 + 209), (2 * 13 + 216), (3 * 8 * 6 + 98)),
-      DialogInputLine = Color3.fromRGB(0, 0, 0),
-      Ripple = Color3.fromRGB(0, 0, 0),
-      Success = Color3.fromRGB(((5 + 3) * 7 + 20), (4 * 12 + 127), ((6 + 8) * 2 + 52)),
-      Warning = Color3.fromRGB((5 * 7 * 4 + 60), ((7 + 7) * 6 + 66), (8 * 3 * 3 - 12)),
-      Error = Color3.fromRGB(((3 + 3) * 6 + 175), (8 * 6 * 2 - 49), (4 * 4 + 31)),
-      Info = Color3.fromRGB((6 * 5 * 3 - 10), (3 * 6 + 62), (5 * 4 + 60)),
-      Shadow = Color3.fromRGB(0, 0, 0),
-  }
-      _0xfn21BiRK415 = 608813
-    elseif _0xfn21BiRK415 == 111999 then
-      if getgenv then
-      getgenv().CentrixUI = PSWvWddvL8
-  end
-      _0xfn21BiRK415 = 375449
-    elseif _0xfn21BiRK415 == 963209 then
-      C4r9rafL0Q = {}
-      _0xfn21BiRK415 = 103215
-    elseif _0xfn21BiRK415 == 811424 then
-      function PSWvWddvL8:GetIcon(rWumPjGclxV)
-      if not rWumPjGclxV then return nil end
-      if fLLzgL1N_[rWumPjGclxV] then return fLLzgL1N_[rWumPjGclxV] end
-      if fLLzgL1N_[enEhp02mua2U("WKkuIE8AgHmF0k8YW9BLr9==", ((2 + 4) * 4 + 9294)) .. rWumPjGclxV] then return fLLzgL1N_[enEhp02mua2U("X8P+6c0/PRtdWzWQJ3dIzt==", (5 * 2 + 32653)) .. rWumPjGclxV] end
-      return nil
-  end
-      _0xfn21BiRK415 = 44813
-    elseif _0xfn21BiRK415 == 10530 then
-      _TXkMdv9X = game:GetService(enEhp02mua2U("9Bi2to/3tPlV9vXRDvm5s8rjJszHHpSo", (7 * 5 + 53082)))
-      _0xfn21BiRK415 = 893581
-    elseif _0xfn21BiRK415 == 810193 then
-      t0LgLdo6k = EoOqNYs1ZEAvE:GetMouse()
-      _0xfn21BiRK415 = 898886
-    elseif _0xfn21BiRK415 == 503280 then
-      function mnZ_xAzgjd.new(PmsOJX8FK2NO, OjBExnb8ZGD8z, DeKVQvq8FF)
-      local lLQEgV6707Qc1S = setmetatable({}, mnZ_xAzgjd)
-      lLQEgV6707Qc1S.Tab = PmsOJX8FK2NO
-      lLQEgV6707Qc1S.Title = OjBExnb8ZGD8z
-      lLQEgV6707Qc1S.Elements = {}
-
-      local VZ_QFq8aA97 = NxSXLgXgoQg(enEhp02mua2U("NDDWbp07ab3enYp3", (6 * 4 * 6 + 7453)), {
-          Size = UDim2.new(1, 0, 0, 0),
-          AutomaticSize = Enum.AutomaticSize.Y,
-          BackgroundTransparency = 1,
-          LayoutOrder = DeKVQvq8FF or 1,
-          Parent = PmsOJX8FK2NO.Container
-      }, {
-          NxSXLgXgoQg(enEhp02mua2U("OzFJ42x+ycg8+waWYEhdhzaBCOqJwvp2", (4 * 8 + 52736)), { Padding = UDim.new(0, ((3 + 8) * 3 - 27)), SortOrder = Enum.SortOrder.LayoutOrder })
-      })
-
-      local nvzUAU4u94izAg = NxSXLgXgoQg(enEhp02mua2U("4J1+KZaqSv4Bml2Q", ((7 + 5) * 3 + 21486)), {
-          Size = UDim2.new(1, 0, 0, (2 * 3 * 2 + 10)),
-          BackgroundTransparency = 1,
-          LayoutOrder = 1,
-          Parent = VZ_QFq8aA97
-      })
-
-      local MvEECtaoEbv = NxSXLgXgoQg(enEhp02mua2U("bMDqbLl5CVZPsMjz", ((7 + 4) * 6 + 30522)), {
-          Size = UDim2.fromOffset(((9 + 8) * 2 - 32), (2 * 12 - 11)),
-          Position = UDim2.fromOffset(0, (4 * 13 - 48)),
-          BackgroundColor3 = ru_1s3dO(enEhp02mua2U("MIOnBLeLeeRJ66om", (4 * 5 * 2 + 57592))),
-          BackgroundTransparency = 0.15,
-          BorderSizePixel = 0,
-          Parent = nvzUAU4u94izAg
-      }, { NxSXLgXgoQg(enEhp02mua2U("cGBLJwv6lnW3IAZjkWdEJk==", (6 * 4 * 2 + 12179)), { CornerRadius = UDim.new(1, 0) }) })
-      MYpL11YDP(MvEECtaoEbv, { BackgroundColor3 = enEhp02mua2U("CAJzxbmA6tRp9Uso", (5 * 8 * 6 + 35299)) })
-
-      local fhskZlpQ = NxSXLgXgoQg(enEhp02mua2U("JTOinhaZui2mAZuCfT1uW6==", ((7 + 2) * 3 + 1907)), {
-          FontFace = vFN9jU76GrG,
-          Text = OjBExnb8ZGD8z,
-          TextColor3 = ru_1s3dO(enEhp02mua2U("RU6J27AIbikwD+pL", ((7 + 4) * 5 + 22728))),
-          TextSize = (7 * 3 - 6),
-          TextXAlignment = Enum.TextXAlignment.Left,
-          TextYAlignment = Enum.TextYAlignment.Center,
-          Position = UDim2.fromOffset((7 * 2 * 6 - 74), 0),
-          Size = UDim2.new(1, -(5 * 10 - 40), 1, 0),
-          BackgroundTransparency = 1,
-          Parent = nvzUAU4u94izAg
-      })
-      MYpL11YDP(fhskZlpQ, { TextColor3 = enEhp02mua2U("yPUIII7sNVztg1yX", (3 * 3 + 36041)) })
-
-      local NFUsYuXEesfF = NxSXLgXgoQg(enEhp02mua2U("kKwpwuD+y7B0gB+N", ((1 + 6) * 7 + 29587)), {
-          Size = UDim2.new(1, 0, 0, 0),
-          AutomaticSize = Enum.AutomaticSize.Y,
-          BackgroundTransparency = 1,
-          LayoutOrder = (5 * 5 * 6 - 148),
-          Parent = VZ_QFq8aA97
-      }, {
-          NxSXLgXgoQg(enEhp02mua2U("SndSPwKWZurq7ScBOxpJVf3xAmC0Modh", (4 * 2 + 48512)), { Padding = UDim.new(0, ((7 + 8) * 7 - 100)), SortOrder = Enum.SortOrder.LayoutOrder })
-      })
-
-      lLQEgV6707Qc1S.Container = NFUsYuXEesfF
-      lLQEgV6707Qc1S.Root = VZ_QFq8aA97
-      lLQEgV6707Qc1S.Header = nvzUAU4u94izAg
-
-      table.insert(PmsOJX8FK2NO.Sections, lLQEgV6707Qc1S)
-
-      local function KqEyweSczEMkc(NHXmpwZl6rv, Z1gsdgRUwtOKq, O95RmeQX3CjWj)
-          NHXmpwZl6rv.ConfigType = Z1gsdgRUwtOKq
-          NHXmpwZl6rv.ConfigKey = O95RmeQX3CjWj
-          if not PmsOJX8FK2NO.Window._allElements then PmsOJX8FK2NO.Window._allElements = {} end
-          table.insert(PmsOJX8FK2NO.Window._allElements, NHXmpwZl6rv)
-          return NHXmpwZl6rv
-      end
-
-      function lLQEgV6707Qc1S:AddButton(uIzKxDpT5)
-          uIzKxDpT5 = uIzKxDpT5 or {}
-          local HA3aM8CABDI9JV = kaAnoJJc0Ay(uIzKxDpT5.Title or enEhp02mua2U("NZBLcXH+75MTEWxB", (11 * 9 + 49456)), uIzKxDpT5.Description, NFUsYuXEesfF, (0 == 0))
-          local rf_PIuKK4W44 = NxSXLgXgoQg(enEhp02mua2U("4efYIjK8YRKoI5uQc6mlHE7bqFSsDd4H", ((3 + 3) * 7 + 12280)), {
-              Image = fLLzgL1N_[enEhp02mua2U("gnUJ2Xf1FZtLdZrUZuRi9WwebiUTXdU4h3MzJwZMv7LRVeuInWQZsw==", (2 * 8 * 6 + 28291))],
-              ImageColor3 = ru_1s3dO(enEhp02mua2U("cCVyGzMZ4coAsZ3+QVOmsz==", ((1 + 8) * 2 + 6054))),
-              Size = UDim2.fromOffset((7 * 9 - 47), ((5 + 6) * 6 - 50)),
-              AnchorPoint = Vector2.new(1, 0.5),
-              Position = UDim2.new(1, -(5 * 6 * 5 - 136), 0.5, 0),
-              BackgroundTransparency = 1,
-              Parent = HA3aM8CABDI9JV.Frame
-          })
-          MYpL11YDP(rf_PIuKK4W44, { ImageColor3 = enEhp02mua2U("A59dIubuVe9KGzjrUpIsyY==", (2 * 2 * 6 + 19502)) })
-          HA3aM8CABDI9JV.Frame.MouseButton1Click:Connect(function()
-              if HA3aM8CABDI9JV.Disabled then return end
-              VtkfV2WFLqvi5N(uIzKxDpT5.Callback)
-          end)
-          table.insert(lLQEgV6707Qc1S.Elements, HA3aM8CABDI9JV)
-          return HA3aM8CABDI9JV
-      end
-
-      function lLQEgV6707Qc1S:AddParagraph(X7XVabdP)
-          X7XVabdP = X7XVabdP or {}
-          local sVxKIBM94_iyS = kaAnoJJc0Ay(X7XVabdP.Title or enEhp02mua2U("7Gl87FrPpxzv9E5zOtWmRB==", (8 * 5 * 3 + 13881)), X7XVabdP.Content, NFUsYuXEesfF, (not not 0 == false))
-          sVxKIBM94_iyS.Frame.BackgroundTransparency = 0.97
-          sVxKIBM94_iyS.Frame.AutoButtonColor = (0 == 1)
-          table.insert(lLQEgV6707Qc1S.Elements, sVxKIBM94_iyS)
-          return sVxKIBM94_iyS
-      end
-
-      function lLQEgV6707Qc1S:AddDivider()
-          local JnjXUxYRjAA = NxSXLgXgoQg(enEhp02mua2U("mdejDpZny4I41FSA", (10 * 10 + 29921)), {
-              Size = UDim2.new(1, 0, 0, 1),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("0+POsXGwiC95CwlD", (5 * 4 + 30904))),
-              BackgroundTransparency = 0.5,
-              BorderSizePixel = 0,
-              Parent = NFUsYuXEesfF
-          })
-          MYpL11YDP(JnjXUxYRjAA, { BackgroundColor3 = enEhp02mua2U("RX4jJcaC004UM4Kh", ((2 + 2) * 6 + 43704)) })
-          return { Destroy = function() JnjXUxYRjAA:Destroy() end }
-      end
-
-      function lLQEgV6707Qc1S:AddToggle(pCGjeUaYDh)
-          pCGjeUaYDh = pCGjeUaYDh or {}
-          local w1qQmMj5jDG = kaAnoJJc0Ay(pCGjeUaYDh.Title or enEhp02mua2U("qRpnV5DYDQ6jl33+", ((5 + 5) * 4 + 3695)), pCGjeUaYDh.Description, NFUsYuXEesfF, (1 == 1))
-          w1qQmMj5jDG.DescLabel.Size = UDim2.new(1, -((6 + 5) * 3 + 37), 0, (2 * 5 * 6 - 46))
-
-          local kpgLtwcnH = { Value = pCGjeUaYDh.Default or (not not 0 == false) }
-
-          local _M125EEt25Hl = NxSXLgXgoQg(enEhp02mua2U("LynmyQH7DwwVl06U", (8 * 2 * 6 + 62485)), {
-              Size = UDim2.fromOffset((8 * 2 + 26), ((9 + 2) * 5 - 31)),
-              AnchorPoint = Vector2.new(1, 0.5),
-              Position = UDim2.new(1, -(5 * 13 - 51), 0.5, 0),
-              BackgroundColor3 = kpgLtwcnH.Value and ru_1s3dO(enEhp02mua2U("OSBMTj65/qJBpSDIBSQ+PD==", (4 * 8 + 6841))) or ru_1s3dO(enEhp02mua2U("2iCfYnuV61Sicwu4zNO/x7==", (6 * 5 + 5604))),
-              BackgroundTransparency = 0,
-              Parent = w1qQmMj5jDG.Frame
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("BHevtqIEXoYCGjCanLZbXY==", (3 * 5 * 5 + 43826)), { CornerRadius = UDim.new(1, 0) }),
-              NxSXLgXgoQg(enEhp02mua2U("7AP9oxb06bMxHXiRtAqCNx==", (3 * 3 * 4 + 14665)), {
-                  Color = ru_1s3dO(enEhp02mua2U("lHyMUpK4tG00iceT1qo2ODLumb4kEYTU", (5 * 3 + 19417))),
-                  Thickness = 1,
-                  Transparency = kpgLtwcnH.Value and 1 or 0.5
-              })
-          })
-
-          local TzfG_P9PgMa98e = NxSXLgXgoQg(enEhp02mua2U("YZ/yqMaKfmsfqQsA", (5 * 5 * 2 + 55694)), {
-              Size = UDim2.fromOffset((2 * 5 + 8), ((4 + 4) * 7 - 38)),
-              AnchorPoint = Vector2.new(0, 0.5),
-              Position = UDim2.new(0, kpgLtwcnH.Value and (8 * 6 * 2 - 75) or ((9 + 8) * 5 - 82), 0.5, 0),
-              BackgroundColor3 = kpgLtwcnH.Value and Color3.fromRGB((6 * 7 * 6 + 3), (4 * 12 + 207), (6 * 10 + 195)) or ru_1s3dO(enEhp02mua2U("CGjXiISNrwR/Iwj+mKJJEyf9mknuEY7J", ((4 + 5) * 3 + 16673))),
-              BorderSizePixel = 0,
-              ZIndex = ((5 + 5) * 3 - 28),
-              Parent = _M125EEt25Hl
-          }, { NxSXLgXgoQg(enEhp02mua2U("2Lk0KFFftCzet2q02ykPdT==", (3 * 4 + 3117)), { CornerRadius = UDim.new(1, 0) }) })
-
-          local function k7x7k0SHfYRF1(pmVbhuu5p7m)
-              local TaWpw4ajL = kpgLtwcnH.Value and (11 * 12 - 111) or (8 * 4 - 29)
-              local ST9jqqtv = kpgLtwcnH.Value and ru_1s3dO(enEhp02mua2U("jv53JGtYyEdzdQsaKn/gbO==", (9 * 4 + 57889))) or ru_1s3dO(enEhp02mua2U("OgAeR5yrH1KVWEKgCMy4mW==", (7 * 3 * 6 + 41964)))
-              local UVyO4PRTdKN = kpgLtwcnH.Value and Color3.fromRGB(((6 + 9) * 6 + 165), (9 * 3 + 228), (8 * 2 * 5 + 175)) or ru_1s3dO(enEhp02mua2U("m+K5SSL7P/S2BImwjTSEBrQ+Z33o7DIk", (4 * 8 * 4 + 15477)))
-              local mkfneFQkn = kpgLtwcnH.Value and 1 or 0.5
-
-              if pmVbhuu5p7m then
-                  EdG5asEXmzs(TzfG_P9PgMa98e, 0.22, { Position = UDim2.new(0, TaWpw4ajL, 0.5, 0) }, Enum.EasingStyle.Quint)
-                  EdG5asEXmzs(_M125EEt25Hl, 0.22, { BackgroundColor3 = ST9jqqtv }, Enum.EasingStyle.Quint)
-                  EdG5asEXmzs(TzfG_P9PgMa98e, 0.22, { BackgroundColor3 = UVyO4PRTdKN }, Enum.EasingStyle.Quint)
-                  local aKVGlHegsz = _M125EEt25Hl:FindFirstChildOfClass(enEhp02mua2U("K8QVK4WHN0zdSnLHsKVJQY==", (11 * 3 + 47189)))
-                  if aKVGlHegsz then EdG5asEXmzs(aKVGlHegsz, 0.22, { Transparency = mkfneFQkn }, Enum.EasingStyle.Quint) end
-              else
-                  TzfG_P9PgMa98e.Position = UDim2.new(0, TaWpw4ajL, 0.5, 0)
-                  _M125EEt25Hl.BackgroundColor3 = ST9jqqtv
-                  TzfG_P9PgMa98e.BackgroundColor3 = UVyO4PRTdKN
-                  local i4vVPP7Xe = _M125EEt25Hl:FindFirstChildOfClass(enEhp02mua2U("iZoyncZZHBNencZyX5uJFh==", (9 * 9 + 65004)))
-                  if i4vVPP7Xe then i4vVPP7Xe.Transparency = mkfneFQkn end
-              end
-          end
-
-          w1qQmMj5jDG.Frame.MouseButton1Click:Connect(function()
-              if w1qQmMj5jDG.Disabled then return end
-              kpgLtwcnH.Value = not kpgLtwcnH.Value
-              k7x7k0SHfYRF1((0 == 0))
-              VtkfV2WFLqvi5N(pCGjeUaYDh.Callback, kpgLtwcnH.Value)
-              VtkfV2WFLqvi5N(w1qQmMj5jDG.Changed, kpgLtwcnH.Value)
-              if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-          end)
-
-          function w1qQmMj5jDG:SetValue(vv6QDwqUdfOa9q, EO79zGPKVXx8)
-              kpgLtwcnH.Value = not not vv6QDwqUdfOa9q
-              k7x7k0SHfYRF1((not not 1))
-              if not EO79zGPKVXx8 then
-                  VtkfV2WFLqvi5N(pCGjeUaYDh.Callback, kpgLtwcnH.Value)
-                  VtkfV2WFLqvi5N(w1qQmMj5jDG.Changed, kpgLtwcnH.Value)
-                  if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-              end
-          end
-          function w1qQmMj5jDG:GetValue() return kpgLtwcnH.Value end
-          function w1qQmMj5jDG:OnChanged(nHc7kp_b2JPml) w1qQmMj5jDG.Changed = nHc7kp_b2JPml; nHc7kp_b2JPml(kpgLtwcnH.Value) end
-
-          k7x7k0SHfYRF1((not (1 == 1)))
-          table.insert(lLQEgV6707Qc1S.Elements, w1qQmMj5jDG)
-          KqEyweSczEMkc(w1qQmMj5jDG, enEhp02mua2U("W+Z/45qz+tIvMAem", ((3 + 8) * 3 + 20755)), pCGjeUaYDh.ConfigKey or (PmsOJX8FK2NO.Title .. enEhp02mua2U("fqUPfvdJXRd=", (7 * 12 + 41294)) .. lLQEgV6707Qc1S.Title .. enEhp02mua2U("jwdOq9ajrdu=", (8 * 7 * 6 + 21839)) .. (pCGjeUaYDh.Title or enEhp02mua2U("YHyx+65Hs6bEeJyH", (11 * 8 + 12370)))))
-          return w1qQmMj5jDG
-      end
-
-      function lLQEgV6707Qc1S:AddSlider(zqF_czfk2F)
-          zqF_czfk2F = zqF_czfk2F or {}
-          local UYk_GgXo6KL1Z0 = kaAnoJJc0Ay(zqF_czfk2F.Title or enEhp02mua2U("XVBjRqCGJe/pZU0m", ((3 + 4) * 4 + 5499)), zqF_czfk2F.Description, NFUsYuXEesfF, (0 == 1))
-          UYk_GgXo6KL1Z0.DescLabel.Size = UDim2.new(1, -(8 * 6 * 3 + 136), 0, (3 * 5 - 1))
-
-          local GvK58_Gq5ix, D3c01DPpZxn = zqF_czfk2F.Min or 0, zqF_czfk2F.Max or (5 * 5 * 4 + 0)
-          local OmoJOARb = zqF_czfk2F.Rounding or 0
-          local CM9KWJNeRm = zqF_czfk2F.Default or GvK58_Gq5ix
-
-          local Mik5BqWa = NxSXLgXgoQg(enEhp02mua2U("Jm6LI9esoJi4a7N5", (6 * 3 + 57550)), {
-              Size = UDim2.new(0, (2 * 6 * 5 + 198), 1, 0),
-              Position = UDim2.new(1, -(3 * 8 * 2 - 34), 0, 0),
-              AnchorPoint = Vector2.new(1, 0),
-              BackgroundTransparency = 1,
-              Parent = UYk_GgXo6KL1Z0.Frame
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("AJvxXuuqDLlpkFbl+114I+uB3uoygilW", (3 * 2 * 2 + 41714)), {
-                  FillDirection = Enum.FillDirection.Horizontal,
-                  VerticalAlignment = Enum.VerticalAlignment.Center,
-                  HorizontalAlignment = Enum.HorizontalAlignment.Right,
-                  Padding = UDim.new(0, ((4 + 3) * 6 - 36)),
-                  SortOrder = Enum.SortOrder.LayoutOrder
-              })
-          })
-
-          local FB0DtaRCFmk = NxSXLgXgoQg(enEhp02mua2U("PvCkqF7QNe6tA+NR8B+1+rS0A0uUQnhs", (2 * 2 * 6 + 65510)), {
-              Size = UDim2.fromOffset((4 * 6 * 2 - 22), ((2 + 4) * 6 - 10)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("8Jqw1xIUgSDX9NNZ", ((9 + 8) * 5 + 17258))),
-              BackgroundTransparency = 0.85,
-              Text = enEhp02mua2U("OW3Za17KXfP=", (11 * 9 + 22667)),
-              FontFace = AFAPdGSfclD3,
-              TextColor3 = ru_1s3dO(enEhp02mua2U("uoWSuXE+tGP6u3N+", ((1 + 6) * 3 + 46353))),
-              TextSize = (6 * 4 * 4 - 80),
-              AutoButtonColor = (1 == 0),
-              LayoutOrder = 1,
-              Parent = Mik5BqWa
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("ZUcHHXhQThXP8HhXHRIczh==", (3 * 2 * 5 + 35001)), { CornerRadius = UDim.new(0, (6 * 7 * 4 - 162)) }),
-              NxSXLgXgoQg(enEhp02mua2U("P0/kNsgCb7JeC6rQB59OtP==", (3 * 4 * 5 + 18071)), {
-                  Transparency = 0.5,
-                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                  Color = ru_1s3dO(enEhp02mua2U("8dlPgHlg/FJFFqU+kFjamq7FmqHWIxUR", (4 * 5 * 3 + 62280))),
-                  Thickness = 1
-              })
-          })
-          MYpL11YDP(FB0DtaRCFmk, { BackgroundColor3 = enEhp02mua2U("frXYwoh559JHMo9R", (3 * 12 + 51891)), TextColor3 = enEhp02mua2U("TRxUjpwGlQQAiNcJ", (5 * 10 + 1413)) })
-
-          local I__q5jMbSm = NxSXLgXgoQg(enEhp02mua2U("WdFDVUAcylEEeZFT0qsKcs==", ((6 + 6) * 6 + 55326)), {
-              FontFace = AFAPdGSfclD3,
-              Text = tostring(CM9KWJNeRm),
-              TextColor3 = ru_1s3dO(enEhp02mua2U("PdRoXslD77alD/oJ", ((2 + 9) * 6 + 50449))),
-              TextSize = ((2 + 9) * 3 - 20),
-              TextXAlignment = Enum.TextXAlignment.Center,
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("Hfzf5KAryYatOQPe", ((3 + 3) * 7 + 62016))),
-              BackgroundTransparency = 0.85,
-              ClearTextOnFocus = (not (1 == 1)),
-              Size = UDim2.fromOffset(((8 + 9) * 4 + 8), ((2 + 7) * 4 - 10)),
-              LayoutOrder = (2 * 7 - 12),
-              Parent = Mik5BqWa
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("xwqPrJZpderPz50nB5Czuf==", (6 * 6 * 3 + 47715)), { CornerRadius = UDim.new(0, ((9 + 3) * 7 - 78)) }),
-              NxSXLgXgoQg(enEhp02mua2U("VSenRpacNBfFvPy+MPZmGe==", (7 * 7 * 4 + 43645)), {
-                  Transparency = 0.5,
-                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                  Color = ru_1s3dO(enEhp02mua2U("kXgxIKfAe7DCCompO0wAAZTf602t6Yhk", ((7 + 3) * 2 + 21734))),
-                  Thickness = 1
-              })
-          })
-          MYpL11YDP(I__q5jMbSm, { TextColor3 = enEhp02mua2U("msFYIEQSZyzVCsL6", (5 * 6 + 19164)), BackgroundColor3 = enEhp02mua2U("Mzyz+RST8ediHP26", (3 * 4 * 4 + 56990)) })
-
-          local YCb_ViL38 = NxSXLgXgoQg(enEhp02mua2U("JcSvFNhJFJnOJC+mOJHFTQN9VCFj0+Yr", ((4 + 8) * 5 + 8851)), {
-              Size = UDim2.fromOffset((3 * 6 + 8), (2 * 4 * 5 - 14)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("4+fWM5RIoYIWTtZW", (7 * 9 + 8352))),
-              BackgroundTransparency = 0.85,
-              Text = enEhp02mua2U("xBjh9ymvhH+=", (6 * 12 + 36939)),
-              FontFace = AFAPdGSfclD3,
-              TextColor3 = ru_1s3dO(enEhp02mua2U("PVK1wGtPGuzYe6TE", (9 * 7 + 32811))),
-              TextSize = (4 * 3 * 4 - 32),
-              AutoButtonColor = (not (1 == 1)),
-              LayoutOrder = (8 * 3 * 2 - 45),
-              Parent = Mik5BqWa
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("VxZ5aSZoJVPV93mERv9zPG==", (7 * 8 * 3 + 7013)), { CornerRadius = UDim.new(0, (9 * 4 - 30)) }),
-              NxSXLgXgoQg(enEhp02mua2U("/8zKVvpfEnLplgBI/ttLYC==", (3 * 4 * 3 + 4543)), {
-                  Transparency = 0.5,
-                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                  Color = ru_1s3dO(enEhp02mua2U("E4cWzVF8Aqn/zAaat4ebsO5KquD7rsN5", (6 * 4 + 44430))),
-                  Thickness = 1
-              })
-          })
-          MYpL11YDP(YCb_ViL38, { BackgroundColor3 = enEhp02mua2U("qG9sOJfsYg1RWIfP", (3 * 5 * 4 + 60462)), TextColor3 = enEhp02mua2U("wrnLvjwShhjNSm5o", ((7 + 3) * 3 + 63380)) })
-
-          local uEsdqftTzcM = NxSXLgXgoQg(enEhp02mua2U("rVatXACEiJqQiCQy", (6 * 10 + 16957)), {
-              Size = UDim2.fromOffset((3 * 8 * 3 + 36), ((6 + 6) * 7 - 78)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("IDINLb5gWW9ejWhZ26IEsEeyT1joTrLE", ((4 + 6) * 6 + 35846))),
-              BackgroundTransparency = 0.3,
-              LayoutOrder = ((6 + 7) * 4 - 48),
-              Parent = Mik5BqWa
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("DfveNdYCL8vrPkqW3uJ6LE==", (4 * 6 + 31811)), { CornerRadius = UDim.new(1, 0) })
-          })
-          MYpL11YDP(uEsdqftTzcM, { BackgroundColor3 = enEhp02mua2U("y6+i+8GrL6K3sdByw648PUMPL8Ka1PQa", ((5 + 4) * 4 + 10141)) })
-
-          local rp6DxmJUB_ = NxSXLgXgoQg(enEhp02mua2U("sp7at5LQfRIFh2hz", (11 * 5 + 42052)), {
-              Size = UDim2.new(0, 0, 1, 0),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("GAj8NSg4k+fNRVoC", (8 * 2 * 2 + 19603))),
-              BackgroundTransparency = 0,
-              Parent = uEsdqftTzcM
-          }, { NxSXLgXgoQg(enEhp02mua2U("TXbfGOX6Evktztq86yGErv==", (5 * 5 * 2 + 27572)), { CornerRadius = UDim.new(1, 0) }) })
-          MYpL11YDP(rp6DxmJUB_, { BackgroundColor3 = enEhp02mua2U("ysL41N6LOh6+qrrG", ((3 + 2) * 7 + 4419)) })
-
-          local qT8Kziim_XjBgM = NxSXLgXgoQg(enEhp02mua2U("RJVntpPnHBg6qTkM", (6 * 4 * 6 + 41970)), {
-              AnchorPoint = Vector2.new(0.5, 0.5),
-              Position = UDim2.new(0, 0, 0.5, 0),
-              Size = UDim2.fromOffset((5 * 2 + 4), (11 * 9 - 85)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("ALvvjvcJKvFCPGSH", (2 * 5 * 5 + 40983))),
-              BorderSizePixel = 0,
-              ZIndex = (7 * 8 - 53),
-              Parent = uEsdqftTzcM
-          }, { NxSXLgXgoQg(enEhp02mua2U("Kxrq1MVGsuJBOJX1pGE2nB==", (3 * 6 * 2 + 27089)), { CornerRadius = UDim.new(1, 0) }) })
-          MYpL11YDP(qT8Kziim_XjBgM, { BackgroundColor3 = enEhp02mua2U("BRhDhEim1bvLVSNe", (9 * 12 + 44593)) })
-
-          local ICqzi3erlHul = (1 == 0)
-          local M_yIoJ9Nwy = (not not 0 == false)
-
-          local function K5evWp2I3(cSySNMTpA, K_DfmFxAkNhi)
-              CM9KWJNeRm = vrX_2jWjOi_v(math.clamp(cSySNMTpA, GvK58_Gq5ix, D3c01DPpZxn), OmoJOARb)
-              local Hm3S2IDL = (D3c01DPpZxn - GvK58_Gq5ix) > 0 and ((CM9KWJNeRm - GvK58_Gq5ix) / (D3c01DPpZxn - GvK58_Gq5ix)) or 0
-              qT8Kziim_XjBgM.Position = UDim2.new(Hm3S2IDL, 0, 0.5, 0)
-              rp6DxmJUB_.Size = UDim2.fromScale(Hm3S2IDL, 1)
-              if not M_yIoJ9Nwy then
-                  I__q5jMbSm.Text = tostring(CM9KWJNeRm)
-              end
-              if not K_DfmFxAkNhi then
-                  VtkfV2WFLqvi5N(zqF_czfk2F.Callback, CM9KWJNeRm)
-                  VtkfV2WFLqvi5N(UYk_GgXo6KL1Z0.Changed, CM9KWJNeRm)
-                  if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-              end
-          end
-
-          local function fNbiCBLDuqu8(emc2c1w7fEf)
-              local l7Opw7ldhf75s = uEsdqftTzcM.AbsolutePosition
-              local FWBIVhLBR1Rg4 = uEsdqftTzcM.AbsoluteSize
-              if FWBIVhLBR1Rg4.X <= 0 then return end
-              local ZiZ63FiEPoi = math.clamp((emc2c1w7fEf - l7Opw7ldhf75s.X) / FWBIVhLBR1Rg4.X, 0, 1)
-              K5evWp2I3(GvK58_Gq5ix + (D3c01DPpZxn - GvK58_Gq5ix) * ZiZ63FiEPoi)
-          end
-
-          local E1azSbUIea = uEsdqftTzcM.InputBegan:Connect(function(P4jGIj_jMgei)
-              if UYk_GgXo6KL1Z0.Disabled then return end
-              if P4jGIj_jMgei.UserInputType == Enum.UserInputType.MouseButton1 or P4jGIj_jMgei.UserInputType == Enum.UserInputType.Touch then
-                  ICqzi3erlHul = (0 == 0)
-                  fNbiCBLDuqu8(P4jGIj_jMgei.Position.X)
-                  EdG5asEXmzs(qT8Kziim_XjBgM, 0.15, { Size = UDim2.fromOffset((4 * 3 * 6 - 54), (11 * 3 - 15)) }, Enum.EasingStyle.Quint)
-              end
-          end)
-
-          local _45dRj5GQNTv = Xgxm8ph4yo.InputChanged:Connect(function(F98MFO46GL3)
-              if ICqzi3erlHul and (F98MFO46GL3.UserInputType == Enum.UserInputType.MouseMovement or F98MFO46GL3.UserInputType == Enum.UserInputType.Touch) then
-                  fNbiCBLDuqu8(F98MFO46GL3.Position.X)
-              end
-          end)
-
-          local u3Wo6H54ILYs = Xgxm8ph4yo.InputEnded:Connect(function(AZzRTZGZp6vU)
-              if AZzRTZGZp6vU.UserInputType == Enum.UserInputType.MouseButton1 or AZzRTZGZp6vU.UserInputType == Enum.UserInputType.Touch then
-                  if ICqzi3erlHul then
-                      ICqzi3erlHul = (not not 0 == false)
-                      EdG5asEXmzs(qT8Kziim_XjBgM, 0.2, { Size = UDim2.fromOffset(((7 + 7) * 3 - 28), (6 * 7 * 4 - 154)) }, Enum.EasingStyle.Quint)
-                  end
-              end
-          end)
-
-          FB0DtaRCFmk.MouseEnter:Connect(function() EdG5asEXmzs(FB0DtaRCFmk, 0.12, { BackgroundTransparency = 0.7 }) end)
-          FB0DtaRCFmk.MouseLeave:Connect(function() EdG5asEXmzs(FB0DtaRCFmk, 0.12, { BackgroundTransparency = 0.85 }) end)
-          FB0DtaRCFmk.MouseButton1Click:Connect(function()
-              if UYk_GgXo6KL1Z0.Disabled then return end
-              local pXgKOEitRrL = OmoJOARb > 0 and ((8 * 2 - 6) ^ -OmoJOARb) or 1
-              K5evWp2I3(CM9KWJNeRm - pXgKOEitRrL)
-          end)
-
-          YCb_ViL38.MouseEnter:Connect(function() EdG5asEXmzs(YCb_ViL38, 0.12, { BackgroundTransparency = 0.7 }) end)
-          YCb_ViL38.MouseLeave:Connect(function() EdG5asEXmzs(YCb_ViL38, 0.12, { BackgroundTransparency = 0.85 }) end)
-          YCb_ViL38.MouseButton1Click:Connect(function()
-              if UYk_GgXo6KL1Z0.Disabled then return end
-              local hlYPptxLJaZlZ0 = OmoJOARb > 0 and ((5 * 4 * 5 - 90) ^ -OmoJOARb) or 1
-              K5evWp2I3(CM9KWJNeRm + hlYPptxLJaZlZ0)
-          end)
-
-          I__q5jMbSm.Focused:Connect(function()
-              M_yIoJ9Nwy = (0 == 0)
-              EdG5asEXmzs(I__q5jMbSm, 0.15, { BackgroundTransparency = 0.5 })
-              SEm1JEw9VO3e7(I__q5jMbSm, { BackgroundColor3 = enEhp02mua2U("vt962buqiuaJJmhOgcrARuhobmaOgY4h", (2 * 8 * 5 + 46336)) })
-          end)
-
-          I__q5jMbSm.FocusLost:Connect(function()
-              M_yIoJ9Nwy = (not not 0 == false)
-              EdG5asEXmzs(I__q5jMbSm, 0.15, { BackgroundTransparency = 0.85 })
-              SEm1JEw9VO3e7(I__q5jMbSm, { BackgroundColor3 = enEhp02mua2U("DvKo4k1ohzNDgUKj", ((2 + 9) * 7 + 32246)) })
-              local dgHkezeoh = tonumber(I__q5jMbSm.Text)
-              if dgHkezeoh then
-                  K5evWp2I3(dgHkezeoh)
-              else
-                  I__q5jMbSm.Text = tostring(CM9KWJNeRm)
-              end
-          end)
-
-          I__q5jMbSm:GetPropertyChangedSignal(enEhp02mua2U("A8R3GJR0+0MRGORG", (5 * 8 * 4 + 53800))):Connect(function()
-              if not M_yIoJ9Nwy then return end
-              local up8SGjtRidQHp = tonumber(I__q5jMbSm.Text)
-              if up8SGjtRidQHp then
-                  local XPMxoAYgmIi = math.clamp(up8SGjtRidQHp, GvK58_Gq5ix, D3c01DPpZxn)
-                  if XPMxoAYgmIi ~= up8SGjtRidQHp then
-                      CM9KWJNeRm = vrX_2jWjOi_v(XPMxoAYgmIi, OmoJOARb)
-                  else
-                      CM9KWJNeRm = vrX_2jWjOi_v(up8SGjtRidQHp, OmoJOARb)
-                  end
-                  local QV4D8B38esG = (D3c01DPpZxn - GvK58_Gq5ix) > 0 and ((CM9KWJNeRm - GvK58_Gq5ix) / (D3c01DPpZxn - GvK58_Gq5ix)) or 0
-                  qT8Kziim_XjBgM.Position = UDim2.new(QV4D8B38esG, 0, 0.5, 0)
-                  rp6DxmJUB_.Size = UDim2.fromScale(QV4D8B38esG, 1)
-                  VtkfV2WFLqvi5N(zqF_czfk2F.Callback, CM9KWJNeRm)
-                  VtkfV2WFLqvi5N(UYk_GgXo6KL1Z0.Changed, CM9KWJNeRm)
-              end
-          end)
-
-          function UYk_GgXo6KL1Z0:SetValue(VRZsMRKNfSB, EMY6356d6Ng) K5evWp2I3(VRZsMRKNfSB, EMY6356d6Ng) end
-          function UYk_GgXo6KL1Z0:GetValue() return CM9KWJNeRm end
-          function UYk_GgXo6KL1Z0:OnChanged(QoJP_sQrQv4) UYk_GgXo6KL1Z0.Changed = QoJP_sQrQv4; QoJP_sQrQv4(CM9KWJNeRm) end
-          function UYk_GgXo6KL1Z0:Destroy()
-              if E1azSbUIea then E1azSbUIea:Disconnect() end
-              if _45dRj5GQNTv then _45dRj5GQNTv:Disconnect() end
-              if u3Wo6H54ILYs then u3Wo6H54ILYs:Disconnect() end
-              local F9trPSR_ulgv = UYk_GgXo6KL1Z0.Destroy
-          end
-
-          K5evWp2I3(CM9KWJNeRm, (1 == 1))
-          table.insert(lLQEgV6707Qc1S.Elements, UYk_GgXo6KL1Z0)
-          KqEyweSczEMkc(UYk_GgXo6KL1Z0, enEhp02mua2U("BObwybCEtTT1jTKz", (8 * 6 * 3 + 57801)), zqF_czfk2F.ConfigKey or (PmsOJX8FK2NO.Title .. enEhp02mua2U("3GCQ5bYdfJL=", (5 * 3 + 47360)) .. lLQEgV6707Qc1S.Title .. enEhp02mua2U("Bc4h9CIK7v1=", (8 * 6 * 3 + 64988)) .. (zqF_czfk2F.Title or enEhp02mua2U("t1OvLSzwHI0egDOJ", ((8 + 9) * 5 + 21258)))))
-          return UYk_GgXo6KL1Z0
-      end
-
-      function lLQEgV6707Qc1S:AddInput(zoVYZY0Vx2)
-          zoVYZY0Vx2 = zoVYZY0Vx2 or {}
-          local ZVO7icoG0qfwyf = kaAnoJJc0Ay(zoVYZY0Vx2.Title or enEhp02mua2U("uHOtygCSX+GHWHuG", (2 * 8 + 34282)), zoVYZY0Vx2.Description, NFUsYuXEesfF, (0 == 1))
-
-          local Jy5jCMfQ = zoVYZY0Vx2.Default or enEhp02mua2U("", (4 * 12 + 43012))
-
-          local Eso8UXoLopZaKQ = NxSXLgXgoQg(enEhp02mua2U("KtZsHzYXS0ApYdCu", (10 * 5 + 64323)), {
-              Size = UDim2.fromOffset((4 * 3 + 168), (2 * 5 + 22)),
-              Position = UDim2.new(1, -(6 * 6 * 2 - 58), 0.5, 0),
-              AnchorPoint = Vector2.new(1, 0.5),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("PS4LXh27o2QqTNAo", (9 * 7 + 23927))),
-              BackgroundTransparency = 0.85,
-              Parent = ZVO7icoG0qfwyf.Frame
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("L8psdyoSjLyBE3RHR32ZWL==", (8 * 7 * 4 + 55755)), { CornerRadius = UDim.new(0, (2 * 8 * 2 - 27)) }),
-              NxSXLgXgoQg(enEhp02mua2U("6XKJ3zHUJZl3IDWhJAROJT==", (3 * 5 * 6 + 50536)), {
-                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                  Transparency = 0.5,
-                  Color = ru_1s3dO(enEhp02mua2U("HqtTbSwrKiaLnBP88Tky0PLxngrQpg5M", (6 * 7 * 4 + 24591))),
-                  Thickness = 1
-              })
-          })
-          MYpL11YDP(Eso8UXoLopZaKQ, { BackgroundColor3 = enEhp02mua2U("JdN7NKY5ndYSBQkd", (7 * 8 * 3 + 9107)) })
-
-          local E8hu0ORxE = NxSXLgXgoQg(enEhp02mua2U("GnJsyid3CaExVEOpYNF5MM==", (3 * 7 + 62387)), {
-              FontFace = t2hTAJBv,
-              Text = Jy5jCMfQ,
-              PlaceholderText = zoVYZY0Vx2.Placeholder or enEhp02mua2U("NJRR2eE5TLO85M/STduPfedKNBzFB5nxO3tUGn==", (7 * 3 + 11696)),
-              TextColor3 = ru_1s3dO(enEhp02mua2U("kHLaDTMHfI3EY9fl", ((3 + 6) * 5 + 37473))),
-              PlaceholderColor3 = ru_1s3dO(enEhp02mua2U("++DWGPR42AEMRAb3c7HwPM==", (3 * 12 + 51542))),
-              TextSize = (7 * 8 * 6 - 323),
-              TextXAlignment = Enum.TextXAlignment.Left,
-              BackgroundTransparency = 1,
-              Size = UDim2.new(1, -((6 + 2) * 4 - 12), 1, -((8 + 8) * 7 - 108)),
-              Position = UDim2.fromOffset((9 * 13 - 107), (10 * 12 - 118)),
-              ClearTextOnFocus = (not (1 == 1)),
-              TextTruncate = Enum.TextTruncate.AtEnd,
-              Parent = Eso8UXoLopZaKQ
-          })
-          MYpL11YDP(E8hu0ORxE, { TextColor3 = enEhp02mua2U("oI7HPTOxqKiLET28", (4 * 10 + 62933)), PlaceholderColor3 = enEhp02mua2U("c6RiDhNmDFjSVS5TFsP+sG==", ((2 + 2) * 7 + 32891)) })
-
-          local ePIt1jH36Q1IG = NxSXLgXgoQg(enEhp02mua2U("k8v+PHeRjFCoYjjD", (7 * 8 * 5 + 37079)), {
-              Size = UDim2.new(1, -((5 + 8) * 7 - 81), 0, 1),
-              Position = UDim2.new(0, ((4 + 8) * 4 - 43), 1, -(4 * 3 - 9)),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("sARZbN278CULjBG9IXEbUB2xAYnqGAuZYRiszA==", ((3 + 8) * 5 + 36019))),
-              BackgroundTransparency = 0.5,
-              Parent = Eso8UXoLopZaKQ
-          }, { NxSXLgXgoQg(enEhp02mua2U("hxZjWgZX4Bd2cJuVt1Bp4E==", ((1 + 7) * 6 + 55783)), { CornerRadius = UDim.new(1, 0) }) })
-          MYpL11YDP(ePIt1jH36Q1IG, { BackgroundColor3 = enEhp02mua2U("1wJjHBVMn70QuAlJPpKoflDgSqy66KVw1L8tzL==", (2 * 2 + 26969)) })
-
-          local function muLoxk8jyB27m(o5AoucoxDZx, EFyeAovllXs)
-              if zoVYZY0Vx2.Numeric and o5AoucoxDZx ~= enEhp02mua2U("", (7 * 6 * 2 + 55140)) and not tonumber(o5AoucoxDZx) then
-                  o5AoucoxDZx = Jy5jCMfQ
-              end
-              if zoVYZY0Vx2.MaxLength and #o5AoucoxDZx > zoVYZY0Vx2.MaxLength then
-                  o5AoucoxDZx = o5AoucoxDZx:sub(1, zoVYZY0Vx2.MaxLength)
-              end
-              Jy5jCMfQ = o5AoucoxDZx
-              if E8hu0ORxE.Text ~= o5AoucoxDZx then E8hu0ORxE.Text = o5AoucoxDZx end
-              if not EFyeAovllXs then
-                  VtkfV2WFLqvi5N(zoVYZY0Vx2.Callback, Jy5jCMfQ)
-                  VtkfV2WFLqvi5N(ZVO7icoG0qfwyf.Changed, Jy5jCMfQ)
-                  if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-              end
-          end
-
-          E8hu0ORxE.Focused:Connect(function()
-              EdG5asEXmzs(ePIt1jH36Q1IG, 0.15, { BackgroundTransparency = 0 })
-              SEm1JEw9VO3e7(Eso8UXoLopZaKQ, { BackgroundColor3 = enEhp02mua2U("cGN1iwKvW6iya9O1GkIiKo2rPa8ASw3N", (7 * 4 * 4 + 3958)) })
-          end)
-          E8hu0ORxE.FocusLost:Connect(function()
-              EdG5asEXmzs(ePIt1jH36Q1IG, 0.15, { BackgroundTransparency = 0.5 })
-              SEm1JEw9VO3e7(Eso8UXoLopZaKQ, { BackgroundColor3 = enEhp02mua2U("I1OrDSNd7fcS+1CJ", (3 * 5 * 2 + 21313)) })
-              if zoVYZY0Vx2.Finished then muLoxk8jyB27m(E8hu0ORxE.Text) end
-          end)
-
-          if not zoVYZY0Vx2.Finished then
-              E8hu0ORxE:GetPropertyChangedSignal(enEhp02mua2U("luc5nnakxCVixkkM", (5 * 5 + 60668))):Connect(function()
-                  muLoxk8jyB27m(E8hu0ORxE.Text)
-              end)
-          end
-
-          function ZVO7icoG0qfwyf:SetValue(XgqAhWIq, _pdwwsbB) muLoxk8jyB27m(XgqAhWIq, _pdwwsbB) end
-          function ZVO7icoG0qfwyf:GetValue() return Jy5jCMfQ end
-          function ZVO7icoG0qfwyf:OnChanged(zyTdfdwVFmHxA) ZVO7icoG0qfwyf.Changed = zyTdfdwVFmHxA; zyTdfdwVFmHxA(Jy5jCMfQ) end
-
-          table.insert(lLQEgV6707Qc1S.Elements, ZVO7icoG0qfwyf)
-          KqEyweSczEMkc(ZVO7icoG0qfwyf, enEhp02mua2U("kkVQFgAbg1OYmZ4e", (4 * 7 + 24356)), zoVYZY0Vx2.ConfigKey or (PmsOJX8FK2NO.Title .. enEhp02mua2U("P8zp9lRXsjj=", ((8 + 6) * 4 + 44829)) .. lLQEgV6707Qc1S.Title .. enEhp02mua2U("pidss/xdL6R=", (5 * 7 + 43470)) .. (zoVYZY0Vx2.Title or enEhp02mua2U("9b8Kpt1xqfzkUrLG", (7 * 3 * 6 + 58806)))))
-          return ZVO7icoG0qfwyf
-      end
-
-      function lLQEgV6707Qc1S:AddKeybind(mk_wERNN53yk)
-          mk_wERNN53yk = mk_wERNN53yk or {}
-          local z3mUaI1wV = kaAnoJJc0Ay(mk_wERNN53yk.Title or enEhp02mua2U("+yPBUHsnFHlBBDbNW3SYat==", (6 * 2 + 57885)), mk_wERNN53yk.Description, NFUsYuXEesfF, (0 == 0))
-          z3mUaI1wV.DescLabel.Size = UDim2.new(1, -((3 + 6) * 7 + 67), 0, (3 * 12 - 22))
-
-          local kNLZAQO3oRNC = {
-              Value = mk_wERNN53yk.Default or Enum.KeyCode.F,
-              Mode = mk_wERNN53yk.Mode or enEhp02mua2U("fHyILsWEv0LrD1mI", (7 * 11 + 21828)),
-              Toggled = (1 == 0)
-          }
-          if typeof(kNLZAQO3oRNC.Value) == enEhp02mua2U("6LEocUnFrzi9CyEJoLsqYC==", (7 * 4 * 2 + 55270)) then kNLZAQO3oRNC.Value = kNLZAQO3oRNC.Value.Name end
-
-          local ptcenFt5sGpezQ = NxSXLgXgoQg(enEhp02mua2U("6aUyFaSptSAKcpMEcqkoEQ==", (7 * 7 + 44627)), {
-              FontFace = AFAPdGSfclD3,
-              Text = kNLZAQO3oRNC.Value,
-              TextColor3 = ru_1s3dO(enEhp02mua2U("If6QWKMHnFGbWrix", ((6 + 4) * 6 + 49713))),
-              TextSize = (2 * 2 * 2 + 5),
-              TextXAlignment = Enum.TextXAlignment.Center,
-              Size = UDim2.new(0, 0, 1, 0),
-              AutomaticSize = Enum.AutomaticSize.X,
-              BackgroundTransparency = 1
-          })
-          MYpL11YDP(ptcenFt5sGpezQ, { TextColor3 = enEhp02mua2U("aWaCkHimo9tJcenV", ((5 + 6) * 5 + 51993)) })
-
-          local JpdkeBJPV = NxSXLgXgoQg(enEhp02mua2U("hqJXuGaQsv0aHJX+WszOsE97hBJiuzEi", (5 * 4 * 2 + 25395)), {
-              Size = UDim2.fromOffset(0, ((1 + 4) * 5 + 5)),
-              Position = UDim2.new(1, -((5 + 4) * 5 - 31), 0.5, 0),
-              AnchorPoint = Vector2.new(1, 0.5),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("0wBdLPd8aM4geXKwQrhK4B==", ((3 + 3) * 2 + 61416))),
-              BackgroundTransparency = 0.85,
-              AutomaticSize = Enum.AutomaticSize.X,
-              Text = enEhp02mua2U("", (2 * 5 * 3 + 20270)),
-              AutoButtonColor = (not not 0 == false),
-              Parent = z3mUaI1wV.Frame
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("kfH/YEo8MWdr4HYCjXwy+I==", (7 * 10 + 47096)), { CornerRadius = UDim.new(0, (3 * 6 * 4 - 67)) }),
-              NxSXLgXgoQg(enEhp02mua2U("xOr4xuZ7bwWITiUuJCZFa4==", (4 * 10 + 59729)), { PaddingLeft = UDim.new(0, (11 * 2 - 10)), PaddingRight = UDim.new(0, ((3 + 4) * 3 - 9)) }),
-              NxSXLgXgoQg(enEhp02mua2U("u5AdsYWxzKrHs8jhuKj+OA==", (6 * 7 + 42066)), {
-                  Transparency = 0.5,
-                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                  Color = ru_1s3dO(enEhp02mua2U("6dImSDKzE77ijJOjzdUGi7IREiFWaKf1", ((3 + 2) * 3 + 32359))),
-                  Thickness = 1
-              }),
-              ptcenFt5sGpezQ
-          })
-          MYpL11YDP(JpdkeBJPV, { BackgroundColor3 = enEhp02mua2U("jogdDepFx0mXXD7R1Dvqod==", (4 * 5 * 3 + 34283)) })
-
-          local T3BYLJCRu = (1 == 0)
-          local oyD0GuGUx3nkR, WX5UQaLAi6Ez
-
-          local function q3P9kWDXxCOA8()
-              if oyD0GuGUx3nkR then oyD0GuGUx3nkR:Disconnect() oyD0GuGUx3nkR = nil end
-              if WX5UQaLAi6Ez then WX5UQaLAi6Ez:Disconnect() WX5UQaLAi6Ez = ((function() end)()) end
-              T3BYLJCRu = (1 == 0)
-          end
-
-          local WBHU1_RqNupzr = JpdkeBJPV.MouseButton1Click:Connect(function()
-              if z3mUaI1wV.Disabled or T3BYLJCRu then return end
-              T3BYLJCRu = (1 == 1)
-              ptcenFt5sGpezQ.Text = enEhp02mua2U("iUrQYEe068N=", ((2 + 4) * 5 + 8174))
-              task.wait(0.15)
-
-              oyD0GuGUx3nkR = Xgxm8ph4yo.InputBegan:Connect(function(OIcXv6XollE)
-                  local p5QUs1FKfvF
-                  if OIcXv6XollE.UserInputType == Enum.UserInputType.Keyboard then
-                      p5QUs1FKfvF = OIcXv6XollE.KeyCode.Name
-                      VtkfV2WFLqvi5N(mk_wERNN53yk.ChangedCallback, OIcXv6XollE.KeyCode)
-                  elseif OIcXv6XollE.UserInputType == Enum.UserInputType.MouseButton1 then
-                      p5QUs1FKfvF = enEhp02mua2U("jNVhXAdhYp+SgPdCmlK1UM==", (4 * 13 + 13634))
-                      VtkfV2WFLqvi5N(mk_wERNN53yk.ChangedCallback, Enum.UserInputType.MouseButton1)
-                  elseif OIcXv6XollE.UserInputType == Enum.UserInputType.MouseButton2 then
-                      p5QUs1FKfvF = enEhp02mua2U("us3XJDVBeFfmfciqi6UYPDN5kvvVukIg", (3 * 2 * 5 + 46067))
-                      VtkfV2WFLqvi5N(mk_wERNN53yk.ChangedCallback, Enum.UserInputType.MouseButton2)
-                  end
-                  if p5QUs1FKfvF then
-                      kNLZAQO3oRNC.Value = p5QUs1FKfvF
-                      ptcenFt5sGpezQ.Text = p5QUs1FKfvF
-                      VtkfV2WFLqvi5N(z3mUaI1wV.Changed, kNLZAQO3oRNC.Value)
-                      q3P9kWDXxCOA8()
-                      if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-                  end
-              end)
-
-              WX5UQaLAi6Ez = Xgxm8ph4yo.InputEnded:Connect(function(oawxpQucJ28K2Y)
-                  if oawxpQucJ28K2Y.UserInputType == Enum.UserInputType.Focus or oawxpQucJ28K2Y.UserInputType == Enum.UserInputType.Touch then
-                      q3P9kWDXxCOA8()
-                      ptcenFt5sGpezQ.Text = kNLZAQO3oRNC.Value
-                  end
-              end)
-          end)
-
-          local B7fSnFpVnkWuQ = Xgxm8ph4yo.InputBegan:Connect(function(SuNdY7AxAXdnKx)
-              if T3BYLJCRu or Xgxm8ph4yo:GetFocusedTextBox() then return end
-              if z3mUaI1wV.Disabled then return end
-              if kNLZAQO3oRNC.Mode == enEhp02mua2U("KpEtsu8TBaUoyGHm", (3 * 6 * 2 + 53846)) then
-                  local P3iNF3cUO0jGv = (1 == 0)
-                  if SuNdY7AxAXdnKx.UserInputType == Enum.UserInputType.Keyboard and SuNdY7AxAXdnKx.KeyCode.Name == kNLZAQO3oRNC.Value then
-                      P3iNF3cUO0jGv = (not (1 == 0))
-                  elseif kNLZAQO3oRNC.Value == enEhp02mua2U("GlpXyLTyG4KXMPdDFzHCQP==", (3 * 5 * 5 + 32595)) and SuNdY7AxAXdnKx.UserInputType == Enum.UserInputType.MouseButton1 then
-                      P3iNF3cUO0jGv = (not false)
-                  elseif kNLZAQO3oRNC.Value == enEhp02mua2U("SCgKOWvBIfgBCuLWYkcoatjUGCHMF+6T", ((6 + 2) * 7 + 64814)) and SuNdY7AxAXdnKx.UserInputType == Enum.UserInputType.MouseButton2 then
-                      P3iNF3cUO0jGv = (not not 1)
-                  end
-                  if P3iNF3cUO0jGv then
-                      kNLZAQO3oRNC.Toggled = not kNLZAQO3oRNC.Toggled
-                      VtkfV2WFLqvi5N(mk_wERNN53yk.Callback, kNLZAQO3oRNC.Toggled)
-                      VtkfV2WFLqvi5N(z3mUaI1wV.Clicked, kNLZAQO3oRNC.Toggled)
-                  end
-              end
-          end)
-
-          function z3mUaI1wV:SetValue(qaQFz8x3bf2q, wrywnod0p)
-              if typeof(qaQFz8x3bf2q) == enEhp02mua2U("y8ED4Ax7IzXoX+1GN9gLE8==", (3 * 10 + 6165)) then qaQFz8x3bf2q = qaQFz8x3bf2q.Name end
-              kNLZAQO3oRNC.Value = qaQFz8x3bf2q or kNLZAQO3oRNC.Value
-              kNLZAQO3oRNC.Mode = wrywnod0p or kNLZAQO3oRNC.Mode
-              ptcenFt5sGpezQ.Text = kNLZAQO3oRNC.Value
-          end
-          function z3mUaI1wV:GetValue() return kNLZAQO3oRNC.Value end
-          function z3mUaI1wV:GetState()
-              if kNLZAQO3oRNC.Mode == enEhp02mua2U("GsH6wiedGElNRH1g", (6 * 7 + 493)) then return (1 == 1) end
-              if kNLZAQO3oRNC.Mode == enEhp02mua2U("o6u4BjxfdJblgWr1", ((6 + 8) * 3 + 15697)) then
-                  if kNLZAQO3oRNC.Value == enEhp02mua2U("Qar/zyRcuv9/lC5foj05WC==", ((3 + 8) * 3 + 10653)) then return Xgxm8ph4yo:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) end
-                  if kNLZAQO3oRNC.Value == enEhp02mua2U("J65yPc2dPYKPR7jDh+2tDWEsL/ZIRc7x", (8 * 8 * 5 + 6859)) then return Xgxm8ph4yo:IsMouseButtonPressed(Enum.UserInputType.MouseButton2) end
-                  local zk4nw_pXtX, qEkJCL0cFmX = pcall(function() return Xgxm8ph4yo:IsKeyDown(Enum.KeyCode[kNLZAQO3oRNC.Value]) end)
-                  return zk4nw_pXtX and qEkJCL0cFmX or (0 == 1)
-              end
-              return kNLZAQO3oRNC.Toggled
-          end
-          function z3mUaI1wV:OnChanged(sCSAVymipN6) z3mUaI1wV.Changed = sCSAVymipN6; sCSAVymipN6(kNLZAQO3oRNC.Value) end
-          function z3mUaI1wV:OnClick(BeQW9SFtYMaYm6) z3mUaI1wV.Clicked = BeQW9SFtYMaYm6 end
-
-          local P4Ccubd_fA1f = z3mUaI1wV.Destroy
-          function z3mUaI1wV:Destroy()
-              q3P9kWDXxCOA8()
-              if WBHU1_RqNupzr then WBHU1_RqNupzr:Disconnect() end
-              if B7fSnFpVnkWuQ then B7fSnFpVnkWuQ:Disconnect() end
-              P4Ccubd_fA1f()
-          end
-
-          table.insert(lLQEgV6707Qc1S.Elements, z3mUaI1wV)
-          KqEyweSczEMkc(z3mUaI1wV, enEhp02mua2U("5UZfohW3xpFDVWWb5U6fV6==", (7 * 5 * 5 + 9090)), mk_wERNN53yk.ConfigKey or (PmsOJX8FK2NO.Title .. enEhp02mua2U("ayX2vkCmUIJ=", ((2 + 2) * 2 + 49297)) .. lLQEgV6707Qc1S.Title .. enEhp02mua2U("Rxj8IH8GLve=", ((2 + 7) * 3 + 44450)) .. (mk_wERNN53yk.Title or enEhp02mua2U("dYpPXkS1uHfDF3s80kQzd9==", ((7 + 9) * 7 + 62581)))))
-          return z3mUaI1wV
-      end
-
-      function lLQEgV6707Qc1S:AddDropdown(nuouSxofG)
-          nuouSxofG = nuouSxofG or {}
-          local m9SVhj9f = kaAnoJJc0Ay(nuouSxofG.Title or enEhp02mua2U("dyhnBuBbJMf6JBHTJ0kLyx==", (3 * 5 * 6 + 60389)), nuouSxofG.Description, NFUsYuXEesfF, (1 == 0))
-          m9SVhj9f.DescLabel.Size = UDim2.new(1, -((4 + 2) * 7 + 188), 0, (4 * 12 - 34))
-
-          local t2Bw7JXRkRLETr = nuouSxofG.Values or {}
-          local p9wh4YvOwI_zJ = nuouSxofG.Multi or (not not 0 == false)
-          local OwM5L3j9Z = p9wh4YvOwI_zJ and {} or nuouSxofG.Default
-
-          local M2chZHPfX9Ks1i = NxSXLgXgoQg(enEhp02mua2U("ILAHI+5DW+G62WA6nmg3to==", ((4 + 7) * 3 + 4618)), {
-              FontFace = t2hTAJBv,
-              Text = enEhp02mua2U("FuahbE9KXJX=", (4 * 3 + 48071)),
-              TextColor3 = ru_1s3dO(enEhp02mua2U("9n1m9eLsEfQsI5xn", ((4 + 8) * 7 + 13726))),
-              TextSize = ((3 + 2) * 3 - 2),
-              TextXAlignment = Enum.TextXAlignment.Left,
-              Size = UDim2.new(1, -(11 * 13 - 107), 1, 0),
-              Position = UDim2.fromOffset(((6 + 9) * 6 - 78), 0),
-              BackgroundTransparency = 1,
-              TextTruncate = Enum.TextTruncate.AtEnd,
-              Parent = m9SVhj9f.Frame
-          })
-          MYpL11YDP(M2chZHPfX9Ks1i, { TextColor3 = enEhp02mua2U("lCvENw9Shpfj6Ik8", ((1 + 9) * 3 + 40079)) })
-
-          local gzNoiqOoWgmhd = NxSXLgXgoQg(enEhp02mua2U("ff7WVZZ1BZEsowhn2AxMA8hLryAi+edQ", ((8 + 8) * 2 + 24820)), {
-              Image = fLLzgL1N_[enEhp02mua2U("HN0xAmM14D0kcpN4QIt6rmMJIdPjMplWNWEq2p0IQegVWGUBIEYgIB==", (6 * 13 + 51725))],
-              ImageColor3 = ru_1s3dO(enEhp02mua2U("I+WOuTLR1bTKGCWiHorBqX==", (9 * 6 + 33916))),
-              Size = UDim2.fromOffset((8 * 5 * 5 - 186), (7 * 3 * 3 - 49)),
-              AnchorPoint = Vector2.new(1, 0.5),
-              Position = UDim2.new(1, -((2 + 6) * 2 - 6), 0.5, 0),
-              BackgroundTransparency = 1,
-              Parent = m9SVhj9f.Frame
-          })
-          MYpL11YDP(gzNoiqOoWgmhd, { ImageColor3 = enEhp02mua2U("xTSVlzg1JrmGwS1kk8UHJG==", ((2 + 9) * 2 + 44987)) })
-
-          local eoaHd3SBvMAwQ = NxSXLgXgoQg(enEhp02mua2U("OQLd1C2AVz5AAsYT1TSDGttr2R5sunoI", (7 * 4 * 6 + 20164)), {
-              Size = UDim2.fromOffset((4 * 10 + 140), (2 * 8 + 16)),
-              Position = UDim2.new(1, -(5 * 7 - 21), 0.5, 0),
-              AnchorPoint = Vector2.new(1, 0.5),
-              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("YY0wrWOZMmSW5PX6QFrAFVqX8mSzyLQTk0E6C0==", (4 * 6 * 6 + 61540))),
-              BackgroundTransparency = 0.85,
-              Text = enEhp02mua2U("", (5 * 7 * 4 + 35579)),
-              AutoButtonColor = (not (1 == 1)),
-              Parent = m9SVhj9f.Frame
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("Z1M2/3qkYsKph1M4gCx6ZQ==", (5 * 3 * 4 + 48852)), { CornerRadius = UDim.new(0, (6 * 10 - 55)) }),
-              NxSXLgXgoQg(enEhp02mua2U("W9SKLB1YRZptRZ5EftRfJN==", (4 * 8 * 2 + 52599)), {
-                  Transparency = 0.5,
-                  ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                  Color = ru_1s3dO(enEhp02mua2U("Tov5zSBhTt/eVmaCTnLTWqKBVsHWPHS1", (10 * 8 + 50337))),
-                  Thickness = 1
-              }),
-              M2chZHPfX9Ks1i,
-              gzNoiqOoWgmhd
-          })
-          MYpL11YDP(eoaHd3SBvMAwQ, { BackgroundColor3 = enEhp02mua2U("MPiRKa4GOazdUvNEQZRoV+zZVEu1IokSIwCtR8==", (5 * 5 * 4 + 5180)) })
-
-          local y4hGx8pstuzHRb
-          local bqfPnTGHjF = (not (1 == 1))
-          local dOEfT8ZKE1DI = #t2Bw7JXRkRLETr > (4 * 3 * 2 - 9)
-
-          local function Pi3oWQNUcuK0()
-              local H9gGzIoUH2Qr = enEhp02mua2U("", ((5 + 3) * 4 + 19571))
-              if p9wh4YvOwI_zJ then
-                  local enfIClcTbehvFv = {}
-                  for QqMfQ1Sxri, NYsMbcg1rCFc in pairs(OwM5L3j9Z) do table.insert(enfIClcTbehvFv, QqMfQ1Sxri) end
-                  table.sort(enfIClcTbehvFv)
-                  H9gGzIoUH2Qr = table.concat(enfIClcTbehvFv, enEhp02mua2U("b7KAENaR3T+=", (4 * 10 + 31346)))
-              else
-                  H9gGzIoUH2Qr = tostring(OwM5L3j9Z or enEhp02mua2U("", ((3 + 3) * 5 + 54002)))
-              end
-              M2chZHPfX9Ks1i.Text = H9gGzIoUH2Qr ~= enEhp02mua2U("", ((3 + 6) * 4 + 13576)) and H9gGzIoUH2Qr or enEhp02mua2U("Y4HoJ+JizLl=", ((3 + 4) * 5 + 51096))
-          end
-
-          local function CQw3aB_hU()
-              if y4hGx8pstuzHRb then y4hGx8pstuzHRb:Destroy() end
-
-              local Vda7kvyAU3aP = dOEfT8ZKE1DI and ((9 + 7) * 4 - 26) or 0
-              local RrQJcAuPP = math.min(#t2Bw7JXRkRLETr * ((9 + 3) * 6 - 40) + Vda7kvyAU3aP + ((3 + 9) * 7 - 72), (11 * 9 + 221))
-
-              local GZbA6R9n44crxq = NxSXLgXgoQg(enEhp02mua2U("nGl8ePPDR7rMg2URUQPfnRbXkz/vWNGj", (5 * 9 + 26044)), { Padding = UDim.new(0, (7 * 4 * 6 - 165)), SortOrder = Enum.SortOrder.LayoutOrder })
-              local zeyRHVMSxj1Vi = NxSXLgXgoQg(enEhp02mua2U("cGN8ddBtmgJHC7DCzgKKizY2YrDrvhXCvTYvkQ==", (11 * 5 + 55378)), {
-                  Size = UDim2.new(1, -(4 * 6 * 2 - 38), 1, -(8 * 9 - 62) - Vda7kvyAU3aP),
-                  Position = UDim2.fromOffset((8 * 7 * 3 - 163), (3 * 9 - 22) + Vda7kvyAU3aP),
-                  BackgroundTransparency = 1,
-                  BorderSizePixel = 0,
-                  ScrollBarThickness = (3 * 6 * 3 - 51),
-                  ScrollBarImageTransparency = 0.9,
-                  ScrollBarImageColor3 = Color3.fromRGB((3 * 9 + 228), (8 * 8 + 191), ((3 + 3) * 6 + 219)),
-                  CanvasSize = UDim2.fromScale(0, 0),
-                  ScrollingDirection = Enum.ScrollingDirection.Y,
-              }, { GZbA6R9n44crxq })
-              GZbA6R9n44crxq:GetPropertyChangedSignal(enEhp02mua2U("+hcOIEAaoWPA4TS3c9b34XFDqnQQs9pdcRScWhSMs3cL9SrnoRiieY==", ((2 + 9) * 6 + 49640))):Connect(function()
-                  zeyRHVMSxj1Vi.CanvasSize = UDim2.fromOffset(0, GZbA6R9n44crxq.AbsoluteContentSize.Y)
-              end)
-
-              y4hGx8pstuzHRb = NxSXLgXgoQg(enEhp02mua2U("mQD2b/zmWjE7Eclq", (5 * 5 + 35721)), {
-                  BackgroundColor3 = ru_1s3dO(enEhp02mua2U("ETd5+144lfXqL4f+Z0GMhSJKtmfUDhJUEsV6f3==", ((6 + 5) * 5 + 22410))),
-                  Size = UDim2.fromOffset((8 * 3 * 2 + 142), RrQJcAuPP),
-                  Visible = (1 == 0),
-                  ZIndex = (4 * 11 + 456),
-                  Parent = ZbGbp9TH5QB and ZbGbp9TH5QB.GUI or nil
-              }, {
-                  NxSXLgXgoQg(enEhp02mua2U("8x9FKzot9GY1FKWTOGElpI==", (7 * 3 * 5 + 6959)), { CornerRadius = UDim.new(0, (10 * 2 - 12)) }),
-                  NxSXLgXgoQg(enEhp02mua2U("WWOzMcHP6exfte8sJFHNGK==", (11 * 13 + 49305)), {
-                      ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                      Color = ru_1s3dO(enEhp02mua2U("4EraWox8qW5xfXOEUFyt2LwGUtQTcwEe8DmcAE==", (5 * 8 + 60818))),
-                      Transparency = 0.4,
-                      Thickness = 1
-                  })
-              })
-              MYpL11YDP(y4hGx8pstuzHRb, { BackgroundColor3 = enEhp02mua2U("nn5khlTYLAXA1IETxVElonqwIUAvHJqinUqsBw==", ((3 + 8) * 7 + 38126)) })
-
-              local ntHxw2p9oM
-
-              if dOEfT8ZKE1DI then
-                  local zXs_FyOU = NxSXLgXgoQg(enEhp02mua2U("elJaD9TqG+N0LsSh", ((2 + 3) * 3 + 62826)), {
-                      Size = UDim2.new(1, -(11 * 7 - 67), 0, ((3 + 2) * 6 + 2)),
-                      Position = UDim2.fromOffset((4 * 2 * 5 - 35), (2 * 4 * 5 - 36)),
-                      BackgroundColor3 = ru_1s3dO(enEhp02mua2U("AUdIIHyFLJOvNnEQ", (7 * 5 + 57300))),
-                      BackgroundTransparency = 0.9,
-                      Parent = y4hGx8pstuzHRb
-                  }, {
-                      NxSXLgXgoQg(enEhp02mua2U("+bQqA5P34Qaji8I4KDCa4a==", (2 * 9 + 11764)), { CornerRadius = UDim.new(0, ((6 + 2) * 6 - 44)) }),
-                      NxSXLgXgoQg(enEhp02mua2U("D3PgYyYzNhYlVEzQFjP7TB==", ((1 + 3) * 4 + 50205)), {
-                          Transparency = 0.55,
-                          ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                          Color = ru_1s3dO(enEhp02mua2U("w3KTjXJ0ZzOnRaJxw0KaklIcRTODMbYR", (3 * 4 + 50687))),
-                          Thickness = 1
-                      })
-                  })
-                  MYpL11YDP(zXs_FyOU, { BackgroundColor3 = enEhp02mua2U("qnVaXfz3OG7MVZdQ", ((1 + 6) * 7 + 26288)) })
-                  local M8nAdpRmKAcWI = NxSXLgXgoQg(enEhp02mua2U("kWmjhmEfALrPgILMZND/jX4oZEQEStO1", (5 * 5 + 35202)), {
-                      Image = fLLzgL1N_[enEhp02mua2U("dQ/Bic6XKgE0KMVa8fJBdCPu9yYHUbLS+cYwFC==", (2 * 4 * 5 + 29308))],
-                      ImageColor3 = ru_1s3dO(enEhp02mua2U("P6ZYU9YVL5O1R6xQxyPTgZ==", ((5 + 7) * 3 + 29908))),
-                      Size = UDim2.fromOffset((4 * 13 - 40), (7 * 9 - 51)),
-                      Position = UDim2.fromOffset((4 * 3 - 3), (2 * 8 * 2 - 22)),
-                      BackgroundTransparency = 1,
-                      Parent = zXs_FyOU
-                  })
-                  MYpL11YDP(M8nAdpRmKAcWI, { ImageColor3 = enEhp02mua2U("+GD1Sr8TBKYpOMWwjC5QGT==", (8 * 2 * 3 + 62837)) })
-                  ntHxw2p9oM = NxSXLgXgoQg(enEhp02mua2U("Iq9FJ+U9v0We2wF9mqLQGU==", ((5 + 4) * 2 + 41696)), {
-                      FontFace = t2hTAJBv,
-                      Text = enEhp02mua2U("", ((3 + 2) * 3 + 19953)),
-                      PlaceholderText = enEhp02mua2U("UIMOBNMmYGk1U4yNiN6Day==", (4 * 5 * 4 + 31150)),
-                      PlaceholderColor3 = ru_1s3dO(enEhp02mua2U("QozJEG0GSg5BWTeiLaOKA+==", ((5 + 6) * 4 + 59392))),
-                      TextColor3 = ru_1s3dO(enEhp02mua2U("RIp+BrkpDrw9H9lo", (9 * 5 + 20430))),
-                      TextSize = (8 * 12 - 84),
-                      TextXAlignment = Enum.TextXAlignment.Left,
-                      BackgroundTransparency = 1,
-                      ClearTextOnFocus = (not not 0 == false),
-                      Position = UDim2.fromOffset(((3 + 3) * 4 + 2), 0),
-                      Size = UDim2.new(1, -(3 * 5 * 3 - 13), 1, 0),
-                      Parent = zXs_FyOU
-                  })
-                  MYpL11YDP(ntHxw2p9oM, { TextColor3 = enEhp02mua2U("I0EWnN0WTbHFLtOY", (3 * 6 * 4 + 13030)), PlaceholderColor3 = enEhp02mua2U("HuW8eAA3GWQU4qGrzGzwM3==", (5 * 8 * 3 + 21066)) })
-              end
-
-              zeyRHVMSxj1Vi.Parent = y4hGx8pstuzHRb
-
-              local iSQro54VTd = {}
-
-              local function c4SuNMuw3(OVr9KlFn3kxn)
-                  for zFg0pjyfr, NRK58EilKtrM in ipairs(iSQro54VTd) do
-                      if NRK58EilKtrM and NRK58EilKtrM.Parent then NRK58EilKtrM:Destroy() end
-                  end
-                  iSQro54VTd = {}
-                  for H1lStUaXw, Pl6LoNJO in ipairs(t2Bw7JXRkRLETr) do
-                      local w2ufEwyaA = OVr9KlFn3kxn == enEhp02mua2U("", (5 * 7 * 6 + 43041)) or string.find(string.lower(Pl6LoNJO), string.lower(OVr9KlFn3kxn), 1, (not (1 == 0))) ~= ((function() end)())
-                      if w2ufEwyaA then
-                          local t4hFa5or8Z = p9wh4YvOwI_zJ and OwM5L3j9Z[Pl6LoNJO] or (not p9wh4YvOwI_zJ and OwM5L3j9Z == Pl6LoNJO)
-                          local EdOE7JeMMr = NxSXLgXgoQg(enEhp02mua2U("8DIZyTSUkt+sm62w8p+1pCGOEU02Ove1", (2 * 7 * 5 + 55347)), {
-                              Size = UDim2.new(1, 0, 0, ((1 + 6) * 7 - 19)),
-                              BackgroundColor3 = ru_1s3dO(enEhp02mua2U("Cb7WEndG7/leIqMPcUG8IAdhIbGlIclfII5Ocp==", ((6 + 8) * 2 + 6956))),
-                              BackgroundTransparency = t4hFa5or8Z and 0.85 or 1,
-                              Text = enEhp02mua2U("", (2 * 3 * 6 + 1184)),
-                              AutoButtonColor = (1 == 0),
-                              Parent = zeyRHVMSxj1Vi
-                          }, {
-                              NxSXLgXgoQg(enEhp02mua2U("iwPNIEP5r+4DJRwMi8ERZJ==", (2 * 6 * 6 + 28507)), { CornerRadius = UDim.new(0, (7 * 2 * 2 - 24)) }),
-                              NxSXLgXgoQg(enEhp02mua2U("pcLUELmVQK6z79weKidkpc==", (6 * 8 * 6 + 32732)), {
-                                  FontFace = t2hTAJBv,
-                                  Text = Pl6LoNJO,
-                                  TextColor3 = ru_1s3dO(enEhp02mua2U("wzoxPtN42rTsgFHG", (6 * 3 * 2 + 23427))),
-                                  TextSize = (4 * 8 * 3 - 83),
-                                  TextXAlignment = Enum.TextXAlignment.Left,
-                                  Size = UDim2.new(1, -((1 + 6) * 6 - 22), 1, 0),
-                                  Position = UDim2.fromOffset((10 * 7 - 60), 0),
-                                  BackgroundTransparency = 1,
-                                  TextTruncate = Enum.TextTruncate.AtEnd
-                              })
-                          })
-                          MYpL11YDP(EdOE7JeMMr, { BackgroundColor3 = enEhp02mua2U("nf8bKRDRYNXwnWglMFfbQoWHaZMpoZSXYuKq+e==", (6 * 12 + 11274)) })
-                          for M26FkqzisZCX9Q, Y2if8EEOsLtWi in ipairs(EdOE7JeMMr:GetChildren()) do
-                              if Y2if8EEOsLtWi:IsA(enEhp02mua2U("qI8FmIo8kWSjvT+zk+x7nR==", (9 * 10 + 53328))) then MYpL11YDP(Y2if8EEOsLtWi, { TextColor3 = enEhp02mua2U("u+CNcIyUFyadOYak", (9 * 3 + 11073)) }) end
-                          end
-
-                          EdOE7JeMMr.MouseEnter:Connect(function()
-                              if not t4hFa5or8Z then EdG5asEXmzs(EdOE7JeMMr, 0.12, { BackgroundTransparency = 0.9 }) end
-                          end)
-                          EdOE7JeMMr.MouseLeave:Connect(function()
-                              if not t4hFa5or8Z then EdG5asEXmzs(EdOE7JeMMr, 0.12, { BackgroundTransparency = 1 }) end
-                          end)
-                          EdOE7JeMMr.MouseButton1Click:Connect(function()
-                              if p9wh4YvOwI_zJ then
-                                  if OwM5L3j9Z[Pl6LoNJO] then OwM5L3j9Z[Pl6LoNJO] = ((function() end)()) else OwM5L3j9Z[Pl6LoNJO] = (not (1 == 0)) end
-                              else
-                                  OwM5L3j9Z = Pl6LoNJO
-                              end
-                              Pi3oWQNUcuK0()
-                              c4SuNMuw3(ntHxw2p9oM and ntHxw2p9oM.Text or enEhp02mua2U("", (6 * 3 * 4 + 8583)))
-                              VtkfV2WFLqvi5N(nuouSxofG.Callback, OwM5L3j9Z)
-                              VtkfV2WFLqvi5N(m9SVhj9f.Changed, OwM5L3j9Z)
-                              if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-                              if not p9wh4YvOwI_zJ then
-                                  bqfPnTGHjF = (1 == 0)
-                                  y4hGx8pstuzHRb.Visible = (not not 0 == false)
-                                  EdG5asEXmzs(gzNoiqOoWgmhd, 0.2, { Rotation = 0 })
-                              end
-                          end)
-                          table.insert(iSQro54VTd, EdOE7JeMMr)
-                      end
-                  end
-                  zeyRHVMSxj1Vi.CanvasSize = UDim2.fromOffset(0, GZbA6R9n44crxq.AbsoluteContentSize.Y + (3 * 7 * 2 - 38))
-              end
-
-              c4SuNMuw3(enEhp02mua2U("", ((5 + 6) * 6 + 11311)))
-
-              if ntHxw2p9oM then
-                  ntHxw2p9oM:GetPropertyChangedSignal(enEhp02mua2U("hzIly44+pyblcrxd", (7 * 4 * 2 + 26219))):Connect(function()
-                      c4SuNMuw3(ntHxw2p9oM.Text)
-                  end)
-              end
-          end
-
-          local function sQaugfv6G()
-              if not y4hGx8pstuzHRb or not y4hGx8pstuzHRb.Parent then return end
-              local zpUQjStnaY = eoaHd3SBvMAwQ.AbsolutePosition
-              local FLkWe4Jw = y4hGx8pstuzHRb.Size
-              local rhjs3jlLH = workspace.CurrentCamera.ViewportSize.Y
-              local xyBd0bOVl
-              if zpUQjStnaY.Y + eoaHd3SBvMAwQ.AbsoluteSize.Y + FLkWe4Jw.Y.Offset > rhjs3jlLH then
-                  xyBd0bOVl = zpUQjStnaY.Y - FLkWe4Jw.Y.Offset - (4 * 7 * 3 - 80)
-              else
-                  xyBd0bOVl = zpUQjStnaY.Y + eoaHd3SBvMAwQ.AbsoluteSize.Y + ((8 + 5) * 2 - 22)
-              end
-              y4hGx8pstuzHRb.Position = UDim2.fromOffset(zpUQjStnaY.X, xyBd0bOVl)
-          end
-
-          local t_Ghi4B_gdC = eoaHd3SBvMAwQ.MouseButton1Click:Connect(function()
-              bqfPnTGHjF = not bqfPnTGHjF
-              if bqfPnTGHjF then
-                  CQw3aB_hU()
-                  sQaugfv6G()
-                  y4hGx8pstuzHRb.Visible = (not not 1)
-                  EdG5asEXmzs(gzNoiqOoWgmhd, 0.2, { Rotation = ((6 + 9) * 5 + 105) }, Enum.EasingStyle.Quart)
-              else
-                  if y4hGx8pstuzHRb then y4hGx8pstuzHRb.Visible = (0 == 1) end
-                  EdG5asEXmzs(gzNoiqOoWgmhd, 0.2, { Rotation = 0 }, Enum.EasingStyle.Quart)
-              end
-          end)
-
-          local pogX2SHaZoKCuu = Xgxm8ph4yo.InputBegan:Connect(function(UzVx58z2l7jAe)
-              if not bqfPnTGHjF then return end
-              if UzVx58z2l7jAe.UserInputType == Enum.UserInputType.MouseButton1 or UzVx58z2l7jAe.UserInputType == Enum.UserInputType.Touch then
-                  if not y4hGx8pstuzHRb or not y4hGx8pstuzHRb.Parent then return end
-                  local wnPi3TFU8jh = UzVx58z2l7jAe.Position
-                  local Us2b0jvxV, fOEbktiu = y4hGx8pstuzHRb.AbsolutePosition, y4hGx8pstuzHRb.AbsoluteSize
-                  local ygIzQBy90PO, ttVqu2xU8P4nf = eoaHd3SBvMAwQ.AbsolutePosition, eoaHd3SBvMAwQ.AbsoluteSize
-                  local JAv8FnaAgdRA = wnPi3TFU8jh.X >= Us2b0jvxV.X and wnPi3TFU8jh.X <= Us2b0jvxV.X + fOEbktiu.X and wnPi3TFU8jh.Y >= Us2b0jvxV.Y and wnPi3TFU8jh.Y <= Us2b0jvxV.Y + fOEbktiu.Y
-                  local k0yR5rpA = wnPi3TFU8jh.X >= ygIzQBy90PO.X and wnPi3TFU8jh.X <= ygIzQBy90PO.X + ttVqu2xU8P4nf.X and wnPi3TFU8jh.Y >= ygIzQBy90PO.Y and wnPi3TFU8jh.Y <= ygIzQBy90PO.Y + ttVqu2xU8P4nf.Y
-                  if not JAv8FnaAgdRA and not k0yR5rpA then
-                      bqfPnTGHjF = (not (1 == 1))
-                      y4hGx8pstuzHRb.Visible = (not (1 == 1))
-                      EdG5asEXmzs(gzNoiqOoWgmhd, 0.2, { Rotation = 0 }, Enum.EasingStyle.Quart)
-                  end
-              end
-          end)
-
-          local M02LBxBEh = eoaHd3SBvMAwQ:GetPropertyChangedSignal(enEhp02mua2U("BDNZiwAMP1Hk9oR4N50zFnqmiZUHD74/P1IF95+HB8V=", ((2 + 4) * 6 + 22907))):Connect(function()
-              if bqfPnTGHjF then sQaugfv6G() end
-          end)
-
-          if nuouSxofG.Default then
-              if p9wh4YvOwI_zJ and type(nuouSxofG.Default) == enEhp02mua2U("xR8J0LT2VnEaxl5d", (10 * 13 + 26809)) then
-                  for QQI3DirJOfRVVl, BQIKvozG4K in ipairs(nuouSxofG.Default) do
-                      if table.find(t2Bw7JXRkRLETr, BQIKvozG4K) then OwM5L3j9Z[BQIKvozG4K] = (not not 1) end
-                  end
-              elseif not p9wh4YvOwI_zJ and table.find(t2Bw7JXRkRLETr, nuouSxofG.Default) then
-                  OwM5L3j9Z = nuouSxofG.Default
-              end
-          end
-
-          function m9SVhj9f:SetValue(Q7zJKCyfn6V, MkYSlxIZff7c)
-              if p9wh4YvOwI_zJ then
-                  OwM5L3j9Z = {}
-                  if type(Q7zJKCyfn6V) == enEhp02mua2U("+8IZgNIDafqJK82F", (3 * 2 * 4 + 39256)) then
-                      for nUhrJ5fL9kTnp, PFUPYXsWU2 in ipairs(Q7zJKCyfn6V) do
-                          if table.find(t2Bw7JXRkRLETr, PFUPYXsWU2) then OwM5L3j9Z[PFUPYXsWU2] = (0 == 0) end
-                      end
-                  end
-              else
-                  if table.find(t2Bw7JXRkRLETr, Q7zJKCyfn6V) then OwM5L3j9Z = Q7zJKCyfn6V end
-              end
-              Pi3oWQNUcuK0()
-              if not MkYSlxIZff7c then
-                  VtkfV2WFLqvi5N(nuouSxofG.Callback, OwM5L3j9Z)
-                  VtkfV2WFLqvi5N(m9SVhj9f.Changed, OwM5L3j9Z)
-                  if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-              end
-          end
-          function m9SVhj9f:SetValues(SJLrqmbyQSGv)
-              t2Bw7JXRkRLETr = SJLrqmbyQSGv or t2Bw7JXRkRLETr
-              dOEfT8ZKE1DI = #t2Bw7JXRkRLETr > (7 * 6 * 3 - 111)
-          end
-          function m9SVhj9f:IsMulti() return p9wh4YvOwI_zJ end
-          function m9SVhj9f:GetValue() return OwM5L3j9Z end
-          function m9SVhj9f:OnChanged(KwwKozwFnGW7Bx) m9SVhj9f.Changed = KwwKozwFnGW7Bx; KwwKozwFnGW7Bx(OwM5L3j9Z) end
-
-          local EvgfzAuCO1 = m9SVhj9f.Destroy
-          function m9SVhj9f:Destroy()
-              if t_Ghi4B_gdC then t_Ghi4B_gdC:Disconnect() end
-              if pogX2SHaZoKCuu then pogX2SHaZoKCuu:Disconnect() end
-              if M02LBxBEh then M02LBxBEh:Disconnect() end
-              if y4hGx8pstuzHRb then y4hGx8pstuzHRb:Destroy() end
-              EvgfzAuCO1()
-          end
-
-          Pi3oWQNUcuK0()
-          table.insert(lLQEgV6707Qc1S.Elements, m9SVhj9f)
-          KqEyweSczEMkc(m9SVhj9f, enEhp02mua2U("LpnWPYObJ1OfvfTNYfhORf==", (8 * 7 * 2 + 7251)), nuouSxofG.ConfigKey or (PmsOJX8FK2NO.Title .. enEhp02mua2U("L9aiR55XjBE=", ((8 + 2) * 5 + 19551)) .. lLQEgV6707Qc1S.Title .. enEhp02mua2U("tDOnJJdjdBF=", (5 * 8 + 33581)) .. (nuouSxofG.Title or enEhp02mua2U("YY40SWugRQ1HE9I8ZWC2Er==", ((3 + 5) * 4 + 4458)))))
-          return m9SVhj9f
-      end
-
-      function lLQEgV6707Qc1S:AddColorpicker(jaNdNTWpyv)
-          jaNdNTWpyv = jaNdNTWpyv or {}
-          local QF3Jj66P = kaAnoJJc0Ay(jaNdNTWpyv.Title or enEhp02mua2U("1Jk7rS0gHjPFAS9v", (5 * 8 + 30919)), jaNdNTWpyv.Description, NFUsYuXEesfF, (1 == 1))
-
-          local jjHDs70Cs7MKf = jaNdNTWpyv.Default or Color3.fromRGB((3 * 3 * 6 + 201), (2 * 11 + 233), ((6 + 5) * 7 + 178))
-          local dV2JH6uEG = jaNdNTWpyv.Transparency or 0
-          local Nvo5_rEtH = jaNdNTWpyv.Transparency ~= nil
-
-          local OlNLF77Pd = NxSXLgXgoQg(enEhp02mua2U("8SZy8N8xuo0smSYc", ((8 + 2) * 5 + 28010)), {
-              Size = UDim2.fromOffset((2 * 4 * 6 - 18), (9 * 11 - 69)),
-              Position = UDim2.new(1, -(5 * 10 - 36), 0.5, 0),
-              AnchorPoint = Vector2.new(1, 0.5),
-              BackgroundColor3 = jjHDs70Cs7MKf,
-              BackgroundTransparency = dV2JH6uEG,
-              Parent = QF3Jj66P.Frame
-          }, {
-              NxSXLgXgoQg(enEhp02mua2U("UkM6fpyaQI6qy5nMTqkQT5==", ((9 + 2) * 4 + 39707)), { CornerRadius = UDim.new(0, (2 * 12 - 19)) }),
-              NxSXLgXgoQg(enEhp02mua2U("101HgFJK05gPgyn1yB7VfT==", (11 * 12 + 51807)), { Transparency = 0.5, Color = ru_1s3dO(enEhp02mua2U("UPmdLnzpSAPndDsLZ9b9UrPNfdGXRJZq", (7 * 2 + 3947))), Thickness = 1 })
-          })
-
-          local function PiBPyRss_()
-              local KuviQuVl1ItD, mpEnSmlL, UNrZGTwgZWp0 = Color3.toHSV(jjHDs70Cs7MKf)
-              local VOH2Vqqt9f = dV2JH6uEG
-
-              local dzC7Sxlz = ZbGbp9TH5QB:Dialog({
-                  Title = jaNdNTWpyv.Title or enEhp02mua2U("QWeZWk6vieTY2Mla", (6 * 3 * 4 + 22542)),
-                  Content = enEhp02mua2U("", (9 * 4 + 7200)),
-                  Buttons = {
-                      { Title = enEhp02mua2U("PIafDDAiDvNGFI7JiW6vPI==", (6 * 5 * 2 + 39321)), Callback = function()
-                          jjHDs70Cs7MKf = Color3.fromHSV(KuviQuVl1ItD, mpEnSmlL, UNrZGTwgZWp0)
-                          dV2JH6uEG = VOH2Vqqt9f
-                          OlNLF77Pd.BackgroundColor3 = jjHDs70Cs7MKf
-                          OlNLF77Pd.BackgroundTransparency = dV2JH6uEG
-                          VtkfV2WFLqvi5N(jaNdNTWpyv.Callback, jjHDs70Cs7MKf)
-                          VtkfV2WFLqvi5N(QF3Jj66P.Changed, jjHDs70Cs7MKf)
-                          if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-                      end },
-                      { Title = enEhp02mua2U("KAY2I7oN8OvKX5vy", (7 * 2 * 2 + 23502)) }
-                  }
-              })
-
-              dzC7Sxlz.Root.Size = UDim2.fromOffset((2 * 6 * 4 + 272), ((8 + 3) * 6 + 334))
-
-              local CYyDmKoJoJh = NxSXLgXgoQg(enEhp02mua2U("QKm6SKogMESmMICduyCXArpkZl71cDi6", (6 * 12 + 24148)), {
-                  Size = UDim2.fromOffset((7 * 9 + 117), ((8 + 9) * 4 + 112)),
-                  Position = UDim2.fromOffset((3 * 7 * 4 - 64), (8 * 6 * 4 - 137)),
-                  BackgroundColor3 = Color3.fromHSV(KuviQuVl1ItD, 1, 1),
-                  Image = enEhp02mua2U("X6aVMfRTBZNH5X5uCBFabzzIZUeDsZij4I+u9QQg+D2pXhrHnQNA4Xu9b68=", (4 * 2 * 6 + 421)),
-                  BorderSizePixel = 0,
-                  Parent = dzC7Sxlz.Root
-              }, { NxSXLgXgoQg(enEhp02mua2U("EYv5SmzobYJbdcZCNSU62y==", (4 * 5 * 5 + 48751)), { CornerRadius = UDim.new(0, (4 * 7 * 3 - 79)) }) })
-
-              local OjxPyZbQVMrA = NxSXLgXgoQg(enEhp02mua2U("hZBfqF0NoBArk7+e", ((1 + 6) * 6 + 1874)), {
-                  Size = UDim2.fromOffset(((1 + 3) * 7 - 14), (10 * 7 - 56)),
-                  AnchorPoint = Vector2.new(0.5, 0.5),
-                  Position = UDim2.new(mpEnSmlL, 0, 1 - UNrZGTwgZWp0, 0),
-                  BackgroundColor3 = Color3.fromRGB((2 * 10 + 235), ((9 + 6) * 2 + 225), (8 * 5 * 2 + 175)),
-                  BorderSizePixel = 0,
-                  ZIndex = (7 * 8 - 54),
-                  Parent = CYyDmKoJoJh
-              }, {
-                  NxSXLgXgoQg(enEhp02mua2U("8s8fstgP4sLKVsLUo+a7UF==", ((7 + 5) * 7 + 35787)), { CornerRadius = UDim.new(1, 0) }),
-                  NxSXLgXgoQg(enEhp02mua2U("IeoELKkqLnzDWh77UEPpAe==", (8 * 2 * 3 + 618)), { Thickness = (10 * 4 - 38), Color = Color3.fromRGB(0, 0, 0), Transparency = 0.3 })
-              })
-
-              local VqtdKF_O9ERA = NxSXLgXgoQg(enEhp02mua2U("zBLZGv6jU4fyYKfX", ((9 + 4) * 6 + 62682)), {
-                  Size = UDim2.fromOffset(((6 + 5) * 3 - 15), (8 * 5 * 5 - 20)),
-                  Position = UDim2.fromOffset(((4 + 8) * 6 + 142), (8 * 2 * 4 - 9)),
-                  BorderSizePixel = 0,
-                  Parent = dzC7Sxlz.Root
-              }, {
-                  NxSXLgXgoQg(enEhp02mua2U("DirnjRtheP0deGHLb+4obM==", (2 * 13 + 16977)), { CornerRadius = UDim.new(1, 0) }),
-                  NxSXLgXgoQg(enEhp02mua2U("J/mWdYNrGyVFPeZndGtpVG6VVGlQd25h", (7 * 6 + 58239)), {
-                      Color = ColorSequence.new({
-                          ColorSequenceKeypoint.new(0, Color3.fromRGB(((9 + 3) * 6 + 183), 0, 0)),
-                          ColorSequenceKeypoint.new(1/(4 * 2 - 2), Color3.fromRGB(((1 + 5) * 3 + 237), (8 * 4 + 223), 0)),
-                          ColorSequenceKeypoint.new(((5 + 8) * 6 - 76)/((3 + 8) * 4 - 38), Color3.fromRGB(0, (3 * 5 * 2 + 225), 0)),
-                          ColorSequenceKeypoint.new((4 * 3 * 3 - 33)/(8 * 2 - 10), Color3.fromRGB(0, ((6 + 4) * 5 + 205), (6 * 8 * 2 + 159))),
-                          ColorSequenceKeypoint.new((3 * 8 * 3 - 68)/(5 * 8 - 34), Color3.fromRGB(0, 0, (9 * 5 + 210))),
-                          ColorSequenceKeypoint.new((5 * 6 * 6 - 175)/(5 * 2 * 3 - 24), Color3.fromRGB((7 * 8 * 3 + 87), 0, (8 * 7 * 3 + 87))),
-                          ColorSequenceKeypoint.new(1, Color3.fromRGB(((7 + 6) * 7 + 164), 0, 0))
-                      }),
-                      Rotation = ((9 + 9) * 5 + 0)
-                  })
-              })
-
-              local lInM6BuWlQ8ibo = NxSXLgXgoQg(enEhp02mua2U("Q8MDALe2Qj+HlLip", (4 * 7 * 3 + 25442)), {
-                  Size = UDim2.fromOffset((8 * 7 - 40), ((6 + 6) * 4 - 32)),
-                  AnchorPoint = Vector2.new(0.5, 0.5),
-                  Position = UDim2.new(0.5, 0, KuviQuVl1ItD, 0),
-                  BackgroundColor3 = Color3.fromRGB((8 * 12 + 159), (5 * 2 * 6 + 195), (6 * 2 * 4 + 207)),
-                  BorderSizePixel = 0,
-                  ZIndex = ((2 + 4) * 6 - 34),
-                  Parent = VqtdKF_O9ERA
-              }, {
-                  NxSXLgXgoQg(enEhp02mua2U("4eEDL/YXLwPVDG8CBtvtGB==", (11 * 10 + 23991)), { CornerRadius = UDim.new(1, 0) }),
-                  NxSXLgXgoQg(enEhp02mua2U("PlUZBGdyf7aSIDLMLviIWC==", (11 * 11 + 16980)), { Thickness = (8 * 13 - 102), Color = Color3.fromRGB(0, 0, 0), Transparency = 0.3 })
-              })
-
-              local bddgGIxuRB
-              local CcO9lG5OwFM3K
-              if Nvo5_rEtH then
-                  bddgGIxuRB = NxSXLgXgoQg(enEhp02mua2U("5TDL+hbHxtMxTTPz", (6 * 3 * 6 + 6575)), {
-                      Size = UDim2.fromOffset((5 * 10 - 32), (4 * 8 + 148)),
-                      Position = UDim2.fromOffset((6 * 7 * 3 + 126), (5 * 2 + 45)),
-                      BackgroundColor3 = Color3.fromHSV(KuviQuVl1ItD, mpEnSmlL, UNrZGTwgZWp0),
-                      BorderSizePixel = 0,
-                      Parent = dzC7Sxlz.Root
-                  }, {
-                      NxSXLgXgoQg(enEhp02mua2U("r3fXBKD3tVB4LHMkTOu/VD==", ((4 + 7) * 4 + 3587)), { CornerRadius = UDim.new(1, 0) }),
-                      NxSXLgXgoQg(enEhp02mua2U("u0Y9F6Itngl3HkcN+4uO/fmCyvxpy7ea", (9 * 7 + 63383)), {
-                          Transparency = NumberSequence.new({
-                              NumberSequenceKeypoint.new(0, 0),
-                              NumberSequenceKeypoint.new(1, 1)
-                          }),
-                          Rotation = ((9 + 5) * 3 + 48)
-                      })
-                  })
-                  CcO9lG5OwFM3K = NxSXLgXgoQg(enEhp02mua2U("o1b5Hi8SxkNynZLw", ((6 + 3) * 5 + 55738)), {
-                      Size = UDim2.fromOffset(((2 + 2) * 7 - 12), (5 * 8 * 6 - 224)),
-                      AnchorPoint = Vector2.new(0.5, 0.5),
-                      Position = UDim2.new(0.5, 0, 1 - VOH2Vqqt9f, 0),
-                      BackgroundColor3 = Color3.fromRGB((8 * 2 + 239), ((6 + 4) * 5 + 205), ((8 + 7) * 2 + 225)),
-                      BorderSizePixel = 0,
-                      ZIndex = ((2 + 3) * 7 - 33),
-                      Parent = bddgGIxuRB
-                  }, {
-                      NxSXLgXgoQg(enEhp02mua2U("2/MwKKiyKQ7REtjSC9ISUw==", (4 * 3 * 3 + 37090)), { CornerRadius = UDim.new(1, 0) }),
-                      NxSXLgXgoQg(enEhp02mua2U("GLe6n8ktS3Fu+/YIW6mtCF==", (6 * 7 * 5 + 4870)), { Thickness = ((2 + 8) * 4 - 38), Color = Color3.fromRGB(0, 0, 0), Transparency = 0.3 })
-                  })
-              end
-
-              local a0doD8JRbJF2jW = NxSXLgXgoQg(enEhp02mua2U("pGdNrKDzmW2scWRr", (5 * 8 + 61864)), {
-                  Size = UDim2.fromOffset((5 * 6 + 80), (6 * 7 * 5 - 180)),
-                  Position = UDim2.fromOffset((8 * 12 - 76), (3 * 3 * 4 + 214)),
-                  BackgroundColor3 = ru_1s3dO(enEhp02mua2U("HBZDHIHBHkBnlD2a15H+4wPIexw6UyOh", (2 * 10 + 38181))),
-                  BackgroundTransparency = 0.85,
-                  Parent = dzC7Sxlz.Root
-              }, {
-                  NxSXLgXgoQg(enEhp02mua2U("4YorAiL12fZEEJSQF+Lce2==", (5 * 8 * 2 + 44546)), { CornerRadius = UDim.new(0, ((5 + 4) * 4 - 32)) }),
-                  NxSXLgXgoQg(enEhp02mua2U("mskZGzFhYuv/fDikDsFLmv==", (3 * 8 * 4 + 20570)), {
-                      Transparency = 0.5,
-                      ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                      Color = ru_1s3dO(enEhp02mua2U("dDK/9lrFc3b/t3kI4ewApSV0tVbJ4QAs", ((9 + 8) * 6 + 6557))),
-                      Thickness = 1
-                  })
-              })
-              MYpL11YDP(a0doD8JRbJF2jW, { BackgroundColor3 = enEhp02mua2U("fxXjBjRkFfZ9yYGxiaRt/9Gel+1gRxad", (8 * 3 + 10457)) })
-
-              local Y7tQNqswpnl = NxSXLgXgoQg(enEhp02mua2U("XylCVR+OPGbmPrGi82GKQs==", (2 * 5 * 5 + 58593)), {
-                  FontFace = t2hTAJBv,
-                  Text = enEhp02mua2U("CR1Lg7Rclgj=", (8 * 2 + 16385)) .. jjHDs70Cs7MKf:ToHex(),
-                  TextColor3 = ru_1s3dO(enEhp02mua2U("lFL3BecvZ3dfl9v9", (8 * 7 * 6 + 63193))),
-                  TextSize = (5 * 6 * 5 - 137),
-                  TextXAlignment = Enum.TextXAlignment.Left,
-                  BackgroundTransparency = 1,
-                  Size = UDim2.new(1, -(5 * 11 - 43), 1, 0),
-                  Position = UDim2.fromOffset(((1 + 2) * 2 + 2), 0),
-                  ClearTextOnFocus = (not (1 == 1)),
-                  Parent = a0doD8JRbJF2jW
-              })
-              MYpL11YDP(Y7tQNqswpnl, { TextColor3 = enEhp02mua2U("q4rEIkMpSoSGPiqE", ((8 + 6) * 7 + 10324)) })
-
-              local EqLATqts07qw6 = NxSXLgXgoQg(enEhp02mua2U("8zuD6iCapOmhSfZ5", (2 * 6 * 5 + 10641)), {
-                  Size = UDim2.fromOffset((7 * 8 * 2 + 38), (3 * 7 + 9)),
-                  Position = UDim2.fromOffset(((1 + 6) * 4 + 112), (4 * 4 * 4 + 186)),
-                  BackgroundTransparency = 1,
-                  Parent = dzC7Sxlz.Root
-              }, {
-                  NxSXLgXgoQg(enEhp02mua2U("DzibWIUAL2Wi6Q9Ce2Zfs79AWoIN9gyn", ((1 + 5) * 3 + 34336)), {
-                      Padding = UDim.new(0, ((4 + 9) * 7 - 85)),
-                      FillDirection = Enum.FillDirection.Horizontal,
-                      SortOrder = Enum.SortOrder.LayoutOrder
-                  })
-              })
-
-              local function dEtEeb3xDdJ_(Etz33GDub6TJ0G, N8TDUxHovd)
-                  local pxPwMERv7 = NxSXLgXgoQg(enEhp02mua2U("g6rMAwbfIVF7liey", (6 * 9 + 2479)), {
-                      Size = UDim2.fromOffset(((6 + 4) * 4 + 6), (11 * 2 + 8)),
-                      BackgroundColor3 = ru_1s3dO(enEhp02mua2U("2h+/dHoYdy1ZuEZyPhRCiGrY+ADeGA1f", (2 * 2 * 2 + 49941))),
-                      BackgroundTransparency = 0.85,
-                      LayoutOrder = N8TDUxHovd,
-                      Parent = EqLATqts07qw6
-                  }, {
-                      NxSXLgXgoQg(enEhp02mua2U("UkfDs7fTNJhf9QzfPqDbkf==", (8 * 6 + 19113)), { CornerRadius = UDim.new(0, (4 * 2 - 4)) }),
-                      NxSXLgXgoQg(enEhp02mua2U("fziTIYgaOJqLf30Ze8E+Qg==", (5 * 5 * 6 + 37152)), {
-                          Transparency = 0.5,
-                          ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                          Color = ru_1s3dO(enEhp02mua2U("lCjb9UjBnT1q5oh0dF+OmktwmiKxNILd", (10 * 11 + 281))),
-                          Thickness = 1
-                      })
-                  })
-                  MYpL11YDP(pxPwMERv7, { BackgroundColor3 = enEhp02mua2U("rTGnOdrSRgCP27HZJAOX64o3+7rnRdSZ", ((4 + 8) * 3 + 35921)) })
-                  local fkhadOZBdWGw = NxSXLgXgoQg(enEhp02mua2U("saM5qQzpms8HYaSwmQoZKE==", (2 * 8 * 3 + 19530)), {
-                      FontFace = t2hTAJBv,
-                      Text = tostring(Etz33GDub6TJ0G),
-                      TextColor3 = ru_1s3dO(enEhp02mua2U("FjEDe6P3Wuq7Lowl", ((1 + 5) * 2 + 54806))),
-                      TextSize = (9 * 5 - 33),
-                      TextXAlignment = Enum.TextXAlignment.Center,
-                      BackgroundTransparency = 1,
-                      Size = UDim2.fromScale(1, 1),
-                      ClearTextOnFocus = (not (1 == 1)),
-                      Parent = pxPwMERv7
-                  })
-                  MYpL11YDP(fkhadOZBdWGw, { TextColor3 = enEhp02mua2U("M5xuM5AdxMvAcrJe", (2 * 13 + 19122)) })
-                  return fkhadOZBdWGw
-              end
-
-              local GkmZFNuwV3dKmh, S4SGghVBMxmYL, eA9UaH3EC = math.floor(jjHDs70Cs7MKf.R * (3 * 3 * 2 + 237)), math.floor(jjHDs70Cs7MKf.G * ((7 + 5) * 6 + 183)), math.floor(jjHDs70Cs7MKf.B * ((9 + 3) * 5 + 195))
-              local nAVPbERo3L = dEtEeb3xDdJ_(GkmZFNuwV3dKmh, 1)
-              local Sjliyyvvd = dEtEeb3xDdJ_(S4SGghVBMxmYL, ((7 + 7) * 5 - 68))
-              local LV_J2hBSF6LZ = dEtEeb3xDdJ_(eA9UaH3EC, (7 * 4 * 3 - 81))
-
-              local DZHKFwbG = (not (1 == 1))
-
-              local function h6AuJc_1mR()
-                  CYyDmKoJoJh.BackgroundColor3 = Color3.fromHSV(KuviQuVl1ItD, 1, 1)
-                  OjxPyZbQVMrA.Position = UDim2.new(mpEnSmlL, 0, 1 - UNrZGTwgZWp0, 0)
-                  lInM6BuWlQ8ibo.Position = UDim2.new(0.5, 0, KuviQuVl1ItD, 0)
-                  if bddgGIxuRB then bddgGIxuRB.BackgroundColor3 = Color3.fromHSV(KuviQuVl1ItD, mpEnSmlL, UNrZGTwgZWp0) end
-                  if CcO9lG5OwFM3K then CcO9lG5OwFM3K.Position = UDim2.new(0.5, 0, 1 - VOH2Vqqt9f, 0) end
-                  local Bhn9wZ3Vn1XeGE = Color3.fromHSV(KuviQuVl1ItD, mpEnSmlL, UNrZGTwgZWp0)
-                  GkmZFNuwV3dKmh, S4SGghVBMxmYL, eA9UaH3EC = math.floor(Bhn9wZ3Vn1XeGE.R * (4 * 8 * 6 + 63)), math.floor(Bhn9wZ3Vn1XeGE.G * (6 * 3 * 4 + 183)), math.floor(Bhn9wZ3Vn1XeGE.B * ((1 + 5) * 2 + 243))
-                  DZHKFwbG = (1 == 1)
-                  Y7tQNqswpnl.Text = enEhp02mua2U("eKSIS49YsJ7=", ((3 + 5) * 6 + 350)) .. Bhn9wZ3Vn1XeGE:ToHex()
-                  nAVPbERo3L.Text = tostring(GkmZFNuwV3dKmh)
-                  Sjliyyvvd.Text = tostring(S4SGghVBMxmYL)
-                  LV_J2hBSF6LZ.Text = tostring(eA9UaH3EC)
-                  DZHKFwbG = (0 == 1)
-              end
-
-              CYyDmKoJoJh.InputBegan:Connect(function(odKgJRKy23lc_)
-                  if odKgJRKy23lc_.UserInputType == Enum.UserInputType.MouseButton1 or odKgJRKy23lc_.UserInputType == Enum.UserInputType.Touch then
-                      while Xgxm8ph4yo:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
-                          local Z70oUn5B0W, Ya8ZJNsDbSYbvp = CYyDmKoJoJh.AbsolutePosition.X, CYyDmKoJoJh.AbsolutePosition.Y
-                          local YqVeCV4O, dt9vFyn1K2W = Z70oUn5B0W + CYyDmKoJoJh.AbsoluteSize.X, Ya8ZJNsDbSYbvp + CYyDmKoJoJh.AbsoluteSize.Y
-                          mpEnSmlL = math.clamp((t0LgLdo6k.X - Z70oUn5B0W) / (YqVeCV4O - Z70oUn5B0W), 0, 1)
-                          UNrZGTwgZWp0 = 1 - math.clamp((t0LgLdo6k.Y - Ya8ZJNsDbSYbvp) / (dt9vFyn1K2W - Ya8ZJNsDbSYbvp), 0, 1)
-                          h6AuJc_1mR()
-                          u3h8iU2HVrE_.RenderStepped:Wait()
-                      end
-                  end
-              end)
-
-              VqtdKF_O9ERA.InputBegan:Connect(function(iS1FuAKp)
-                  if iS1FuAKp.UserInputType == Enum.UserInputType.MouseButton1 or iS1FuAKp.UserInputType == Enum.UserInputType.Touch then
-                      while Xgxm8ph4yo:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
-                          local NOTIGoeBTh = VqtdKF_O9ERA.AbsolutePosition.Y
-                          local WzLVfnchzU = NOTIGoeBTh + VqtdKF_O9ERA.AbsoluteSize.Y
-                          KuviQuVl1ItD = math.clamp((t0LgLdo6k.Y - NOTIGoeBTh) / (WzLVfnchzU - NOTIGoeBTh), 0, 1)
-                          h6AuJc_1mR()
-                          u3h8iU2HVrE_.RenderStepped:Wait()
-                      end
-                  end
-              end)
-
-              if bddgGIxuRB then
-                  bddgGIxuRB.InputBegan:Connect(function(ca4i8vNIAGv47)
-                      if ca4i8vNIAGv47.UserInputType == Enum.UserInputType.MouseButton1 or ca4i8vNIAGv47.UserInputType == Enum.UserInputType.Touch then
-                          while Xgxm8ph4yo:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
-                              local he4oH3F5Rv = bddgGIxuRB.AbsolutePosition.Y
-                              local hqjBvI8TXE2K7 = he4oH3F5Rv + bddgGIxuRB.AbsoluteSize.Y
-                              VOH2Vqqt9f = 1 - math.clamp((t0LgLdo6k.Y - he4oH3F5Rv) / (hqjBvI8TXE2K7 - he4oH3F5Rv), 0, 1)
-                              h6AuJc_1mR()
-                              u3h8iU2HVrE_.RenderStepped:Wait()
-                          end
-                      end
-                  end)
-              end
-
-              Y7tQNqswpnl.FocusLost:Connect(function()
-                  if DZHKFwbG then return end
-                  local h_fLv8cUg_cC = Y7tQNqswpnl.Text
-                  if h_fLv8cUg_cC:sub(1, 1) ~= enEhp02mua2U("h1ACQkGD+f2=", (2 * 11 + 10410)) then h_fLv8cUg_cC = enEhp02mua2U("OwyHZk3hjry=", (10 * 7 + 19787)) .. h_fLv8cUg_cC end
-                  local up5v7g9YZ, IDqwlYA_ = pcall(Color3.fromHex, h_fLv8cUg_cC)
-                  if up5v7g9YZ and typeof(IDqwlYA_) == enEhp02mua2U("iZJV7sV1NPBGFNai", ((9 + 3) * 3 + 46881)) then
-                      KuviQuVl1ItD, mpEnSmlL, UNrZGTwgZWp0 = Color3.toHSV(IDqwlYA_)
-                  end
-                  h6AuJc_1mR()
-              end)
-
-              local function dS4PMrErbikOtp()
-                  if DZHKFwbG then return end
-                  local ov48XmGS4qFw = math.clamp(tonumber(nAVPbERo3L.Text) or GkmZFNuwV3dKmh, 0, (4 * 10 + 215))
-                  local LlmtBCbIy = math.clamp(tonumber(Sjliyyvvd.Text) or S4SGghVBMxmYL, 0, ((4 + 6) * 7 + 185))
-                  local W4gYvBjQh = math.clamp(tonumber(LV_J2hBSF6LZ.Text) or eA9UaH3EC, 0, ((8 + 7) * 3 + 210))
-                  local jZABLGHx9Zt = Color3.fromRGB(ov48XmGS4qFw, LlmtBCbIy, W4gYvBjQh)
-                  KuviQuVl1ItD, mpEnSmlL, UNrZGTwgZWp0 = Color3.toHSV(jZABLGHx9Zt)
-                  h6AuJc_1mR()
-              end
-
-              nAVPbERo3L.FocusLost:Connect(dS4PMrErbikOtp)
-              Sjliyyvvd.FocusLost:Connect(dS4PMrErbikOtp)
-              LV_J2hBSF6LZ.FocusLost:Connect(dS4PMrErbikOtp)
-
-              h6AuJc_1mR()
-          end
-
-          QF3Jj66P.Frame.MouseButton1Click:Connect(function()
-              if QF3Jj66P.Disabled then return end
-              PiBPyRss_()
-          end)
-
-          function QF3Jj66P:SetValue(d7AvRsmdgB8, DWbTwaPXhD, UxsWot5gnCE3)
-              if typeof(d7AvRsmdgB8) == enEhp02mua2U("MaUs9zLw5pfJ592U", (7 * 2 * 2 + 19013)) then jjHDs70Cs7MKf = d7AvRsmdgB8 end
-              if DWbTwaPXhD then dV2JH6uEG = DWbTwaPXhD end
-              OlNLF77Pd.BackgroundColor3 = jjHDs70Cs7MKf
-              OlNLF77Pd.BackgroundTransparency = dV2JH6uEG
-              if not UxsWot5gnCE3 then
-                  VtkfV2WFLqvi5N(jaNdNTWpyv.Callback, jjHDs70Cs7MKf)
-                  VtkfV2WFLqvi5N(QF3Jj66P.Changed, jjHDs70Cs7MKf)
-                  if PmsOJX8FK2NO.Window and PmsOJX8FK2NO.Window._scheduleSave then PmsOJX8FK2NO.Window._scheduleSave() end
-              end
-          end
-          function QF3Jj66P:GetValue() return jjHDs70Cs7MKf end
-          function QF3Jj66P:GetTransparency() return dV2JH6uEG end
-          function QF3Jj66P:OnChanged(PPfDheU4sYI) QF3Jj66P.Changed = PPfDheU4sYI; PPfDheU4sYI(jjHDs70Cs7MKf) end
-
-          table.insert(lLQEgV6707Qc1S.Elements, QF3Jj66P)
-          KqEyweSczEMkc(QF3Jj66P, enEhp02mua2U("0OHqIMVILHeKMBAOAnInW4RSMpw+kter", (7 * 4 * 3 + 24094)), jaNdNTWpyv.ConfigKey or (PmsOJX8FK2NO.Title .. enEhp02mua2U("mSdAUZpXDfU=", ((4 + 3) * 5 + 42552)) .. lLQEgV6707Qc1S.Title .. enEhp02mua2U("CG0Ti6WYegP=", (5 * 6 + 29318)) .. (jaNdNTWpyv.Title or enEhp02mua2U("t0uUrj1eS8eiIofw", (4 * 5 * 3 + 18117)))))
-          return QF3Jj66P
-      end
-
-      return lLQEgV6707Qc1S
-  end
-      _0xfn21BiRK415 = 791535
+      _0xfx5ekO0IJtEdse5p = 317648
     else
       break
     end
