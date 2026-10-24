@@ -1,5 +1,5 @@
 local DevTools = {}
-DevTools.Version = "1.0.0"
+DevTools.Version = "1.0.2"
 DevTools._instances = {}
 
 function DevTools:LogConsole(level, message)
@@ -385,6 +385,8 @@ function DevTools.Install(CentrixUI, Window)
     logList.SortOrder = Enum.SortOrder.LayoutOrder
     logList.Parent = consoleBody
 
+    local logDepth = 0
+
     local function updateConsoleVisibility()
         for _, line in ipairs(state.consoleLines) do
             if line.Instance and line.Instance.Parent then
@@ -395,84 +397,88 @@ function DevTools.Install(CentrixUI, Window)
 
     local function addLog(level, message)
         if not consoleBody or not consoleBody.Parent then return end
+        if logDepth > 0 then return end
+        logDepth = logDepth + 1
+        pcall(function()
+            local entry = Instance.new("Frame")
+            entry.Size = UDim2.new(1, 0, 0, 0)
+            entry.AutomaticSize = Enum.AutomaticSize.Y
+            entry.BackgroundTransparency = 1
+            entry.Parent = consoleBody
 
-        local entry = Instance.new("Frame")
-        entry.Size = UDim2.new(1, 0, 0, 0)
-        entry.AutomaticSize = Enum.AutomaticSize.Y
-        entry.BackgroundTransparency = 1
-        entry.Parent = consoleBody
+            local list = Instance.new("UIListLayout")
+            list.FillDirection = Enum.FillDirection.Horizontal
+            list.Padding = UDim.new(0, 6)
+            list.VerticalAlignment = Enum.VerticalAlignment.Top
+            list.SortOrder = Enum.SortOrder.LayoutOrder
+            list.Parent = entry
 
-        local list = Instance.new("UIListLayout")
-        list.FillDirection = Enum.FillDirection.Horizontal
-        list.Padding = UDim.new(0, 6)
-        list.VerticalAlignment = Enum.VerticalAlignment.Top
-        list.SortOrder = Enum.SortOrder.LayoutOrder
-        list.Parent = entry
+            local time = os.date("%H:%M:%S")
 
-        local time = os.date("%H:%M:%S")
+            local timeLabel = Instance.new("TextLabel")
+            timeLabel.Size = UDim2.new(0, 60, 0, 16)
+            timeLabel.BackgroundTransparency = 1
+            timeLabel.Text = time
+            timeLabel.TextColor3 = C.SUBTEXT
+            timeLabel.FontFace = FONT
+            timeLabel.TextSize = 11
+            timeLabel.TextXAlignment = Enum.TextXAlignment.Left
+            timeLabel.LayoutOrder = 1
+            timeLabel.Parent = entry
 
-        local timeLabel = Instance.new("TextLabel")
-        timeLabel.Size = UDim2.new(0, 60, 0, 16)
-        timeLabel.BackgroundTransparency = 1
-        timeLabel.Text = time
-        timeLabel.TextColor3 = C.SUBTEXT
-        timeLabel.FontFace = FONT
-        timeLabel.TextSize = 11
-        timeLabel.TextXAlignment = Enum.TextXAlignment.Left
-        timeLabel.LayoutOrder = 1
-        timeLabel.Parent = entry
+            local levelColors = {
+                info = C.ACCENT,
+                success = C.SUCCESS,
+                warning = C.WARNING,
+                error = C.ERROR,
+            }
 
-        local levelColors = {
-            info = C.ACCENT,
-            success = C.SUCCESS,
-            warning = C.WARNING,
-            error = C.ERROR,
-        }
+            local levelLabel = Instance.new("TextLabel")
+            levelLabel.Size = UDim2.new(0, 55, 0, 16)
+            levelLabel.BackgroundTransparency = 1
+            levelLabel.Text = string.upper(level)
+            levelLabel.TextColor3 = levelColors[level] or C.TEXT
+            levelLabel.FontFace = FONT
+            levelLabel.TextSize = 11
+            levelLabel.TextXAlignment = Enum.TextXAlignment.Left
+            levelLabel.LayoutOrder = 2
+            levelLabel.Parent = entry
 
-        local levelLabel = Instance.new("TextLabel")
-        levelLabel.Size = UDim2.new(0, 55, 0, 16)
-        levelLabel.BackgroundTransparency = 1
-        levelLabel.Text = string.upper(level)
-        levelLabel.TextColor3 = levelColors[level] or C.TEXT
-        levelLabel.FontFace = FONT
-        levelLabel.TextSize = 11
-        levelLabel.TextXAlignment = Enum.TextXAlignment.Left
-        levelLabel.LayoutOrder = 2
-        levelLabel.Parent = entry
+            local msgLabel = Instance.new("TextLabel")
+            msgLabel.Size = UDim2.new(1, -135, 0, 0)
+            msgLabel.AutomaticSize = Enum.AutomaticSize.Y
+            msgLabel.BackgroundTransparency = 1
+            msgLabel.Text = message
+            msgLabel.TextColor3 = C.TEXT
+            msgLabel.FontFace = FONT
+            msgLabel.TextSize = 11
+            msgLabel.TextXAlignment = Enum.TextXAlignment.Left
+            msgLabel.TextYAlignment = Enum.TextYAlignment.Top
+            msgLabel.TextWrapped = true
+            msgLabel.LayoutOrder = 3
+            msgLabel.Parent = entry
 
-        local msgLabel = Instance.new("TextLabel")
-        msgLabel.Size = UDim2.new(1, -135, 0, 0)
-        msgLabel.AutomaticSize = Enum.AutomaticSize.Y
-        msgLabel.BackgroundTransparency = 1
-        msgLabel.Text = message
-        msgLabel.TextColor3 = C.TEXT
-        msgLabel.FontFace = FONT
-        msgLabel.TextSize = 11
-        msgLabel.TextXAlignment = Enum.TextXAlignment.Left
-        msgLabel.TextYAlignment = Enum.TextYAlignment.Top
-        msgLabel.TextWrapped = true
-        msgLabel.LayoutOrder = 3
-        msgLabel.Parent = entry
+            local data = { Instance = entry, Level = level, Message = message }
+            table.insert(state.consoleLines, data)
 
-        local data = { Instance = entry, Level = level, Message = message }
-        table.insert(state.consoleLines, data)
-
-        if #state.consoleLines > state.consoleMax then
-            local old = table.remove(state.consoleLines, 1)
-            if old and old.Instance then
-                old.Instance:Destroy()
+            if #state.consoleLines > state.consoleMax then
+                local old = table.remove(state.consoleLines, 1)
+                if old and old.Instance then
+                    old.Instance:Destroy()
+                end
             end
-        end
 
-        if state.consoleFilter ~= "all" and state.consoleFilter ~= level then
-            entry.Visible = false
-        end
-
-        task.defer(function()
-            if consoleBody and consoleBody.Parent then
-                consoleBody.CanvasPosition = Vector2.new(0, consoleBody.AbsoluteCanvasSize.Y)
+            if state.consoleFilter ~= "all" and state.consoleFilter ~= level then
+                entry.Visible = false
             end
+
+            task.defer(function()
+                if consoleBody and consoleBody.Parent then
+                    consoleBody.CanvasPosition = Vector2.new(0, consoleBody.AbsoluteCanvasSize.Y)
+                end
+            end)
         end)
+        logDepth = logDepth - 1
     end
 
     table.insert(DevTools._instances, { addLog = addLog })
@@ -549,61 +555,61 @@ function DevTools.Install(CentrixUI, Window)
         if not env then return end
 
         local function hookFn(fnName, level)
-    local original
-    local ok1, v1 = pcall(function() return env[fnName] end)
-    if ok1 and type(v1) == "function" then
-        original = v1
-    else
-        local ok2, v2 = pcall(function() return _G[fnName] end)
-        if ok2 and type(v2) == "function" then
-            original = v2
-        end
-    end
-    if not original then return end
-
-    local detour = original
-
-    local newFn = function(...)
-        local argc = select("#", ...)
-        local args = { ... }
-
-        pcall(function()
-            local parts = {}
-            for i = 1, argc do
-                local v = args[i]
-                local tv = typeof(v)
-                if tv == "string" then
-                    parts[i] = v
-                elseif tv == "Instance" then
-                    local fok, fname = pcall(function() return v:GetFullName() end)
-                    parts[i] = fok and fname or "<Instance>"
-                else
-                    parts[i] = tostring(v)
+            local original
+            local ok1, v1 = pcall(function() return env[fnName] end)
+            if ok1 and type(v1) == "function" then
+                original = v1
+            else
+                local ok2, v2 = pcall(function() return _G[fnName] end)
+                if ok2 and type(v2) == "function" then
+                    original = v2
                 end
             end
-            local text = table.concat(parts, " ")
-            DevTools:LogConsole(level, text)
-        end)
+            if not original then return end
 
-        return detour(...)
-    end
+            local detour = original
 
-    if type(hookfunction) == "function" then
-        local hok, hd = pcall(hookfunction, original, newFn)
-        if hok and type(hd) == "function" then
-            detour = hd
-            return
+            local newFn = function(...)
+                local argc = select("#", ...)
+                local args = { ... }
+
+                pcall(function()
+                    local parts = {}
+                    for i = 1, argc do
+                        local v = args[i]
+                        local tv = typeof(v)
+                        if tv == "string" then
+                            parts[i] = v
+                        elseif tv == "Instance" then
+                            local fok, fname = pcall(function() return v:GetFullName() end)
+                            parts[i] = fok and fname or "<Instance>"
+                        else
+                            parts[i] = tostring(v)
+                        end
+                    end
+                    local text = table.concat(parts, " ")
+                    DevTools:LogConsole(level, text)
+                end)
+
+                return detour(...)
+            end
+
+            if type(hookfunction) == "function" then
+                local hok, hd = pcall(hookfunction, original, newFn)
+                if hok and type(hd) == "function" then
+                    detour = hd
+                    return
+                end
+            end
+
+            if type(replaceclosure) == "function" then
+                local rok = pcall(replaceclosure, original, newFn)
+                if rok then return end
+            end
+
+            pcall(function() env[fnName] = newFn end)
+            pcall(function() _G[fnName] = newFn end)
         end
-    end
-
-    if type(replaceclosure) == "function" then
-        local rok = pcall(replaceclosure, original, newFn)
-        if rok then return end
-    end
-
-    pcall(function() env[fnName] = newFn end)
-    pcall(function() _G[fnName] = newFn end)
-end
 
         hookFn("print", "info")
         hookFn("warn", "warning")
