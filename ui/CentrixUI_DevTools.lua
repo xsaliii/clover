@@ -549,56 +549,61 @@ function DevTools.Install(CentrixUI, Window)
         if not env then return end
 
         local function hookFn(fnName, level)
-            local original
-            local ok1, v1 = pcall(function() return env[fnName] end)
-            if ok1 and type(v1) == "function" then
-                original = v1
-            else
-                local ok2, v2 = pcall(function() return _G[fnName] end)
-                if ok2 and type(v2) == "function" then
-                    original = v2
+    local original
+    local ok1, v1 = pcall(function() return env[fnName] end)
+    if ok1 and type(v1) == "function" then
+        original = v1
+    else
+        local ok2, v2 = pcall(function() return _G[fnName] end)
+        if ok2 and type(v2) == "function" then
+            original = v2
+        end
+    end
+    if not original then return end
+
+    local detour = original
+
+    local newFn = function(...)
+        local argc = select("#", ...)
+        local args = { ... }
+
+        pcall(function()
+            local parts = {}
+            for i = 1, argc do
+                local v = args[i]
+                local tv = typeof(v)
+                if tv == "string" then
+                    parts[i] = v
+                elseif tv == "Instance" then
+                    local fok, fname = pcall(function() return v:GetFullName() end)
+                    parts[i] = fok and fname or "<Instance>"
+                else
+                    parts[i] = tostring(v)
                 end
             end
-            if not original then return end
+            local text = table.concat(parts, " ")
+            DevTools:LogConsole(level, text)
+        end)
 
-            local newFn = function(...)
-                local argc = select("#", ...)
-                local args = { ... }
+        return detour(...)
+    end
 
-                pcall(function()
-                    local parts = {}
-                    for i = 1, argc do
-                        local v = args[i]
-                        local tv = typeof(v)
-                        if tv == "string" then
-                            parts[i] = v
-                        elseif tv == "Instance" then
-                            local fok, fname = pcall(function() return v:GetFullName() end)
-                            parts[i] = fok and fname or "<Instance>"
-                        else
-                            parts[i] = tostring(v)
-                        end
-                    end
-                    local text = table.concat(parts, " ")
-                    DevTools:LogConsole(level, text)
-                end)
-
-                return original(...)
-            end
-
-            if type(hookfunction) == "function" then
-                local hok = pcall(hookfunction, original, newFn)
-                if hok then return end
-            end
-
-            if type(replaceclosure) == "function" then
-                local rok = pcall(replaceclosure, original, newFn)
-                if rok then return end
-            end
-
-            pcall(function() env[fnName] = newFn end)
-            pcall(function() _G[fnName] = newFn end)
+    if type(hookfunction) == "function" then
+        local hok, hd = pcall(hookfunction, original, newFn)
+        if hok and type(hd) == "function" then
+            detour = hd
+            return
         end
+    end
+
+    if type(replaceclosure) == "function" then
+        local rok = pcall(replaceclosure, original, newFn)
+        if rok then return end
+    end
+
+    pcall(function() env[fnName] = newFn end)
+    pcall(function() _G[fnName] = newFn end)
+end
 
         hookFn("print", "info")
         hookFn("warn", "warning")
