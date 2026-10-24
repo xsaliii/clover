@@ -1,5 +1,5 @@
 local CentrixUI = {}
-CentrixUI.Version = "4.5.0"
+CentrixUI.Version = "4.6.0"
 
 local function SafeClone(inst)
     if type(cloneref) == "function" then
@@ -1073,6 +1073,33 @@ function CentrixUI:GetIcon(name)
     return Assets[name] or Assets["lucide-" .. name]
 end
 
+function CentrixUI:ResolveIcon(icon, callback)
+    if not icon or icon == "" or type(icon) ~= "string" then
+        return callback(nil)
+    end
+    if icon:sub(1, 11) == "rbxassetid:" or icon:sub(1, 11) == "rbxasset://" then
+        return callback(icon)
+    end
+    if icon:sub(1, 4) == "http" then
+        return LoadAssetAsync(icon, callback)
+    end
+    local lucide = Assets[icon] or Assets["lucide-" .. icon]
+    return callback(lucide or icon)
+end
+
+function CentrixUI:ListIcons()
+    local list = {}
+    for k, _ in pairs(Assets) do
+        table.insert(list, k)
+    end
+    table.sort(list)
+    return list
+end
+
+function CentrixUI:PreloadIcon(url, callback)
+    return LoadAssetAsync(url, callback)
+end
+
 local Themes = {}
 
 Themes.Dark = {
@@ -1414,7 +1441,7 @@ local function CreateElement(title, desc, parent, interactable, rippleColor, ico
 
     if icon then
         IconImage = New("ImageLabel", {
-            Image = CentrixUI:GetIcon(icon) or icon,
+            Image = "",
             ImageColor3 = GetTheme("SubText"),
             Size = UDim2.fromOffset(18, 18),
             AnchorPoint = Vector2.new(0, 0.5),
@@ -1423,6 +1450,15 @@ local function CreateElement(title, desc, parent, interactable, rippleColor, ico
             Parent = Frame
         })
         Register(IconImage, { ImageColor3 = "SubText" })
+        CentrixUI:ResolveIcon(icon, function(asset)
+            if asset and IconImage and IconImage.Parent then
+                IconImage.Image = asset
+                if asset:sub(1, 4) == "rbxassetid" or asset:sub(1, 11) == "rbxassetid:" or asset:sub(1, 9) == "rbxasset" then
+                else
+                    IconImage.ImageColor3 = Color3.new(1, 1, 1)
+                end
+            end
+        end)
     end
 
     local TitleLabel = New("TextLabel", {
@@ -1497,6 +1533,33 @@ local function CreateElement(title, desc, parent, interactable, rippleColor, ico
         TitleLabel.TextTransparency = self.Disabled and 0.4 or 0
         DescLabel.TextTransparency = self.Disabled and 0.4 or 0
     end
+    function self:Highlight(color)
+        if self._highlighting then return end
+        self._highlighting = true
+        local stroke = Frame:FindFirstChildOfClass("UIStroke")
+        if not stroke then
+            stroke = New("UIStroke", {
+                ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+                Thickness = 1,
+                Parent = Frame
+            })
+        end
+        local origColor = stroke.Color
+        local origThickness = stroke.Thickness
+        local origTransparency = stroke.Transparency
+        stroke.Color = color or GetTheme("Accent")
+        stroke.Thickness = 2
+        stroke.Transparency = 0
+        Tween(stroke, 0.8, { Transparency = 1 })
+        task.delay(1, function()
+            if stroke and stroke.Parent then
+                stroke.Color = origColor
+                stroke.Thickness = origThickness
+                stroke.Transparency = origTransparency
+            end
+            self._highlighting = false
+        end)
+    end
     function self:Destroy()
         for i = #Registry, 1, -1 do
             local e = Registry[i]
@@ -1567,12 +1630,11 @@ function Section.new(tab, title, order, opts)
     local Chevron
     if collapsible then
         Chevron = New("ImageLabel", {
-            Image = Assets["lucide-chevron-down"],
+            Image = collapsed and Assets["lucide-chevron-down"] or Assets["lucide-chevron-up"],
             ImageColor3 = GetTheme("SubText"),
             Size = UDim2.fromOffset(14, 14),
             AnchorPoint = Vector2.new(1, 0.5),
-            Position = UDim2.new(1, 0, 0.5, 0),
-            Rotation = collapsed and -90 or 0,
+            Position = UDim2.new(1, -2, 0.5, 0),
             BackgroundTransparency = 1,
             Parent = Header
         })
@@ -1593,41 +1655,46 @@ function Section.new(tab, title, order, opts)
     self.Container = ElementsContainer
     self.Root = SectionRoot
     self.Header = Header
+    self.Collapsible = collapsible
 
     table.insert(tab.Sections, self)
 
+    local function applyCollapsed(v)
+        collapsed = not not v
+        ElementsContainer.Visible = not collapsed
+        if Chevron then
+            Chevron.Image = collapsed and Assets["lucide-chevron-down"] or Assets["lucide-chevron-up"]
+        end
+    end
+
     if collapsible then
-        local ClickCatcher = New("TextButton", {
-            Size = UDim2.new(1, 0, 0, 22),
-            Position = UDim2.fromOffset(0, 0),
-            BackgroundTransparency = 1,
-            Text = "",
-            AutoButtonColor = false,
-            ZIndex = 10,
-            Parent = SectionRoot
-        })
-        ClickCatcher.MouseButton1Click:Connect(function()
-            collapsed = not collapsed
-            ElementsContainer.Visible = not collapsed
-            Tween(Chevron, 0.22, { Rotation = collapsed and -90 or 0 }, Enum.EasingStyle.Quart)
+        Header.InputBegan:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                applyCollapsed(not collapsed)
+            end
         end)
-        self._clickCatcher = ClickCatcher
-        local baseUpdate = SectionRoot.ChildAdded
+        Header.MouseEnter:Connect(function()
+            Tween(TitleLabel, 0.12, { TextTransparency = 0.15 })
+            if Chevron then Tween(Chevron, 0.12, { ImageTransparency = 0 }) end
+        end)
+        Header.MouseLeave:Connect(function()
+            Tween(TitleLabel, 0.12, { TextTransparency = 0 })
+        end)
     end
 
     function self:SetCollapsed(v)
         if not collapsible then return end
-        collapsed = not not v
-        ElementsContainer.Visible = not collapsed
-        if Chevron then
-            Tween(Chevron, 0.22, { Rotation = collapsed and -90 or 0 }, Enum.EasingStyle.Quart)
-        end
+        applyCollapsed(v)
     end
     function self:IsCollapsed() return collapsed end
+    function self:SetTitle(t) TitleLabel.Text = t or ""; return self end
 
     local function RegisterElement(el, cfgType, cfgKey)
         el.ConfigType = cfgType
         el.ConfigKey = cfgKey
+        el._parentTab = tab
+        el._parentSection = self
+        el._parentSectionTitle = self.Title
         if not tab.Window._allElements then tab.Window._allElements = {} end
         table.insert(tab.Window._allElements, el)
         return el
@@ -1659,13 +1726,13 @@ function Section.new(tab, title, order, opts)
         local el = CreateElement(cfg.Title or "Paragraph", cfg.Content, ElementsContainer, false, nil, cfg.Icon)
         el.Frame.BackgroundTransparency = 0.97
         el.Frame.AutoButtonColor = false
-        function el:UpdateParagraph(title, content)
-            if title ~= nil then self:SetTitle(title) end
-            if content ~= nil then self:SetDesc(content) end
+        function el:UpdateParagraph(t, c)
+            if t ~= nil then self:SetTitle(t) end
+            if c ~= nil then self:SetDesc(c) end
             return self
         end
-        function el:SetContent(content)
-            self:SetDesc(content)
+        function el:SetContent(c)
+            self:SetDesc(c)
             return self
         end
         table.insert(self.Elements, el)
@@ -3105,6 +3172,7 @@ function CentrixUI:CreateWindow(cfg)
     Window.Destroyed = false
     Window._connections = {}
     Window._allElements = {}
+    Window._searchEntries = {}
     Window.AutoSave = cfg.AutoSave or false
     Window.FolderName = cfg.Foldername or "Centrix"
     Window._opacity = 1
@@ -3396,7 +3464,7 @@ function CentrixUI:CreateWindow(cfg)
     local lastClickTime = 0
 
     local function isOverTitleButton(pos)
-        for _, btn in ipairs({ CloseBtn, MaxBtn, MinBtn }) do
+        for _, btn in ipairs({ CloseBtn, MaxBtn, MinBtn, Window.SearchButton }) do
             if btn and btn.Parent then
                 local ap = btn.AbsolutePosition
                 local as = btn.AbsoluteSize
@@ -3549,14 +3617,42 @@ function CentrixUI:CreateWindow(cfg)
 
         local dialogScale = New("UIScale", { Scale = 1.06, Parent = Root })
 
+        local hasIcon = dcfg.Icon ~= nil
+        local titleX = hasIcon and 60 or 20
+        local contentY = hasIcon and 58 or 52
+
+        if hasIcon then
+            local IconImage = New("ImageLabel", {
+                Image = "",
+                ImageColor3 = dcfg.IconColor or GetTheme("Accent"),
+                Size = UDim2.fromOffset(28, 28),
+                Position = UDim2.fromOffset(20, 22),
+                BackgroundTransparency = 1,
+                Parent = Root
+            })
+            if dcfg.IconColor == nil then
+                Register(IconImage, { ImageColor3 = "Accent" })
+            end
+            CentrixUI:ResolveIcon(dcfg.Icon, function(asset)
+                if asset and IconImage and IconImage.Parent then
+                    IconImage.Image = asset
+                    if dcfg.Icon:sub(1, 4) == "http" or dcfg.Icon:sub(1, 11) == "rbxassetid:" then
+                        if not dcfg.IconColor then
+                            IconImage.ImageColor3 = Color3.new(1, 1, 1)
+                        end
+                    end
+                end
+            end)
+        end
+
         local TitleLabel2 = New("TextLabel", {
             FontFace = FONT_BOLD,
             Text = dcfg.Title or "Dialog",
             TextColor3 = GetTheme("Text"),
             TextSize = 18,
             TextXAlignment = Enum.TextXAlignment.Left,
-            Size = UDim2.new(1, -40, 0, 24),
-            Position = UDim2.fromOffset(20, 20),
+            Size = UDim2.new(1, -titleX - 20, 0, 24),
+            Position = UDim2.fromOffset(titleX, 20),
             BackgroundTransparency = 1,
             Parent = Root
         })
@@ -3564,7 +3660,7 @@ function CentrixUI:CreateWindow(cfg)
 
         local ContentHolder = New("Frame", {
             Size = UDim2.new(1, -40, 1, -110),
-            Position = UDim2.fromOffset(20, 52),
+            Position = UDim2.fromOffset(20, contentY),
             BackgroundTransparency = 1,
             Parent = Root
         })
@@ -3683,7 +3779,6 @@ function CentrixUI:CreateWindow(cfg)
 
         local notifType = ncfg.Type or "info"
         local duration = ncfg.Duration or 5
-        local typeIcon = ncfg.Icon or TintIconForType(notifType)
         local typeColorKey = ColorKeyForType(notifType)
 
         local Root = New("Frame", {
@@ -3709,14 +3804,43 @@ function CentrixUI:CreateWindow(cfg)
         Register(AccentBar, { BackgroundColor3 = typeColorKey })
 
         local IconImage = New("ImageLabel", {
-            Image = CentrixUI:GetIcon(typeIcon) or Assets[typeIcon],
-            ImageColor3 = GetTheme(typeColorKey),
+            Image = "",
+            ImageColor3 = ncfg.IconColor or GetTheme(typeColorKey),
             Size = UDim2.fromOffset(16, 16),
             Position = UDim2.fromOffset(14, 14),
             BackgroundTransparency = 1,
             Parent = Root
         })
-        Register(IconImage, { ImageColor3 = typeColorKey })
+        if ncfg.IconColor == nil then
+            Register(IconImage, { ImageColor3 = typeColorKey })
+        end
+
+        local iconValue = ncfg.Icon
+        if not iconValue or iconValue == "" then
+            iconValue = TintIconForType(notifType)
+        end
+
+        if type(iconValue) == "string" then
+            if iconValue:sub(1, 4) == "http" then
+                IconImage.Image = Assets[TintIconForType(notifType)] or ""
+                LoadAssetAsync(iconValue, function(asset)
+                    if asset and IconImage and IconImage.Parent then
+                        IconImage.Image = asset
+                        if ncfg.IconColor == nil then
+                            IconImage.ImageColor3 = Color3.new(1, 1, 1)
+                        end
+                    end
+                end)
+            elseif iconValue:sub(1, 11) == "rbxassetid:" or iconValue:sub(1, 11) == "rbxasset://" then
+                IconImage.Image = iconValue
+                if ncfg.IconColor == nil then
+                    IconImage.ImageColor3 = Color3.new(1, 1, 1)
+                end
+            else
+                local lucide = Assets[iconValue] or Assets["lucide-" .. iconValue]
+                IconImage.Image = lucide or iconValue
+            end
+        end
 
         local TitleText = New("TextLabel", {
             FontFace = FONT_BOLD,
@@ -3823,6 +3947,19 @@ function CentrixUI:CreateWindow(cfg)
         return { Close = close }
     end
 
+    function Window:NotifyDialog(ncfg)
+        ncfg = ncfg or {}
+        local notifType = ncfg.Type or "info"
+        local colorKey = ColorKeyForType(notifType)
+        return Window:Dialog({
+            Title = ncfg.Title or "Notification",
+            Content = ncfg.Content or "",
+            Icon = ncfg.Icon or TintIconForType(notifType),
+            IconColor = ncfg.IconColor or GetTheme(colorKey),
+            Buttons = ncfg.Buttons or { { Title = "OK" } }
+        })
+    end
+
     function Window:AddTab(tcfg)
         tcfg = tcfg or {}
         return Tab.new(self, tcfg.Title or "Tab", tcfg.Icon)
@@ -3854,6 +3991,316 @@ function CentrixUI:CreateWindow(cfg)
         ContainerHolder.Position = UDim2.fromOffset(TabWidth + 40, 96)
         Tween(ContainerHolder, 0.25, { GroupTransparency = 0 })
         Tween(ContainerHolder, 0.32, { Position = UDim2.fromOffset(TabWidth + 30, 96) }, Enum.EasingStyle.Quart)
+    end
+
+    function Window:JumpToElement(el)
+        if not el or not el._parentTab then return end
+        Window:SelectTab(el._parentTab.Index)
+        task.defer(function()
+            task.wait(0.35)
+            local section = el._parentSection
+            if section and section.IsCollapsed and section:IsCollapsed() then
+                section:SetCollapsed(false)
+                task.wait(0.15)
+            end
+            local container = el._parentTab.Container
+            if container and el.Frame and el.Frame.Parent then
+                local elY = el.Frame.AbsolutePosition.Y - container.AbsolutePosition.Y + container.CanvasPosition.Y
+                Tween(container, 0.4, { CanvasPosition = Vector2.new(0, math.max(0, elY - 40)) }, Enum.EasingStyle.Quart)
+            end
+            if el.Highlight then
+                el:Highlight()
+            end
+        end)
+    end
+
+    function Window:RegisterSearchEntry(entry)
+        if not entry or not entry.Name then return end
+        Window._searchEntries = Window._searchEntries or {}
+        table.insert(Window._searchEntries, entry)
+        return entry
+    end
+
+    function Window:EnableSearch(opts)
+        opts = opts or {}
+        if Window._searchEnabled then return end
+        Window._searchEnabled = true
+        Window._searchKey = opts.Keybind or Enum.KeyCode.K
+
+        Window.SearchButton = MakeTitleButton("lucide-search", -114, function()
+            if Window._openSearch then Window._openSearch() end
+        end)
+
+        local overlay = New("Frame", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Visible = false,
+            ZIndex = 997,
+            Parent = ScreenGui
+        })
+
+        local backdrop = New("TextButton", {
+            Size = UDim2.fromScale(1, 1),
+            BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+            BackgroundTransparency = 1,
+            Text = "",
+            AutoButtonColor = false,
+            Parent = overlay
+        })
+
+        local panel = New("CanvasGroup", {
+            Size = UDim2.fromOffset(500, 400),
+            Position = UDim2.new(0.5, 0, 0.2, 0),
+            AnchorPoint = Vector2.new(0.5, 0),
+            BackgroundColor3 = GetTheme("Background"),
+            GroupTransparency = 0,
+            Parent = overlay
+        }, {
+            New("UICorner", { CornerRadius = UDim.new(0, 10) }),
+            New("UIStroke", { Color = GetTheme("Border"), Thickness = 1, Transparency = 0.3 })
+        })
+        Register(panel, { BackgroundColor3 = "Background" })
+
+        local searchIcon = New("ImageLabel", {
+            Image = Assets["lucide-search"],
+            ImageColor3 = GetTheme("SubText"),
+            Size = UDim2.fromOffset(18, 18),
+            Position = UDim2.fromOffset(16, 16),
+            BackgroundTransparency = 1,
+            Parent = panel
+        })
+        Register(searchIcon, { ImageColor3 = "SubText" })
+
+        local searchInput = New("TextBox", {
+            FontFace = FONT,
+            Text = "",
+            PlaceholderText = "Search tabs, sections, elements...",
+            PlaceholderColor3 = GetTheme("SubText"),
+            TextColor3 = GetTheme("Text"),
+            TextSize = 14,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(44, 0),
+            Size = UDim2.new(1, -60, 0, 50),
+            ClearTextOnFocus = false,
+            Parent = panel
+        })
+        Register(searchInput, { TextColor3 = "Text", PlaceholderColor3 = "SubText" })
+
+        local dividerLine = New("Frame", {
+            Size = UDim2.new(1, 0, 0, 1),
+            Position = UDim2.fromOffset(0, 50),
+            BackgroundColor3 = GetTheme("Border"),
+            BackgroundTransparency = 0.5,
+            BorderSizePixel = 0,
+            Parent = panel
+        })
+        Register(dividerLine, { BackgroundColor3 = "Border" })
+
+        local resultList = New("ScrollingFrame", {
+            Size = UDim2.new(1, -20, 1, -60),
+            Position = UDim2.fromOffset(10, 56),
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            ScrollBarThickness = 3,
+            ScrollBarImageTransparency = 0.9,
+            ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255),
+            CanvasSize = UDim2.new(),
+            Parent = panel
+        }, {
+            New("UIListLayout", { Padding = UDim.new(0, 2), SortOrder = Enum.SortOrder.LayoutOrder })
+        })
+        local resultLayout = resultList:FindFirstChildOfClass("UIListLayout")
+        resultLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+            resultList.CanvasSize = UDim2.fromOffset(0, resultLayout.AbsoluteContentSize.Y)
+        end)
+
+        local typeToIcon = {
+            Toggle = "lucide-toggle-right",
+            Slider = "lucide-sliders-horizontal",
+            Dropdown = "lucide-chevron-down",
+            Input = "lucide-type",
+            Keybind = "lucide-keyboard",
+            Colorpicker = "lucide-palette",
+            Element = "lucide-circle",
+            Command = "lucide-terminal",
+        }
+
+        local function buildEntries()
+            local entries = {}
+            for _, el in ipairs(Window._allElements) do
+                if el._parentTab and el._parentSection and el.TitleLabel then
+                    local title = el.TitleLabel.Text or "Element"
+                    table.insert(entries, {
+                        Name = title,
+                        Type = el.ConfigType or "Element",
+                        Category = el._parentTab.Title .. " > " .. el._parentSection.Title,
+                        Tab = el._parentTab,
+                        Section = el._parentSection,
+                        Element = el,
+                        SearchText = string.lower(title .. " " .. el._parentTab.Title .. " " .. el._parentSection.Title .. " " .. (el.ConfigType or "")),
+                        Order = 1,
+                    })
+                end
+            end
+            for _, custom in ipairs(Window._searchEntries) do
+                table.insert(entries, {
+                    Name = custom.Name,
+                    Type = custom.Category or "Command",
+                    Category = custom.Category or "Commands",
+                    Callback = custom.Callback,
+                    Icon = custom.Icon,
+                    SearchText = string.lower(custom.Name .. " " .. (custom.Category or "")),
+                    Order = 0,
+                })
+            end
+            return entries
+        end
+
+        local function renderResults(filter)
+            for _, c in ipairs(resultList:GetChildren()) do
+                if c:IsA("TextButton") then c:Destroy() end
+            end
+            local entries = buildEntries()
+            local matches = {}
+            for _, entry in ipairs(entries) do
+                if filter == "" or string.find(entry.SearchText, string.lower(filter), 1, true) then
+                    table.insert(matches, entry)
+                end
+            end
+            table.sort(matches, function(a, b)
+                if a.Order ~= b.Order then return a.Order < b.Order end
+                return a.Name < b.Name
+            end)
+            for i, entry in ipairs(matches) do
+                local row = New("TextButton", {
+                    Size = UDim2.new(1, 0, 0, 40),
+                    BackgroundColor3 = GetTheme("Element"),
+                    BackgroundTransparency = 0.95,
+                    Text = "",
+                    AutoButtonColor = false,
+                    LayoutOrder = i,
+                    Parent = resultList
+                }, {
+                    New("UICorner", { CornerRadius = UDim.new(0, 6) })
+                })
+                Register(row, { BackgroundColor3 = "Element" })
+
+                local iconSrc = nil
+                if entry.Icon then
+                    iconSrc = CentrixUI:GetIcon(entry.Icon)
+                end
+                if not iconSrc then
+                    iconSrc = Assets[typeToIcon[entry.Type] or "lucide-circle"]
+                end
+
+                local icon = New("ImageLabel", {
+                    Image = iconSrc or "",
+                    ImageColor3 = GetTheme("SubText"),
+                    Size = UDim2.fromOffset(16, 16),
+                    Position = UDim2.fromOffset(12, 12),
+                    BackgroundTransparency = 1,
+                    Parent = row
+                })
+                Register(icon, { ImageColor3 = "SubText" })
+
+                local label = New("TextLabel", {
+                    FontFace = FONT_MEDIUM,
+                    Text = entry.Name,
+                    TextColor3 = GetTheme("Text"),
+                    TextSize = 13,
+                    TextXAlignment = Enum.TextXAlignment.Left,
+                    Size = UDim2.new(1, -60, 0, 18),
+                    Position = UDim2.fromOffset(38, 5),
+                    BackgroundTransparency = 1,
+                    TextTruncate = Enum.TextTruncate.AtEnd,
+                    Parent = row
+                })
+                Register(label, { TextColor3 = "Text" })
+
+                local cat = New("TextLabel", {
+                    FontFace = FONT,
+                    Text = entry.Category,
+                    TextColor3 = GetTheme("SubText"),
+                    TextSize = 11,
+                    TextXAlignment = Enum.TextXAlignment.Left,
+                    Size = UDim2.new(1, -60, 0, 14),
+                    Position = UDim2.fromOffset(38, 22),
+                    BackgroundTransparency = 1,
+                    TextTruncate = Enum.TextTruncate.AtEnd,
+                    Parent = row
+                })
+                Register(cat, { TextColor3 = "SubText" })
+
+                row.MouseEnter:Connect(function()
+                    Tween(row, 0.12, { BackgroundTransparency = 0.9 })
+                end)
+                row.MouseLeave:Connect(function()
+                    Tween(row, 0.12, { BackgroundTransparency = 0.95 })
+                end)
+                row.MouseButton1Click:Connect(function()
+                    Window._closeSearch()
+                    if entry.Callback then
+                        SafeCallback(entry.Callback)
+                    elseif entry.Element then
+                        Window:JumpToElement(entry.Element)
+                    end
+                end)
+            end
+        end
+
+        searchInput:GetPropertyChangedSignal("Text"):Connect(function()
+            renderResults(searchInput.Text)
+        end)
+
+        backdrop.MouseButton1Click:Connect(function()
+            Window._closeSearch()
+        end)
+
+        Window._searchOverlay = overlay
+        Window._searchPanel = panel
+        Window._searchInput = searchInput
+        Window._searchBackdrop = backdrop
+
+        Window._openSearch = function()
+            overlay.Visible = true
+            searchInput.Text = ""
+            renderResults("")
+            Tween(backdrop, 0.2, { BackgroundTransparency = 0.5 })
+            panel.GroupTransparency = 1
+            panel.Position = UDim2.new(0.5, 0, 0.15, 0)
+            Tween(panel, 0.25, { GroupTransparency = 0, Position = UDim2.new(0.5, 0, 0.2, 0) }, Enum.EasingStyle.Quart)
+            task.defer(function()
+                if searchInput then
+                    searchInput:CaptureFocus()
+                end
+            end)
+        end
+
+        Window._closeSearch = function()
+            Tween(backdrop, 0.15, { BackgroundTransparency = 1 })
+            Tween(panel, 0.2, { GroupTransparency = 1 })
+            task.delay(0.2, function()
+                if overlay then overlay.Visible = false end
+                if searchInput then searchInput:ReleaseFocus() end
+            end)
+        end
+
+        track(UserInputService.InputBegan:Connect(function(input)
+            if input.KeyCode == Window._searchKey and UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then
+                if overlay.Visible then
+                    Window._closeSearch()
+                else
+                    Window._openSearch()
+                end
+            end
+        end))
+
+        track(UserInputService.InputEnded:Connect(function(input)
+            if overlay.Visible and input.KeyCode == Enum.KeyCode.Escape then
+                Window._closeSearch()
+            end
+        end))
     end
 
     function Window:Minimize()
@@ -4269,6 +4716,13 @@ function CentrixUI:Notify(ncfg)
         return ActiveWindow:Notify(ncfg)
     end
     warn("[CentrixUI] Notify called but no active window")
+    return nil
+end
+
+function CentrixUI:NotifyDialog(ncfg)
+    if ActiveWindow and not ActiveWindow.Destroyed then
+        return ActiveWindow:NotifyDialog(ncfg)
+    end
     return nil
 end
 
