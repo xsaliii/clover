@@ -2867,8 +2867,15 @@ function CentrixUI:CreateWindow(cfg)
         DialogLayer.Visible = true
         Tween(DialogTint, 0.2, { BackgroundTransparency = 0.35 })
 
+        local dialogContent = dcfg.Content or ""
+        if dcfg.Detail and dcfg.Detail ~= "" then
+            dialogContent = dialogContent ~= "" and (dialogContent .. "\n\nDetail:\n" .. dcfg.Detail) or ("Detail:\n" .. dcfg.Detail)
+        end
+        local estimatedLines = math.max(1, math.ceil(#dialogContent / 38))
+        local dialogHeight = math.clamp(110 + estimatedLines * 18, 180, 320)
+
         local Root = New("CanvasGroup", {
-            Size = UDim2.fromOffset(320, 180),
+            Size = UDim2.fromOffset(320, dialogHeight),
             AnchorPoint = Vector2.new(0.5, 0.5),
             Position = UDim2.fromScale(0.5, 0.5),
             BackgroundColor3 = GetTheme("Dialog"),
@@ -2925,10 +2932,10 @@ function CentrixUI:CreateWindow(cfg)
             Parent = Root
         })
 
-        if dcfg.Content and dcfg.Content ~= "" then
+        if dialogContent ~= "" then
             local contentLabel = New("TextLabel", {
                 FontFace = FONT,
-                Text = dcfg.Content,
+                Text = dialogContent,
                 TextColor3 = GetTheme("Text"),
                 TextSize = 13,
                 TextXAlignment = Enum.TextXAlignment.Left,
@@ -3209,6 +3216,7 @@ function CentrixUI:CreateWindow(cfg)
         return Window:Dialog({
             Title = ncfg.Title or "Notification",
             Content = ncfg.Content or "",
+            Detail = ncfg.Detail or ncfg.Details,
             Icon = ncfg.Icon or TintIconForType(notifType),
             IconColor = ncfg.IconColor or GetTheme(colorKey),
             Buttons = ncfg.Buttons or { { Title = "OK" } }
@@ -3608,20 +3616,6 @@ function CentrixUI:CreateWindow(cfg)
 
         local IslandScale = New("UIScale", { Scale = 1, Parent = Island })
 
-        -- CanvasGroup has hover events but no GuiButton mouse button events.
-        -- Keep input on a transparent button layered over the island content.
-        local IslandButton = New("TextButton", {
-            Name = "IslandButton",
-            Size = UDim2.fromScale(1, 1),
-            BackgroundTransparency = 1,
-            Text = "",
-            AutoButtonColor = false,
-            Active = true,
-            Selectable = false,
-            ZIndex = 960,
-            Parent = Island
-        })
-
         local ToggleText = New("TextLabel", {
             Name = "ToggleText",
             Size = UDim2.fromScale(1, 1),
@@ -3732,9 +3726,11 @@ function CentrixUI:CreateWindow(cfg)
         Register(ProgressFill, { BackgroundColor3 = "Accent" })
 
         local State = "toggle"
-        local NotifToken = 0
         local NotifQueue = {}
+        local CurrentNotification = nil
+        local CurrentNotificationId = 0
         local ToggleLock = false
+        local showNotification
 
         local function getCorner() return Island:FindFirstChildOfClass("UICorner") end
 
@@ -3760,24 +3756,26 @@ function CentrixUI:CreateWindow(cfg)
         end
 
         local function dismissCurrent()
-            NotifToken = NotifToken + 1
+            if State ~= "notify" then return end
+            CurrentNotification = nil
             if #NotifQueue > 0 then
                 local nextNotif = table.remove(NotifQueue, 1)
-                if Window._IslandShowNotification then
-                    Window._IslandShowNotification(nextNotif)
-                end
+                showNotification(nextNotif)
             else
                 showToggle()
             end
         end
 
-        local function showNotification(ncfg)
+        showNotification = function(ncfg)
             State = "notify"
+            CurrentNotification = ncfg
+            CurrentNotificationId = CurrentNotificationId + 1
+            local notificationId = CurrentNotificationId
             ToggleText.Visible = false
             NotifFrame.Visible = true
 
             TitleLabel.Text = ncfg.Title or "Notification"
-            DescLabel.Text = ncfg.Content or ""
+            DescLabel.Text = ncfg.Content or ncfg.Detail or ncfg.Details or ""
 
             local colorKey = ColorKeyForType(ncfg.Type or "info")
             local hasCustomColor = ncfg.IconColor ~= nil
@@ -3797,27 +3795,30 @@ function CentrixUI:CreateWindow(cfg)
                 end
             end)
 
-            ProgressFill.Size = UDim2.new(1, 0, 1, 0)
-            animateTo(ExpandW, ExpandH, false, 0.55)
-
-            local token = NotifToken + 1
-            NotifToken = token
             local duration = ncfg.Duration or DefaultDuration
 
             task.spawn(function()
-                task.wait(0.35)
-                if token ~= NotifToken then return end
-                if not ProgressFill or not ProgressFill.Parent then return end
-                Tween(ProgressFill, duration, { Size = UDim2.new(0, 0, 1, 0) }, Enum.EasingStyle.Linear)
+                if duration <= 0 then return end
                 task.wait(duration)
-                if token ~= NotifToken then return end
-                if not Island or not Island.Parent then return end
-                dismissCurrent()
+                if State ~= "notify" or CurrentNotificationId ~= notificationId then return end
+                if ProgressFill and ProgressFill.Parent then
+                    Tween(ProgressFill, 0.18, { Size = UDim2.new(0, 0, 1, 0) }, Enum.EasingStyle.Linear)
+                end
+                task.wait(0.18)
+                if State == "notify" and CurrentNotificationId == notificationId then
+                    dismissCurrent()
+                end
             end)
+
+            ProgressFill.Size = UDim2.new(1, 0, 1, 0)
+            if duration > 0 then
+                Tween(ProgressFill, duration, { Size = UDim2.new(0, 0, 1, 0) }, Enum.EasingStyle.Linear)
+            end
+            animateTo(ExpandW, ExpandH, false, 0.45)
         end
 
         Window._IslandShowNotification = function(ncfg)
-            if State == "notify" then
+            if State == "notify" or #NotifQueue > 0 then
                 table.insert(NotifQueue, ncfg)
             else
                 showNotification(ncfg)
@@ -3841,6 +3842,18 @@ function CentrixUI:CreateWindow(cfg)
             end
         end
 
+        local IslandButton = New("TextButton", {
+            Name = "IslandButton",
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Text = "",
+            AutoButtonColor = false,
+            Active = true,
+            Selectable = false,
+            ZIndex = 955,
+            Parent = Island
+        })
+
         Island.MouseEnter:Connect(function()
             if State == "toggle" then
                 Tween(Island, 0.15, { BackgroundTransparency = 0 })
@@ -3863,7 +3876,22 @@ function CentrixUI:CreateWindow(cfg)
         end)
         IslandButton.MouseButton1Click:Connect(function()
             if State == "notify" then
-                dismissCurrent()
+                local current = CurrentNotification
+                local detail = current and (current.Detail or current.Details)
+                if detail and detail ~= "" and not current._DetailShown then
+                    current._DetailShown = true
+                    Window:NotifyDialog({
+                        Title = current.Title or "Notification",
+                        Content = current.Content or "",
+                        Detail = detail,
+                        Type = current.Type,
+                        Icon = current.Icon,
+                        IconColor = current.IconColor,
+                        Buttons = current.Buttons
+                    })
+                else
+                    dismissCurrent()
+                end
             elseif not ToggleLock then
                 ToggleLock = true
                 Window:Toggle()
