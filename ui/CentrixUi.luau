@@ -1,5 +1,5 @@
 local CentrixUI = {}
-CentrixUI.Version = "4.7.0"
+CentrixUI.Version = "4.7.1"
 
 local DEFAULT_LUCIDE_URL = "https://raw.githubusercontent.com/xsaliii/clover/refs/heads/main/ui/lucide_icon.lua"
 
@@ -574,6 +574,28 @@ local function SafeCallback(fn, ...)
     end
 end
 
+local function SafeChanged(el, ...)
+    if not el or not el.Changed then return end
+    if el._inChanged then return end
+    el._inChanged = true
+    local ok, err = pcall(el.Changed, ...)
+    el._inChanged = false
+    if not ok then
+        warn("[CentrixUI] OnChanged error: " .. tostring(err))
+    end
+end
+
+local function SafeConfigCallback(cfg, ...)
+    if not cfg or not cfg.Callback then return end
+    if cfg._inCallback then return end
+    cfg._inCallback = true
+    local ok, err = pcall(cfg.Callback, ...)
+    cfg._inCallback = false
+    if not ok then
+        warn("[CentrixUI] Callback error: " .. tostring(err))
+    end
+end
+
 local function SerializeValue(el)
     if el.ConfigType == "Toggle" then
         return el:GetValue() and "true" or "false"
@@ -1123,24 +1145,38 @@ function Section.new(tab, title, order, opts)
 
         el.Frame.MouseButton1Click:Connect(function()
             if el.Disabled then return end
+            if el._settingValue then return end
+            el._settingValue = true
             state.Value = not state.Value
             render(true)
-            SafeCallback(cfg.Callback, state.Value)
-            SafeCallback(el.Changed, state.Value)
+            SafeConfigCallback(cfg, state.Value)
+            SafeChanged(el, state.Value)
             if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
+            el._settingValue = false
         end)
 
         function el:SetValue(v, silent)
+            if el._settingValue then return end
+            el._settingValue = true
             state.Value = not not v
             render(true)
             if not silent then
-                SafeCallback(cfg.Callback, state.Value)
-                SafeCallback(el.Changed, state.Value)
+                SafeConfigCallback(cfg, state.Value)
+                SafeChanged(el, state.Value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
+            el._settingValue = false
         end
         function el:GetValue() return state.Value end
-        function el:OnChanged(fn) el.Changed = fn; fn(state.Value) end
+        function el:OnChanged(fn)
+            el.Changed = fn
+            if not el._inChanged then
+                el._inChanged = true
+                pcall(fn, state.Value)
+                el._inChanged = false
+            end
+            return el
+        end
 
         render(false)
         table.insert(self.Elements, el)
@@ -1230,16 +1266,19 @@ function Section.new(tab, title, order, opts)
         local editing = false
 
         local function setValue(v, silent)
+            if el._settingValue then return end
+            el._settingValue = true
             value = Round(math.clamp(v, min, max), rounding)
             local alpha = (max - min) > 0 and ((value - min) / (max - min)) or 0
             Knob.Position = UDim2.new(alpha, 0, 0.5, 0)
             Fill.Size = UDim2.fromScale(alpha, 1)
             if not editing then ValueInput.Text = tostring(value) end
             if not silent then
-                SafeCallback(cfg.Callback, value)
-                SafeCallback(el.Changed, value)
+                SafeConfigCallback(cfg, value)
+                SafeChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
+            el._settingValue = false
         end
 
         local function updateFromX(inputX)
@@ -1294,6 +1333,8 @@ function Section.new(tab, title, order, opts)
 
         local textConn = ValueInput:GetPropertyChangedSignal("Text"):Connect(function()
             if not editing then return end
+            if el._settingValue then return end
+            el._settingValue = true
             local num = tonumber(ValueInput.Text)
             if num then
                 local clamped = math.clamp(num, min, max)
@@ -1305,15 +1346,24 @@ function Section.new(tab, title, order, opts)
                 local alpha = (max - min) > 0 and ((value - min) / (max - min)) or 0
                 Knob.Position = UDim2.new(alpha, 0, 0.5, 0)
                 Fill.Size = UDim2.fromScale(alpha, 1)
-                SafeCallback(cfg.Callback, value)
-                SafeCallback(el.Changed, value)
+                SafeConfigCallback(cfg, value)
+                SafeChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
+            el._settingValue = false
         end)
 
         function el:SetValue(v, silent) setValue(v, silent) end
         function el:GetValue() return value end
-        function el:OnChanged(fn) el.Changed = fn; fn(value) end
+        function el:OnChanged(fn)
+            el.Changed = fn
+            if not el._inChanged then
+                el._inChanged = true
+                pcall(fn, value)
+                el._inChanged = false
+            end
+            return el
+        end
 
         local baseDestroy = el.Destroy
         function el:Destroy()
@@ -1382,15 +1432,18 @@ function Section.new(tab, title, order, opts)
         Register(Indicator, { BackgroundColor3 = "InputIndicator" })
 
         local function setValue(v, silent)
+            if el._settingValue then return end
+            el._settingValue = true
             if cfg.Numeric and v ~= "" and not tonumber(v) then v = value end
             if cfg.MaxLength and #v > cfg.MaxLength then v = v:sub(1, cfg.MaxLength) end
             value = v
             if Input.Text ~= v then Input.Text = v end
             if not silent then
-                SafeCallback(cfg.Callback, value)
-                SafeCallback(el.Changed, value)
+                SafeConfigCallback(cfg, value)
+                SafeChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
+            el._settingValue = false
         end
 
         Input.Focused:Connect(function()
@@ -1405,13 +1458,22 @@ function Section.new(tab, title, order, opts)
 
         if not cfg.Finished then
             Input:GetPropertyChangedSignal("Text"):Connect(function()
+                if el._settingValue then return end
                 setValue(Input.Text)
             end)
         end
 
         function el:SetValue(v, silent) setValue(v, silent) end
         function el:GetValue() return value end
-        function el:OnChanged(fn) el.Changed = fn; fn(value) end
+        function el:OnChanged(fn)
+            el.Changed = fn
+            if not el._inChanged then
+                el._inChanged = true
+                pcall(fn, value)
+                el._inChanged = false
+            end
+            return el
+        end
 
         table.insert(self.Elements, el)
         RegisterElement(el, "Input", cfg.ConfigKey or (tab.Title .. "::" .. self.Title .. "::" .. (cfg.Title or "Input")))
@@ -1494,7 +1556,7 @@ function Section.new(tab, title, order, opts)
                 if keyName then
                     state.Value = keyName
                     KeyLabel.Text = keyName
-                    SafeCallback(el.Changed, state.Value)
+                    SafeChanged(el, state.Value)
                     stopListening()
                     if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
                 end
@@ -1521,8 +1583,12 @@ function Section.new(tab, title, order, opts)
                 end
                 if matches then
                     state.Toggled = not state.Toggled
-                    SafeCallback(cfg.Callback, state.Toggled)
-                    SafeCallback(el.Clicked, state.Toggled)
+                    SafeConfigCallback(cfg, state.Toggled)
+                    if el.Clicked and not el._inClick then
+                        el._inClick = true
+                        pcall(el.Clicked, state.Toggled)
+                        el._inClick = false
+                    end
                 end
             end
         end)
@@ -1544,7 +1610,15 @@ function Section.new(tab, title, order, opts)
             end
             return state.Toggled
         end
-        function el:OnChanged(fn) el.Changed = fn; fn(state.Value) end
+        function el:OnChanged(fn)
+            el.Changed = fn
+            if not el._inChanged then
+                el._inChanged = true
+                pcall(fn, state.Value)
+                el._inChanged = false
+            end
+            return el
+        end
         function el:OnClick(fn) el.Clicked = fn end
 
         local baseDestroy = el.Destroy
@@ -1776,8 +1850,8 @@ function Section.new(tab, title, order, opts)
                             end
                             updateDisplay()
                             renderOptions(searchInput and searchInput.Text or "")
-                            SafeCallback(cfg.Callback, value)
-                            SafeCallback(el.Changed, value)
+                            SafeConfigCallback(cfg, value)
+                            SafeChanged(el, value)
                             if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
                             if not multi then
                                 opened = false
@@ -1857,6 +1931,8 @@ function Section.new(tab, title, order, opts)
         end
 
         function el:SetValue(v, silent)
+            if el._settingValue then return end
+            el._settingValue = true
             if multi then
                 value = {}
                 if type(v) == "table" then
@@ -1869,10 +1945,11 @@ function Section.new(tab, title, order, opts)
             end
             updateDisplay()
             if not silent then
-                SafeCallback(cfg.Callback, value)
-                SafeCallback(el.Changed, value)
+                SafeConfigCallback(cfg, value)
+                SafeChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
+            el._settingValue = false
         end
         function el:SetValues(newValues)
             values = newValues or {}
@@ -1901,7 +1978,15 @@ function Section.new(tab, title, order, opts)
         end
         function el:IsMulti() return multi end
         function el:GetValue() return value end
-        function el:OnChanged(fn) el.Changed = fn; fn(value) end
+        function el:OnChanged(fn)
+            el.Changed = fn
+            if not el._inChanged then
+                el._inChanged = true
+                pcall(fn, value)
+                el._inChanged = false
+            end
+            return el
+        end
 
         local baseDestroy = el.Destroy
         function el:Destroy()
@@ -1952,8 +2037,8 @@ function Section.new(tab, title, order, opts)
                         transparency = workingTransparency
                         Preview.BackgroundColor3 = value
                         Preview.BackgroundTransparency = transparency
-                        SafeCallback(cfg.Callback, value)
-                        SafeCallback(el.Changed, value)
+                        SafeConfigCallback(cfg, value)
+                        SafeChanged(el, value)
                         if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
                     end },
                     { Title = "Cancel" }
@@ -2222,19 +2307,30 @@ function Section.new(tab, title, order, opts)
         end)
 
         function el:SetValue(c, t, silent)
+            if el._settingValue then return end
+            el._settingValue = true
             if typeof(c) == "Color3" then value = c end
             if t then transparency = t end
             Preview.BackgroundColor3 = value
             Preview.BackgroundTransparency = transparency
             if not silent then
-                SafeCallback(cfg.Callback, value)
-                SafeCallback(el.Changed, value)
+                SafeConfigCallback(cfg, value)
+                SafeChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
+            el._settingValue = false
         end
         function el:GetValue() return value end
         function el:GetTransparency() return transparency end
-        function el:OnChanged(fn) el.Changed = fn; fn(value) end
+        function el:OnChanged(fn)
+            el.Changed = fn
+            if not el._inChanged then
+                el._inChanged = true
+                pcall(fn, value)
+                el._inChanged = false
+            end
+            return el
+        end
 
         table.insert(self.Elements, el)
         RegisterElement(el, "Colorpicker", cfg.ConfigKey or (tab.Title .. "::" .. self.Title .. "::" .. (cfg.Title or "Color")))
