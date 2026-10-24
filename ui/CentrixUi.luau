@@ -3,7 +3,7 @@ CentrixUI.Version = "4.7.1"
 
 local DEFAULT_LUCIDE_URL = "https://raw.githubusercontent.com/xsaliii/clover/refs/heads/main/ui/lucide_icon.lua"
 
-local function SafeClone(inst)
+local function WhyClone(inst)
     if type(cloneref) == "function" then
         local ok, res = pcall(cloneref, inst)
         if ok and res then return res end
@@ -11,8 +11,8 @@ local function SafeClone(inst)
     return inst
 end
 
-local function SafeService(name)
-    return SafeClone(game:GetService(name))
+local function WhyService(name)
+    return WhyClone(game:GetService(name))
 end
 
 local function HighIdentity()
@@ -62,7 +62,7 @@ local function CreateSpoofedGui(realName)
     if UsedHidden then
         gui.Parent = HiddenParent
     else
-        local core = SafeService("CoreGui")
+        local core = WhyService("CoreGui")
         HighIdentity()
         pcall(function() gui.Parent = core end)
         ResetIdentity()
@@ -77,12 +77,12 @@ local function CreateSpoofedGui(realName)
     return gui
 end
 
-local TweenService = SafeService("TweenService")
-local RunService = SafeService("RunService")
-local UserInputService = SafeService("UserInputService")
-local Players = SafeService("Players")
-local CoreGui = SafeService("CoreGui")
-local Lighting = SafeService("Lighting")
+local TweenService = WhyService("TweenService")
+local RunService = WhyService("RunService")
+local UserInputService = WhyService("UserInputService")
+local Players = WhyService("Players")
+local CoreGui = WhyService("CoreGui")
+local Lighting = WhyService("Lighting")
 
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
@@ -566,7 +566,7 @@ function Acrylic.Disable()
     Acrylic.Enabled = false
 end
 
-local function SafeCallback(fn, ...)
+local function WhyCallback(fn, ...)
     if not fn then return end
     local ok, err = pcall(fn, ...)
     if not ok then
@@ -574,7 +574,7 @@ local function SafeCallback(fn, ...)
     end
 end
 
-local function SafeChanged(el, ...)
+local function WhyChanged(el, ...)
     if not el or not el.Changed then return end
     if el._inChanged then return end
     el._inChanged = true
@@ -585,7 +585,7 @@ local function SafeChanged(el, ...)
     end
 end
 
-local function SafeConfigCallback(cfg, ...)
+local function WhyConfigCallback(cfg, ...)
     if not cfg or not cfg.Callback then return end
     if cfg._inCallback then return end
     cfg._inCallback = true
@@ -977,7 +977,7 @@ function Section.new(tab, title, order, opts)
         end)
         el.Frame.MouseButton1Click:Connect(function()
             if el.Disabled then return end
-            SafeCallback(cfg.Callback)
+            WhyCallback(cfg.Callback)
         end)
         table.insert(self.Elements, el)
         return el
@@ -1149,8 +1149,8 @@ function Section.new(tab, title, order, opts)
             el._settingValue = true
             state.Value = not state.Value
             render(true)
-            SafeConfigCallback(cfg, state.Value)
-            SafeChanged(el, state.Value)
+            WhyConfigCallback(cfg, state.Value)
+            WhyChanged(el, state.Value)
             if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             el._settingValue = false
         end)
@@ -1161,8 +1161,8 @@ function Section.new(tab, title, order, opts)
             state.Value = not not v
             render(true)
             if not silent then
-                SafeConfigCallback(cfg, state.Value)
-                SafeChanged(el, state.Value)
+                WhyConfigCallback(cfg, state.Value)
+                WhyChanged(el, state.Value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
             el._settingValue = false
@@ -1274,8 +1274,8 @@ function Section.new(tab, title, order, opts)
             Fill.Size = UDim2.fromScale(alpha, 1)
             if not editing then ValueInput.Text = tostring(value) end
             if not silent then
-                SafeConfigCallback(cfg, value)
-                SafeChanged(el, value)
+                WhyConfigCallback(cfg, value)
+                WhyChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
             el._settingValue = false
@@ -1346,8 +1346,8 @@ function Section.new(tab, title, order, opts)
                 local alpha = (max - min) > 0 and ((value - min) / (max - min)) or 0
                 Knob.Position = UDim2.new(alpha, 0, 0.5, 0)
                 Fill.Size = UDim2.fromScale(alpha, 1)
-                SafeConfigCallback(cfg, value)
-                SafeChanged(el, value)
+                WhyConfigCallback(cfg, value)
+                WhyChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
             el._settingValue = false
@@ -1439,8 +1439,8 @@ function Section.new(tab, title, order, opts)
             value = v
             if Input.Text ~= v then Input.Text = v end
             if not silent then
-                SafeConfigCallback(cfg, value)
-                SafeChanged(el, value)
+                WhyConfigCallback(cfg, value)
+                WhyChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
             el._settingValue = false
@@ -1545,18 +1545,18 @@ function Section.new(tab, title, order, opts)
                 local keyName
                 if input.UserInputType == Enum.UserInputType.Keyboard then
                     keyName = input.KeyCode.Name
-                    SafeCallback(cfg.ChangedCallback, input.KeyCode)
+                    WhyCallback(cfg.ChangedCallback, input.KeyCode)
                 elseif input.UserInputType == Enum.UserInputType.MouseButton1 then
                     keyName = "MouseLeft"
-                    SafeCallback(cfg.ChangedCallback, Enum.UserInputType.MouseButton1)
+                    WhyCallback(cfg.ChangedCallback, Enum.UserInputType.MouseButton1)
                 elseif input.UserInputType == Enum.UserInputType.MouseButton2 then
                     keyName = "MouseRight"
-                    SafeCallback(cfg.ChangedCallback, Enum.UserInputType.MouseButton2)
+                    WhyCallback(cfg.ChangedCallback, Enum.UserInputType.MouseButton2)
                 end
                 if keyName then
                     state.Value = keyName
                     KeyLabel.Text = keyName
-                    SafeChanged(el, state.Value)
+                    WhyChanged(el, state.Value)
                     stopListening()
                     if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
                 end
@@ -1583,7 +1583,7 @@ function Section.new(tab, title, order, opts)
                 end
                 if matches then
                     state.Toggled = not state.Toggled
-                    SafeConfigCallback(cfg, state.Toggled)
+                    WhyConfigCallback(cfg, state.Toggled)
                     if el.Clicked and not el._inClick then
                         el._inClick = true
                         pcall(el.Clicked, state.Toggled)
@@ -1850,8 +1850,8 @@ function Section.new(tab, title, order, opts)
                             end
                             updateDisplay()
                             renderOptions(searchInput and searchInput.Text or "")
-                            SafeConfigCallback(cfg, value)
-                            SafeChanged(el, value)
+                            WhyConfigCallback(cfg, value)
+                            WhyChanged(el, value)
                             if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
                             if not multi then
                                 opened = false
@@ -1945,8 +1945,8 @@ function Section.new(tab, title, order, opts)
             end
             updateDisplay()
             if not silent then
-                SafeConfigCallback(cfg, value)
-                SafeChanged(el, value)
+                WhyConfigCallback(cfg, value)
+                WhyChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
             el._settingValue = false
@@ -2037,8 +2037,8 @@ function Section.new(tab, title, order, opts)
                         transparency = workingTransparency
                         Preview.BackgroundColor3 = value
                         Preview.BackgroundTransparency = transparency
-                        SafeConfigCallback(cfg, value)
-                        SafeChanged(el, value)
+                        WhyConfigCallback(cfg, value)
+                        WhyChanged(el, value)
                         if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
                     end },
                     { Title = "Cancel" }
@@ -2314,8 +2314,8 @@ function Section.new(tab, title, order, opts)
             Preview.BackgroundColor3 = value
             Preview.BackgroundTransparency = transparency
             if not silent then
-                SafeConfigCallback(cfg, value)
-                SafeChanged(el, value)
+                WhyConfigCallback(cfg, value)
+                WhyChanged(el, value)
                 if tab.Window and tab.Window._scheduleSave then tab.Window._scheduleSave() end
             end
             el._settingValue = false
@@ -3123,7 +3123,7 @@ function CentrixUI:CreateWindow(cfg)
             Btn.MouseEnter:Connect(function() Tween(Btn, 0.12, { BackgroundTransparency = math.max(0, baseTrans - 0.08) }) end)
             Btn.MouseLeave:Connect(function() Tween(Btn, 0.12, { BackgroundTransparency = baseTrans }) end)
             Btn.MouseButton1Click:Connect(function()
-                SafeCallback(btnCfg.Callback)
+                WhyCallback(btnCfg.Callback)
                 closeDialog()
             end)
         end
@@ -3604,7 +3604,7 @@ function CentrixUI:CreateWindow(cfg)
                 row.MouseButton1Click:Connect(function()
                     Window._closeSearch()
                     if entry.Callback then
-                        SafeCallback(entry.Callback)
+                        WhyCallback(entry.Callback)
                     elseif entry.Element then
                         Window:JumpToElement(entry.Element)
                     end
