@@ -3608,6 +3608,20 @@ function CentrixUI:CreateWindow(cfg)
 
         local IslandScale = New("UIScale", { Scale = 1, Parent = Island })
 
+        -- CanvasGroup has hover events but no GuiButton mouse button events.
+        -- Keep input on a transparent button layered over the island content.
+        local IslandButton = New("TextButton", {
+            Name = "IslandButton",
+            Size = UDim2.fromScale(1, 1),
+            BackgroundTransparency = 1,
+            Text = "",
+            AutoButtonColor = false,
+            Active = true,
+            Selectable = false,
+            ZIndex = 960,
+            Parent = Island
+        })
+
         local ToggleText = New("TextLabel", {
             Name = "ToggleText",
             Size = UDim2.fromScale(1, 1),
@@ -3837,17 +3851,17 @@ function CentrixUI:CreateWindow(cfg)
                 Tween(Island, 0.15, { BackgroundTransparency = 0.05 })
             end
         end)
-        Island.MouseButton1Down:Connect(function()
+        IslandButton.MouseButton1Down:Connect(function()
             if State == "toggle" then
                 Tween(IslandScale, 0.08, { Scale = 0.94 })
             end
         end)
-        Island.MouseButton1Up:Connect(function()
+        IslandButton.MouseButton1Up:Connect(function()
             if State == "toggle" then
                 Tween(IslandScale, 0.12, { Scale = 1 })
             end
         end)
-        Island.MouseButton1Click:Connect(function()
+        IslandButton.MouseButton1Click:Connect(function()
             if State == "notify" then
                 dismissCurrent()
             elseif not ToggleLock then
