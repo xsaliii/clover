@@ -738,11 +738,20 @@ local _trigon =
 }
 
 _trigon.Trigon.IgnoreGuiInset = true
-_trigon.Trigon.DisplayOrder = -1
+_trigon.Trigon.DisplayOrder = 9999
 _trigon.Trigon.Name = "Trigon"
 _trigon.Trigon.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 _trigon.Trigon.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-_trigon.Trigon.Parent = gethui()
+_trigon.Trigon.ResetOnSpawn = false
+local ok_hui, hui_result = pcall(function() return gethui() end)
+local trigon_ui_parent = (ok_hui and hui_result) or game:GetService("CoreGui")
+pcall(function()
+	local old_trigon_gui = trigon_ui_parent:FindFirstChild("Trigon")
+	if old_trigon_gui and old_trigon_gui ~= _trigon.Trigon then
+		old_trigon_gui:Destroy()
+	end
+end)
+_trigon.Trigon.Parent = trigon_ui_parent
 
 _trigon.Canvas.BorderSizePixel = 0
 _trigon.Canvas.BackgroundColor3 = Color3.fromRGB(39, 41, 46)
@@ -7340,7 +7349,7 @@ task.spawn(function()
 	_trigon.TopbarGUI.ResetOnSpawn = false
 	_trigon.TopbarGUI.Name = "TrigonTop"
 	_trigon.TopbarGUI.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-	_trigon.TopbarGUI.Parent = gethui()
+	_trigon.TopbarGUI.Parent = pcall(function() return gethui() end) and gethui() or game:GetService("CoreGui")
 	
 	_trigon.TopbarFrame.BorderSizePixel = 0
 	_trigon.TopbarFrame.BackgroundColor3 = Color3.fromRGB(216, 228, 255)
@@ -8429,8 +8438,28 @@ task.spawn(function()
 		_G.clearScriptContainer()
 		url = params or "https://rscripts.net/api/v2/scripts?page=1&orderBy=date&sort=desc"
 		print("Searching: "..url)
-		data = _G.Trigon and HttpService:JSONDecode(game:HttpGet(url)) or HttpService:JSONDecode(dataContainer.Value)
-		repeat wait() until data ~= "x"
+		local ok_fetch, fetched = false, nil
+		if _G.Trigon then
+			ok_fetch, fetched = pcall(function() return game:HttpGet(url) end)
+		end
+		if ok_fetch and fetched then
+			ok_fetch, fetched = pcall(function() return HttpService:JSONDecode(fetched) end)
+		else
+			ok_fetch, fetched = pcall(function() return HttpService:JSONDecode(dataContainer.Value) end)
+		end
+		if not ok_fetch or not fetched then
+			print("Trigon: script list fetch failed, check your connection or try again.")
+			Top.Interactable = true
+			LFrame.Visible = false
+			return
+		end
+		data = fetched
+		if not (data and data.info and data.scripts) then
+			print("Trigon: unexpected script list response.")
+			Top.Interactable = true
+			LFrame.Visible = false
+			return
+		end
 	
 		_G.MaxPages = data.info.maxPages
 		Top.Interactable = false
