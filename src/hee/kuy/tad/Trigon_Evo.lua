@@ -8189,7 +8189,20 @@ task.spawn(function()
 	editor = script.Parent.Canvas.Container.Main.Tabs.Editor
 	tabContainer = editor.ScriptTabs.Container
 	
-	_G.OdeSE = _G.Trigon and loadstring(game:HttpGet('https://raw.githubusercontent.com/relbaldski/bald/main/OdeScriptEditor/main.lua'))() or require(script.Parent.OdeScriptEditor)
+	local function _trigon_httpget(u)
+		local ok,b=pcall(function() return game:HttpGet(u) end)
+		if ok and type(b)=='string' and #b>0 then return b end
+		if request then local ok2,r=pcall(function() return request({Url=u,Method="GET"}) end) if ok2 and r and type(r.Body)=='string' then return r.Body end end
+		if http_request then local ok2,r=pcall(function() return http_request({Url=u,Method="GET"}) end) if ok2 and r and type(r.Body)=='string' then return r.Body end end
+		if http and http.request then local ok2,r=pcall(function() return http.request({Url=u,Method="GET"}) end) if ok2 and r and type(r.Body)=='string' then return r.Body end end
+		return nil
+	end
+	local _ode_src = _trigon_httpget('https://raw.githubusercontent.com/relbaldski/bald/main/OdeScriptEditor/main.lua')
+	_G.OdeSE = nil
+	if _ode_src then
+		local ok,f = pcall(loadstring, _ode_src)
+		if ok and f then local ok2,m=pcall(f); if ok2 then _G.OdeSE=m end end
+	end
 	
 	tabFrameTemplate = tabContainer:WaitForChild("tab_frame")
 	tabFrameTemplate.Visible = false
@@ -8439,12 +8452,13 @@ task.spawn(function()
 		url = params or "https://rscripts.net/api/v2/scripts?page=1&orderBy=date&sort=desc"
 		print("Searching: "..url)
 		local ok_fetch, fetched = false, nil
-		if _G.Trigon then
-			ok_fetch, fetched = pcall(function() return game:HttpGet(url) end)
+		local _body = nil
+		pcall(function() _body = game:HttpGet(url) end)
+		if not _body and request then local ok2,r=pcall(function() return request({Url=url,Method="GET"}) end); if ok2 and r and type(r.Body)=='string' then _body=r.Body end end
+		if _body then
+			ok_fetch, fetched = pcall(function() return HttpService:JSONDecode(_body) end)
 		end
-		if ok_fetch and fetched then
-			ok_fetch, fetched = pcall(function() return HttpService:JSONDecode(fetched) end)
-		else
+		if not ok_fetch then
 			ok_fetch, fetched = pcall(function() return HttpService:JSONDecode(dataContainer.Value) end)
 		end
 		if not ok_fetch or not fetched then
